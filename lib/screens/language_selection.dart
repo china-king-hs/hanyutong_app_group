@@ -3,17 +3,10 @@ import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 import '../app_state.dart';
 import '../widgets/step_indicator.dart';
+import '../config/app_languages.dart';
+import '../l10n/app_localizations.dart';
 
-const _languages = [
-  {'code': 'en', 'name': 'English', 'country': 'United States', 'flag': '🇺🇸'},
-  {'code': 'es', 'name': 'Español', 'country': 'Spain', 'flag': '🇪🇸'},
-  {'code': 'fr', 'name': 'Français', 'country': 'France', 'flag': '🇫🇷'},
-  {'code': 'de', 'name': 'Deutsch', 'country': 'Germany', 'flag': '🇩🇪'},
-  {'code': 'ja', 'name': '日本語', 'country': 'Japan', 'flag': '🇯🇵'},
-  {'code': 'ko', 'name': '한국어', 'country': 'South Korea', 'flag': '🇰🇷'},
-  {'code': 'pt', 'name': 'Português', 'country': 'Portugal', 'flag': '🇵🇹'},
-  {'code': 'ru', 'name': 'Русский', 'country': 'Russia', 'flag': '🇷🇺'},
-];
+const _languages = supportedLanguages;
 
 class LanguageSelection extends StatefulWidget {
   const LanguageSelection({super.key});
@@ -46,27 +39,27 @@ class _LanguageSelectionState extends State<LanguageSelection> {
                   children: [
                     const StepIndicator(total: 3, current: 0),
                     const SizedBox(height: 48),
-                    const Text(
-                      'What language do you use to learn Chinese?',
+                    Text(
+                      AppLocalizations.of(context)!.selectNativeLanguage,
                       textAlign: TextAlign.center,
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontSize: 26,
                         fontWeight: FontWeight.bold,
                         color: Color(0xFF333333),
                       ),
                     ),
                     const SizedBox(height: 8),
-                    const Text(
-                      'Please select your native language',
-                      style: TextStyle(color: Color(0xFF999999)),
+                    Text(
+                      AppLocalizations.of(context)!.pleaseSelect,
+                      style: const TextStyle(color: Color(0xFF999999)),
                     ),
                     const SizedBox(height: 32),
-                    ..._languages.map((lang) => _LangCard(
-                          lang: lang,
-                          isSelected: _selected == lang['code'],
-                          onTap: () =>
-                              setState(() => _selected = lang['code']),
-                        )),
+                  ..._languages.map((lang) => _LangCard(
+                        lang: lang,
+                        isSelected: _selected == lang.code,
+                        onTap: () =>
+                            setState(() => _selected = lang.code),
+                      )),
                   ],
                 ),
               ),
@@ -90,9 +83,9 @@ class _LanguageSelectionState extends State<LanguageSelection> {
                       borderRadius: BorderRadius.circular(12),
                     ),
                   ),
-                  child: const Text(
-                    'Confirm',
-                    style: TextStyle(
+                  child: Text(
+                    AppLocalizations.of(context)!.confirm,
+                    style: const TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.bold,
                       color: Colors.white,
@@ -109,7 +102,7 @@ class _LanguageSelectionState extends State<LanguageSelection> {
 }
 
 class _LangCard extends StatelessWidget {
-  final Map<String, String> lang;
+  final AppLanguage lang;
   final bool isSelected;
   final VoidCallback onTap;
 
@@ -151,20 +144,29 @@ class _LangCard extends StatelessWidget {
                 shape: BoxShape.circle,
               ),
               alignment: Alignment.center,
-              child: Text(lang['flag']!, style: const TextStyle(fontSize: 24)),
+              child: Text(lang.flag, style: const TextStyle(fontSize: 24)),
             ),
             const SizedBox(width: 16),
             Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(lang['name']!,
-                      style: const TextStyle(
-                          fontWeight: FontWeight.w600,
-                          color: Color(0xFF333333))),
-                  Text(lang['country']!,
-                      style: const TextStyle(
-                          fontSize: 13, color: Color(0xFF999999))),
+                  Text(
+                    lang.nativeName,
+                    style: const TextStyle(
+                      fontWeight: FontWeight.w600,
+                      color: Color(0xFF333333),
+                      fontSize: 16,
+                    ),
+                    textDirection: lang.isRTL ? TextDirection.rtl : TextDirection.ltr,
+                  ),
+                  Text(
+                    '${lang.englishName} • ${lang.country}',
+                    style: const TextStyle(
+                      fontSize: 13,
+                      color: Color(0xFF999999),
+                    ),
+                  ),
                 ],
               ),
             ),

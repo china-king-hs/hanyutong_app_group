@@ -2,16 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 import '../app_state.dart';
-
-// 语言 flag 映射
-const _langFlags = {
-  'en': '🇺🇸', 'es': '🇪🇸', 'fr': '🇫🇷', 'de': '🇩🇪',
-  'ja': '🇯🇵', 'ko': '🇰🇷', 'pt': '🇵🇹', 'ru': '🇷🇺',
-};
-const _langNames = {
-  'en': 'English', 'es': 'Español', 'fr': 'Français', 'de': 'Deutsch',
-  'ja': '日本語', 'ko': '한국어', 'pt': 'Português', 'ru': 'Русский',
-};
+import '../config/app_languages.dart';
+import '../l10n/app_localizations.dart';
 
 class HomeTab extends StatelessWidget {
   const HomeTab({super.key});
@@ -30,11 +22,13 @@ class HomeTab extends StatelessWidget {
               children: [
                 _TopButton(
                   child: Row(children: [
-                    Text(_langFlags[state.language] ?? '🇺🇸',
-                        style: const TextStyle(fontSize: 22)),
+                    Text(
+                      getLanguage(state.language)?.flag ?? '🇺🇸',
+                      style: const TextStyle(fontSize: 22),
+                    ),
                     const SizedBox(width: 8),
                     Text(
-                      _langNames[state.language] ?? 'English',
+                      getLanguage(state.language)?.nativeName ?? 'English',
                       style: const TextStyle(
                           fontSize: 13,
                           fontWeight: FontWeight.w500,
@@ -49,7 +43,7 @@ class HomeTab extends StatelessWidget {
                     const Text('🎯', style: TextStyle(fontSize: 18)),
                     const SizedBox(width: 8),
                     Text(
-                      '${state.dailyGoal}分钟',
+                      '${state.dailyGoal} ${AppLocalizations.of(context)!.minutes}',
                       style: const TextStyle(
                           fontSize: 13,
                           fontWeight: FontWeight.w500,
@@ -71,9 +65,27 @@ class HomeTab extends StatelessWidget {
               ),
               child: Row(
                 children: [
-                  _StatItem(icon: '🔥', value: '${state.streak}', label1: '连续学习', label2: '天'),
-                  _StatItem(icon: '📅', value: '${state.totalDays}', label1: '累计天数', label2: '天'),
-                  _StatItem(icon: '⏱', value: '${state.totalHours}', label1: '学习时长', label2: '小时'),
+                  _StatItem(
+                    icon: '🔥', 
+                    value: '${state.streak}', 
+                    label1: '连续学习', 
+                    label2: '天',
+                    useLocalization: true,
+                  ),
+                  _StatItem(
+                    icon: '📅', 
+                    value: '${state.totalDays}', 
+                    label1: '累计天数', 
+                    label2: '天',
+                    useLocalization: true,
+                  ),
+                  _StatItem(
+                    icon: '⏱', 
+                    value: '${state.totalHours}', 
+                    label1: '学习时长', 
+                    label2: '小时',
+                    useLocalization: true,
+                  ),
                 ],
               ),
             ),
@@ -84,17 +96,35 @@ class HomeTab extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Text('已掌握',
-                      style: TextStyle(
+                  Text(AppLocalizations.of(context)!.mastered,
+                      style: const TextStyle(
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
                           color: Color(0xFF333333))),
                   const SizedBox(height: 16),
                   Row(
                     children: [
-                      _StatItem(icon: '📝', value: '${state.masteredWords}', label1: '字词', label2: '个'),
-                      _StatItem(icon: '📄', value: '${state.masteredSentences}', label1: '句子', label2: '个'),
-                      _StatItem(icon: '⭐', value: '${state.masteredAdvanced}', label1: '高阶', label2: '个'),
+                      _StatItem(
+                        icon: '📝', 
+                        value: '${state.masteredWords}', 
+                        label1: '字词', 
+                        label2: '个',
+                        useLocalization: true,
+                      ),
+                      _StatItem(
+                        icon: '📄', 
+                        value: '${state.masteredSentences}', 
+                        label1: '句子', 
+                        label2: '个',
+                        useLocalization: true,
+                      ),
+                      _StatItem(
+                        icon: '⭐', 
+                        value: '${state.masteredAdvanced}', 
+                        label1: '高阶', 
+                        label2: '个',
+                        useLocalization: true,
+                      ),
                     ],
                   ),
                   const SizedBox(height: 16),
@@ -108,8 +138,8 @@ class HomeTab extends StatelessWidget {
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(12)),
                       ),
-                      child: const Text('复习',
-                          style: TextStyle(
+                      child: Text(AppLocalizations.of(context)!.review,
+                          style: const TextStyle(
                               fontSize: 15,
                               fontWeight: FontWeight.bold,
                               color: Colors.white)),
@@ -128,9 +158,9 @@ class HomeTab extends StatelessWidget {
                   children: [
                     const Icon(Icons.star, color: Colors.amber, size: 24),
                     const SizedBox(width: 12),
-                    const Expanded(
-                      child: Text('我的收藏',
-                          style: TextStyle(
+                    Expanded(
+                      child: Text(AppLocalizations.of(context)!.myFavorites,
+                          style: const TextStyle(
                               fontSize: 16,
                               fontWeight: FontWeight.bold,
                               color: Color(0xFF333333))),
@@ -147,16 +177,7 @@ class HomeTab extends StatelessWidget {
   }
 
   void _showLanguageSelector(BuildContext context, AppState state) {
-    const langs = [
-      {'code': 'en', 'name': 'English', 'flag': '🇺🇸'},
-      {'code': 'es', 'name': 'Español', 'flag': '🇪🇸'},
-      {'code': 'fr', 'name': 'Français', 'flag': '🇫🇷'},
-      {'code': 'de', 'name': 'Deutsch', 'flag': '🇩🇪'},
-      {'code': 'ja', 'name': '日本語', 'flag': '🇯🇵'},
-      {'code': 'ko', 'name': '한국어', 'flag': '🇰🇷'},
-      {'code': 'pt', 'name': 'Português', 'flag': '🇵🇹'},
-      {'code': 'ru', 'name': 'Русский', 'flag': '🇷🇺'},
-    ];
+    const langs = supportedLanguages;
     showModalBottomSheet(
       context: context,
       shape: const RoundedRectangleBorder(
@@ -165,18 +186,31 @@ class HomeTab extends StatelessWidget {
         shrinkWrap: true,
         padding: const EdgeInsets.all(16),
         children: [
-          const Text('选择母语',
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+          Text(AppLocalizations.of(context)!.chooseNativeLanguage,
+              style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
               textAlign: TextAlign.center),
           const SizedBox(height: 12),
           ...langs.map((l) => ListTile(
-                leading: Text(l['flag']!, style: const TextStyle(fontSize: 24)),
-                title: Text(l['name']!),
-                trailing: state.language == l['code']
+                leading: Text(l.flag, style: const TextStyle(fontSize: 24)),
+                title: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      l.nativeName,
+                      textDirection: l.isRTL ? TextDirection.rtl : TextDirection.ltr,
+                      style: const TextStyle(fontWeight: FontWeight.w500),
+                    ),
+                    Text(
+                      l.englishName,
+                      style: const TextStyle(fontSize: 12, color: Colors.grey),
+                    ),
+                  ],
+                ),
+                trailing: state.language == l.code
                     ? const Icon(Icons.check, color: Color(0xFF4285F4))
                     : null,
                 onTap: () {
-                  state.setLanguage(l['code']!);
+                  state.setLanguage(l.code);
                   Navigator.pop(context);
                 },
               )),
@@ -195,12 +229,12 @@ class HomeTab extends StatelessWidget {
         shrinkWrap: true,
         padding: const EdgeInsets.all(16),
         children: [
-          const Text('每日目标（分钟）',
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+          Text(AppLocalizations.of(context)!.dailyGoalMinutes,
+              style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
               textAlign: TextAlign.center),
           const SizedBox(height: 12),
           ...goals.map((g) => ListTile(
-                title: Text('$g 分钟'),
+                title: Text('$g ${AppLocalizations.of(context)!.minutes}'),
                 trailing: state.dailyGoal == g
                     ? const Icon(Icons.check, color: Color(0xFF4285F4))
                     : null,
@@ -229,11 +263,11 @@ class _TopButton extends StatelessWidget {
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(12),
-          boxShadow: [
+          boxShadow: const [
             BoxShadow(
-                color: Colors.black.withOpacity(0.06),
+                color: Color.fromARGB(15, 0, 0, 0),
                 blurRadius: 4,
-                offset: const Offset(0, 2))
+                offset: Offset(0, 2))
           ],
         ),
         child: child,
@@ -247,14 +281,19 @@ class _StatItem extends StatelessWidget {
   final String value;
   final String label1;
   final String label2;
-  const _StatItem(
-      {required this.icon,
-      required this.value,
-      required this.label1,
-      required this.label2});
+  final bool useLocalization;
+  const _StatItem({
+    required this.icon,
+    required this.value,
+    required this.label1,
+    required this.label2,
+    this.useLocalization = false,
+  });
 
   @override
   Widget build(BuildContext context) {
+    final localizations = AppLocalizations.of(context);
+    
     return Expanded(
       child: Column(
         children: [
@@ -265,13 +304,49 @@ class _StatItem extends StatelessWidget {
                   fontSize: 22,
                   fontWeight: FontWeight.bold,
                   color: Color(0xFF4285F4))),
-          Text(label1,
-              style: const TextStyle(fontSize: 11, color: Color(0xFF999999))),
-          Text(label2,
-              style: const TextStyle(fontSize: 11, color: Color(0xFF999999))),
+          Text(
+            useLocalization && localizations != null ? _getLocalizedLabel1(localizations) : label1,
+            style: const TextStyle(fontSize: 11, color: Color(0xFF999999)),
+          ),
+          Text(
+            useLocalization && localizations != null ? _getLocalizedLabel2(localizations) : label2,
+            style: const TextStyle(fontSize: 11, color: Color(0xFF999999)),
+          ),
         ],
       ),
     );
+  }
+  
+  String _getLocalizedLabel1(AppLocalizations localizations) {
+    switch (label1) {
+      case '连续学习':
+        return localizations.streakLabel;
+      case '累计天数':
+        return localizations.totalDaysLabel;
+      case '学习时长':
+        return localizations.totalHoursLabel;
+      case '字词':
+        return localizations.wordsLabel;
+      case '句子':
+        return localizations.sentencesLabel;
+      case '高阶':
+        return localizations.advancedLabel;
+      default:
+        return label1;
+    }
+  }
+  
+  String _getLocalizedLabel2(AppLocalizations localizations) {
+    switch (label2) {
+      case '天':
+        return localizations.unitDays;
+      case '小时':
+        return localizations.unitHours;
+      case '个':
+        return localizations.unitItems;
+      default:
+        return label2;
+    }
   }
 }
 
@@ -287,11 +362,11 @@ class _Card extends StatelessWidget {
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(20),
-        boxShadow: [
+        boxShadow: const [
           BoxShadow(
-              color: Colors.black.withOpacity(0.06),
+              color: Color.fromARGB(15, 0, 0, 0),
               blurRadius: 6,
-              offset: const Offset(0, 2))
+              offset: Offset(0, 2))
         ],
       ),
       child: child,

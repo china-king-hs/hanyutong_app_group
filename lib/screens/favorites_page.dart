@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 import '../app_state.dart';
+import '../l10n/app_localizations.dart';
 
 const _sampleWords = [
   {'chinese': '你好', 'pinyin': 'nǐ hǎo', 'id': 'nihao'},
@@ -13,6 +14,7 @@ class FavoritesPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final state = context.watch<AppState>();
+    final loc = AppLocalizations.of(context)!;
     final displayedWords =
         _sampleWords.where((w) => state.favorites.contains(w['id'])).toList();
 
@@ -37,8 +39,8 @@ class FavoritesPage extends StatelessWidget {
                       icon: const Icon(Icons.arrow_back,
                           color: Color(0xFF333333)),
                     ),
-                    const Text('我的收藏',
-                        style: TextStyle(
+                    Text(loc.myFavoritesTitle,
+                        style: const TextStyle(
                             fontSize: 18, fontWeight: FontWeight.bold)),
                   ],
                 ),
@@ -48,9 +50,9 @@ class FavoritesPage extends StatelessWidget {
           // Content
           Expanded(
             child: displayedWords.isEmpty
-                ? const Center(
-                    child: Text('还没有收藏任何词条',
-                        style: TextStyle(color: Color(0xFF999999))))
+                ? Center(
+                    child: Text(loc.noFavoritesYet,
+                        style: const TextStyle(color: Color(0xFF999999))))
                 : ListView.separated(
                     padding: const EdgeInsets.all(24),
                     itemCount: displayedWords.length,

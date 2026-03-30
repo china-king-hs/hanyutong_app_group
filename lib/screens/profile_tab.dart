@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 import '../app_state.dart';
+import '../l10n/app_localizations.dart';
 
 const _langFlags = {
   'en': '🇺🇸', 'es': '🇪🇸', 'fr': '🇫🇷', 'de': '🇩🇪',
@@ -14,13 +15,14 @@ class ProfileTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final state = context.watch<AppState>();
+    final loc = AppLocalizations.of(context)!;
 
     final progress = [
-      {'label': '📝 字词', 'value': 45, 'color': const Color(0xFF4285F4)},
-      {'label': '📄 句子', 'value': 30, 'color': Colors.green},
-      {'label': '📐 语法', 'value': 0, 'color': Colors.grey, 'locked': true},
-      {'label': '🎧 听力', 'value': 20, 'color': Colors.purple},
-      {'label': '⭐ 高阶', 'value': 10, 'color': Colors.red},
+      {'label': '📝 ${loc.wordsLabel}', 'value': 45, 'color': const Color(0xFF4285F4)},
+      {'label': '📄 ${loc.sentencesLabel}', 'value': 30, 'color': Colors.green},
+      {'label': '📐 Grammar', 'value': 0, 'color': Colors.grey, 'locked': true},
+      {'label': '🎧 ${loc.listening}', 'value': 20, 'color': Colors.purple},
+      {'label': '⭐ ${loc.advancedLabel}', 'value': 10, 'color': Colors.red},
     ];
 
     return SafeArea(
@@ -46,8 +48,8 @@ class ProfileTab extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const Text('学习者',
-                          style: TextStyle(
+                      Text(loc.learnerName,
+                          style: const TextStyle(
                               fontSize: 18,
                               fontWeight: FontWeight.bold,
                               color: Color(0xFF333333))),
@@ -74,8 +76,8 @@ class ProfileTab extends StatelessWidget {
             const SizedBox(height: 32),
 
             // Achievements
-            const Text('我的成就',
-                style: TextStyle(
+            Text(loc.myAchievements,
+                style: const TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
                     color: Color(0xFF333333))),
@@ -97,8 +99,8 @@ class ProfileTab extends StatelessWidget {
             const SizedBox(height: 32),
 
             // Learning Progress
-            const Text('学习进度',
-                style: TextStyle(
+            Text(loc.learningProgress,
+                style: const TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
                     color: Color(0xFF333333))),

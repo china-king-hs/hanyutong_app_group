@@ -1,20 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import '../l10n/app_localizations.dart';
 
 const _questions = [
   {
     'id': 1,
-    'options': ['选项 A', '选项 B', '选项 C', '选项 D'],
     'correct': 1,
   },
   {
     'id': 2,
-    'options': ['选项 A', '选项 B', '选项 C', '选项 D'],
     'correct': 2,
   },
   {
     'id': 3,
-    'options': ['选项 A', '选项 B', '选项 C', '选项 D'],
     'correct': 0,
   },
 ];
@@ -84,7 +82,13 @@ class _ListeningPracticeState extends State<ListeningPractice> {
 
   @override
   Widget build(BuildContext context) {
-    final options = (_question['options'] as List).cast<String>();
+    final loc = AppLocalizations.of(context)!;
+    final options = [
+      loc.optionA,
+      loc.optionB,
+      loc.optionC,
+      loc.optionD,
+    ];
 
     return Scaffold(
       backgroundColor: const Color(0xFFF5F5F5),
@@ -105,8 +109,8 @@ class _ListeningPracticeState extends State<ListeningPractice> {
                       onPressed: () => context.pop(),
                       icon: const Icon(Icons.arrow_back, color: Color(0xFF333333)),
                     ),
-                    const Text('听力练习',
-                        style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+                    Text(loc.listeningPracticeTitle,
+                        style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
                   ],
                 ),
               ),
@@ -119,7 +123,7 @@ class _ListeningPracticeState extends State<ListeningPractice> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text('第 ${_current + 1} 题 / 共 ${_questions.length} 题',
+                Text(loc.questionProgress.replaceAll('{current}', '${_current + 1}').replaceAll('{total}', '${_questions.length}'),
                     style: const TextStyle(fontSize: 13, color: Color(0xFF666666))),
                 const SizedBox(height: 8),
                 ClipRRect(
@@ -155,8 +159,8 @@ class _ListeningPracticeState extends State<ListeningPractice> {
                     child: const Icon(Icons.volume_up, color: Colors.white, size: 44),
                   ),
                   const SizedBox(height: 8),
-                  const Text('点击播放',
-                      style: TextStyle(fontSize: 13, color: Color(0xFF999999))),
+                  Text(loc.tapToPlay,
+                      style: const TextStyle(fontSize: 13, color: Color(0xFF999999))),
                   const SizedBox(height: 24),
                   // Options
                   ...options.asMap().entries.map((entry) {
@@ -203,11 +207,11 @@ class _ListeningPracticeState extends State<ListeningPractice> {
                   // Buttons
                   Row(
                     children: [
-                      TextButton(
-                        onPressed: _isSubmitted ? null : _handleNext,
-                        child: const Text('跳过',
-                            style: TextStyle(color: Color(0xFF999999))),
-                      ),
+                          TextButton(
+                            onPressed: _isSubmitted ? null : _handleNext,
+                            child: Text(loc.skip,
+                                style: const TextStyle(color: Color(0xFF999999))),
+                          ),
                       const SizedBox(width: 8),
                       Expanded(
                         child: ElevatedButton(
@@ -220,8 +224,8 @@ class _ListeningPracticeState extends State<ListeningPractice> {
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(12)),
                           ),
-                          child: const Text('提交',
-                              style: TextStyle(
+                          child: Text(loc.submit,
+                              style: const TextStyle(
                                   color: Colors.white, fontWeight: FontWeight.bold)),
                         ),
                       ),

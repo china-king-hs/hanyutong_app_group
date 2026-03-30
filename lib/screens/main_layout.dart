@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import '../l10n/app_localizations.dart';
 
 class MainLayout extends StatelessWidget {
   final Widget child;
@@ -35,12 +36,12 @@ class MainLayout extends StatelessWidget {
               break;
           }
         },
-        items: const [
-          BottomNavigationBarItem(icon: Icon(Icons.home_outlined), label: '首页'),
+        items: [
+          BottomNavigationBarItem(icon: const Icon(Icons.home_outlined), label: AppLocalizations.of(context)!.home),
           BottomNavigationBarItem(
-              icon: Icon(Icons.menu_book_outlined), label: '学习'),
+              icon: const Icon(Icons.menu_book_outlined), label: AppLocalizations.of(context)!.learning),
           BottomNavigationBarItem(
-              icon: Icon(Icons.person_outline), label: '我的'),
+              icon: const Icon(Icons.person_outline), label: AppLocalizations.of(context)!.profile),
         ],
       ),
     );

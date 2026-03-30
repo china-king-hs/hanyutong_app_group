@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 import '../app_state.dart';
+import '../l10n/app_localizations.dart';
 
 const _sampleContent = {
   'idioms': [
@@ -19,12 +20,7 @@ const _sampleContent = {
   ],
 };
 
-const _titles = {
-  'idioms': '成语',
-  'proverbs': '谚语/歇后语',
-  'poetry': '诗词',
-  'culture': '文化常识',
-};
+// 标题现在使用本地化文本，不再需要硬编码
 
 class AdvancedPractice extends StatefulWidget {
   final String type;
@@ -50,7 +46,6 @@ class _AdvancedPracticeState extends State<AdvancedPractice> {
           .cast<Map<String, String>>();
 
   Map<String, String> get _currentItem => _content[_currentIndex];
-  String get _title => _titles[widget.type] ?? '成语';
 
   void _handleRecord() {
     setState(() => _isRecording = true);
@@ -107,6 +102,7 @@ class _AdvancedPracticeState extends State<AdvancedPractice> {
   @override
   Widget build(BuildContext context) {
     final state = context.watch<AppState>();
+    final loc = AppLocalizations.of(context)!;
     final isFav = state.favorites.contains(_currentItem['id']);
 
     return Scaffold(
@@ -130,8 +126,13 @@ class _AdvancedPracticeState extends State<AdvancedPractice> {
                           onPressed: () => context.pop(),
                           icon: const Icon(Icons.arrow_back, color: Color(0xFF333333)),
                         ),
-                        Text(_title,
-                            style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+                        Text(
+                          widget.type == 'idioms' ? loc.idioms :
+                          widget.type == 'proverbs' ? loc.proverbs :
+                          widget.type == 'poetry' ? loc.poetry :
+                          loc.culture,
+                          style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold)
+                        ),
                       ],
                     ),
                   ),
@@ -144,24 +145,98 @@ class _AdvancedPracticeState extends State<AdvancedPractice> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Row(
+                    // 两行步骤显示
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text('Step 1：朗读中文',
-                            style: TextStyle(
-                                fontSize: 13,
-                                fontWeight: _step == 'pronunciation' ? FontWeight.bold : FontWeight.normal,
-                                color: _step == 'pronunciation' ? const Color(0xFF4285F4) : const Color(0xFF999999))),
-                        const SizedBox(width: 8),
-                        const Text('→', style: TextStyle(color: Color(0xFF999999))),
-                        const SizedBox(width: 8),
-                        Text('Step 2：解释含义',
-                            style: TextStyle(
-                                fontSize: 13,
-                                fontWeight: _step == 'meaning' ? FontWeight.bold : FontWeight.normal,
-                                color: _step == 'meaning' ? const Color(0xFF4285F4) : const Color(0xFF999999))),
+                        // 第一行：步骤1
+                        Row(
+                          children: [
+                            Container(
+                              width: 24,
+                              height: 24,
+                              decoration: BoxDecoration(
+                                color: _step == 'pronunciation' 
+                                    ? const Color(0xFF4285F4) 
+                                    : const Color(0xFFE0E0E0),
+                                borderRadius: BorderRadius.circular(12),
+                              ),
+                              child: Center(
+                                child: Text(
+                                  '1',
+                                  style: TextStyle(
+                                    fontSize: 12,
+                                    fontWeight: FontWeight.bold,
+                                    color: _step == 'pronunciation' 
+                                        ? Colors.white 
+                                        : const Color(0xFF999999),
+                                  ),
+                                ),
+                              ),
+                            ),
+                            const SizedBox(width: 8),
+                            Expanded(
+                              child: Text(
+                                loc.step1ReadChinese,
+                                style: TextStyle(
+                                  fontSize: 12,
+                                  fontWeight: _step == 'pronunciation'
+                                      ? FontWeight.bold
+                                      : FontWeight.normal,
+                                  color: _step == 'pronunciation'
+                                      ? const Color(0xFF4285F4)
+                                      : const Color(0xFF999999),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                        const SizedBox(height: 8),
+                        // 第二行：步骤2
+                        Row(
+                          children: [
+                            Container(
+                              width: 24,
+                              height: 24,
+                              decoration: BoxDecoration(
+                                color: _step == 'meaning' 
+                                    ? const Color(0xFF4285F4) 
+                                    : const Color(0xFFE0E0E0),
+                                borderRadius: BorderRadius.circular(12),
+                              ),
+                              child: Center(
+                                child: Text(
+                                  '2',
+                                  style: TextStyle(
+                                    fontSize: 12,
+                                    fontWeight: FontWeight.bold,
+                                    color: _step == 'meaning' 
+                                        ? Colors.white 
+                                        : const Color(0xFF999999),
+                                  ),
+                                ),
+                              ),
+                            ),
+                            const SizedBox(width: 8),
+                            Expanded(
+                              child: Text(
+                                loc.step2Explain,
+                                style: TextStyle(
+                                  fontSize: 12,
+                                  fontWeight: _step == 'meaning'
+                                      ? FontWeight.bold
+                                      : FontWeight.normal,
+                                  color: _step == 'meaning'
+                                      ? const Color(0xFF4285F4)
+                                      : const Color(0xFF999999),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
                       ],
                     ),
-                    const SizedBox(height: 6),
+                    const SizedBox(height: 12),
                     ClipRRect(
                       borderRadius: BorderRadius.circular(4),
                       child: LinearProgressIndicator(
@@ -216,8 +291,8 @@ class _AdvancedPracticeState extends State<AdvancedPractice> {
                             child: TextButton.icon(
                               onPressed: () => setState(() => _showChineseExplanation = true),
                               icon: const Icon(Icons.menu_book, size: 16, color: Color(0xFF666666)),
-                              label: const Text('中文释义',
-                                  style: TextStyle(fontSize: 13, color: Color(0xFF666666))),
+                              label: Text(loc.chineseExplanation,
+                                  style: const TextStyle(fontSize: 13, color: Color(0xFF666666))),
                               style: TextButton.styleFrom(
                                 backgroundColor: const Color(0xFFE0E0E0),
                                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
@@ -232,7 +307,7 @@ class _AdvancedPracticeState extends State<AdvancedPractice> {
                               width: 36, height: 36,
                               decoration: BoxDecoration(
                                   color: Colors.white, shape: BoxShape.circle,
-                                  boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.1), blurRadius: 4)]),
+                                  boxShadow: [BoxShadow(color: const Color.fromARGB(255, 0, 0, 0).withAlpha(25), blurRadius: 4)]),
                               child: const Icon(Icons.volume_up, size: 18, color: Color(0xFF4285F4)),
                             ),
                           ),
@@ -251,7 +326,7 @@ class _AdvancedPracticeState extends State<AdvancedPractice> {
                                 decoration: BoxDecoration(
                                     shape: BoxShape.circle,
                                     border: Border.all(
-                                        color: const Color(0xFF4285F4).withOpacity(0.4),
+                                        color: const Color(0xFF4285F4).withAlpha(102),
                                         width: 4)),
                               ),
                             Container(
@@ -266,7 +341,7 @@ class _AdvancedPracticeState extends State<AdvancedPractice> {
                       ),
                       const SizedBox(height: 12),
                       Text(
-                        _step == 'pronunciation' ? '点击麦克风，朗读上方中文' : '用你的母语解释这个词的含义',
+                        _step == 'pronunciation' ? loc.tapMicToRead : loc.explainInNativeLanguage,
                         style: const TextStyle(fontSize: 13, color: Color(0xFF999999)),
                         textAlign: TextAlign.center,
                       ),
@@ -276,12 +351,12 @@ class _AdvancedPracticeState extends State<AdvancedPractice> {
                         children: [
                           TextButton(
                             onPressed: _handleSkip,
-                            child: const Text('跳过', style: TextStyle(color: Color(0xFF999999))),
+                            child: Text(loc.skip, style: const TextStyle(color: Color(0xFF999999))),
                           ),
                           if (_step == 'meaning')
                             TextButton(
                               onPressed: () => setState(() => _showAnswer = true),
-                              child: const Text('显示答案', style: TextStyle(color: Color(0xFF999999))),
+                              child: Text(loc.showAnswer, style: const TextStyle(color: Color(0xFF999999))),
                             ),
                         ],
                       ),
@@ -295,27 +370,27 @@ class _AdvancedPracticeState extends State<AdvancedPractice> {
           // Pronunciation Score
           if (_showPronScore)
             _bottomSheet(
-              title: '发音评分 🎤',
+              title: loc.pronunciationScore,
               items: [
-                _ScoreRow('声调准确率', _pronScore['tone']!, _scoreColor(_pronScore['tone']!)),
-                _ScoreRow('字音准确率', _pronScore['sound']!, _scoreColor(_pronScore['sound']!)),
+                _scoreRow(loc.toneAccuracy, _pronScore['tone']!, _scoreColor(_pronScore['tone']!)),
+                _scoreRow(loc.soundAccuracy, _pronScore['sound']!, _scoreColor(_pronScore['sound']!)),
               ],
               action: ElevatedButton(
                 onPressed: _handleNextStep,
                 style: _blueBtn,
-                child: const Text('下一步：解释含义 →',
-                    style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
+                child: Text(loc.nextStepExplain,
+                    style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
               ),
             ),
 
           // Meaning Score
           if (_showMeaningScore)
             _bottomSheet(
-              title: '理解评分 💡',
+              title: loc.meaningScore,
               items: [
-                _ScoreRow('字面义', _meaningScore['literal']!, _scoreColor(_meaningScore['literal']!)),
-                _ScoreRow('引申义', _meaningScore['extended']!, _scoreColor(_meaningScore['extended']!)),
-                _ScoreRow('现实意义', _meaningScore['practical']!, _scoreColor(_meaningScore['practical']!)),
+                _scoreRow(loc.literalMeaning, _meaningScore['literal']!, _scoreColor(_meaningScore['literal']!)),
+                _scoreRow(loc.extendedMeaning, _meaningScore['extended']!, _scoreColor(_meaningScore['extended']!)),
+                _scoreRow(loc.practicalMeaning, _meaningScore['practical']!, _scoreColor(_meaningScore['practical']!)),
               ],
               action: _avgMeaning >= 70
                   ? Column(children: [
@@ -326,12 +401,12 @@ class _AdvancedPracticeState extends State<AdvancedPractice> {
                             color: const Color(0xFFE8F5E9),
                             borderRadius: BorderRadius.circular(8),
                             border: const Border(left: BorderSide(color: Colors.green, width: 4))),
-                        child: const Text('✅ 你已掌握!',
-                            style: TextStyle(color: Colors.green, fontWeight: FontWeight.bold)),
+                        child: Text(loc.masteredSuccess,
+                            style: const TextStyle(color: Colors.green, fontWeight: FontWeight.bold)),
                       ),
                       SizedBox(width: double.infinity,
                           child: ElevatedButton(onPressed: _handleContinue, style: _blueBtn,
-                              child: const Text('继续 →', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)))),
+                              child: Text(loc.continueBtn, style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold)))),
                     ])
                   : Column(children: [
                       Container(
@@ -341,8 +416,8 @@ class _AdvancedPracticeState extends State<AdvancedPractice> {
                             color: const Color(0xFFFFF3E0),
                             borderRadius: BorderRadius.circular(8),
                             border: const Border(left: BorderSide(color: Colors.orange, width: 4))),
-                        child: const Text('🔄 再试一次',
-                            style: TextStyle(color: Colors.orange, fontWeight: FontWeight.bold)),
+                        child: Text(loc.tryAgain,
+                            style: const TextStyle(color: Colors.orange, fontWeight: FontWeight.bold)),
                       ),
                       SizedBox(width: double.infinity,
                           child: ElevatedButton(onPressed: _handleRetry,
@@ -350,18 +425,18 @@ class _AdvancedPracticeState extends State<AdvancedPractice> {
                                   backgroundColor: Colors.orange,
                                   padding: const EdgeInsets.symmetric(vertical: 16),
                                   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12))),
-                              child: const Text('重新录音', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)))),
+                              child: Text(loc.reRecord, style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold)))),
                     ]),
             ),
 
           // Chinese Explanation Dialog
           if (_showChineseExplanation)
-            _dialog('中文通俗解释', '（数据未导入，暂时空白）',
+            _dialog(loc.chineseExplanation, loc.dataNotLoaded,
                 () => setState(() => _showChineseExplanation = false)),
 
           // Answer Dialog
           if (_showAnswer)
-            _dialog('释义如下', '（此处为母语释义，数据未导入，暂时空白）',
+            _dialog(loc.meaningBelow, loc.meaningPlaceholder,
                 () => setState(() => _showAnswer = false)),
         ],
       ),
@@ -395,6 +470,7 @@ class _AdvancedPracticeState extends State<AdvancedPractice> {
   }
 
   Widget _dialog(String title, String content, VoidCallback onClose) {
+    final loc = AppLocalizations.of(context)!;
     return GestureDetector(
       onTap: onClose,
       child: Container(
@@ -421,7 +497,7 @@ class _AdvancedPracticeState extends State<AdvancedPractice> {
                       style: ElevatedButton.styleFrom(
                           backgroundColor: const Color(0xFFE0E0E0),
                           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12))),
-                      child: const Text('关闭', style: TextStyle(color: Color(0xFF666666))),
+                      child: Text(loc.close, style: const TextStyle(color: Color(0xFF666666))),
                     ),
                   ),
                 ],
@@ -434,7 +510,7 @@ class _AdvancedPracticeState extends State<AdvancedPractice> {
   }
 }
 
-Widget _ScoreRow(String label, int score, Color color) {
+Widget _scoreRow(String label, int score, Color color) {
   return Padding(
     padding: const EdgeInsets.only(bottom: 12),
     child: Column(

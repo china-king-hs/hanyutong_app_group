@@ -2,13 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 import '../app_state.dart';
+import '../l10n/app_localizations.dart';
 
-const _levels = [
-  {'id': 'beginner', 'name': '入门'},
-  {'id': 'elementary', 'name': '初级'},
-  {'id': 'intermediate', 'name': '中级'},
-  {'id': 'advanced', 'name': '高级'},
-];
+// 获取本地化的级别列表
+List<Map<String, String>> _getLevels(BuildContext context) {
+  final localizations = AppLocalizations.of(context);
+  return [
+    {'id': 'beginner', 'name': localizations!.beginnerLevel},
+    {'id': 'elementary', 'name': localizations.elementaryLevel},
+    {'id': 'intermediate', 'name': localizations.intermediateLevel},
+    {'id': 'advanced', 'name': localizations.advancedLevelName},
+  ];
+}
 
 class LearnTab extends StatefulWidget {
   const LearnTab({super.key});
@@ -23,8 +28,9 @@ class _LearnTabState extends State<LearnTab> {
   @override
   Widget build(BuildContext context) {
     final state = context.watch<AppState>();
+    final levels = _getLevels(context);
     final currentLevel =
-        _levels.firstWhere((l) => l['id'] == state.level, orElse: () => _levels[0]);
+        levels.firstWhere((l) => l['id'] == state.level, orElse: () => levels[0]);
 
     return SafeArea(
       child: SingleChildScrollView(
@@ -76,7 +82,7 @@ class _LearnTabState extends State<LearnTab> {
                   ],
                 ),
                 child: Column(
-                  children: _levels
+                  children: levels
                       .map((lvl) => GestureDetector(
                             onTap: () {
                               state.setLevel(lvl['id']!);
@@ -120,7 +126,7 @@ class _LearnTabState extends State<LearnTab> {
               children: [
                 _PracticeCard(
                   emoji: '📖',
-                  label: '字词练习',
+                  label: AppLocalizations.of(context)!.wordsPractice,
                   color: const Color(0xFFDCEAFF),
                   iconColor: const Color(0xFF4285F4),
                   icon: Icons.menu_book,
@@ -128,7 +134,7 @@ class _LearnTabState extends State<LearnTab> {
                 ),
                 _PracticeCard(
                   emoji: '📄',
-                  label: '句子练习',
+                  label: AppLocalizations.of(context)!.sentencesPractice,
                   color: const Color(0xFFDCF5E7),
                   iconColor: Colors.green,
                   icon: Icons.article,
@@ -136,7 +142,7 @@ class _LearnTabState extends State<LearnTab> {
                 ),
                 _PracticeCard(
                   emoji: '📐',
-                  label: '语法学习',
+                  label: AppLocalizations.of(context)!.grammarLearning,
                   color: const Color(0xFFFFEDD8),
                   iconColor: Colors.orange,
                   icon: Icons.translate,
@@ -144,7 +150,7 @@ class _LearnTabState extends State<LearnTab> {
                 ),
                 _PracticeCard(
                   emoji: '🎧',
-                  label: '听力练习',
+                  label: AppLocalizations.of(context)!.listeningPractice,
                   color: const Color(0xFFF0DCFF),
                   iconColor: Colors.purple,
                   icon: Icons.headphones,
@@ -155,8 +161,8 @@ class _LearnTabState extends State<LearnTab> {
             const SizedBox(height: 24),
 
             // Advanced Reading
-            const Text('高阶阅读 · 中国文化学习',
-                style: TextStyle(fontSize: 13, color: Color(0xFF999999))),
+            Text(AppLocalizations.of(context)!.advancedReading,
+                style: const TextStyle(fontSize: 13, color: Color(0xFF999999))),
             const SizedBox(height: 12),
             GridView.count(
               physics: const NeverScrollableScrollPhysics(),
@@ -165,21 +171,21 @@ class _LearnTabState extends State<LearnTab> {
               crossAxisSpacing: 16,
               mainAxisSpacing: 16,
               children: [
-                _SimpleCard(emoji: '🀄', label: '成语',
+                _SimpleCard(emoji: '🀄', label: AppLocalizations.of(context)!.idioms,
                     onTap: () => context.push('/advanced/idioms')),
-                _SimpleCard(emoji: '📜', label: '谚语/歇后语',
+                _SimpleCard(emoji: '📜', label: AppLocalizations.of(context)!.proverbs,
                     onTap: () => context.push('/advanced/proverbs')),
-                _SimpleCard(emoji: '🎋', label: '诗词',
+                _SimpleCard(emoji: '🎋', label: AppLocalizations.of(context)!.poetry,
                     onTap: () => context.push('/advanced/poetry')),
-                _SimpleCard(emoji: '🏮', label: '文化常识',
+                _SimpleCard(emoji: '🏮', label: AppLocalizations.of(context)!.culture,
                     onTap: () => context.push('/advanced/culture')),
               ],
             ),
             const SizedBox(height: 24),
 
             // Auxiliary Materials
-            const Text('辅助学习资料',
-                style: TextStyle(fontSize: 13, color: Color(0xFF999999))),
+            Text(AppLocalizations.of(context)!.auxiliaryMaterials,
+                style: const TextStyle(fontSize: 13, color: Color(0xFF999999))),
             const SizedBox(height: 12),
             GridView.count(
               physics: const NeverScrollableScrollPhysics(),
@@ -188,9 +194,9 @@ class _LearnTabState extends State<LearnTab> {
               crossAxisSpacing: 16,
               mainAxisSpacing: 16,
               children: [
-                _SimpleCard(emoji: '📋', label: 'HSK 考试大纲',
+                _SimpleCard(emoji: '📋', label: AppLocalizations.of(context)!.hskOutline,
                     onTap: () => context.push('/empty')),
-                _SimpleCard(emoji: '📚', label: 'HSK 辅导资料',
+                _SimpleCard(emoji: '📚', label: AppLocalizations.of(context)!.hskMaterials,
                     onTap: () => context.push('/empty')),
               ],
             ),

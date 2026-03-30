@@ -29,6 +29,12 @@ dev_dependencies:
     sdk: flutter
   flutter_lints: ^4.0.0
   flutter_launcher_icons: ^0.14.1
+  # 国际化支持
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.20.2
+  # ARB文件生成工具（可选，用于开发时快速生成）
+  # flutter_localizations_utils: ^0.4.0
 
 flutter:
   uses-material-design: true

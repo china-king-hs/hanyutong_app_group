@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import '../l10n/app_localizations.dart';
 
 const _reviewTypes = [
-  {'emoji': '📝', 'title': '字词复习', 'path': '/empty'},
-  {'emoji': '📄', 'title': '句子复习', 'path': '/empty'},
-  {'emoji': '⭐', 'title': '高阶复习', 'subtitle': '成语 / 谚语 / 诗词', 'path': '/empty'},
+  {'emoji': '📝', 'path': '/empty'},
+  {'emoji': '📄', 'path': '/empty'},
+  {'emoji': '⭐', 'path': '/empty'},
 ];
 
 class ReviewPage extends StatelessWidget {
@@ -12,6 +13,15 @@ class ReviewPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final loc = AppLocalizations.of(context)!;
+    
+    // 创建本地化的复习类型列表
+    final reviewTypes = [
+      {'emoji': '📝', 'title': loc.wordsReview, 'path': '/empty'},
+      {'emoji': '📄', 'title': loc.sentencesReview, 'path': '/empty'},
+      {'emoji': '⭐', 'title': loc.advancedReview, 'subtitle': loc.idiomsProverbsPoetry, 'path': '/empty'},
+    ];
+    
     return Scaffold(
       backgroundColor: const Color(0xFFF5F5F5),
       body: Column(
@@ -33,8 +43,8 @@ class ReviewPage extends StatelessWidget {
                       icon: const Icon(Icons.arrow_back,
                           color: Color(0xFF333333)),
                     ),
-                    const Text('复习',
-                        style: TextStyle(
+                    Text(loc.reviewTitle,
+                        style: const TextStyle(
                             fontSize: 18, fontWeight: FontWeight.bold)),
                   ],
                 ),
@@ -45,10 +55,10 @@ class ReviewPage extends StatelessWidget {
           Expanded(
             child: ListView.separated(
               padding: const EdgeInsets.all(24),
-              itemCount: _reviewTypes.length,
+              itemCount: reviewTypes.length,
               separatorBuilder: (_, __) => const SizedBox(height: 16),
               itemBuilder: (_, i) {
-                final type = _reviewTypes[i];
+                final type = reviewTypes[i];
                 return GestureDetector(
                   onTap: () => context.push(type['path']!),
                   child: Container(

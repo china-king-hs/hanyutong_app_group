@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 import '../app_state.dart';
+import '../l10n/app_localizations.dart';
 
 const _sampleWords = [
   {'chinese': '学习', 'pinyin': 'xué xí', 'id': 'xuexi'},
@@ -96,7 +97,8 @@ class _PracticePageState extends State<PracticePage> {
   @override
   Widget build(BuildContext context) {
     final state = context.watch<AppState>();
-    final title = widget.type == 'words' ? '字词练习' : '句子练习';
+    final loc = AppLocalizations.of(context)!;
+    final title = widget.type == 'words' ? loc.wordsPracticeTitle : loc.sentencesPracticeTitle;
     final isFav = state.favorites.contains(_currentWord['id']);
 
     return Scaffold(
@@ -108,7 +110,7 @@ class _PracticePageState extends State<PracticePage> {
               // Header
               _buildHeader(title),
               // Step Indicator
-              _buildStepBar(),
+              _buildStepBar(context),
               // Content
               Expanded(
                 child: SingleChildScrollView(
@@ -217,8 +219,8 @@ class _PracticePageState extends State<PracticePage> {
                       const SizedBox(height: 12),
                       Text(
                         _step == 'pronunciation'
-                            ? '点击麦克风，朗读上方中文'
-                            : '用你的母语解释这个词的含义',
+                            ? loc.tapMicToRead
+                            : loc.explainInNativeLanguage,
                         style: const TextStyle(
                             fontSize: 13, color: Color(0xFF999999)),
                         textAlign: TextAlign.center,
@@ -230,14 +232,14 @@ class _PracticePageState extends State<PracticePage> {
                         children: [
                           TextButton(
                             onPressed: _handleSkip,
-                            child: const Text('跳过',
-                                style: TextStyle(color: Color(0xFF999999))),
+                            child: Text(loc.skip,
+                                style: const TextStyle(color: Color(0xFF999999))),
                           ),
                           if (_step == 'meaning')
                             TextButton(
                               onPressed: () => setState(() => _showAnswer = true),
-                              child: const Text('显示答案',
-                                  style: TextStyle(color: Color(0xFF999999))),
+                              child: Text(loc.showAnswer,
+                                  style: const TextStyle(color: Color(0xFF999999))),
                             ),
                         ],
                       ),
@@ -251,10 +253,10 @@ class _PracticePageState extends State<PracticePage> {
           // Pronunciation Score Sheet
           if (_showPronunciationScore)
             _ScoreSheet(
-              title: '发音评分 🎤',
+              title: loc.pronunciationScore,
               items: [
-                _ScoreItem(label: '声调准确率', score: _pronScore['tone']!),
-                _ScoreItem(label: '字音准确率', score: _pronScore['sound']!),
+                _ScoreItem(label: loc.toneAccuracy, score: _pronScore['tone']!),
+                _ScoreItem(label: loc.soundAccuracy, score: _pronScore['sound']!),
               ],
               scoreColor: _scoreColor,
               actions: [
@@ -263,8 +265,8 @@ class _PracticePageState extends State<PracticePage> {
                   child: ElevatedButton(
                     onPressed: _handleNextStep,
                     style: _blueBtn,
-                    child: const Text('下一步：解释含义 →',
-                        style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
+                    child: Text(loc.nextStepExplain,
+                        style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
                   ),
                 ),
               ],
@@ -273,11 +275,11 @@ class _PracticePageState extends State<PracticePage> {
           // Meaning Score Sheet
           if (_showMeaningScore)
             _ScoreSheet(
-              title: '理解评分 💡',
+              title: loc.meaningScore,
               items: [
-                _ScoreItem(label: '字面义', score: _meaningScore['literal']!),
-                _ScoreItem(label: '引申义', score: _meaningScore['extended']!),
-                _ScoreItem(label: '现实意义', score: _meaningScore['practical']!),
+                _ScoreItem(label: loc.literalMeaning, score: _meaningScore['literal']!),
+                _ScoreItem(label: loc.extendedMeaning, score: _meaningScore['extended']!),
+                _ScoreItem(label: loc.practicalMeaning, score: _meaningScore['practical']!),
               ],
               scoreColor: _scoreColor,
               actions: [
@@ -290,16 +292,16 @@ class _PracticePageState extends State<PracticePage> {
                       borderRadius: BorderRadius.circular(8),
                       border: const Border(left: BorderSide(color: Colors.green, width: 4)),
                     ),
-                    child: const Text('✅ 你已掌握！',
-                        style: TextStyle(color: Colors.green, fontWeight: FontWeight.bold)),
+                    child: Text(loc.masteredSuccess,
+                        style: const TextStyle(color: Colors.green, fontWeight: FontWeight.bold)),
                   ),
                   SizedBox(
                     width: double.infinity,
                     child: ElevatedButton(
                       onPressed: _handleContinue,
                       style: _blueBtn,
-                      child: const Text('继续 →',
-                          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
+                    child: Text(loc.continueBtn,
+                        style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
                     ),
                   ),
                 ] else ...[
@@ -311,8 +313,8 @@ class _PracticePageState extends State<PracticePage> {
                       borderRadius: BorderRadius.circular(8),
                       border: const Border(left: BorderSide(color: Colors.orange, width: 4)),
                     ),
-                    child: const Text('🔄 再试一次',
-                        style: TextStyle(color: Colors.orange, fontWeight: FontWeight.bold)),
+                    child: Text(loc.tryAgain,
+                        style: const TextStyle(color: Colors.orange, fontWeight: FontWeight.bold)),
                   ),
                   SizedBox(
                     width: double.infinity,
@@ -324,8 +326,8 @@ class _PracticePageState extends State<PracticePage> {
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(12)),
                       ),
-                      child: const Text('重新录音',
-                          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
+                      child: Text(loc.reRecord,
+                          style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
                     ),
                   ),
                 ],
@@ -351,12 +353,12 @@ class _PracticePageState extends State<PracticePage> {
                       child: Column(
                         mainAxisSize: MainAxisSize.min,
                         children: [
-                          const Text('释义如下',
-                              style: TextStyle(
+                          Text(loc.meaningBelow,
+                              style: const TextStyle(
                                   fontSize: 18, fontWeight: FontWeight.bold)),
                           const SizedBox(height: 12),
-                          const Text('（此处为母语释义，数据未导入，暂时空白）',
-                              style: TextStyle(color: Color(0xFF666666))),
+                          Text(loc.meaningPlaceholder,
+                              style: const TextStyle(color: Color(0xFF666666))),
                           const SizedBox(height: 20),
                           SizedBox(
                             width: double.infinity,
@@ -367,8 +369,8 @@ class _PracticePageState extends State<PracticePage> {
                                 shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(12)),
                               ),
-                              child: const Text('关闭',
-                                  style: TextStyle(color: Color(0xFF666666))),
+                            child: Text(loc.close,
+                                style: const TextStyle(color: Color(0xFF666666))),
                             ),
                           ),
                         ],
@@ -409,39 +411,106 @@ class _PracticePageState extends State<PracticePage> {
     );
   }
 
-  Widget _buildStepBar() {
+  Widget _buildStepBar(BuildContext context) {
+    final loc = AppLocalizations.of(context)!;
     return Container(
       color: Colors.white,
       padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Row(
+          // 两行步骤显示
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text('Step 1：朗读中文',
-                  style: TextStyle(
-                      fontSize: 13,
-                      fontWeight: _step == 'pronunciation'
-                          ? FontWeight.bold
-                          : FontWeight.normal,
-                      color: _step == 'pronunciation'
-                          ? const Color(0xFF4285F4)
-                          : const Color(0xFF999999))),
-              const SizedBox(width: 8),
-              const Text('→', style: TextStyle(color: Color(0xFF999999))),
-              const SizedBox(width: 8),
-              Text('Step 2：解释含义',
-                  style: TextStyle(
-                      fontSize: 13,
-                      fontWeight: _step == 'meaning'
-                          ? FontWeight.bold
-                          : FontWeight.normal,
-                      color: _step == 'meaning'
-                          ? const Color(0xFF4285F4)
-                          : const Color(0xFF999999))),
+              // 第一行：步骤1
+              Row(
+                children: [
+                  Container(
+                    width: 24,
+                    height: 24,
+                    decoration: BoxDecoration(
+                      color: _step == 'pronunciation' 
+                          ? const Color(0xFF4285F4) 
+                          : const Color(0xFFE0E0E0),
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    child: Center(
+                      child: Text(
+                        '1',
+                        style: TextStyle(
+                          fontSize: 12,
+                          fontWeight: FontWeight.bold,
+                          color: _step == 'pronunciation' 
+                              ? Colors.white 
+                              : const Color(0xFF999999),
+                        ),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(width: 8),
+                  Expanded(
+                    child: Text(
+                      loc.step1ReadChinese,
+                      style: TextStyle(
+                        fontSize: 12,
+                        fontWeight: _step == 'pronunciation'
+                            ? FontWeight.bold
+                            : FontWeight.normal,
+                        color: _step == 'pronunciation'
+                            ? const Color(0xFF4285F4)
+                            : const Color(0xFF999999),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 8),
+              // 第二行：步骤2
+              Row(
+                children: [
+                  Container(
+                    width: 24,
+                    height: 24,
+                    decoration: BoxDecoration(
+                      color: _step == 'meaning' 
+                          ? const Color(0xFF4285F4) 
+                          : const Color(0xFFE0E0E0),
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    child: Center(
+                      child: Text(
+                        '2',
+                        style: TextStyle(
+                          fontSize: 12,
+                          fontWeight: FontWeight.bold,
+                          color: _step == 'meaning' 
+                              ? Colors.white 
+                              : const Color(0xFF999999),
+                        ),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(width: 8),
+                  Expanded(
+                    child: Text(
+                      loc.step2Explain,
+                      style: TextStyle(
+                        fontSize: 12,
+                        fontWeight: _step == 'meaning'
+                            ? FontWeight.bold
+                            : FontWeight.normal,
+                        color: _step == 'meaning'
+                            ? const Color(0xFF4285F4)
+                            : const Color(0xFF999999),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ],
           ),
-          const SizedBox(height: 6),
+          const SizedBox(height: 12),
           ClipRRect(
             borderRadius: BorderRadius.circular(4),
             child: LinearProgressIndicator(

@@ -1,3 +1,5 @@
+import 'dart:ui';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
@@ -23,66 +25,196 @@ GoRouter buildRouter(BuildContext context) {
     routes: [
       GoRoute(
         path: '/',
-        builder: (ctx, state) => const SplashScreen(),
+        pageBuilder: (context, state) => CustomTransitionPage<void>(
+          key: state.pageKey,
+          child: const SplashScreen(),
+          transitionsBuilder: (context, animation, secondaryAnimation, child) {
+            return FadeTransition(
+              opacity: animation,
+              child: child,
+            );
+          },
+          transitionDuration: const Duration(milliseconds: 200),
+        ),
       ),
       GoRoute(
         path: '/language',
-        builder: (ctx, state) => const LanguageSelection(),
+        pageBuilder: (context, state) => CustomTransitionPage<void>(
+          key: state.pageKey,
+          child: const LanguageSelection(),
+          transitionsBuilder: (context, animation, secondaryAnimation, child) {
+            return FadeTransition(
+              opacity: animation,
+              child: child,
+            );
+          },
+          transitionDuration: const Duration(milliseconds: 200),
+        ),
       ),
       GoRoute(
         path: '/level',
-        builder: (ctx, state) => const LevelTest(),
+        pageBuilder: (context, state) => CustomTransitionPage<void>(
+          key: state.pageKey,
+          child: const LevelTest(),
+          transitionsBuilder: (context, animation, secondaryAnimation, child) {
+            return FadeTransition(
+              opacity: animation,
+              child: child,
+            );
+          },
+          transitionDuration: const Duration(milliseconds: 200),
+        ),
       ),
       GoRoute(
         path: '/goal',
-        builder: (ctx, state) => const GoalSetting(),
+        pageBuilder: (context, state) => CustomTransitionPage<void>(
+          key: state.pageKey,
+          child: const GoalSetting(),
+          transitionsBuilder: (context, animation, secondaryAnimation, child) {
+            return FadeTransition(
+              opacity: animation,
+              child: child,
+            );
+          },
+          transitionDuration: const Duration(milliseconds: 200),
+        ),
       ),
       ShellRoute(
         builder: (ctx, state, child) => MainLayout(child: child),
         routes: [
           GoRoute(
             path: '/app',
-            builder: (ctx, state) => const HomeTab(),
+            pageBuilder: (context, state) => CustomTransitionPage<void>(
+              key: state.pageKey,
+              child: const HomeTab(),
+              transitionsBuilder: (context, animation, secondaryAnimation, child) {
+                return FadeTransition(
+                  opacity: animation,
+                  child: child,
+                );
+              },
+              transitionDuration: const Duration(milliseconds: 200),
+            ),
           ),
           GoRoute(
             path: '/app/learn',
-            builder: (ctx, state) => const LearnTab(),
+            pageBuilder: (context, state) => CustomTransitionPage<void>(
+              key: state.pageKey,
+              child: const LearnTab(),
+              transitionsBuilder: (context, animation, secondaryAnimation, child) {
+                return FadeTransition(
+                  opacity: animation,
+                  child: child,
+                );
+              },
+              transitionDuration: const Duration(milliseconds: 200),
+            ),
           ),
           GoRoute(
             path: '/app/profile',
-            builder: (ctx, state) => const ProfileTab(),
+            pageBuilder: (context, state) => CustomTransitionPage<void>(
+              key: state.pageKey,
+              child: const ProfileTab(),
+              transitionsBuilder: (context, animation, secondaryAnimation, child) {
+                return FadeTransition(
+                  opacity: animation,
+                  child: child,
+                );
+              },
+              transitionDuration: const Duration(milliseconds: 200),
+            ),
           ),
         ],
       ),
       GoRoute(
         path: '/favorites',
-        builder: (ctx, state) => const FavoritesPage(),
+        pageBuilder: (context, state) => CustomTransitionPage<void>(
+          key: state.pageKey,
+          child: const FavoritesPage(),
+          transitionsBuilder: (context, animation, secondaryAnimation, child) {
+            return FadeTransition(
+              opacity: animation,
+              child: child,
+            );
+          },
+          transitionDuration: const Duration(milliseconds: 200),
+        ),
       ),
       GoRoute(
         path: '/review',
-        builder: (ctx, state) => const ReviewPage(),
+        pageBuilder: (context, state) => CustomTransitionPage<void>(
+          key: state.pageKey,
+          child: const ReviewPage(),
+          transitionsBuilder: (context, animation, secondaryAnimation, child) {
+            return FadeTransition(
+              opacity: animation,
+              child: child,
+            );
+          },
+          transitionDuration: const Duration(milliseconds: 200),
+        ),
       ),
       GoRoute(
         path: '/practice/:type',
-        builder: (ctx, state) {
+        pageBuilder: (context, state) {
           final type = state.pathParameters['type'] ?? 'words';
-          return PracticePage(type: type);
+          return CustomTransitionPage<void>(
+            key: state.pageKey,
+            child: PracticePage(type: type),
+            transitionsBuilder: (context, animation, secondaryAnimation, child) {
+              return FadeTransition(
+                opacity: animation,
+                child: child,
+              );
+            },
+            transitionDuration: const Duration(milliseconds: 200),
+          );
         },
       ),
       GoRoute(
         path: '/listening',
-        builder: (ctx, state) => const ListeningPractice(),
+        pageBuilder: (context, state) => CustomTransitionPage<void>(
+          key: state.pageKey,
+          child: const ListeningPractice(),
+          transitionsBuilder: (context, animation, secondaryAnimation, child) {
+            return FadeTransition(
+              opacity: animation,
+              child: child,
+            );
+          },
+          transitionDuration: const Duration(milliseconds: 200),
+        ),
       ),
       GoRoute(
         path: '/advanced/:type',
-        builder: (ctx, state) {
+        pageBuilder: (context, state) {
           final type = state.pathParameters['type'] ?? 'idioms';
-          return AdvancedPractice(type: type);
+          return CustomTransitionPage<void>(
+            key: state.pageKey,
+            child: AdvancedPractice(type: type),
+            transitionsBuilder: (context, animation, secondaryAnimation, child) {
+              return FadeTransition(
+                opacity: animation,
+                child: child,
+              );
+            },
+            transitionDuration: const Duration(milliseconds: 200),
+          );
         },
       ),
       GoRoute(
         path: '/empty',
-        builder: (ctx, state) => const EmptyPage(),
+        pageBuilder: (context, state) => CustomTransitionPage<void>(
+          key: state.pageKey,
+          child: const EmptyPage(),
+          transitionsBuilder: (context, animation, secondaryAnimation, child) {
+            return FadeTransition(
+              opacity: animation,
+              child: child,
+            );
+          },
+          transitionDuration: const Duration(milliseconds: 200),
+        ),
       ),
     ],
   );
