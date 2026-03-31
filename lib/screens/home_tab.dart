@@ -22,10 +22,7 @@ class HomeTab extends StatelessWidget {
               children: [
                 _TopButton(
                   child: Row(children: [
-                    Text(
-                      getLanguage(state.language)?.flag ?? '🇺🇸',
-                      style: const TextStyle(fontSize: 22),
-                    ),
+                    const Icon(Icons.language, size: 18, color: Color(0xFF666666)),
                     const SizedBox(width: 8),
                     Text(
                       getLanguage(state.language)?.nativeName ?? 'English',
@@ -191,7 +188,6 @@ class HomeTab extends StatelessWidget {
               textAlign: TextAlign.center),
           const SizedBox(height: 12),
           ...langs.map((l) => ListTile(
-                leading: Text(l.flag, style: const TextStyle(fontSize: 24)),
                 title: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [

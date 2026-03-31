@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 import '../app_state.dart';
 import '../l10n/app_localizations.dart';
+import '../widgets/sound_wave_button.dart';
 
 const _sampleContent = {
   'idioms': [
@@ -34,6 +35,8 @@ class _AdvancedPracticeState extends State<AdvancedPractice> {
   String _step = 'pronunciation';
   int _currentIndex = 0;
   bool _isRecording = false;
+  bool _isCancelling = false;
+  double _dragStartY = 0;
   bool _showPronScore = false;
   bool _showMeaningScore = false;
   bool _showAnswer = false;
@@ -47,13 +50,33 @@ class _AdvancedPracticeState extends State<AdvancedPractice> {
 
   Map<String, String> get _currentItem => _content[_currentIndex];
 
-  void _handleRecord() {
-    setState(() => _isRecording = true);
-    Future.delayed(const Duration(seconds: 2), () {
-      if (!mounted) return;
+  void _handleLongPressStart(LongPressStartDetails details) {
+    setState(() {
+      _isRecording = true;
+      _isCancelling = false;
+      _dragStartY = details.globalPosition.dy;
+    });
+  }
+
+  void _handleLongPressMoveUpdate(LongPressMoveUpdateDetails details) {
+    final dy = details.globalPosition.dy - _dragStartY;
+    final cancelling = dy < -50;
+    if (cancelling != _isCancelling) {
+      setState(() => _isCancelling = cancelling);
+    }
+  }
+
+  void _handleLongPressEnd(LongPressEndDetails details) {
+    if (_isCancelling) {
+      setState(() {
+        _isRecording = false;
+        _isCancelling = false;
+      });
+    } else {
       final rnd = Random();
       setState(() {
         _isRecording = false;
+        _isCancelling = false;
         if (_step == 'pronunciation') {
           _pronScore = {'tone': rnd.nextInt(30) + 70, 'sound': rnd.nextInt(30) + 70};
           _showPronScore = true;
@@ -66,7 +89,7 @@ class _AdvancedPracticeState extends State<AdvancedPractice> {
           _showMeaningScore = true;
         }
       });
-    });
+    }
   }
 
   void _handleNextStep() => setState(() { _showPronScore = false; _step = 'meaning'; });
@@ -300,49 +323,67 @@ class _AdvancedPracticeState extends State<AdvancedPractice> {
                               ),
                             ),
                           ),
-                          // Speaker
+                          // Speaker — 声波动画
                           Positioned(
-                            bottom: 8, right: 12,
-                            child: Container(
-                              width: 36, height: 36,
-                              decoration: BoxDecoration(
-                                  color: Colors.white, shape: BoxShape.circle,
-                                  boxShadow: [BoxShadow(color: const Color.fromARGB(255, 0, 0, 0).withAlpha(25), blurRadius: 4)]),
-                              child: const Icon(Icons.volume_up, size: 18, color: Color(0xFF4285F4)),
-                            ),
+                            bottom: 0,
+                            right: 4,
+                            child: SoundWaveButton(size: 36),
                           ),
                         ],
                       ),
                       const SizedBox(height: 32),
-                      // Mic
+                      // Mic — 按住录音，上滑取消
                       GestureDetector(
-                        onTap: _isRecording ? null : _handleRecord,
-                        child: Stack(
-                          alignment: Alignment.center,
-                          children: [
-                            if (_isRecording)
-                              Container(
-                                width: 96, height: 96,
-                                decoration: BoxDecoration(
-                                    shape: BoxShape.circle,
-                                    border: Border.all(
-                                        color: const Color(0xFF4285F4).withAlpha(102),
-                                        width: 4)),
-                              ),
-                            Container(
-                              width: 72, height: 72,
-                              decoration: BoxDecoration(
-                                  color: _isRecording ? const Color(0xFF4285F4) : Colors.grey[300],
-                                  shape: BoxShape.circle),
-                              child: const Icon(Icons.mic, color: Colors.white, size: 36),
-                            ),
-                          ],
+                        onLongPressStart: _handleLongPressStart,
+                        onLongPressMoveUpdate: _handleLongPressMoveUpdate,
+                        onLongPressEnd: _handleLongPressEnd,
+                        child: AnimatedContainer(
+                          duration: const Duration(milliseconds: 150),
+                          width: _isRecording ? 84 : 72,
+                          height: _isRecording ? 84 : 72,
+                          decoration: BoxDecoration(
+                            color: _isCancelling
+                                ? Colors.red
+                                : _isRecording
+                                    ? const Color(0xFF4285F4)
+                                    : Colors.grey[300],
+                            shape: BoxShape.circle,
+                            boxShadow: _isRecording
+                                ? [
+                                    BoxShadow(
+                                      color: (_isCancelling ? Colors.red : const Color(0xFF4285F4))
+                                          .withOpacity(0.4),
+                                      blurRadius: 18,
+                                      spreadRadius: 6,
+                                    )
+                                  ]
+                                : [],
+                          ),
+                          child: Icon(
+                            _isCancelling ? Icons.close : Icons.mic,
+                            color: Colors.white,
+                            size: 36,
+                          ),
                         ),
                       ),
                       const SizedBox(height: 12),
                       Text(
+                        _isRecording
+                            ? loc.slideUpToCancel
+                            : loc.holdToRecord,
+                        style: TextStyle(
+                          fontSize: 13,
+                          color: _isRecording
+                              ? (_isCancelling ? Colors.red : const Color(0xFF4285F4))
+                              : const Color(0xFF999999),
+                          fontWeight: _isRecording ? FontWeight.w600 : FontWeight.normal,
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                      const SizedBox(height: 4),
+                      Text(
                         _step == 'pronunciation' ? loc.tapMicToRead : loc.explainInNativeLanguage,
-                        style: const TextStyle(fontSize: 13, color: Color(0xFF999999)),
+                        style: const TextStyle(fontSize: 12, color: Color(0xFFBBBBBB)),
                         textAlign: TextAlign.center,
                       ),
                       const SizedBox(height: 24),

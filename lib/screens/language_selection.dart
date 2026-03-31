@@ -136,17 +136,6 @@ class _LangCard extends StatelessWidget {
         ),
         child: Row(
           children: [
-            Container(
-              width: 48,
-              height: 48,
-              decoration: const BoxDecoration(
-                color: Color(0xFFF5F5F5),
-                shape: BoxShape.circle,
-              ),
-              alignment: Alignment.center,
-              child: Text(lang.flag, style: const TextStyle(fontSize: 24)),
-            ),
-            const SizedBox(width: 16),
             Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -161,7 +150,7 @@ class _LangCard extends StatelessWidget {
                     textDirection: lang.isRTL ? TextDirection.rtl : TextDirection.ltr,
                   ),
                   Text(
-                    '${lang.englishName} • ${lang.country}',
+                    lang.englishName,
                     style: const TextStyle(
                       fontSize: 13,
                       color: Color(0xFF999999),

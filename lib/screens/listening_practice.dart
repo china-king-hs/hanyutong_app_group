@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import '../l10n/app_localizations.dart';
+import '../widgets/sound_wave_button.dart';
 
 const _questions = [
   {
@@ -144,19 +145,11 @@ class _ListeningPracticeState extends State<ListeningPractice> {
               padding: const EdgeInsets.all(24),
               child: Column(
                 children: [
-                  // Audio Player Button
-                  Container(
-                    width: 88,
-                    height: 88,
-                    decoration: const BoxDecoration(
-                      color: Colors.deepOrange,
-                      shape: BoxShape.circle,
-                      boxShadow: [
-                        BoxShadow(
-                            color: Colors.black26, blurRadius: 8, offset: Offset(0, 4))
-                      ],
-                    ),
-                    child: const Icon(Icons.volume_up, color: Colors.white, size: 44),
+                  // Audio Player Button — 大号声波动画
+                  SoundWaveButton(
+                    size: 88,
+                    color: Colors.deepOrange,
+                    iconSize: 44,
                   ),
                   const SizedBox(height: 8),
                   Text(loc.tapToPlay,

@@ -120,6 +120,8 @@ class AppLocalizations {
       'close': 'Close',
       'step1ReadChinese': 'Read Chinese',
       'step2Explain': 'Explain Meaning',
+      'holdToRecord': 'Hold to record',
+      'slideUpToCancel': 'Slide up to cancel',
       // advanced_practice.dart
       'idioms': 'Idioms',
       'proverbs': 'Proverbs/Sayings',
@@ -270,6 +272,8 @@ class AppLocalizations {
       'close': 'Закрыть',
       'step1ReadChinese': 'Читайте китайский',
       'step2Explain': 'Объясните значение',
+      'holdToRecord': 'Удерживайте для записи',
+      'slideUpToCancel': 'Проведите вверх для отмены',
       // advanced_practice.dart
       'idioms': 'Идиомы',
       'proverbs': 'Поговорки/Пословицы',
@@ -419,6 +423,8 @@ class AppLocalizations {
       'close': 'بستن',
       'step1ReadChinese': 'چینی بخوانید',
       'step2Explain': 'معنی را توضیح دهید',
+      'holdToRecord': 'نگه دارید تا ضبط شود',
+      'slideUpToCancel': 'برای لغو به بالا بکشید',
       // advanced_practice.dart
       'chineseExplanation': 'توضیح چینی',
       'dataNotLoaded': '(داده بارگیری نشده، موقتا خالی)',
@@ -562,6 +568,8 @@ class AppLocalizations {
       'close': 'إغلاق',
       'step1ReadChinese': 'اقرأ الصينية',
       'step2Explain': 'اشرح المعنى',
+      'holdToRecord': 'اضغط مطولاً للتسجيل',
+      'slideUpToCancel': 'اسحب لأعلى للإلغاء',
       // advanced_practice.dart
       'chineseExplanation': 'شرح صيني',
       'dataNotLoaded': '(لم يتم تحميل البيانات، فارغ مؤقتاً)',
@@ -706,6 +714,8 @@ class AppLocalizations {
       'close': 'Kapat',
       'step1ReadChinese': 'Çince Okuyun',
       'step2Explain': 'Anlamı Açıklayın',
+      'holdToRecord': 'Kaydetmek için basılı tutun',
+      'slideUpToCancel': 'İptal etmek için yukarı kaydırın',
       // advanced_practice.dart
       'idioms': 'Deyimler',
       'proverbs': 'Atasözleri/Sözler',
@@ -859,6 +869,8 @@ class AppLocalizations {
   String get close => _localizedValues[locale.languageCode]?['close'] ?? 'Close';
   String get step1ReadChinese => _localizedValues[locale.languageCode]?['step1ReadChinese'] ?? 'Read Chinese';
   String get step2Explain => _localizedValues[locale.languageCode]?['step2Explain'] ?? 'Explain Meaning';
+  String get holdToRecord => _localizedValues[locale.languageCode]?['holdToRecord'] ?? 'Hold to record';
+  String get slideUpToCancel => _localizedValues[locale.languageCode]?['slideUpToCancel'] ?? 'Slide up to cancel';
 
   // review_page.dart中的文本
   String get reviewTitle => _localizedValues[locale.languageCode]?['reviewTitle'] ?? 'Review';

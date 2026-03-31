@@ -251,7 +251,7 @@ class _PracticeCard extends StatelessWidget {
               child: Icon(icon, color: iconColor, size: 22),
             ),
             const SizedBox(height: 12),
-            Text('$emoji $label',
+            Text(label,
                 style: const TextStyle(
                     fontWeight: FontWeight.bold, color: Color(0xFF333333))),
           ],
