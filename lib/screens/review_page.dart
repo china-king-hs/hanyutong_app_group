@@ -2,12 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import '../l10n/app_localizations.dart';
 
-const _reviewTypes = [
-  {'emoji': '📝', 'path': '/empty'},
-  {'emoji': '📄', 'path': '/empty'},
-  {'emoji': '⭐', 'path': '/empty'},
-];
-
 class ReviewPage extends StatelessWidget {
   const ReviewPage({super.key});
 
@@ -17,9 +11,10 @@ class ReviewPage extends StatelessWidget {
     
     // 创建本地化的复习类型列表
     final reviewTypes = [
-      {'emoji': '📝', 'title': loc.wordsReview, 'path': '/empty'},
-      {'emoji': '📄', 'title': loc.sentencesReview, 'path': '/empty'},
-      {'emoji': '⭐', 'title': loc.advancedReview, 'subtitle': loc.idiomsProverbsPoetry, 'path': '/empty'},
+      {'emoji': '📝', 'title': loc.wordsReview, 'path': '/words-review'},
+      {'emoji': '📖', 'title': loc.idiomsReview, 'path': '/idioms-review'},
+      {'emoji': '💡', 'title': loc.proverbsReview, 'path': '/proverbs-review'},
+      {'emoji': '🎋', 'title': loc.poetryReview, 'path': '/poetry-review'},
     ];
     
     return Scaffold(

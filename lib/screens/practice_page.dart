@@ -4,13 +4,9 @@ import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 import '../app_state.dart';
 import '../l10n/app_localizations.dart';
+import '../models/word_model.dart';
+import '../models/word_repository.dart';
 import '../widgets/sound_wave_button.dart';
-
-const _sampleWords = [
-  {'chinese': '学习', 'pinyin': 'xué xí', 'id': 'xuexi'},
-  {'chinese': '朋友', 'pinyin': 'péng yǒu', 'id': 'pengyou'},
-  {'chinese': '快乐', 'pinyin': 'kuài lè', 'id': 'kuaile'},
-];
 
 class PracticePage extends StatefulWidget {
   final String type;
@@ -21,6 +17,10 @@ class PracticePage extends StatefulWidget {
 }
 
 class _PracticePageState extends State<PracticePage> {
+  List<WordModel> _words = [];
+  bool _isLoading = true;
+  String? _loadError;
+
   String _step = 'pronunciation'; // 'pronunciation' | 'meaning'
   int _currentIndex = 0;
   bool _isRecording = false;
@@ -32,7 +32,38 @@ class _PracticePageState extends State<PracticePage> {
   Map<String, int> _pronScore = {'tone': 85, 'sound': 90};
   Map<String, int> _meaningScore = {'literal': 80, 'extended': 75, 'practical': 85};
 
-  Map<String, String> get _currentWord => _sampleWords[_currentIndex];
+  @override
+  void initState() {
+    super.initState();
+    _loadWords();
+  }
+
+  Future<void> _loadWords() async {
+    final state = context.read<AppState>();
+    try {
+      final allWords = await WordRepository.loadWords(state.level);
+      // 过滤掉已掌握的词语
+      final availableWords = allWords
+          .where((w) => !state.masteredWordIds.contains(w.id))
+          .toList();
+      if (mounted) {
+        setState(() {
+          _words = availableWords;
+          _isLoading = false;
+        });
+      }
+    } catch (e) {
+      if (mounted) {
+        setState(() {
+          _loadError = e.toString();
+          _isLoading = false;
+        });
+      }
+    }
+  }
+
+  WordModel? get _currentWord =>
+      _words.isNotEmpty ? _words[_currentIndex % _words.length] : null;
 
   // 按住开始录音
   void _handleLongPressStart(LongPressStartDetails details) {
@@ -92,11 +123,15 @@ class _PracticePageState extends State<PracticePage> {
   }
 
   void _handleContinue() {
+    final state = context.read<AppState>();
+    // 标记当前词语为已掌握（两步都通过了）
+    state.markWordMastered(_currentWord!.id);
+
     setState(() {
       _showMeaningScore = false;
       _step = 'pronunciation';
     });
-    if (_currentIndex < _sampleWords.length - 1) {
+    if (_currentIndex < _words.length - 1) {
       setState(() => _currentIndex++);
     } else {
       context.pop();
@@ -127,7 +162,64 @@ class _PracticePageState extends State<PracticePage> {
     final state = context.watch<AppState>();
     final loc = AppLocalizations.of(context)!;
     final title = widget.type == 'words' ? loc.wordsPracticeTitle : loc.sentencesPracticeTitle;
-    final isFav = state.favorites.contains(_currentWord['id']);
+
+    // Loading / Error state
+    if (_isLoading) {
+      return Scaffold(
+        backgroundColor: const Color(0xFFF5F5F5),
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const CircularProgressIndicator(color: Color(0xFF4285F4)),
+              const SizedBox(height: 16),
+              Text(loc.loading, style: const TextStyle(color: Color(0xFF666666))),
+            ],
+          ),
+        ),
+      );
+    }
+
+    if (_loadError != null) {
+      return Scaffold(
+        backgroundColor: const Color(0xFFF5F5F5),
+        body: Center(
+          child: Padding(
+            padding: const EdgeInsets.all(24),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const Icon(Icons.error_outline, color: Colors.red, size: 48),
+                const SizedBox(height: 16),
+                Text(loc.dataNotLoaded, style: const TextStyle(color: Color(0xFF666666))),
+                const SizedBox(height: 8),
+                Text(_loadError!, style: const TextStyle(color: Colors.red, fontSize: 12)),
+                const SizedBox(height: 16),
+                ElevatedButton(
+                  onPressed: () {
+                    setState(() { _isLoading = true; _loadError = null; });
+                    _loadWords();
+                  },
+                  child: Text(loc.retry),
+                ),
+              ],
+            ),
+          ),
+        ),
+      );
+    }
+
+    if (_words.isEmpty) {
+      return Scaffold(
+        backgroundColor: const Color(0xFFF5F5F5),
+        body: Center(
+          child: Text(loc.noData, style: const TextStyle(color: Color(0xFF666666))),
+        ),
+      );
+    }
+
+    final word = _currentWord!;
+    final isFav = state.favorites.contains(word.id);
 
     return Scaffold(
       backgroundColor: const Color(0xFFF5F5F5),
@@ -161,14 +253,14 @@ class _PracticePageState extends State<PracticePage> {
                               child: Column(
                                 children: [
                                   Text(
-                                    _currentWord['chinese']!,
+                                    word.word,
                                     style: const TextStyle(
                                         fontSize: 48,
                                         fontWeight: FontWeight.bold,
                                         color: Color(0xFF333333)),
                                   ),
                                   const SizedBox(height: 8),
-                                  Text(_currentWord['pinyin']!,
+                                  Text(word.pinyin,
                                       style: const TextStyle(
                                           fontSize: 18, color: Color(0xFF999999))),
                                   const SizedBox(height: 24),
@@ -181,8 +273,7 @@ class _PracticePageState extends State<PracticePage> {
                             top: 8,
                             right: 8,
                             child: IconButton(
-                              onPressed: () =>
-                                  state.toggleFavorite(_currentWord['id']!),
+                              onPressed: () => state.toggleFavorite(word.id),
                               icon: Icon(
                                 isFav ? Icons.star : Icons.star_border,
                                 color: isFav ? Colors.amber : Colors.grey,
@@ -388,8 +479,11 @@ class _PracticePageState extends State<PracticePage> {
                               style: const TextStyle(
                                   fontSize: 18, fontWeight: FontWeight.bold)),
                           const SizedBox(height: 12),
-                          Text(loc.meaningPlaceholder,
-                              style: const TextStyle(color: Color(0xFF666666))),
+                          Text(
+                            word.translationFor(state.language),
+                            style: const TextStyle(color: Color(0xFF666666), fontSize: 16),
+                            textAlign: TextAlign.center,
+                          ),
                           const SizedBox(height: 20),
                           SizedBox(
                             width: double.infinity,
@@ -461,8 +555,8 @@ class _PracticePageState extends State<PracticePage> {
                     width: 24,
                     height: 24,
                     decoration: BoxDecoration(
-                      color: _step == 'pronunciation' 
-                          ? const Color(0xFF4285F4) 
+                      color: _step == 'pronunciation'
+                          ? const Color(0xFF4285F4)
                           : const Color(0xFFE0E0E0),
                       borderRadius: BorderRadius.circular(12),
                     ),
@@ -472,8 +566,8 @@ class _PracticePageState extends State<PracticePage> {
                         style: TextStyle(
                           fontSize: 12,
                           fontWeight: FontWeight.bold,
-                          color: _step == 'pronunciation' 
-                              ? Colors.white 
+                          color: _step == 'pronunciation'
+                              ? Colors.white
                               : const Color(0xFF999999),
                         ),
                       ),
@@ -504,8 +598,8 @@ class _PracticePageState extends State<PracticePage> {
                     width: 24,
                     height: 24,
                     decoration: BoxDecoration(
-                      color: _step == 'meaning' 
-                          ? const Color(0xFF4285F4) 
+                      color: _step == 'meaning'
+                          ? const Color(0xFF4285F4)
                           : const Color(0xFFE0E0E0),
                       borderRadius: BorderRadius.circular(12),
                     ),
@@ -515,8 +609,8 @@ class _PracticePageState extends State<PracticePage> {
                         style: TextStyle(
                           fontSize: 12,
                           fontWeight: FontWeight.bold,
-                          color: _step == 'meaning' 
-                              ? Colors.white 
+                          color: _step == 'meaning'
+                              ? Colors.white
                               : const Color(0xFF999999),
                         ),
                       ),

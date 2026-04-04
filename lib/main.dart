@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:provider/provider.dart';
 import 'package:window_manager/window_manager.dart';
@@ -7,22 +8,29 @@ import 'router.dart';
 import 'config/app_languages.dart';
 import 'l10n/app_localizations.dart';
 
+// 判断是否为桌面平台（Windows/Linux/macOS，不包括 Android/Web）
+final bool _isDesktop = (defaultTargetPlatform == TargetPlatform.windows ||
+    defaultTargetPlatform == TargetPlatform.linux ||
+    defaultTargetPlatform == TargetPlatform.macOS);
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  // ── Windows 桌面：设置窗口为手机比例 390 × 844 ──
-  await windowManager.ensureInitialized();
-  const windowOptions = WindowOptions(
-    size: Size(390, 844),
-    minimumSize: Size(360, 640),
-    center: true,
-    title: '汉语通',
-    titleBarStyle: TitleBarStyle.normal,
-  );
-  await windowManager.waitUntilReadyToShow(windowOptions, () async {
-    await windowManager.show();
-    await windowManager.focus();
-  });
+  // ── Windows 桌面：设置窗口为手机比例 390 × 844（仅桌面平台调用）──
+  if (_isDesktop) {
+    await windowManager.ensureInitialized();
+    const windowOptions = WindowOptions(
+      size: Size(390, 844),
+      minimumSize: Size(360, 640),
+      center: true,
+      title: '汉语通',
+      titleBarStyle: TitleBarStyle.normal,
+    );
+    await windowManager.waitUntilReadyToShow(windowOptions, () async {
+      await windowManager.show();
+      await windowManager.focus();
+    });
+  }
   // ─────────────────────────────────────────────────
 
   final appState = AppState();
@@ -43,25 +51,50 @@ class ChineseGoApp extends StatefulWidget {
   State<ChineseGoApp> createState() => _ChineseGoAppState();
 }
 
-class _ChineseGoAppState extends State<ChineseGoApp> {
+class _ChineseGoAppState extends State<ChineseGoApp> with WidgetsBindingObserver {
   bool _hasShownPopupToday = false;
 
   @override
-  void didChangeDependencies() {
-    super.didChangeDependencies();
+  void initState() {
+    super.initState();
+    // 监听 AppState 变化，触发弹窗
     final appState = Provider.of<AppState>(context, listen: false);
+    appState.addListener(_onAppStateChanged);
+    // 注册生命周期监听
+    WidgetsBinding.instance.addObserver(this);
+  }
 
-    // 监听目标达成弹窗
-    appState.addListener(() {
-      if (appState.showGoalPopup && !_hasShownPopupToday) {
-        _hasShownPopupToday = true;
-        WidgetsBinding.instance.addPostFrameCallback((_) {
-          if (mounted) {
-            _showGoalReachedDialog(context, appState);
-          }
-        });
+  @override
+  void dispose() {
+    final appState = Provider.of<AppState>(context, listen: false);
+    appState.removeListener(_onAppStateChanged);
+    WidgetsBinding.instance.removeObserver(this);
+    super.dispose();
+  }
+
+  // 监听 AppState 的 showGoalPopup 变化
+  void _onAppStateChanged() {
+    final appState = Provider.of<AppState>(context, listen: false);
+    if (appState.showGoalPopup && !_hasShownPopupToday) {
+      _hasShownPopupToday = true;
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (mounted) {
+          _showGoalReachedDialog(context, appState);
+        }
+      });
+    }
+  }
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    if (state == AppLifecycleState.resumed) {
+      // App 从后台回到前台时，重新检查弹窗状态
+      final appState = Provider.of<AppState>(context, listen: false);
+      if (appState.showGoalPopup) {
+        _hasShownPopupToday = false; // 重置，允许再次显示
+        _onAppStateChanged();
       }
-    });
+    }
   }
 
   void _showGoalReachedDialog(BuildContext context, AppState appState) {

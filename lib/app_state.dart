@@ -31,6 +31,9 @@ class AppState extends ChangeNotifier {
   // ---------- 收藏 ----------
   Set<String> _favorites = {};
 
+  // ---------- 已掌握词语 ----------
+  Set<String> _masteredWordIds = {};
+
   // ---------- Getters ----------
   String get language => _language;
   String get level => _level;
@@ -46,6 +49,7 @@ class AppState extends ChangeNotifier {
   int get learningTime => _learningTime;
   bool get showGoalPopup => _showGoalPopup;
   Set<String> get favorites => _favorites;
+  Set<String> get masteredWordIds => _masteredWordIds;
 
   // ---------- 初始化（从 SharedPreferences 读取） ----------
   Future<void> init() async {
@@ -76,6 +80,12 @@ class AppState extends ChangeNotifier {
     if (favJson != null) {
       final List list = jsonDecode(favJson);
       _favorites = list.cast<String>().toSet();
+    }
+
+    final masteredJson = prefs.getString('masteredWordIds');
+    if (masteredJson != null) {
+      final List list = jsonDecode(masteredJson);
+      _masteredWordIds = list.cast<String>().toSet();
     }
   }
 
@@ -161,6 +171,18 @@ class AppState extends ChangeNotifier {
     }
     _favorites = newSet;
     _save((p) async => p.setString('favorites', jsonEncode(newSet.toList())));
+    notifyListeners();
+  }
+
+  /// 将词语标记为已掌握（两步测评都通过后调用）
+  void markWordMastered(String wordId) {
+    if (_masteredWordIds.contains(wordId)) return;
+    _masteredWordIds.add(wordId);
+    _masteredWords = _masteredWordIds.length;
+    _save((p) async {
+      p.setString('masteredWordIds', jsonEncode(_masteredWordIds.toList()));
+      p.setInt('masteredWords', _masteredWords);
+    });
     notifyListeners();
   }
 

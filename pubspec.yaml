@@ -1,5 +1,5 @@
-name: chinese_go_app
-description: 汉语通 - 面向外国人的中文学习 App
+name: hanyu_tong
+description: HanYu_Tong - 面向外国人的中文学习 App
 # App 显示名称（在手机桌面上显示的名称）
 # 注意：修改 App 名称请同时修改 android/app/src/main/AndroidManifest.xml 中的 android:label
 
@@ -23,16 +23,16 @@ dependencies:
   cupertino_icons: ^1.0.8
   # Windows 桌面窗口管理（控制窗口大小/标题等）
   window_manager: ^0.3.9
+  # 国际化支持（必须放在 dependencies 以便 Release/真机构建可用）
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.20.2
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^4.0.0
   flutter_launcher_icons: ^0.14.1
-  # 国际化支持
-  flutter_localizations:
-    sdk: flutter
-  intl: ^0.20.2
   # ARB文件生成工具（可选，用于开发时快速生成）
   # flutter_localizations_utils: ^0.4.0
 
@@ -40,6 +40,7 @@ flutter:
   uses-material-design: true
   assets:
     - assets/icon/
+    - assets/words/
 
 flutter_launcher_icons:
   android: true

@@ -1,6 +1,8 @@
 /// RTL 语言工具类
 /// 用于处理从右向左书写的语言（波斯语、阿拉伯语）
 
+import 'package:flutter/material.dart';
+
 // RTL 语言代码列表
 const rtlLanguages = {'fa', 'ar'};
 

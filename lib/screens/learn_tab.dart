@@ -116,45 +116,30 @@ class _LearnTabState extends State<LearnTab> {
             ],
             const SizedBox(height: 16),
 
-            // Practice Buttons
-            GridView.count(
-              physics: const NeverScrollableScrollPhysics(),
-              shrinkWrap: true,
-              crossAxisCount: 2,
-              crossAxisSpacing: 16,
-              mainAxisSpacing: 16,
+            // Practice Buttons — 左右并排
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                _PracticeCard(
-                  emoji: '📖',
-                  label: AppLocalizations.of(context)!.wordsPractice,
-                  color: const Color(0xFFDCEAFF),
-                  iconColor: const Color(0xFF4285F4),
-                  icon: Icons.menu_book,
-                  onTap: () => context.push('/practice/words'),
+                Expanded(
+                  child: _PracticeCard(
+                    emoji: '📖',
+                    label: AppLocalizations.of(context)!.wordsPractice,
+                    color: const Color(0xFFDCEAFF),
+                    iconColor: const Color(0xFF4285F4),
+                    icon: Icons.menu_book,
+                    onTap: () => context.push('/practice/words'),
+                  ),
                 ),
-                _PracticeCard(
-                  emoji: '📄',
-                  label: AppLocalizations.of(context)!.sentencesPractice,
-                  color: const Color(0xFFDCF5E7),
-                  iconColor: Colors.green,
-                  icon: Icons.article,
-                  onTap: () => context.push('/practice/sentences'),
-                ),
-                _PracticeCard(
-                  emoji: '📐',
-                  label: AppLocalizations.of(context)!.grammarLearning,
-                  color: const Color(0xFFFFEDD8),
-                  iconColor: Colors.orange,
-                  icon: Icons.translate,
-                  onTap: () => context.push('/empty'),
-                ),
-                _PracticeCard(
-                  emoji: '🎧',
-                  label: AppLocalizations.of(context)!.listeningPractice,
-                  color: const Color(0xFFF0DCFF),
-                  iconColor: Colors.purple,
-                  icon: Icons.headphones,
-                  onTap: () => context.push('/listening'),
+                const SizedBox(width: 16),
+                Expanded(
+                  child: _PracticeCard(
+                    emoji: '📐',
+                    label: AppLocalizations.of(context)!.grammarLearning,
+                    color: const Color(0xFFFFEDD8),
+                    iconColor: Colors.orange,
+                    icon: Icons.translate,
+                    onTap: () => context.push('/empty'),
+                  ),
                 ),
               ],
             ),
@@ -251,9 +236,16 @@ class _PracticeCard extends StatelessWidget {
               child: Icon(icon, color: iconColor, size: 22),
             ),
             const SizedBox(height: 12),
-            Text(label,
+            SizedBox(
+              height: 40,
+              child: Text(
+                label,
+                maxLines: 2,
+                softWrap: true,
                 style: const TextStyle(
-                    fontWeight: FontWeight.bold, color: Color(0xFF333333))),
+                    fontWeight: FontWeight.bold, color: Color(0xFF333333)),
+              ),
+            ),
           ],
         ),
       ),

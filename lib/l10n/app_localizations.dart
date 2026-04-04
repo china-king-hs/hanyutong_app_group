@@ -1,8 +1,6 @@
 // 应用本地化类
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
-import 'package:intl/intl.dart';
-import 'dart:async';
 
 class AppLocalizations {
   final Locale locale;
@@ -16,7 +14,7 @@ class AppLocalizations {
   static const LocalizationsDelegate<AppLocalizations> delegate =
       _AppLocalizationsDelegate();
 
-  static Map<String, Map<String, String>> _localizedValues = {
+  static final Map<String, Map<String, String>> _localizedValues = {
     'en': {
       'appTitle': 'Chinese Go',
       'selectNativeLanguage': 'What language do you use to learn Chinese?',
@@ -133,6 +131,9 @@ class AppLocalizations {
       'culture': 'Cultural Knowledge',
       'chineseExplanation': 'Chinese Explanation',
       'dataNotLoaded': '(Data not loaded, temporarily blank)',
+      'loading': 'Loading...',
+      'retry': 'Retry',
+      'noData': '(No data)',
       // listening_practice.dart
       'listeningPracticeTitle': 'Listening Practice',
       'optionA': 'Option A',
@@ -178,9 +179,11 @@ class AppLocalizations {
       'reviewTitle': 'Review',
       'review': 'Review',
       'wordsReview': 'Words Review',
-      'sentencesReview': 'Sentences Review',
-      'advancedReview': 'Advanced Review',
-      'idiomsProverbsPoetry': 'Idioms / Proverbs / Poetry',
+      'idiomsReview': 'Idioms Review',
+      'proverbsReview': 'Proverbs Review',
+      'poetryReview': 'Poetry Review',
+      'noMasteredWordsYet': 'No words mastered yet',
+      'noMasteredWordsHint': 'Complete both steps in words practice to add words here',
       // empty_page.dart
       'comingSoon': 'Coming Soon',
       'featureInDevelopment': 'Feature is under development...',
@@ -304,6 +307,9 @@ class AppLocalizations {
       'culture': 'Культурные знания',
       'chineseExplanation': 'Китайское объяснение',
       'dataNotLoaded': '(Данные не загружены, временно пусто)',
+      'loading': 'Загрузка...',
+      'retry': 'Повторить',
+      'noData': '(Нет данных)',
       // listening_practice.dart
       'listeningPracticeTitle': 'Практика аудирования',
       'optionA': 'Вариант A',
@@ -349,9 +355,11 @@ class AppLocalizations {
       'reviewTitle': 'Обзор',
       'review': 'Обзор',
       'wordsReview': 'Обзор слов',
-      'sentencesReview': 'Обзор предложений',
-      'advancedReview': 'Обзор продвинутых',
-      'idiomsProverbsPoetry': 'Идиомы / Пословицы / Поэзия',
+      'idiomsReview': 'Обзор идиом',
+      'proverbsReview': 'Обзор пословиц',
+      'poetryReview': 'Обзор поэзии',
+      'noMasteredWordsYet': 'Пока нет освоенных слов',
+      'noMasteredWordsHint': 'Пройдите оба этапа практики слов, чтобы добавить слова сюда',
       // empty_page.dart
       'comingSoon': 'Скоро будет',
       'featureInDevelopment': 'Функция находится в разработке...',
@@ -470,6 +478,9 @@ class AppLocalizations {
       // advanced_practice.dart
       'chineseExplanation': 'توضیح چینی',
       'dataNotLoaded': '(داده بارگیری نشده، موقتا خالی)',
+      'loading': 'بارگیری...',
+      'retry': 'تلاش دوباره',
+      'noData': '(داده‌ای وجود ندارد)',
       // listening_practice.dart
       'listeningPracticeTitle': 'تمرین شنیداری',
       'optionA': 'گزینه الف',
@@ -513,9 +524,11 @@ class AppLocalizations {
       // review_page.dart
       'reviewTitle': 'مرور',
       'wordsReview': 'مرور کلمات',
-      'sentencesReview': 'مرور جملات',
-      'advancedReview': 'مرور پیشرفته',
-      'idiomsProverbsPoetry': 'اصطلاحات / ضرب‌المثل‌ها / شعر',
+      'idiomsReview': 'مرور اصطلاحات',
+      'proverbsReview': 'مرور ضرب‌المثل‌ها',
+      'poetryReview': 'مرور شعر',
+      'noMasteredWordsYet': 'هنوز کلمه‌ای تسلط یافته نشده',
+      'noMasteredWordsHint': 'هر دو مرحله تمرین کلمات را کامل کنید تا کلمات اینجا اضافه شوند',
       // empty_page.dart
       'comingSoon': 'به زودی',
       'featureInDevelopment': 'ویژگی در حال توسعه است...',
@@ -634,6 +647,9 @@ class AppLocalizations {
       // advanced_practice.dart
       'chineseExplanation': 'شرح صيني',
       'dataNotLoaded': '(لم يتم تحميل البيانات، فارغ مؤقتاً)',
+      'loading': 'جارٍ التحميل...',
+      'retry': 'إعادة المحاولة',
+      'noData': '(لا توجد بيانات)',
       // listening_practice.dart
       'listeningPracticeTitle': 'تدريب الاستماع',
       'optionA': 'الخيار أ',
@@ -677,9 +693,11 @@ class AppLocalizations {
       // review_page.dart
       'reviewTitle': 'مراجعة',
       'wordsReview': 'مراجعة الكلمات',
-      'sentencesReview': 'مراجعة الجمل',
-      'advancedReview': 'مراجعة متقدمة',
-      'idiomsProverbsPoetry': 'أمثال / حكم / شعر',
+      'idiomsReview': 'مراجعة الأمثال',
+      'proverbsReview': 'مراجعة الحكم',
+      'poetryReview': 'مراجعة الشعر',
+      'noMasteredWordsYet': 'لم تتم مراجعة أي كلمات بعد',
+      'noMasteredWordsHint': 'أكمل كلا المرحلتين في تمرين الكلمات لإضافة الكلمات هنا',
       // empty_page.dart
       'comingSoon': 'قريباً',
       'featureInDevelopment': 'الميزة قيد التطوير...',
@@ -727,7 +745,6 @@ class AppLocalizations {
       'unitHours': 'saat',
       'unitItem': 'öğe',
       'unitItems': 'öğe',
-      'myFavorites': 'Favorilerim',
       'myFavorites': 'Favorilerim',
       'learn': 'Öğren',
       'currentLevel': 'Mevcut Seviye',
@@ -800,6 +817,9 @@ class AppLocalizations {
       // advanced_practice.dart
       'chineseExplanation': 'Çince Açıklama',
       'dataNotLoaded': '(Veri yüklenmedi, geçici olarak boş)',
+      'loading': 'Yükleniyor...',
+      'retry': 'Tekrar Dene',
+      'noData': '(Veri yok)',
       // listening_practice.dart
       'listeningPracticeTitle': 'Dinleme Pratiği',
       'optionA': 'Seçenek A',
@@ -845,9 +865,11 @@ class AppLocalizations {
       'reviewTitle': 'Gözden Geçirme',
       'review': 'Gözden Geçirme',
       'wordsReview': 'Kelime Gözden Geçirme',
-      'sentencesReview': 'Cümle Gözden Geçirme',
-      'advancedReview': 'İleri Gözden Geçirme',
-      'idiomsProverbsPoetry': 'Deyimler / Atasözleri / Şiir',
+      'idiomsReview': 'Deyim Gözden Geçirme',
+      'proverbsReview': 'Atasözü Gözden Geçirme',
+      'poetryReview': 'Şiir Gözden Geçirme',
+      'noMasteredWordsYet': 'Henüz kelime öğrenilmedi',
+      'noMasteredWordsHint': 'Buraya kelime eklemek için kelime pratiğinde her iki adımı da tamamlayın',
       // empty_page.dart
       'comingSoon': 'Yakında',
       'featureInDevelopment': 'Özellik geliştirme aşamasında...',
@@ -973,9 +995,11 @@ class AppLocalizations {
   // review_page.dart中的文本
   String get reviewTitle => _localizedValues[locale.languageCode]?['reviewTitle'] ?? 'Review';
   String get wordsReview => _localizedValues[locale.languageCode]?['wordsReview'] ?? 'Words Review';
-  String get sentencesReview => _localizedValues[locale.languageCode]?['sentencesReview'] ?? 'Sentences Review';
-  String get advancedReview => _localizedValues[locale.languageCode]?['advancedReview'] ?? 'Advanced Review';
-  String get idiomsProverbsPoetry => _localizedValues[locale.languageCode]?['idiomsProverbsPoetry'] ?? 'Idioms / Proverbs / Poetry';
+  String get idiomsReview => _localizedValues[locale.languageCode]?['idiomsReview'] ?? 'Idioms Review';
+  String get proverbsReview => _localizedValues[locale.languageCode]?['proverbsReview'] ?? 'Proverbs Review';
+  String get poetryReview => _localizedValues[locale.languageCode]?['poetryReview'] ?? 'Poetry Review';
+  String get noMasteredWordsYet => _localizedValues[locale.languageCode]?['noMasteredWordsYet'] ?? 'No words mastered yet';
+  String get noMasteredWordsHint => _localizedValues[locale.languageCode]?['noMasteredWordsHint'] ?? 'Complete both steps in words practice to add words here';
 
   // listening_practice.dart中的文本
   String get listeningPracticeTitle => _localizedValues[locale.languageCode]?['listeningPracticeTitle'] ?? 'Listening Practice';
@@ -990,6 +1014,9 @@ class AppLocalizations {
   // advanced_practice.dart中的文本
   String get chineseExplanation => _localizedValues[locale.languageCode]?['chineseExplanation'] ?? 'Chinese Explanation';
   String get dataNotLoaded => _localizedValues[locale.languageCode]?['dataNotLoaded'] ?? '(Data not loaded, temporarily blank)';
+  String get loading => _localizedValues[locale.languageCode]?['loading'] ?? 'Loading...';
+  String get retry => _localizedValues[locale.languageCode]?['retry'] ?? 'Retry';
+  String get noData => _localizedValues[locale.languageCode]?['noData'] ?? '(No data)';
 
   // favorites_page.dart中的文本
   String get myFavoritesTitle => _localizedValues[locale.languageCode]?['myFavorites'] ?? 'My Favorites';

@@ -1,0 +1,4439 @@
+[
+  {
+    "word": "爱",
+    "pinyin": "ài",
+    "en": "love",
+    "ru": "любовь",
+    "tr": "aşk",
+    "fa": "عشق",
+    "ar": "حب"
+  },
+  {
+    "word": "八",
+    "pinyin": "bā",
+    "en": "eight",
+    "ru": "восемь",
+    "tr": "sekiz",
+    "fa": "هشت",
+    "ar": "ثمانية"
+  },
+  {
+    "word": "爸爸",
+    "pinyin": "bàba",
+    "en": "father",
+    "ru": "отец",
+    "tr": "baba",
+    "fa": "پدر",
+    "ar": "أب"
+  },
+  {
+    "word": "白天",
+    "pinyin": "báitiān",
+    "en": "daytime",
+    "ru": "день",
+    "tr": "gündüz",
+    "fa": "روز",
+    "ar": "نهار"
+  },
+  {
+    "word": "百",
+    "pinyin": "bǎi",
+    "en": "hundred",
+    "ru": "сто",
+    "tr": "yüz",
+    "fa": "صد",
+    "ar": "مئة"
+  },
+  {
+    "word": "半",
+    "pinyin": "bàn",
+    "en": "half",
+    "ru": "половина",
+    "tr": "yarım",
+    "fa": "نیم",
+    "ar": "نصف"
+  },
+  {
+    "word": "包子",
+    "pinyin": "bāozi",
+    "en": "steamed bun",
+    "ru": "байцзы",
+    "tr": "baozi",
+    "fa": "بائوزی",
+    "ar": "بوزي"
+  },
+  {
+    "word": "杯子",
+    "pinyin": "bēizi",
+    "en": "cup/glass",
+    "ru": "стакан",
+    "tr": "bardak",
+    "fa": "لیوان",
+    "ar": "كوب"
+  },
+  {
+    "word": "本",
+    "pinyin": "běn",
+    "en": "this",
+    "ru": "этот",
+    "tr": "bu cilt",
+    "fa": "این جلد",
+    "ar": "هذا"
+  },
+  {
+    "word": "边",
+    "pinyin": "biān",
+    "en": "side/edge",
+    "ru": "сторона",
+    "tr": "kenar",
+    "fa": "کناره",
+    "ar": "جانب"
+  },
+  {
+    "word": "病",
+    "pinyin": "bìng",
+    "en": "sick/disease",
+    "ru": "болезнь",
+    "tr": "hasta",
+    "fa": "بیمار",
+    "ar": "مرض"
+  },
+  {
+    "word": "不",
+    "pinyin": "bù",
+    "en": "not",
+    "ru": "не",
+    "tr": "değil",
+    "fa": "نه",
+    "ar": "لا"
+  },
+  {
+    "word": "不客气",
+    "pinyin": "búkèqi",
+    "en": "you're welcome",
+    "ru": "пожалуйста",
+    "tr": "rica ederim",
+    "fa": "خواهش می‌کنم",
+    "ar": "عفواً"
+  },
+  {
+    "word": "不要",
+    "pinyin": "búyào",
+    "en": "don't",
+    "ru": "не надо",
+    "tr": "yapma",
+    "fa": "نکن",
+    "ar": "لا"
+  },
+  {
+    "word": "菜",
+    "pinyin": "cài",
+    "en": "dish/vegetable",
+    "ru": "блюдо",
+    "tr": "yemek",
+    "fa": "غذا",
+    "ar": "طبق"
+  },
+  {
+    "word": "茶",
+    "pinyin": "chá",
+    "en": "tea",
+    "ru": "чай",
+    "tr": "çay",
+    "fa": "چای",
+    "ar": "شاي"
+  },
+  {
+    "word": "唱",
+    "pinyin": "chàng",
+    "en": "sing",
+    "ru": "петь",
+    "tr": "söylemek",
+    "fa": "خواندن",
+    "ar": "غناء"
+  },
+  {
+    "word": "超市",
+    "pinyin": "chāoshì",
+    "en": "supermarket",
+    "ru": "супермаркет",
+    "tr": "süpermarket",
+    "fa": "سوپرمارکت",
+    "ar": "سوبرماركت"
+  },
+  {
+    "word": "车",
+    "pinyin": "chē",
+    "en": "car/vehicle",
+    "ru": "машина",
+    "tr": "araba",
+    "fa": "ماشین",
+    "ar": "سيارة"
+  },
+  {
+    "word": "吃",
+    "pinyin": "chī",
+    "en": "eat",
+    "ru": "есть",
+    "tr": "yemek",
+    "fa": "خوردن",
+    "ar": "أكل"
+  },
+  {
+    "word": "出租车",
+    "pinyin": "chūzūchē",
+    "en": "taxi",
+    "ru": "такси",
+    "tr": "taksi",
+    "fa": "تاکسی",
+    "ar": "تاكسي"
+  },
+  {
+    "word": "穿",
+    "pinyin": "chuān",
+    "en": "wear/put on",
+    "ru": "носить",
+    "tr": "giymek",
+    "fa": "پوشیدن",
+    "ar": "ارتداء"
+  },
+  {
+    "word": "打电话",
+    "pinyin": "dǎdiànhuà",
+    "en": "make a phone call",
+    "ru": "звонить",
+    "tr": "telefon etmek",
+    "fa": "تلفن زدن",
+    "ar": "الاتصال هاتفي"
+  },
+  {
+    "word": "大",
+    "pinyin": "dà",
+    "en": "big/large",
+    "ru": "большой",
+    "tr": "büyük",
+    "fa": "بزرگ",
+    "ar": "كبير"
+  },
+  {
+    "word": "大家",
+    "pinyin": "dàjiā",
+    "en": "everyone",
+    "ru": "все",
+    "tr": "herkes",
+    "fa": "همه",
+    "ar": "الجميع"
+  },
+  {
+    "word": "大学",
+    "pinyin": "dàxué",
+    "en": "university",
+    "ru": "университет",
+    "tr": "üniversite",
+    "fa": "دانشگاه",
+    "ar": "جامعة"
+  },
+  {
+    "word": "大学生",
+    "pinyin": "dàxuéshēng",
+    "en": "university student",
+    "ru": "студент",
+    "tr": "üniversite öğrencisi",
+    "fa": "دانشجو",
+    "ar": "طالب جامعي"
+  },
+  {
+    "word": "到",
+    "pinyin": "dào",
+    "en": "arrive/to",
+    "ru": "прибыть",
+    "tr": "varmak",
+    "fa": "رسیدن",
+    "ar": "وصل"
+  },
+  {
+    "word": "第",
+    "pinyin": "dì",
+    "en": "ordinal prefix",
+    "ru": "порядковый суффикс",
+    "tr": "-ıncı / -inci",
+    "fa": "پیشوند ترتیبی",
+    "ar": "البادئة الترتيبية"
+  },
+  {
+    "word": "弟弟",
+    "pinyin": "dìdi",
+    "en": "younger brother",
+    "ru": "младший брат",
+    "tr": "küçük kardeş",
+    "fa": "برادر کوچکتر",
+    "ar": "أصغر إخوة"
+  },
+  {
+    "word": "点",
+    "pinyin": "diǎn",
+    "en": "o'clock/point",
+    "ru": "час",
+    "tr": "saat",
+    "fa": "ساعت",
+    "ar": "ساعة"
+  },
+  {
+    "word": "店",
+    "pinyin": "diàn",
+    "en": "shop",
+    "ru": "магазин",
+    "tr": "dükkan",
+    "fa": "مغازه",
+    "ar": "متجر"
+  },
+  {
+    "word": "电话",
+    "pinyin": "diànhuà",
+    "en": "telephone",
+    "ru": "телефон",
+    "tr": "telefon",
+    "fa": "تلفن",
+    "ar": "هاتف"
+  },
+  {
+    "word": "电脑",
+    "pinyin": "diànnǎo",
+    "en": "computer",
+    "ru": "компьютер",
+    "tr": "bilgisayar",
+    "fa": "کامپیوتر",
+    "ar": "حاسوب"
+  },
+  {
+    "word": "电视",
+    "pinyin": "diànshì",
+    "en": "television",
+    "ru": "телевизор",
+    "tr": "televizyon",
+    "fa": "تلویزیون",
+    "ar": "تلفزيون"
+  },
+  {
+    "word": "电影",
+    "pinyin": "diànyǐng",
+    "en": "movie/film",
+    "ru": "фильм",
+    "tr": "film",
+    "fa": "فیلم",
+    "ar": "فيلم"
+  },
+  {
+    "word": "电影院",
+    "pinyin": "diànyǐngyuàn",
+    "en": "cinema",
+    "ru": "кинотеатр",
+    "tr": "sinema",
+    "fa": "سینما",
+    "ar": "سينما"
+  },
+  {
+    "word": "东西",
+    "pinyin": "dōngxi",
+    "en": "thing/stuff",
+    "ru": "вещь",
+    "tr": "şey",
+    "fa": "چیز",
+    "ar": "شيء"
+  },
+  {
+    "word": "都",
+    "pinyin": "dōu",
+    "en": "all",
+    "ru": "все",
+    "tr": "hepsi",
+    "fa": "همه",
+    "ar": "كل"
+  },
+  {
+    "word": "读",
+    "pinyin": "dú",
+    "en": "read",
+    "ru": "читать",
+    "tr": "okumak",
+    "fa": "خواندن",
+    "ar": "قراءة"
+  },
+  {
+    "word": "读书",
+    "pinyin": "dúshū",
+    "en": "read a book/study",
+    "ru": "учиться",
+    "tr": "kitap okumak",
+    "fa": "درس خواندن",
+    "ar": "دراسة"
+  },
+  {
+    "word": "对",
+    "pinyin": "duì",
+    "en": "right/correct",
+    "ru": "правильный",
+    "tr": "doğru",
+    "fa": "درست",
+    "ar": "صحيح"
+  },
+  {
+    "word": "对不起",
+    "pinyin": "duìbuqǐ",
+    "en": "sorry",
+    "ru": "извините",
+    "tr": "özür dilerim",
+    "fa": "ببخشید",
+    "ar": "آسف"
+  },
+  {
+    "word": "多",
+    "pinyin": "duō",
+    "en": "many/much",
+    "ru": "много",
+    "tr": "çok",
+    "fa": "زیاد",
+    "ar": "كثير"
+  },
+  {
+    "word": "多少",
+    "pinyin": "duōshao",
+    "en": "how much/many",
+    "ru": "сколько",
+    "tr": "kaç",
+    "fa": "چند",
+    "ar": "كم"
+  },
+  {
+    "word": "儿子",
+    "pinyin": "érzi",
+    "en": "son",
+    "ru": "сын",
+    "tr": "oğul",
+    "fa": "پسر",
+    "ar": "ابن"
+  },
+  {
+    "word": "二",
+    "pinyin": "èr",
+    "en": "two",
+    "ru": "два",
+    "tr": "iki",
+    "fa": "دو",
+    "ar": "اثنان"
+  },
+  {
+    "word": "饭",
+    "pinyin": "fàn",
+    "en": "meal/rice",
+    "ru": "еда / рис",
+    "tr": "yemek",
+    "fa": "غذا",
+    "ar": "طعام"
+  },
+  {
+    "word": "饭店",
+    "pinyin": "fàndiàn",
+    "en": "restaurant",
+    "ru": "ресторан",
+    "tr": "restoran",
+    "fa": "رستوران",
+    "ar": "مطعم"
+  },
+  {
+    "word": "房间",
+    "pinyin": "fángjiān",
+    "en": "room",
+    "ru": "комната",
+    "tr": "oda",
+    "fa": "اتاق",
+    "ar": "غرفة"
+  },
+  {
+    "word": "非常",
+    "pinyin": "fēicháng",
+    "en": "very",
+    "ru": "очень",
+    "tr": "çok",
+    "fa": "بسیار",
+    "ar": "جداً"
+  },
+  {
+    "word": "飞机",
+    "pinyin": "fēijī",
+    "en": "airplane",
+    "ru": "самолёт",
+    "tr": "uçak",
+    "fa": "هواپیما",
+    "ar": "طائرة"
+  },
+  {
+    "word": "分",
+    "pinyin": "fēn",
+    "en": "cent/minute",
+    "ru": "минута",
+    "tr": "dakika",
+    "fa": "دقیقه",
+    "ar": "دقيقة"
+  },
+  {
+    "word": "分钟",
+    "pinyin": "fēnzhōng",
+    "en": "minute",
+    "ru": "минута",
+    "tr": "dakika",
+    "fa": "دقیقه",
+    "ar": "دقيقة"
+  },
+  {
+    "word": "高兴",
+    "pinyin": "gāoxìng",
+    "en": "happy",
+    "ru": "счастливый",
+    "tr": "mutlu",
+    "fa": "خوشحال",
+    "ar": "سعيد"
+  },
+  {
+    "word": "歌",
+    "pinyin": "gē",
+    "en": "song",
+    "ru": "песня",
+    "tr": "şarkı",
+    "fa": "آهنگ",
+    "ar": "أغنية"
+  },
+  {
+    "word": "哥哥",
+    "pinyin": "gēge",
+    "en": "older brother",
+    "ru": "старший брат",
+    "tr": "büyük kardeş",
+    "fa": "برادر بزرگتر",
+    "ar": "أكبر إخوة"
+  },
+  {
+    "word": "个",
+    "pinyin": "gè",
+    "en": "(general measure word)",
+    "ru": "(общий счётный суффикс)",
+    "tr": "(genel ölçü birimi)",
+    "fa": "(کلمه شمارشی عمومی)",
+    "ar": "(أداة عد عامة)"
+  },
+  {
+    "word": "给",
+    "pinyin": "gěi",
+    "en": "give/to",
+    "ru": "давать",
+    "tr": "vermek",
+    "fa": "دادن",
+    "ar": "أعطى"
+  },
+  {
+    "word": "公司",
+    "pinyin": "gōngsī",
+    "en": "company",
+    "ru": "компания",
+    "tr": "şirket",
+    "fa": "شرکت",
+    "ar": "شركة"
+  },
+  {
+    "word": "工作",
+    "pinyin": "gōngzuò",
+    "en": "work/job",
+    "ru": "работа",
+    "tr": "iş",
+    "fa": "کار",
+    "ar": "عمل"
+  },
+  {
+    "word": "狗",
+    "pinyin": "gǒu",
+    "en": "dog",
+    "ru": "собака",
+    "tr": "köpek",
+    "fa": "سگ",
+    "ar": "كلب"
+  },
+  {
+    "word": "贵",
+    "pinyin": "guì",
+    "en": "expensive",
+    "ru": "дорогой",
+    "tr": "pahalı",
+    "fa": "گران",
+    "ar": "غالي"
+  },
+  {
+    "word": "国",
+    "pinyin": "guó",
+    "en": "country",
+    "ru": "страна",
+    "tr": "ülke",
+    "fa": "کشور",
+    "ar": "بلد"
+  },
+  {
+    "word": "还",
+    "pinyin": "hái",
+    "en": "still/also",
+    "ru": "ещё",
+    "tr": "hâlâ",
+    "fa": "هنوز",
+    "ar": "لا يزال"
+  },
+  {
+    "word": "孩子",
+    "pinyin": "háizi",
+    "en": "child",
+    "ru": "ребёнок",
+    "tr": "çocuk",
+    "fa": "بچه",
+    "ar": "طفل"
+  },
+  {
+    "word": "汉语",
+    "pinyin": "Hànyǔ",
+    "en": "Chinese language",
+    "ru": "китайский язык",
+    "tr": "Çince",
+    "fa": "زبان چینی",
+    "ar": "اللغة الصينية"
+  },
+  {
+    "word": "汉字",
+    "pinyin": "Hànzì",
+    "en": "Chinese character",
+    "ru": "китайский иероглиф",
+    "tr": "Çin karakteri",
+    "fa": "حرف چینی",
+    "ar": "حرف صيني"
+  },
+  {
+    "word": "好",
+    "pinyin": "hǎo",
+    "en": "good",
+    "ru": "хороший",
+    "tr": "iyi",
+    "fa": "خوب",
+    "ar": "جيد"
+  },
+  {
+    "word": "好吃",
+    "pinyin": "hǎochī",
+    "en": "delicious",
+    "ru": "вкусный",
+    "tr": "lezzetli",
+    "fa": "خوشمزه",
+    "ar": "لذيذ"
+  },
+  {
+    "word": "好看",
+    "pinyin": "hǎokàn",
+    "en": "good-looking/beautiful",
+    "ru": "красивый",
+    "tr": "güzel",
+    "fa": "قشنگ",
+    "ar": "جميل"
+  },
+  {
+    "word": "好听",
+    "pinyin": "hǎotīng",
+    "en": "nice-sounding",
+    "ru": "приятный",
+    "tr": "güzel",
+    "fa": "خوب",
+    "ar": "حسن"
+  },
+  {
+    "word": "好玩儿",
+    "pinyin": "hǎowánr",
+    "en": "fun/interesting",
+    "ru": "интересный",
+    "tr": "eğlenceli",
+    "fa": "جالب",
+    "ar": "ممتع"
+  },
+  {
+    "word": "号",
+    "pinyin": "hào",
+    "en": "number/date",
+    "ru": "номер",
+    "tr": "numara",
+    "fa": "شماره",
+    "ar": "رقم"
+  },
+  {
+    "word": "喝",
+    "pinyin": "hē",
+    "en": "drink",
+    "ru": "пить",
+    "tr": "içmek",
+    "fa": "نوشیدن",
+    "ar": "شرب"
+  },
+  {
+    "word": "和",
+    "pinyin": "hé",
+    "en": "and",
+    "ru": "и",
+    "tr": "ve",
+    "fa": "و",
+    "ar": "و"
+  },
+  {
+    "word": "很",
+    "pinyin": "hěn",
+    "en": "very",
+    "ru": "очень",
+    "tr": "çok",
+    "fa": "خیلی",
+    "ar": "جداً"
+  },
+  {
+    "word": "后",
+    "pinyin": "hòu",
+    "en": "after/behind",
+    "ru": "после",
+    "tr": "sonra",
+    "fa": "بعد",
+    "ar": "بعد"
+  },
+  {
+    "word": "回",
+    "pinyin": "huí",
+    "en": "return/go back",
+    "ru": "вернуться",
+    "tr": "dönmek",
+    "fa": "برگشتن",
+    "ar": "رجوع"
+  },
+  {
+    "word": "会",
+    "pinyin": "huì",
+    "en": "can/able to",
+    "ru": "мочь",
+    "tr": "yapabilmek",
+    "fa": "توانستن",
+    "ar": "يمكن"
+  },
+  {
+    "word": "火车",
+    "pinyin": "huǒchē",
+    "en": "train",
+    "ru": "поезд",
+    "tr": "tren",
+    "fa": "قطار",
+    "ar": "قطار"
+  },
+  {
+    "word": "鸡蛋",
+    "pinyin": "jīdàn",
+    "en": "egg",
+    "ru": "яйцо",
+    "tr": "yumurta",
+    "fa": "تخم مرغ",
+    "ar": "بيضة"
+  },
+  {
+    "word": "几",
+    "pinyin": "jǐ",
+    "en": "how many/several",
+    "ru": "сколько",
+    "tr": "kaç",
+    "fa": "چند",
+    "ar": "كم"
+  },
+  {
+    "word": "家",
+    "pinyin": "jiā",
+    "en": "home/family",
+    "ru": "дом",
+    "tr": "ev",
+    "fa": "خانه",
+    "ar": "منزل"
+  },
+  {
+    "word": "家人",
+    "pinyin": "jiārén",
+    "en": "family member",
+    "ru": "член семьи",
+    "tr": "aile bireyi",
+    "fa": "عضو خانواده",
+    "ar": "فرد العائلة"
+  },
+  {
+    "word": "见",
+    "pinyin": "jiàn",
+    "en": "see/meet",
+    "ru": "видеть",
+    "tr": "görmek",
+    "fa": "دیدن",
+    "ar": "رؤية"
+  },
+  {
+    "word": "件",
+    "pinyin": "jiàn",
+    "en": "(measure word for clothes/items)",
+    "ru": "(счётное слово для одежды/предметов)",
+    "tr": "tane / parça",
+    "fa": "قطعه",
+    "ar": "(أداة عد للملابس/الأشياء)"
+  },
+  {
+    "word": "饺子",
+    "pinyin": "jiǎozi",
+    "en": "dumpling",
+    "ru": "пельмени",
+    "tr": "jiaozi",
+    "fa": "جیائوزی",
+    "ar": "جياوزي"
+  },
+  {
+    "word": "叫",
+    "pinyin": "jiào",
+    "en": "call/be called",
+    "ru": "называть",
+    "tr": "adamak",
+    "fa": "صدا زدن",
+    "ar": "يُسمى"
+  },
+  {
+    "word": "姐姐",
+    "pinyin": "jiějie",
+    "en": "older sister",
+    "ru": "старшая сестра",
+    "tr": "büyük kız kardeş",
+    "fa": "خواهر بزرگتر",
+    "ar": "أكبر أخوات"
+  },
+  {
+    "word": "今年",
+    "pinyin": "jīnnián",
+    "en": "this year",
+    "ru": "этот год",
+    "tr": "bu yıl",
+    "fa": "امسال",
+    "ar": "هذا العام"
+  },
+  {
+    "word": "今天",
+    "pinyin": "jīntiān",
+    "en": "today",
+    "ru": "сегодня",
+    "tr": "bugün",
+    "fa": "امروز",
+    "ar": "اليوم"
+  },
+  {
+    "word": "九",
+    "pinyin": "jiǔ",
+    "en": "nine",
+    "ru": "девять",
+    "tr": "dokuz",
+    "fa": "نه",
+    "ar": "تسعة"
+  },
+  {
+    "word": "觉得",
+    "pinyin": "juéde",
+    "en": "think/feel",
+    "ru": "считать / чувствовать",
+    "tr": "hissetmek",
+    "fa": "احساس کردن",
+    "ar": "يشعر"
+  },
+  {
+    "word": "开",
+    "pinyin": "kāi",
+    "en": "open/drive",
+    "ru": "открыть",
+    "tr": "açmak",
+    "fa": "باز کردن",
+    "ar": "فتح"
+  },
+  {
+    "word": "开车",
+    "pinyin": "kāichē",
+    "en": "drive a car",
+    "ru": "водить машину",
+    "tr": "araba kullanmak",
+    "fa": "رانندگی کردن",
+    "ar": "قيادة"
+  },
+  {
+    "word": "看",
+    "pinyin": "kàn",
+    "en": "look/see",
+    "ru": "смотреть",
+    "tr": "bakmak",
+    "fa": "دیدن",
+    "ar": "رؤية"
+  },
+  {
+    "word": "看病",
+    "pinyin": "kànbìng",
+    "en": "see a doctor",
+    "ru": "идти к врачу",
+    "tr": "doktora gitmek",
+    "fa": "دکتر رفتن",
+    "ar": "زيارة الطبيب"
+  },
+  {
+    "word": "看见",
+    "pinyin": "kànjiàn",
+    "en": "see/catch sight of",
+    "ru": "увидеть",
+    "tr": "görmek",
+    "fa": "دیدن",
+    "ar": "رأى"
+  },
+  {
+    "word": "可以",
+    "pinyin": "kěyǐ",
+    "en": "can/may",
+    "ru": "можно",
+    "tr": "olabilir",
+    "fa": "می‌توان",
+    "ar": "يمكن"
+  },
+  {
+    "word": "课",
+    "pinyin": "kè",
+    "en": "class/lesson",
+    "ru": "урок",
+    "tr": "ders",
+    "fa": "درس",
+    "ar": "درس"
+  },
+  {
+    "word": "口",
+    "pinyin": "kǒu",
+    "en": "mouth",
+    "ru": "рот",
+    "tr": "ağız",
+    "fa": "دهان",
+    "ar": "فم"
+  },
+  {
+    "word": "块",
+    "pinyin": "kuài",
+    "en": "piece/kuai",
+    "ru": "куай / кусок",
+    "tr": "tane",
+    "fa": "تکه",
+    "ar": "قطعة"
+  },
+  {
+    "word": "来",
+    "pinyin": "lái",
+    "en": "come",
+    "ru": "прийти",
+    "tr": "gelmek",
+    "fa": "آمدن",
+    "ar": "أتى"
+  },
+  {
+    "word": "老师",
+    "pinyin": "lǎoshī",
+    "en": "teacher",
+    "ru": "учитель",
+    "tr": "öğretmen",
+    "fa": "معلم",
+    "ar": "معلم"
+  },
+  {
+    "word": "冷",
+    "pinyin": "lěng",
+    "en": "cold",
+    "ru": "холодный",
+    "tr": "soğuk",
+    "fa": "سرد",
+    "ar": "بارد"
+  },
+  {
+    "word": "里",
+    "pinyin": "lǐ",
+    "en": "inside",
+    "ru": "внутри",
+    "tr": "İçi",
+    "fa": "داخل",
+    "ar": "داخل"
+  },
+  {
+    "word": "两",
+    "pinyin": "liǎng",
+    "en": "two",
+    "ru": "два",
+    "tr": "iki",
+    "fa": "دو",
+    "ar": "اثنان"
+  },
+  {
+    "word": "零",
+    "pinyin": "líng",
+    "en": "zero",
+    "ru": "ноль",
+    "tr": "sıfır",
+    "fa": "صفر",
+    "ar": "صفر"
+  },
+  {
+    "word": "六",
+    "pinyin": "liù",
+    "en": "six",
+    "ru": "шесть",
+    "tr": "altı",
+    "fa": "شش",
+    "ar": "ستة"
+  },
+  {
+    "word": "妈妈",
+    "pinyin": "māma",
+    "en": "mother",
+    "ru": "мать",
+    "tr": "anne",
+    "fa": "مادر",
+    "ar": "أم"
+  },
+  {
+    "word": "买",
+    "pinyin": "mǎi",
+    "en": "buy",
+    "ru": "покупать",
+    "tr": "almak",
+    "fa": "خریدن",
+    "ar": "شراء"
+  },
+  {
+    "word": "卖",
+    "pinyin": "mài",
+    "en": "sell",
+    "ru": "продавать",
+    "tr": "satmak",
+    "fa": "فروشیدن",
+    "ar": "بيع"
+  },
+  {
+    "word": "忙",
+    "pinyin": "máng",
+    "en": "busy",
+    "ru": "занятой",
+    "tr": "meşgul",
+    "fa": "مشغول",
+    "ar": "مشغول"
+  },
+  {
+    "word": "猫",
+    "pinyin": "māo",
+    "en": "cat",
+    "ru": "кошка",
+    "tr": "kedi",
+    "fa": "گربه",
+    "ar": "قطة"
+  },
+  {
+    "word": "没关系",
+    "pinyin": "méiguānxi",
+    "en": "never mind/it's ok",
+    "ru": "ничего",
+    "tr": "önemli değil",
+    "fa": "اشکالی ندارد",
+    "ar": "لا بأس"
+  },
+  {
+    "word": "没事",
+    "pinyin": "méishì",
+    "en": "it's fine/no problem",
+    "ru": "нет проблем",
+    "tr": "sorun yok",
+    "fa": "مشکلی نیست",
+    "ar": "لا مشكلة"
+  },
+  {
+    "word": "没有",
+    "pinyin": "méiyǒu",
+    "en": "don't have",
+    "ru": "нет",
+    "tr": "yok",
+    "fa": "ندارد",
+    "ar": "لا يملك"
+  },
+  {
+    "word": "妹妹",
+    "pinyin": "mèimei",
+    "en": "younger sister",
+    "ru": "младшая сестра",
+    "tr": "küçük kız kardeş",
+    "fa": "خواهر کوچکتر",
+    "ar": "أصغر أخوات"
+  },
+  {
+    "word": "米饭",
+    "pinyin": "mǐfàn",
+    "en": "cooked rice",
+    "ru": "рис",
+    "tr": "pirinç",
+    "fa": "برنج",
+    "ar": "أرز"
+  },
+  {
+    "word": "面包",
+    "pinyin": "miànbāo",
+    "en": "bread",
+    "ru": "хлеб",
+    "tr": "ekmek",
+    "fa": "نان",
+    "ar": "خبز"
+  },
+  {
+    "word": "面条儿",
+    "pinyin": "miàntiáor",
+    "en": "noodles",
+    "ru": "лапша",
+    "tr": "makarna",
+    "fa": "نودل",
+    "ar": "نودلز"
+  },
+  {
+    "word": "明年",
+    "pinyin": "míngnián",
+    "en": "next year",
+    "ru": "в следующем году",
+    "tr": "gelecek yıl",
+    "fa": "سال بعد",
+    "ar": "العام القادم"
+  },
+  {
+    "word": "明天",
+    "pinyin": "míngtiān",
+    "en": "tomorrow",
+    "ru": "завтра",
+    "tr": "yarın",
+    "fa": "فردا",
+    "ar": "غداً"
+  },
+  {
+    "word": "名字",
+    "pinyin": "míngzi",
+    "en": "name",
+    "ru": "имя",
+    "tr": "isim",
+    "fa": "اسم",
+    "ar": "اسم"
+  },
+  {
+    "word": "哪",
+    "pinyin": "nǎ",
+    "en": "where",
+    "ru": "где",
+    "tr": "nerede",
+    "fa": "کجا",
+    "ar": "أين"
+  },
+  {
+    "word": "哪个",
+    "pinyin": "nǎge",
+    "en": "which one",
+    "ru": "который",
+    "tr": "hangi",
+    "fa": "کدام",
+    "ar": "أي"
+  },
+  {
+    "word": "哪里",
+    "pinyin": "nǎlǐ",
+    "en": "where",
+    "ru": "где",
+    "tr": "nerede",
+    "fa": "کجا",
+    "ar": "أين"
+  },
+  {
+    "word": "哪儿",
+    "pinyin": "nǎr",
+    "en": "where",
+    "ru": "где",
+    "tr": "nerede",
+    "fa": "کجا",
+    "ar": "أين"
+  },
+  {
+    "word": "哪些",
+    "pinyin": "nǎxiē",
+    "en": "which ones",
+    "ru": "которые",
+    "tr": "hangileri",
+    "fa": "کدام‌ها",
+    "ar": "أيها"
+  },
+  {
+    "word": "那",
+    "pinyin": "nà",
+    "en": "that",
+    "ru": "тот",
+    "tr": "o",
+    "fa": "آن",
+    "ar": "ذلك"
+  },
+  {
+    "word": "那边",
+    "pinyin": "nàbiān",
+    "en": "over there",
+    "ru": "там",
+    "tr": "şurasi",
+    "fa": "آنجا آن‌طرف",
+    "ar": "هناك"
+  },
+  {
+    "word": "那个",
+    "pinyin": "nàge",
+    "en": "that one",
+    "ru": "тот",
+    "tr": "o",
+    "fa": "آن",
+    "ar": "ذلك"
+  },
+  {
+    "word": "那里",
+    "pinyin": "nàlǐ",
+    "en": "there",
+    "ru": "там",
+    "tr": "ora",
+    "fa": "آنجا",
+    "ar": "هناك"
+  },
+  {
+    "word": "那儿",
+    "pinyin": "nàr",
+    "en": "there",
+    "ru": "там",
+    "tr": "ora",
+    "fa": "آنجا",
+    "ar": "هناك"
+  },
+  {
+    "word": "那些",
+    "pinyin": "nàxiē",
+    "en": "those",
+    "ru": "те",
+    "tr": "onlar",
+    "fa": "آن‌ها",
+    "ar": "تلك"
+  },
+  {
+    "word": "男",
+    "pinyin": "nán",
+    "en": "male/man",
+    "ru": "мужчина",
+    "tr": "erkek",
+    "fa": "مرد",
+    "ar": "ذكر"
+  },
+  {
+    "word": "男朋友",
+    "pinyin": "nánpéngyou",
+    "en": "boyfriend",
+    "ru": "парень",
+    "tr": "erkek arkadaş",
+    "fa": "دوست پسر",
+    "ar": "صديق"
+  },
+  {
+    "word": "能",
+    "pinyin": "néng",
+    "en": "can/be able to",
+    "ru": "мочь",
+    "tr": "yapabilmek",
+    "fa": "توانستن",
+    "ar": "يمكن"
+  },
+  {
+    "word": "你",
+    "pinyin": "nǐ",
+    "en": "you",
+    "ru": "ты",
+    "tr": "sen",
+    "fa": "تو",
+    "ar": "أنت"
+  },
+  {
+    "word": "你好",
+    "pinyin": "nǐhǎo",
+    "en": "hello",
+    "ru": "здравствуйте",
+    "tr": "merhaba",
+    "fa": "سلام",
+    "ar": "مرحباً"
+  },
+  {
+    "word": "你们",
+    "pinyin": "nǐmen",
+    "en": "you",
+    "ru": "вы",
+    "tr": "siz",
+    "fa": "شما",
+    "ar": "أنتم"
+  },
+  {
+    "word": "年",
+    "pinyin": "nián",
+    "en": "year",
+    "ru": "год",
+    "tr": "yıl",
+    "fa": "سال",
+    "ar": "سنة"
+  },
+  {
+    "word": "您",
+    "pinyin": "nín",
+    "en": "you",
+    "ru": "Вы",
+    "tr": "siz",
+    "fa": "شما",
+    "ar": "أنتم"
+  },
+  {
+    "word": "牛奶",
+    "pinyin": "niúnǎi",
+    "en": "milk",
+    "ru": "молоко",
+    "tr": "süt",
+    "fa": "شیر",
+    "ar": "حليب"
+  },
+  {
+    "word": "女",
+    "pinyin": "nǚ",
+    "en": "female/woman",
+    "ru": "женщина",
+    "tr": "kadın",
+    "fa": "زن",
+    "ar": "أنثى"
+  },
+  {
+    "word": "女儿",
+    "pinyin": "nǚ'ér",
+    "en": "daughter",
+    "ru": "дочь",
+    "tr": "kız",
+    "fa": "دختر",
+    "ar": "ابنة"
+  },
+  {
+    "word": "女朋友",
+    "pinyin": "nǚpéngyou",
+    "en": "girlfriend",
+    "ru": "девушка",
+    "tr": "kız arkadaş",
+    "fa": "دوست دختر",
+    "ar": "صديقة"
+  },
+  {
+    "word": "女士",
+    "pinyin": "nǚshì",
+    "en": "lady/Ms.",
+    "ru": "дама",
+    "tr": "bayan",
+    "fa": "خانم",
+    "ar": "سيدة"
+  },
+  {
+    "word": "朋友",
+    "pinyin": "péngyou",
+    "en": "friend",
+    "ru": "друг",
+    "tr": "arkadaş",
+    "fa": "دوست",
+    "ar": "صديق"
+  },
+  {
+    "word": "便宜",
+    "pinyin": "piányi",
+    "en": "cheap",
+    "ru": "дешёвый",
+    "tr": "ucuz",
+    "fa": "ارزان",
+    "ar": "رخيص"
+  },
+  {
+    "word": "漂亮",
+    "pinyin": "piàoliang",
+    "en": "beautiful",
+    "ru": "красивый",
+    "tr": "güzel",
+    "fa": "زیبا",
+    "ar": "جميلة"
+  },
+  {
+    "word": "苹果",
+    "pinyin": "píngguǒ",
+    "en": "apple",
+    "ru": "яблоко",
+    "tr": "elma",
+    "fa": "سیب",
+    "ar": "تفاحة"
+  },
+  {
+    "word": "七",
+    "pinyin": "qī",
+    "en": "seven",
+    "ru": "семь",
+    "tr": "yedi",
+    "fa": "هفت",
+    "ar": "سبعة"
+  },
+  {
+    "word": "起床",
+    "pinyin": "qǐchuáng",
+    "en": "get up",
+    "ru": "вставать",
+    "tr": "kalkmak",
+    "fa": "بیدار شدن",
+    "ar": "الاستيقاظ"
+  },
+  {
+    "word": "千",
+    "pinyin": "qiān",
+    "en": "thousand",
+    "ru": "тысяча",
+    "tr": "bin",
+    "fa": "هزار",
+    "ar": "ألف"
+  },
+  {
+    "word": "前",
+    "pinyin": "qián",
+    "en": "front/before",
+    "ru": "перед",
+    "tr": "önce",
+    "fa": "قبل",
+    "ar": "قبل"
+  },
+  {
+    "word": "钱",
+    "pinyin": "qián",
+    "en": "money",
+    "ru": "деньги",
+    "tr": "para",
+    "fa": "پول",
+    "ar": "مال"
+  },
+  {
+    "word": "请",
+    "pinyin": "qǐng",
+    "en": "please",
+    "ru": "пожалуйста",
+    "tr": "lütfen",
+    "fa": "لطفاً",
+    "ar": "من فضلك"
+  },
+  {
+    "word": "请问",
+    "pinyin": "qǐngwèn",
+    "en": "may I ask",
+    "ru": "можно спросить",
+    "tr": "sorabilir miyim",
+    "fa": "بپرسم",
+    "ar": "هل يمكن أن أسأل"
+  },
+  {
+    "word": "去",
+    "pinyin": "qù",
+    "en": "go",
+    "ru": "идти",
+    "tr": "gitmek",
+    "fa": "رفتن",
+    "ar": "ذهاب"
+  },
+  {
+    "word": "去年",
+    "pinyin": "qùnián",
+    "en": "last year",
+    "ru": "в прошлом году",
+    "tr": "geçen yıl",
+    "fa": "سال قبل",
+    "ar": "العام الماضي"
+  },
+  {
+    "word": "热",
+    "pinyin": "rè",
+    "en": "hot",
+    "ru": "горячий",
+    "tr": "sıcak",
+    "fa": "داغ",
+    "ar": "حار"
+  },
+  {
+    "word": "人",
+    "pinyin": "rén",
+    "en": "person",
+    "ru": "человек",
+    "tr": "kişi",
+    "fa": "شخص",
+    "ar": "شخص"
+  },
+  {
+    "word": "认识",
+    "pinyin": "rènshi",
+    "en": "know/recognize",
+    "ru": "знать",
+    "tr": "tanımak",
+    "fa": "شناسختن",
+    "ar": "معرفة"
+  },
+  {
+    "word": "日",
+    "pinyin": "rì",
+    "en": "day/sun",
+    "ru": "день",
+    "tr": "gün",
+    "fa": "روز",
+    "ar": "يوم"
+  },
+  {
+    "word": "三",
+    "pinyin": "sān",
+    "en": "three",
+    "ru": "три",
+    "tr": "üç",
+    "fa": "سه",
+    "ar": "ثلاثة"
+  },
+  {
+    "word": "商店",
+    "pinyin": "shāngdiàn",
+    "en": "shop/store",
+    "ru": "магазин",
+    "tr": "dükkan",
+    "fa": "فروشگاه",
+    "ar": "متجر"
+  },
+  {
+    "word": "上",
+    "pinyin": "shàng",
+    "en": "up/on",
+    "ru": "верх / на",
+    "tr": "üst",
+    "fa": "بالا",
+    "ar": "فوق"
+  },
+  {
+    "word": "上班",
+    "pinyin": "shàngbān",
+    "en": "go to work",
+    "ru": "идти на работу",
+    "tr": "işe gitmek",
+    "fa": "به سر کار رفتن",
+    "ar": "الذهاب للعمل"
+  },
+  {
+    "word": "上课",
+    "pinyin": "shàngkè",
+    "en": "go to class",
+    "ru": "идти на урок",
+    "tr": "derse gitmek",
+    "fa": "به کلاس رفتن",
+    "ar": "الذهاب للدرس"
+  },
+  {
+    "word": "上午",
+    "pinyin": "shàngwǔ",
+    "en": "morning",
+    "ru": "утро",
+    "tr": "sabah",
+    "fa": "صبح",
+    "ar": "صباح"
+  },
+  {
+    "word": "上学",
+    "pinyin": "shàngxué",
+    "en": "go to school",
+    "ru": "идти в школу",
+    "tr": "okula gitmek",
+    "fa": "به مدرسه رفتن",
+    "ar": "الذهاب للمدرسة"
+  },
+  {
+    "word": "少",
+    "pinyin": "shǎo",
+    "en": "few/less",
+    "ru": "мало",
+    "tr": "az",
+    "fa": "کم",
+    "ar": "قليل"
+  },
+  {
+    "word": "谁",
+    "pinyin": "shéi/shuí",
+    "en": "who",
+    "ru": "кто",
+    "tr": "kim",
+    "fa": "چه کسی",
+    "ar": "من"
+  },
+  {
+    "word": "什么",
+    "pinyin": "shénme",
+    "en": "what",
+    "ru": "что",
+    "tr": "ne",
+    "fa": "چه",
+    "ar": "ماذا"
+  },
+  {
+    "word": "生病",
+    "pinyin": "shēngbìng",
+    "en": "be ill/get sick",
+    "ru": "заболеть",
+    "tr": "hasta olmak",
+    "fa": "مریض شدن",
+    "ar": "المرض"
+  },
+  {
+    "word": "十",
+    "pinyin": "shí",
+    "en": "ten",
+    "ru": "десять",
+    "tr": "on",
+    "fa": "ده",
+    "ar": "عشرة"
+  },
+  {
+    "word": "时候",
+    "pinyin": "shíhou",
+    "en": "time/when",
+    "ru": "время",
+    "tr": "zaman",
+    "fa": "وقت",
+    "ar": "وقت"
+  },
+  {
+    "word": "时间",
+    "pinyin": "shíjiān",
+    "en": "time",
+    "ru": "время",
+    "tr": "zaman",
+    "fa": "زمان",
+    "ar": "وقت"
+  },
+  {
+    "word": "事",
+    "pinyin": "shì",
+    "en": "thing/matter",
+    "ru": "дело",
+    "tr": "iş",
+    "fa": "چیز/کار",
+    "ar": "أمر"
+  },
+  {
+    "word": "是",
+    "pinyin": "shì",
+    "en": "is/be",
+    "ru": "быть",
+    "tr": "olmak",
+    "fa": "بودن",
+    "ar": "يكون"
+  },
+  {
+    "word": "手机",
+    "pinyin": "shǒujī",
+    "en": "mobile phone",
+    "ru": "мобильный телефон",
+    "tr": "cep telefonu",
+    "fa": "گوشی موبایل",
+    "ar": "هاتف محمول"
+  },
+  {
+    "word": "书",
+    "pinyin": "shū",
+    "en": "book",
+    "ru": "книга",
+    "tr": "kitap",
+    "fa": "کتاب",
+    "ar": "كتاب"
+  },
+  {
+    "word": "书店",
+    "pinyin": "shūdiàn",
+    "en": "bookstore",
+    "ru": "книжный магазин",
+    "tr": "kitabçı",
+    "fa": "کتاب‌فروشی",
+    "ar": "مكتبة"
+  },
+  {
+    "word": "水",
+    "pinyin": "shuǐ",
+    "en": "water",
+    "ru": "вода",
+    "tr": "su",
+    "fa": "آب",
+    "ar": "ماء"
+  },
+  {
+    "word": "水果",
+    "pinyin": "shuǐguǒ",
+    "en": "fruit",
+    "ru": "фрукт",
+    "tr": "meyve",
+    "fa": "میوه",
+    "ar": "فاكهة"
+  },
+  {
+    "word": "睡",
+    "pinyin": "shuì",
+    "en": "sleep",
+    "ru": "спать",
+    "tr": "uyumak",
+    "fa": "خوابیدن",
+    "ar": "نوم"
+  },
+  {
+    "word": "睡觉",
+    "pinyin": "shuìjiào",
+    "en": "go to sleep",
+    "ru": "спать",
+    "tr": "uyumak",
+    "fa": "خواب رفتن",
+    "ar": "النوم"
+  },
+  {
+    "word": "说",
+    "pinyin": "shuō",
+    "en": "speak/say",
+    "ru": "говорить",
+    "tr": "söylemek",
+    "fa": "گفتن",
+    "ar": "يقول"
+  },
+  {
+    "word": "说话",
+    "pinyin": "shuōhuà",
+    "en": "talk/speak",
+    "ru": "разговаривать",
+    "tr": "konuşmak",
+    "fa": "صحبت کردن",
+    "ar": "التحدث"
+  },
+  {
+    "word": "四",
+    "pinyin": "sì",
+    "en": "four",
+    "ru": "четыре",
+    "tr": "dört",
+    "fa": "چهار",
+    "ar": "أربعة"
+  },
+  {
+    "word": "岁",
+    "pinyin": "suì",
+    "en": "year",
+    "ru": "возраст",
+    "tr": "yaş",
+    "fa": "سال",
+    "ar": "سنة"
+  },
+  {
+    "word": "他",
+    "pinyin": "tā",
+    "en": "he/him",
+    "ru": "он",
+    "tr": "o",
+    "fa": "او",
+    "ar": "هو"
+  },
+  {
+    "word": "它",
+    "pinyin": "tā",
+    "en": "it",
+    "ru": "оно",
+    "tr": "o",
+    "fa": "آن",
+    "ar": "هو"
+  },
+  {
+    "word": "她",
+    "pinyin": "tā",
+    "en": "she/her",
+    "ru": "она",
+    "tr": "o",
+    "fa": "او",
+    "ar": "هي"
+  },
+  {
+    "word": "他们",
+    "pinyin": "tāmen",
+    "en": "they",
+    "ru": "они",
+    "tr": "onlar",
+    "fa": "آن‌ها",
+    "ar": "هم"
+  },
+  {
+    "word": "它们",
+    "pinyin": "tāmen",
+    "en": "they",
+    "ru": "они",
+    "tr": "onlar",
+    "fa": "آن‌ها",
+    "ar": "هما"
+  },
+  {
+    "word": "她们",
+    "pinyin": "tāmen",
+    "en": "they",
+    "ru": "они",
+    "tr": "onlar",
+    "fa": "آن‌ها",
+    "ar": "هن"
+  },
+  {
+    "word": "太",
+    "pinyin": "tài",
+    "en": "too/very",
+    "ru": "слишком",
+    "tr": "çok",
+    "fa": "خیلی",
+    "ar": "جدًا"
+  },
+  {
+    "word": "天",
+    "pinyin": "tiān",
+    "en": "day/sky",
+    "ru": "день / небо",
+    "tr": "gün/gökyüzü",
+    "fa": "روز/آسمان",
+    "ar": "يوم/سماء"
+  },
+  {
+    "word": "天气",
+    "pinyin": "tiānqì",
+    "en": "weather",
+    "ru": "погода",
+    "tr": "hava",
+    "fa": "آب و هوا",
+    "ar": "طقس"
+  },
+  {
+    "word": "听",
+    "pinyin": "tīng",
+    "en": "listen/hear",
+    "ru": "слушать",
+    "tr": "dinlemek",
+    "fa": "شنیدن",
+    "ar": "الاستماع"
+  },
+  {
+    "word": "听见",
+    "pinyin": "tīngjiàn",
+    "en": "hear",
+    "ru": "услышать",
+    "tr": "işitmek",
+    "fa": "شنیدن",
+    "ar": "سماع"
+  },
+  {
+    "word": "同学",
+    "pinyin": "tóngxué",
+    "en": "classmate",
+    "ru": "одноклассник",
+    "tr": "sınıf arkadaşı",
+    "fa": "همکلاسی",
+    "ar": "زميل دراسة"
+  },
+  {
+    "word": "外",
+    "pinyin": "wài",
+    "en": "outside/out",
+    "ru": "вне / снаружи",
+    "tr": "dış",
+    "fa": "بیرون",
+    "ar": "خارج"
+  },
+  {
+    "word": "外边",
+    "pinyin": "wàibian",
+    "en": "outside",
+    "ru": "снаружи",
+    "tr": "dışarı",
+    "fa": "بیرون",
+    "ar": "خارج"
+  },
+  {
+    "word": "玩",
+    "pinyin": "wán",
+    "en": "play",
+    "ru": "играть",
+    "tr": "oynamak",
+    "fa": "بازی کردن",
+    "ar": "اللعب"
+  },
+  {
+    "word": "晚",
+    "pinyin": "wǎn",
+    "en": "late/evening",
+    "ru": "поздно / вечер",
+    "tr": "gecikmek / akşam",
+    "fa": "دیر/شب",
+    "ar": "مساء"
+  },
+  {
+    "word": "晚饭",
+    "pinyin": "wǎnfàn",
+    "en": "dinner",
+    "ru": "ужин",
+    "tr": "akşam yemeği",
+    "fa": "شام",
+    "ar": "عشاء"
+  },
+  {
+    "word": "晚上",
+    "pinyin": "wǎnshang",
+    "en": "evening/night",
+    "ru": "вечер",
+    "tr": "akşam",
+    "fa": "شب",
+    "ar": "مساء"
+  },
+  {
+    "word": "喂",
+    "pinyin": "wèi",
+    "en": "hello",
+    "ru": "алло",
+    "tr": "alo",
+    "fa": "آلو",
+    "ar": "ألو"
+  },
+  {
+    "word": "问",
+    "pinyin": "wèn",
+    "en": "ask",
+    "ru": "спрашивать",
+    "tr": "sormak",
+    "fa": "پرسیدن",
+    "ar": "سؤال"
+  },
+  {
+    "word": "问题",
+    "pinyin": "wèntí",
+    "en": "question/problem",
+    "ru": "вопрос",
+    "tr": "soru",
+    "fa": "سوال",
+    "ar": "سؤال"
+  },
+  {
+    "word": "我",
+    "pinyin": "wǒ",
+    "en": "I/me",
+    "ru": "я",
+    "tr": "ben",
+    "fa": "من",
+    "ar": "أنا"
+  },
+  {
+    "word": "我们",
+    "pinyin": "wǒmen",
+    "en": "we/us",
+    "ru": "мы",
+    "tr": "biz",
+    "fa": "ما",
+    "ar": "نحن"
+  },
+  {
+    "word": "五",
+    "pinyin": "wǔ",
+    "en": "five",
+    "ru": "пять",
+    "tr": "beş",
+    "fa": "پنج",
+    "ar": "خمسة"
+  },
+  {
+    "word": "午饭",
+    "pinyin": "wǔfàn",
+    "en": "lunch",
+    "ru": "обед",
+    "tr": "öğle yemeği",
+    "fa": "ناهار",
+    "ar": "غداء"
+  },
+  {
+    "word": "喜欢",
+    "pinyin": "xǐhuan",
+    "en": "like",
+    "ru": "нравиться",
+    "tr": "sevmek",
+    "fa": "دوست داشتن",
+    "ar": "يحب"
+  },
+  {
+    "word": "下",
+    "pinyin": "xià",
+    "en": "down/next",
+    "ru": "вниз",
+    "tr": "aşağı",
+    "fa": "پایین",
+    "ar": "أسفل"
+  },
+  {
+    "word": "下雨",
+    "pinyin": "xiàyǔ",
+    "en": "rain",
+    "ru": "дождь",
+    "tr": "yağmur",
+    "fa": "باران",
+    "ar": "مطر"
+  },
+  {
+    "word": "下班",
+    "pinyin": "xiàbān",
+    "en": "get off work",
+    "ru": "закончить работу",
+    "tr": "işten çıkmak",
+    "fa": "از کار آمدن",
+    "ar": "الانتهاء من العمل"
+  },
+  {
+    "word": "下课",
+    "pinyin": "xiàkè",
+    "en": "finish class",
+    "ru": "закончить урок",
+    "tr": "dersten çıkmak",
+    "fa": "از کلاس آمدن",
+    "ar": "انتهاء الدرس"
+  },
+  {
+    "word": "下午",
+    "pinyin": "xiàwǔ",
+    "en": "afternoon",
+    "ru": "после обеда",
+    "tr": "öğleden sonra",
+    "fa": "بعد از ظهر",
+    "ar": "بعد الظهر"
+  },
+  {
+    "word": "先生",
+    "pinyin": "xiānsheng",
+    "en": "Mr./sir",
+    "ru": "господин",
+    "tr": "bey",
+    "fa": "آقای",
+    "ar": "سيد"
+  },
+  {
+    "word": "现在",
+    "pinyin": "xiànzài",
+    "en": "now",
+    "ru": "сейчас",
+    "tr": "şimdi",
+    "fa": "حالا",
+    "ar": "الآن"
+  },
+  {
+    "word": "想",
+    "pinyin": "xiǎng",
+    "en": "think/want",
+    "ru": "думать / хотеть",
+    "tr": "düşünmek / istemek",
+    "fa": "فکر کردن / خواستن",
+    "ar": "يريد / يفكر"
+  },
+  {
+    "word": "小",
+    "pinyin": "xiǎo",
+    "en": "small",
+    "ru": "маленький",
+    "tr": "küçük",
+    "fa": "کوچک",
+    "ar": "صغير"
+  },
+  {
+    "word": "小朋友",
+    "pinyin": "xiǎopéngyǒu",
+    "en": "child/young friend",
+    "ru": "ребёнок",
+    "tr": "çocuk",
+    "fa": "بچه",
+    "ar": "طفل صغير"
+  },
+  {
+    "word": "小时",
+    "pinyin": "xiǎoshí",
+    "en": "hour",
+    "ru": "час",
+    "tr": "saat",
+    "fa": "ساعت",
+    "ar": "ساعة"
+  },
+  {
+    "word": "小学",
+    "pinyin": "xiǎoxué",
+    "en": "primary school",
+    "ru": "начальная школа",
+    "tr": "ilkokul",
+    "fa": "دبستان",
+    "ar": "مدرسة ابتدائية"
+  },
+  {
+    "word": "小学生",
+    "pinyin": "xiǎoxuéshēng",
+    "en": "primary school student",
+    "ru": "ученик начальной школы",
+    "tr": "ilkokul öğrencisi",
+    "fa": "شاگرد دبستان",
+    "ar": "تلميذ"
+  },
+  {
+    "word": "些",
+    "pinyin": "xiē",
+    "en": "some",
+    "ru": "некоторые",
+    "tr": "bazı",
+    "fa": "برخی",
+    "ar": "بعض"
+  },
+  {
+    "word": "写",
+    "pinyin": "xiě",
+    "en": "write",
+    "ru": "писать",
+    "tr": "yazmak",
+    "fa": "نوشتن",
+    "ar": "كتابة"
+  },
+  {
+    "word": "谢谢",
+    "pinyin": "xièxie",
+    "en": "thank you",
+    "ru": "спасибо",
+    "tr": "teşekkürler",
+    "fa": "مرسی / ممنون",
+    "ar": "شكراً"
+  },
+  {
+    "word": "新",
+    "pinyin": "xīn",
+    "en": "new",
+    "ru": "новый",
+    "tr": "yeni",
+    "fa": "جدید",
+    "ar": "جديد"
+  },
+  {
+    "word": "星期",
+    "pinyin": "xīngqī",
+    "en": "week",
+    "ru": "неделя",
+    "tr": "hafta",
+    "fa": "هفته",
+    "ar": "أسبوع"
+  },
+  {
+    "word": "星期日",
+    "pinyin": "xīngqīrì",
+    "en": "Sunday",
+    "ru": "воскресенье",
+    "tr": "Pazar",
+    "fa": "یکشنبه",
+    "ar": "الأحد"
+  },
+  {
+    "word": "星期天",
+    "pinyin": "xīngqītiān",
+    "en": "Sunday",
+    "ru": "воскресенье",
+    "tr": "Pazar",
+    "fa": "یکشنبه",
+    "ar": "الأحد"
+  },
+  {
+    "word": "休息",
+    "pinyin": "xiūxi",
+    "en": "rest",
+    "ru": "отдыхать",
+    "tr": "dinlenmek",
+    "fa": "استراحت",
+    "ar": "راحة"
+  },
+  {
+    "word": "学",
+    "pinyin": "xué",
+    "en": "learn/study",
+    "ru": "учить",
+    "tr": "öğrenmek",
+    "fa": "یاد گرفتن",
+    "ar": "تعلم"
+  },
+  {
+    "word": "学生",
+    "pinyin": "xuéshēng",
+    "en": "student",
+    "ru": "студент",
+    "tr": "öğrenci",
+    "fa": "دانش‌آموز / دانشجو",
+    "ar": "طالب"
+  },
+  {
+    "word": "学习",
+    "pinyin": "xuéxí",
+    "en": "study",
+    "ru": "учиться",
+    "tr": "öğrenmek / çalışmak",
+    "fa": "یادگیری",
+    "ar": "دراسة"
+  },
+  {
+    "word": "学校",
+    "pinyin": "xuéxiào",
+    "en": "school",
+    "ru": "школа",
+    "tr": "okul",
+    "fa": "مدرسه",
+    "ar": "مدرسة"
+  },
+  {
+    "word": "雪",
+    "pinyin": "xuě",
+    "en": "snow",
+    "ru": "снег",
+    "tr": "kar",
+    "fa": "برف",
+    "ar": "ثلج"
+  },
+  {
+    "word": "要",
+    "pinyin": "yào",
+    "en": "want/need",
+    "ru": "хотеть",
+    "tr": "istemek",
+    "fa": "خواستن",
+    "ar": "يريد"
+  },
+  {
+    "word": "也",
+    "pinyin": "yě",
+    "en": "also/too",
+    "ru": "тоже",
+    "tr": "ayrıca",
+    "fa": "هم",
+    "ar": "أيضاً"
+  },
+  {
+    "word": "一",
+    "pinyin": "yī",
+    "en": "one",
+    "ru": "один",
+    "tr": "bir",
+    "fa": "یک",
+    "ar": "واحد"
+  },
+  {
+    "word": "衣服",
+    "pinyin": "yīfu",
+    "en": "clothes",
+    "ru": "одежда",
+    "tr": "giyim / kıyafet",
+    "fa": "لباس",
+    "ar": "ملابس"
+  },
+  {
+    "word": "医生",
+    "pinyin": "yīshēng",
+    "en": "doctor",
+    "ru": "врач",
+    "tr": "doktor",
+    "fa": "دکتر",
+    "ar": "طبيب"
+  },
+  {
+    "word": "医院",
+    "pinyin": "yīyuàn",
+    "en": "hospital",
+    "ru": "больница",
+    "tr": "hastane",
+    "fa": "بیمارستان",
+    "ar": "مستشفى"
+  },
+  {
+    "word": "一半",
+    "pinyin": "yíbàn",
+    "en": "half",
+    "ru": "половина",
+    "tr": "yarım",
+    "fa": "نیم",
+    "ar": "نصف"
+  },
+  {
+    "word": "一下",
+    "pinyin": "yíxià",
+    "en": "a bit/briefly",
+    "ru": "немного",
+    "tr": "biraz",
+    "fa": "کمی",
+    "ar": "قليلاً"
+  },
+  {
+    "word": "椅子",
+    "pinyin": "yǐzi",
+    "en": "chair",
+    "ru": "стул",
+    "tr": "sandalye",
+    "fa": "صندلی",
+    "ar": "كرسي"
+  },
+  {
+    "word": "一点儿",
+    "pinyin": "yìdiǎnr",
+    "en": "a little",
+    "ru": "немного",
+    "tr": "biraz",
+    "fa": "کمی",
+    "ar": "قليلاً"
+  },
+  {
+    "word": "一些",
+    "pinyin": "yìxiē",
+    "en": "some",
+    "ru": "некоторые",
+    "tr": "bazı",
+    "fa": "برخی",
+    "ar": "بعض"
+  },
+  {
+    "word": "有",
+    "pinyin": "yǒu",
+    "en": "have/there is",
+    "ru": "иметь",
+    "tr": "sahip olmak / var",
+    "fa": "داشتن",
+    "ar": "يملك"
+  },
+  {
+    "word": "有的",
+    "pinyin": "yǒude",
+    "en": "some/have",
+    "ru": "некоторые",
+    "tr": "bazı",
+    "fa": "بعض",
+    "ar": "بعض"
+  },
+  {
+    "word": "有点儿",
+    "pinyin": "yǒudiǎnr",
+    "en": "a bit",
+    "ru": "немного",
+    "tr": "biraz",
+    "fa": "کمی",
+    "ar": "قليلاً"
+  },
+  {
+    "word": "有些",
+    "pinyin": "yǒuxiē",
+    "en": "some",
+    "ru": "некоторые",
+    "tr": "bazı",
+    "fa": "برخی",
+    "ar": "بعض"
+  },
+  {
+    "word": "雨",
+    "pinyin": "yǔ",
+    "en": "rain",
+    "ru": "дождь",
+    "tr": "yağmur",
+    "fa": "باران",
+    "ar": "مطر"
+  },
+  {
+    "word": "元",
+    "pinyin": "yuán",
+    "en": "yuan",
+    "ru": "юань",
+    "tr": "yuan",
+    "fa": "یوان",
+    "ar": "يوان"
+  },
+  {
+    "word": "月",
+    "pinyin": "yuè",
+    "en": "month/moon",
+    "ru": "месяц / луна",
+    "tr": "ay",
+    "fa": "ماه",
+    "ar": "شهر / قمر"
+  },
+  {
+    "word": "再",
+    "pinyin": "zài",
+    "en": "again",
+    "ru": "снова",
+    "tr": "tekrar",
+    "fa": "دوباره",
+    "ar": "مرة أخرى"
+  },
+  {
+    "word": "在",
+    "pinyin": "zài",
+    "en": "at/in",
+    "ru": "в / на",
+    "tr": "...de / ...da",
+    "fa": "در",
+    "ar": "في"
+  },
+  {
+    "word": "再见",
+    "pinyin": "zàijiàn",
+    "en": "goodbye",
+    "ru": "до свидания",
+    "tr": "görüşürüz",
+    "fa": "خداحافظ",
+    "ar": "مع السلامة"
+  },
+  {
+    "word": "早",
+    "pinyin": "zǎo",
+    "en": "early",
+    "ru": "рано",
+    "tr": "erken",
+    "fa": "زود",
+    "ar": "مبكر"
+  },
+  {
+    "word": "早饭",
+    "pinyin": "zǎofàn",
+    "en": "breakfast",
+    "ru": "завтрак",
+    "tr": "kahvaltı",
+    "fa": "صبحانه",
+    "ar": "فطور"
+  },
+  {
+    "word": "早上",
+    "pinyin": "zǎoshang",
+    "en": "morning",
+    "ru": "утро",
+    "tr": "sabah",
+    "fa": "صبح",
+    "ar": "صباح"
+  },
+  {
+    "word": "怎么",
+    "pinyin": "zěnme",
+    "en": "how",
+    "ru": "как",
+    "tr": "nasıl",
+    "fa": "چگونه",
+    "ar": "كيف"
+  },
+  {
+    "word": "怎么样",
+    "pinyin": "zěnmeyàng",
+    "en": "how about it",
+    "ru": "как",
+    "tr": "nasılsın",
+    "fa": "چطوره",
+    "ar": "كيف حالك"
+  },
+  {
+    "word": "找",
+    "pinyin": "zhǎo",
+    "en": "look for/find",
+    "ru": "искать / найти",
+    "tr": "aramak / bulmak",
+    "fa": "پیدا کردن / جستن",
+    "ar": "البحث"
+  },
+  {
+    "word": "这",
+    "pinyin": "zhè",
+    "en": "this",
+    "ru": "этот",
+    "tr": "bu",
+    "fa": "این",
+    "ar": "هذا"
+  },
+  {
+    "word": "这边",
+    "pinyin": "zhèbiān",
+    "en": "this side",
+    "ru": "здесь",
+    "tr": "burasi",
+    "fa": "اینجا این‌طرف",
+    "ar": "هنا"
+  },
+  {
+    "word": "这个",
+    "pinyin": "zhège",
+    "en": "this one",
+    "ru": "этот",
+    "tr": "bu",
+    "fa": "این",
+    "ar": "هذا"
+  },
+  {
+    "word": "这里",
+    "pinyin": "zhèlǐ",
+    "en": "here",
+    "ru": "здесь",
+    "tr": "bura",
+    "fa": "اینجا",
+    "ar": "هنا"
+  },
+  {
+    "word": "这儿",
+    "pinyin": "zhèr",
+    "en": "here",
+    "ru": "здесь",
+    "tr": "bura",
+    "fa": "اینجا",
+    "ar": "هنا"
+  },
+  {
+    "word": "这些",
+    "pinyin": "zhèxiē",
+    "en": "these",
+    "ru": "эти",
+    "tr": "bunlar",
+    "fa": "این‌ها",
+    "ar": "هؤلاء"
+  },
+  {
+    "word": "真",
+    "pinyin": "zhēn",
+    "en": "really/truly",
+    "ru": "действительно / правда",
+    "tr": "gerçekten",
+    "fa": "واقعاً",
+    "ar": "حقاً"
+  },
+  {
+    "word": "正在",
+    "pinyin": "zhèngzài",
+    "en": "just now/in progress",
+    "ru": "сейчас",
+    "tr": "şu an",
+    "fa": "در حال",
+    "ar": "في حالة"
+  },
+  {
+    "word": "只",
+    "pinyin": "zhī",
+    "en": "only",
+    "ru": "только",
+    "tr": "sadece",
+    "fa": "فقط",
+    "ar": "فقط"
+  },
+  {
+    "word": "知道",
+    "pinyin": "zhīdào",
+    "en": "know",
+    "ru": "знать",
+    "tr": "bilmek",
+    "fa": "دانستن",
+    "ar": "يعرف"
+  },
+  {
+    "word": "中国",
+    "pinyin": "Zhōngguó",
+    "en": "China",
+    "ru": "Китай",
+    "tr": "Çin",
+    "fa": "چین",
+    "ar": "الصين"
+  },
+  {
+    "word": "中文",
+    "pinyin": "Zhōngwén",
+    "en": "Chinese",
+    "ru": "китайский язык",
+    "tr": "Çince",
+    "fa": "چینی",
+    "ar": "الصينية"
+  },
+  {
+    "word": "中午",
+    "pinyin": "zhōngwǔ",
+    "en": "noon",
+    "ru": "полдень",
+    "tr": "öğle",
+    "fa": "ظهر",
+    "ar": "ظهر"
+  },
+  {
+    "word": "中学",
+    "pinyin": "zhōngxué",
+    "en": "middle school",
+    "ru": "средняя школа",
+    "tr": "ortaokul",
+    "fa": "دبیرستان",
+    "ar": "مدرسة متوسطة"
+  },
+  {
+    "word": "中学生",
+    "pinyin": "zhōngxuéshēng",
+    "en": "middle school student",
+    "ru": "ученик средней школы",
+    "tr": "ortaokul öğrencisi",
+    "fa": "شاگرد دبیرستان",
+    "ar": "تلميذ"
+  },
+  {
+    "word": "住",
+    "pinyin": "zhù",
+    "en": "live/stay",
+    "ru": "жить",
+    "tr": "yaşamak / kalmak",
+    "fa": "زندگی کردن / ماندن",
+    "ar": "يعيش / يقيم"
+  },
+  {
+    "word": "桌子",
+    "pinyin": "zhuōzi",
+    "en": "table/desk",
+    "ru": "стол",
+    "tr": "masa",
+    "fa": "میز",
+    "ar": "طاولة"
+  },
+  {
+    "word": "字",
+    "pinyin": "zì",
+    "en": "character/word",
+    "ru": "иероглиф / буква",
+    "tr": "harf / karakter",
+    "fa": "حرف",
+    "ar": "حرف"
+  },
+  {
+    "word": "昨天",
+    "pinyin": "zuótiān",
+    "en": "yesterday",
+    "ru": "вчера",
+    "tr": "dün",
+    "fa": "دیروز",
+    "ar": "أمس"
+  },
+  {
+    "word": "坐",
+    "pinyin": "zuò",
+    "en": "sit",
+    "ru": "сидеть",
+    "tr": "oturmak",
+    "fa": "نشستن",
+    "ar": "جلس"
+  },
+  {
+    "word": "做",
+    "pinyin": "zuò",
+    "en": "do/make",
+    "ru": "делать",
+    "tr": "yapmak",
+    "fa": "کردن",
+    "ar": "فعل"
+  },
+  {
+    "word": "做饭",
+    "pinyin": "zuòfàn",
+    "en": "cook",
+    "ru": "готовить",
+    "tr": "yemek yapmak",
+    "fa": "آشپزی کردن",
+    "ar": "الطبخ"
+  },
+  {
+    "word": "啊",
+    "pinyin": "a",
+    "en": "ah",
+    "ru": "ах",
+    "tr": "ah",
+    "fa": "آه",
+    "ar": "آه"
+  },
+  {
+    "word": "爱好",
+    "pinyin": "àihào",
+    "en": "hobby",
+    "ru": "хобби",
+    "tr": "hobi",
+    "fa": "سرگرمی",
+    "ar": "هواية"
+  },
+  {
+    "word": "白色",
+    "pinyin": "báisè",
+    "en": "white",
+    "ru": "белый",
+    "tr": "beyaz",
+    "fa": "سفید",
+    "ar": "أبيض"
+  },
+  {
+    "word": "班",
+    "pinyin": "bān",
+    "en": "class/team",
+    "ru": "класс",
+    "tr": "sınıf",
+    "fa": "کلاس",
+    "ar": "فصل"
+  },
+  {
+    "word": "帮",
+    "pinyin": "bāng",
+    "en": "help",
+    "ru": "помогать",
+    "tr": "yardım",
+    "fa": "کمک",
+    "ar": "مساعدة"
+  },
+  {
+    "word": "帮忙",
+    "pinyin": "bāngmáng",
+    "en": "help out",
+    "ru": "помочь",
+    "tr": "yardım etmek",
+    "fa": "کمک کردن",
+    "ar": "المساعدة"
+  },
+  {
+    "word": "包",
+    "pinyin": "bāo",
+    "en": "bag",
+    "ru": "сумка",
+    "tr": "çanta",
+    "fa": "کیف",
+    "ar": "حقيبة"
+  },
+  {
+    "word": "本子",
+    "pinyin": "běnzi",
+    "en": "notebook",
+    "ru": "тетрадь",
+    "tr": "defter",
+    "fa": "دفتر",
+    "ar": "دفتر"
+  },
+  {
+    "word": "比",
+    "pinyin": "bǐ",
+    "en": "compared to",
+    "ru": "по сравнению с",
+    "tr": "karşılaştırma",
+    "fa": "نسبت به",
+    "ar": "مقارنة بـ"
+  },
+  {
+    "word": "笔",
+    "pinyin": "bǐ",
+    "en": "pen",
+    "ru": "ручка",
+    "tr": "kalem",
+    "fa": "خودکار",
+    "ar": "قلم"
+  },
+  {
+    "word": "别",
+    "pinyin": "bié",
+    "en": "don't",
+    "ru": "не",
+    "tr": "yapma",
+    "fa": "نکن",
+    "ar": "لا"
+  },
+  {
+    "word": "不错",
+    "pinyin": "búcuò",
+    "en": "not bad",
+    "ru": "неплохо",
+    "tr": "fena değil",
+    "fa": "بد نیست",
+    "ar": "ليس سيئاً"
+  },
+  {
+    "word": "不好意思",
+    "pinyin": "bùhǎoyìsi",
+    "en": "sorry/excuse me",
+    "ru": "извините",
+    "tr": "affedersiniz",
+    "fa": "ببخشید",
+    "ar": "عفواً"
+  },
+  {
+    "word": "长",
+    "pinyin": "cháng",
+    "en": "long",
+    "ru": "длинный",
+    "tr": "uzun",
+    "fa": "بلند",
+    "ar": "طويل"
+  },
+  {
+    "word": "车站",
+    "pinyin": "chēzhàn",
+    "en": "bus/train station",
+    "ru": "станция",
+    "tr": "istasyon",
+    "fa": "ایستگاه",
+    "ar": "محطة"
+  },
+  {
+    "word": "出",
+    "pinyin": "chū",
+    "en": "go out",
+    "ru": "выйти",
+    "tr": "çıkmak",
+    "fa": "بیرون رفتن",
+    "ar": "خرج"
+  },
+  {
+    "word": "出国",
+    "pinyin": "chūguó",
+    "en": "go abroad",
+    "ru": "поехать за границу",
+    "tr": "yurtdışına çıkmak",
+    "fa": "رفتن به خارج",
+    "ar": "السفر للخارج"
+  },
+  {
+    "word": "出来",
+    "pinyin": "chūlái",
+    "en": "come out",
+    "ru": "выйти",
+    "tr": "çıkmak",
+    "fa": "بیرون آمدن",
+    "ar": "الخروج"
+  },
+  {
+    "word": "出门",
+    "pinyin": "chūmén",
+    "en": "go out/leave home",
+    "ru": "выходить из дома",
+    "tr": "dışarı çıkmak",
+    "fa": "بیرون رفتن",
+    "ar": "الخروج من المنزل"
+  },
+  {
+    "word": "出去",
+    "pinyin": "chūqù",
+    "en": "go out",
+    "ru": "выйти",
+    "tr": "çıkmak",
+    "fa": "بیرون رفتن",
+    "ar": "الخروج"
+  },
+  {
+    "word": "床",
+    "pinyin": "chuáng",
+    "en": "bed",
+    "ru": "кровать",
+    "tr": "yatak",
+    "fa": "تخت",
+    "ar": "سرير"
+  },
+  {
+    "word": "词",
+    "pinyin": "cí",
+    "en": "word",
+    "ru": "слово",
+    "tr": "kelime",
+    "fa": "کلمه",
+    "ar": "كلمة"
+  },
+  {
+    "word": "次",
+    "pinyin": "cì",
+    "en": "time (measure word)",
+    "ru": "раз",
+    "tr": "kez/dafa",
+    "fa": "بار",
+    "ar": "مرة"
+  },
+  {
+    "word": "从",
+    "pinyin": "cóng",
+    "en": "from",
+    "ru": "от",
+    "tr": "...dan",
+    "fa": "از",
+    "ar": "من"
+  },
+  {
+    "word": "从小",
+    "pinyin": "cóngxiǎo",
+    "en": "from childhood",
+    "ru": "с детства",
+    "tr": "çocukluktan",
+    "fa": "از کودکی",
+    "ar": "منذ الطفولة"
+  },
+  {
+    "word": "错",
+    "pinyin": "cuò",
+    "en": "wrong",
+    "ru": "неправильно",
+    "tr": "yanlış",
+    "fa": "اشتباه",
+    "ar": "خطأ"
+  },
+  {
+    "word": "打",
+    "pinyin": "dǎ",
+    "en": "play/hit",
+    "ru": "бить / играть",
+    "tr": "vurmak/oynamak",
+    "fa": "زدن",
+    "ar": "ضرب"
+  },
+  {
+    "word": "打车",
+    "pinyin": "dǎchē",
+    "en": "take a taxi",
+    "ru": "взять такси",
+    "tr": "taksi tutmak",
+    "fa": "تاکسی گرفتن",
+    "ar": "ركوب تاكسي"
+  },
+  {
+    "word": "打开",
+    "pinyin": "dǎkāi",
+    "en": "open",
+    "ru": "открыть",
+    "tr": "açmak",
+    "fa": "باز کردن",
+    "ar": "فتح"
+  },
+  {
+    "word": "但",
+    "pinyin": "dàn",
+    "en": "but",
+    "ru": "но",
+    "tr": "ama",
+    "fa": "اما",
+    "ar": "لكن"
+  },
+  {
+    "word": "但是",
+    "pinyin": "dànshì",
+    "en": "but",
+    "ru": "но",
+    "tr": "ancak",
+    "fa": "اما",
+    "ar": "ولكن"
+  },
+  {
+    "word": "得",
+    "pinyin": "de",
+    "en": "(particle)",
+    "ru": "(частица)",
+    "tr": "(particle)",
+    "fa": "(حرف)",
+    "ar": "(حرف)"
+  },
+  {
+    "word": "地",
+    "pinyin": "de",
+    "en": "(particle)",
+    "ru": "(частица)",
+    "tr": "(particle)",
+    "fa": "(حرف)",
+    "ar": "(حرف)"
+  },
+  {
+    "word": "等",
+    "pinyin": "děng",
+    "en": "wait",
+    "ru": "ждать",
+    "tr": "beklemek",
+    "fa": "منتظر شدن",
+    "ar": "انتظار"
+  },
+  {
+    "word": "地铁",
+    "pinyin": "dìtiě",
+    "en": "subway",
+    "ru": "метро",
+    "tr": "metro",
+    "fa": "مترو",
+    "ar": "مترو"
+  },
+  {
+    "word": "点",
+    "pinyin": "diǎn",
+    "en": "order/a little",
+    "ru": "заказать / немного",
+    "tr": "sipariş etmek",
+    "fa": "سفارش",
+    "ar": "طلب"
+  },
+  {
+    "word": "懂",
+    "pinyin": "dǒng",
+    "en": "understand",
+    "ru": "понимать",
+    "tr": "anlamak",
+    "fa": "فهمیدن",
+    "ar": "فهم"
+  },
+  {
+    "word": "动",
+    "pinyin": "dòng",
+    "en": "move",
+    "ru": "двигаться",
+    "tr": "hareket etmek",
+    "fa": "حرکت",
+    "ar": "حركة"
+  },
+  {
+    "word": "饭馆",
+    "pinyin": "fànguǎn",
+    "en": "restaurant",
+    "ru": "ресторан",
+    "tr": "lokanta",
+    "fa": "رستوران",
+    "ar": "مطعم"
+  },
+  {
+    "word": "飞",
+    "pinyin": "fēi",
+    "en": "fly",
+    "ru": "летать",
+    "tr": "uçmak",
+    "fa": "پرواز",
+    "ar": "طيران"
+  },
+  {
+    "word": "高",
+    "pinyin": "gāo",
+    "en": "tall/high",
+    "ru": "высокий",
+    "tr": "uzun",
+    "fa": "بلند",
+    "ar": "طويل"
+  },
+  {
+    "word": "高中",
+    "pinyin": "gāozhōng",
+    "en": "high school",
+    "ru": "старшая школа",
+    "tr": "lise",
+    "fa": "دبیرستان",
+    "ar": "مدرسة ثانوية"
+  },
+  {
+    "word": "告诉",
+    "pinyin": "gàosu",
+    "en": "tell",
+    "ru": "сказать",
+    "tr": "söylemek",
+    "fa": "گفتن",
+    "ar": "أخبر"
+  },
+  {
+    "word": "个子",
+    "pinyin": "gèzi",
+    "en": "height/stature",
+    "ru": "рост",
+    "tr": "boy",
+    "fa": "قد",
+    "ar": "طول"
+  },
+  {
+    "word": "跟",
+    "pinyin": "gēn",
+    "en": "with/follow",
+    "ru": "с",
+    "tr": "ile",
+    "fa": "با",
+    "ar": "مع"
+  },
+  {
+    "word": "公交车",
+    "pinyin": "gōngjiāochē",
+    "en": "bus",
+    "ru": "автобус",
+    "tr": "otobüs",
+    "fa": "اتوبوس",
+    "ar": "حافلة"
+  },
+  {
+    "word": "过",
+    "pinyin": "guò",
+    "en": "pass/cross",
+    "ru": "пройти",
+    "tr": "geçmek",
+    "fa": "گذشتن",
+    "ar": "مرور"
+  },
+  {
+    "word": "过来",
+    "pinyin": "guòlái",
+    "en": "come over",
+    "ru": "подойти",
+    "tr": "gelmek",
+    "fa": "آمدن",
+    "ar": "القدوم"
+  },
+  {
+    "word": "过年",
+    "pinyin": "guònián",
+    "en": "celebrate New Year",
+    "ru": "встречать Новый год",
+    "tr": "yılbaşı kutlamak",
+    "fa": "سال نو",
+    "ar": "الاحتفال بالسنة الجديدة"
+  },
+  {
+    "word": "过去",
+    "pinyin": "guòqù",
+    "en": "in the past",
+    "ru": "в прошлом",
+    "tr": "geçmişte",
+    "fa": "گذشته",
+    "ar": "الماضي"
+  },
+  {
+    "word": "过",
+    "pinyin": "guo",
+    "en": "(experiential particle)",
+    "ru": "(частица)",
+    "tr": "(particle)",
+    "fa": "(حرف)",
+    "ar": "(حرف)"
+  },
+  {
+    "word": "还是",
+    "pinyin": "háishi",
+    "en": "or/still",
+    "ru": "или / ещё",
+    "tr": "veya / hâlâ",
+    "fa": "یا",
+    "ar": "أو"
+  },
+  {
+    "word": "黑色",
+    "pinyin": "hēisè",
+    "en": "black",
+    "ru": "чёрный",
+    "tr": "siyah",
+    "fa": "مشکی",
+    "ar": "أسود"
+  },
+  {
+    "word": "红茶",
+    "pinyin": "hóngchá",
+    "en": "black tea",
+    "ru": "чёрный чай",
+    "tr": "siyah çay",
+    "fa": "چای سیاه",
+    "ar": "شاي أحمر"
+  },
+  {
+    "word": "红色",
+    "pinyin": "hóngsè",
+    "en": "red",
+    "ru": "красный",
+    "tr": "kırmızı",
+    "fa": "قرمز",
+    "ar": "أحمر"
+  },
+  {
+    "word": "后面",
+    "pinyin": "hòumiàn",
+    "en": "behind/back",
+    "ru": "сзади",
+    "tr": "arka",
+    "fa": "پشت",
+    "ar": "خلف"
+  },
+  {
+    "word": "花",
+    "pinyin": "huā",
+    "en": "flower/spend",
+    "ru": "цветок / тратить",
+    "tr": "çiçek / harcamak",
+    "fa": "گل",
+    "ar": "زهرة"
+  },
+  {
+    "word": "画",
+    "pinyin": "huà",
+    "en": "draw/paint",
+    "ru": "рисовать",
+    "tr": "çizmek",
+    "fa": "کشیدن",
+    "ar": "رسم"
+  },
+  {
+    "word": "坏",
+    "pinyin": "huài",
+    "en": "broken/bad",
+    "ru": "сломанный / плохой",
+    "tr": "bozuk",
+    "fa": "خراب",
+    "ar": "معطوب"
+  },
+  {
+    "word": "回来",
+    "pinyin": "huílái",
+    "en": "come back",
+    "ru": "вернуться",
+    "tr": "dönmek",
+    "fa": "برگشتن",
+    "ar": "العودة"
+  },
+  {
+    "word": "回去",
+    "pinyin": "huíqù",
+    "en": "go back",
+    "ru": "вернуться",
+    "tr": "dönmek",
+    "fa": "برگشتن",
+    "ar": "العودة"
+  },
+  {
+    "word": "机场",
+    "pinyin": "jīchǎng",
+    "en": "airport",
+    "ru": "аэропорт",
+    "tr": "havalimanı",
+    "fa": "فرودگاه",
+    "ar": "مطار"
+  },
+  {
+    "word": "机票",
+    "pinyin": "jīpiào",
+    "en": "plane ticket",
+    "ru": "авиабилет",
+    "tr": "uçak bileti",
+    "fa": "بلیط هواپیما",
+    "ar": "تذكرة طيران"
+  },
+  {
+    "word": "记得",
+    "pinyin": "jìde",
+    "en": "remember",
+    "ru": "помнить",
+    "tr": "hatırlamak",
+    "fa": "به یاد داشتن",
+    "ar": "تذكر"
+  },
+  {
+    "word": "间",
+    "pinyin": "jiān",
+    "en": "room (measure word)",
+    "ru": "комната",
+    "tr": "oda",
+    "fa": "اتاق",
+    "ar": "غرفة"
+  },
+  {
+    "word": "教",
+    "pinyin": "jiāo",
+    "en": "teach",
+    "ru": "учить",
+    "tr": "öğretmek",
+    "fa": "آموزش دادن",
+    "ar": "تعليم"
+  },
+  {
+    "word": "教室",
+    "pinyin": "jiàoshì",
+    "en": "classroom",
+    "ru": "класс",
+    "tr": "sınıf",
+    "fa": "کلاس درس",
+    "ar": "فصل درس"
+  },
+  {
+    "word": "介绍",
+    "pinyin": "jièshào",
+    "en": "introduce",
+    "ru": "представлять",
+    "tr": "tanıtmak",
+    "fa": "معرفی کردن",
+    "ar": "تقديم"
+  },
+  {
+    "word": "进",
+    "pinyin": "jìn",
+    "en": "enter",
+    "ru": "войти",
+    "tr": "girmek",
+    "fa": "وارد شدن",
+    "ar": "دخول"
+  },
+  {
+    "word": "近",
+    "pinyin": "jìn",
+    "en": "near/close",
+    "ru": "близко",
+    "tr": "yakın",
+    "fa": "نزدیک",
+    "ar": "قريب"
+  },
+  {
+    "word": "进来",
+    "pinyin": "jìnlái",
+    "en": "come in",
+    "ru": "войти",
+    "tr": "içeri girmek",
+    "fa": "وارد شدن",
+    "ar": "الدخول"
+  },
+  {
+    "word": "进去",
+    "pinyin": "jìnqù",
+    "en": "go in",
+    "ru": "войти",
+    "tr": "içeri girmek",
+    "fa": "وارد شدن",
+    "ar": "الدخول"
+  },
+  {
+    "word": "经常",
+    "pinyin": "jīngcháng",
+    "en": "often",
+    "ru": "часто",
+    "tr": "sık sık",
+    "fa": "اغلب",
+    "ar": "غالباً"
+  },
+  {
+    "word": "酒店",
+    "pinyin": "jiǔdiàn",
+    "en": "hotel",
+    "ru": "отель",
+    "tr": "otel",
+    "fa": "هتل",
+    "ar": "فندق"
+  },
+  {
+    "word": "就",
+    "pinyin": "jiù",
+    "en": "then/just",
+    "ru": "тогда / сразу",
+    "tr": "o zaman / hemen",
+    "fa": "پس",
+    "ar": "إذن"
+  },
+  {
+    "word": "咖啡",
+    "pinyin": "kāfēi",
+    "en": "coffee",
+    "ru": "кофе",
+    "tr": "kahve",
+    "fa": "قهوه",
+    "ar": "قهوة"
+  },
+  {
+    "word": "开始",
+    "pinyin": "kāishǐ",
+    "en": "start/begin",
+    "ru": "начать",
+    "tr": "başlamak",
+    "fa": "شروع",
+    "ar": "بدء"
+  },
+  {
+    "word": "开学",
+    "pinyin": "kāixué",
+    "en": "school starts",
+    "ru": "начало учебного года",
+    "tr": "okulun başlaması",
+    "fa": "شروع مدرسه",
+    "ar": "بداية العام الدراسي"
+  },
+  {
+    "word": "考",
+    "pinyin": "kǎo",
+    "en": "test/exam",
+    "ru": "экзамен",
+    "tr": "sınav",
+    "fa": "امتحان",
+    "ar": "اختبار"
+  },
+  {
+    "word": "考试",
+    "pinyin": "kǎoshì",
+    "en": "exam/test",
+    "ru": "экзамен",
+    "tr": "sınav",
+    "fa": "امتحان",
+    "ar": "اختبار"
+  },
+  {
+    "word": "可能",
+    "pinyin": "kěnéng",
+    "en": "possible/maybe",
+    "ru": "возможно",
+    "tr": "muhtemel",
+    "fa": "ممکن است",
+    "ar": "يمكن"
+  },
+  {
+    "word": "裤子",
+    "pinyin": "kùzi",
+    "en": "pants/trousers",
+    "ru": "брюки",
+    "tr": "pantolon",
+    "fa": "شلوار",
+    "ar": "بنطلون"
+  },
+  {
+    "word": "快",
+    "pinyin": "kuài",
+    "en": "fast/quick",
+    "ru": "быстрый",
+    "tr": "hızlı",
+    "fa": "سریع",
+    "ar": "سريع"
+  },
+  {
+    "word": "快乐",
+    "pinyin": "kuàilè",
+    "en": "happy",
+    "ru": "счастливый",
+    "tr": "mutlu",
+    "fa": "خوشحال",
+    "ar": "سعيد"
+  },
+  {
+    "word": "快要",
+    "pinyin": "kuàiyào",
+    "en": "about to",
+    "ru": "скоро",
+    "tr": "az",
+    "fa": "به زودی",
+    "ar": "على وشك"
+  },
+  {
+    "word": "篮球",
+    "pinyin": "lánqiú",
+    "en": "basketball",
+    "ru": "баскетбол",
+    "tr": "basketbol",
+    "fa": "بسکتبال",
+    "ar": "كرة السلة"
+  },
+  {
+    "word": "累",
+    "pinyin": "lèi",
+    "en": "tired",
+    "ru": "усталый",
+    "tr": "yorgun",
+    "fa": "خسته",
+    "ar": "متعب"
+  },
+  {
+    "word": "离",
+    "pinyin": "lí",
+    "en": "from/away from",
+    "ru": "от / расстояние",
+    "tr": "uzaklık",
+    "fa": "فاصله",
+    "ar": "مسافة"
+  },
+  {
+    "word": "里面",
+    "pinyin": "lǐmiàn",
+    "en": "inside",
+    "ru": "внутри",
+    "tr": "içeride",
+    "fa": "داخل",
+    "ar": "داخل"
+  },
+  {
+    "word": "楼",
+    "pinyin": "lóu",
+    "en": "building/floor",
+    "ru": "здание / этаж",
+    "tr": "bina",
+    "fa": "ساختمان",
+    "ar": "مبنى"
+  },
+  {
+    "word": "路",
+    "pinyin": "lù",
+    "en": "road/way",
+    "ru": "дорога",
+    "tr": "yol",
+    "fa": "جاده/مسیر",
+    "ar": "طريق"
+  },
+  {
+    "word": "路上",
+    "pinyin": "lùshang",
+    "en": "on the way",
+    "ru": "по пути",
+    "tr": "yolda",
+    "fa": "در راه",
+    "ar": "في الطريق"
+  },
+  {
+    "word": "旅游",
+    "pinyin": "lǚyóu",
+    "en": "travel/tourism",
+    "ru": "путешествие",
+    "tr": "seyahat / turizm",
+    "fa": "گردشگری",
+    "ar": "سياحة"
+  },
+  {
+    "word": "绿茶",
+    "pinyin": "lǜchá",
+    "en": "green tea",
+    "ru": "зелёный чай",
+    "tr": "yeşil çay",
+    "fa": "چای سبز",
+    "ar": "شاي أخضر"
+  },
+  {
+    "word": "绿色",
+    "pinyin": "lǜsè",
+    "en": "green",
+    "ru": "зелёный",
+    "tr": "yeşil",
+    "fa": "سبز",
+    "ar": "أخضر"
+  },
+  {
+    "word": "慢",
+    "pinyin": "màn",
+    "en": "slow",
+    "ru": "медленный",
+    "tr": "yavaş",
+    "fa": "آهسته",
+    "ar": "بطيء"
+  },
+  {
+    "word": "没意思",
+    "pinyin": "méiyìsi",
+    "en": "boring",
+    "ru": "скучный",
+    "tr": "sıkıcı",
+    "fa": "بی‌حوصله",
+    "ar": "ممل"
+  },
+  {
+    "word": "每",
+    "pinyin": "měi",
+    "en": "every",
+    "ru": "каждый",
+    "tr": "her",
+    "fa": "هر",
+    "ar": "كل"
+  },
+  {
+    "word": "门",
+    "pinyin": "mén",
+    "en": "door",
+    "ru": "дверь",
+    "tr": "kapı",
+    "fa": "در",
+    "ar": "باب"
+  },
+  {
+    "word": "门口",
+    "pinyin": "ménkǒu",
+    "en": "doorway/entrance",
+    "ru": "вход",
+    "tr": "kapı önü",
+    "fa": "ورودی",
+    "ar": "مدخل"
+  },
+  {
+    "word": "门票",
+    "pinyin": "ménpiào",
+    "en": "entrance ticket",
+    "ru": "входной билет",
+    "tr": "giriş bileti",
+    "fa": "بلیط ورودی",
+    "ar": "تذكرة دخول"
+  },
+  {
+    "word": "面",
+    "pinyin": "miàn",
+    "en": "noodle/flour",
+    "ru": "лапша / мука",
+    "tr": "makarna / un",
+    "fa": "نودل/آرد",
+    "ar": "نودلز / دقيق"
+  },
+  {
+    "word": "名",
+    "pinyin": "míng",
+    "en": "name (measure word)",
+    "ru": "имя",
+    "tr": "isim",
+    "fa": "اسم",
+    "ar": "اسم"
+  },
+  {
+    "word": "拿",
+    "pinyin": "ná",
+    "en": "take/hold",
+    "ru": "брать / держать",
+    "tr": "almak / tutmak",
+    "fa": "گرفتن",
+    "ar": "أخذ"
+  },
+  {
+    "word": "那么",
+    "pinyin": "nàme",
+    "en": "then/in that way",
+    "ru": "тогда",
+    "tr": "o zaman",
+    "fa": "آنگاه",
+    "ar": "إذن"
+  },
+  {
+    "word": "那样",
+    "pinyin": "nàyàng",
+    "en": "like that",
+    "ru": "так",
+    "tr": "öyle",
+    "fa": "آنطور",
+    "ar": "هكذا"
+  },
+  {
+    "word": "奶茶",
+    "pinyin": "nǎichá",
+    "en": "milk tea",
+    "ru": "чай с молоком",
+    "tr": "sütlü çay",
+    "fa": "چای شیر",
+    "ar": "شاي بالحليب"
+  },
+  {
+    "word": "奶奶",
+    "pinyin": "nǎinai",
+    "en": "grandmother (paternal)",
+    "ru": "бабушка",
+    "tr": "büyükanne",
+    "fa": "مادربزرگ",
+    "ar": "جدة"
+  },
+  {
+    "word": "男孩儿",
+    "pinyin": "nánháir",
+    "en": "boy",
+    "ru": "мальчик",
+    "tr": "erkek çocuk",
+    "fa": "پسر بچه",
+    "ar": "ولد"
+  },
+  {
+    "word": "鸟",
+    "pinyin": "niǎo",
+    "en": "bird",
+    "ru": "птица",
+    "tr": "kuş",
+    "fa": "پرنده",
+    "ar": "طائر"
+  },
+  {
+    "word": "女孩儿",
+    "pinyin": "nǚháir",
+    "en": "girl",
+    "ru": "девочка",
+    "tr": "kız çocuk",
+    "fa": "دختر بچه",
+    "ar": "بنت"
+  },
+  {
+    "word": "旁边",
+    "pinyin": "pángbiān",
+    "en": "beside/next to",
+    "ru": "рядом",
+    "tr": "yan",
+    "fa": "کنار",
+    "ar": "بجانب"
+  },
+  {
+    "word": "跑",
+    "pinyin": "pǎo",
+    "en": "run",
+    "ru": "бежать",
+    "tr": "koşmak",
+    "fa": "دویدن",
+    "ar": "ركض"
+  },
+  {
+    "word": "跑步",
+    "pinyin": "pǎobù",
+    "en": "run/jogging",
+    "ru": "бегать",
+    "tr": "koşmak",
+    "fa": "دویدن",
+    "ar": "ركض"
+  },
+  {
+    "word": "票",
+    "pinyin": "piào",
+    "en": "ticket",
+    "ru": "билет",
+    "tr": "bilet",
+    "fa": "بلیط",
+    "ar": "تذكرة"
+  },
+  {
+    "word": "妻子",
+    "pinyin": "qīzi",
+    "en": "wife",
+    "ru": "жена",
+    "tr": "eşe",
+    "fa": "همسر",
+    "ar": "زوجة"
+  },
+  {
+    "word": "起来",
+    "pinyin": "qǐlái",
+    "en": "get up/rise",
+    "ru": "встать",
+    "tr": "kalkmak",
+    "fa": "بلند شدن",
+    "ar": "النهوض"
+  },
+  {
+    "word": "前面",
+    "pinyin": "qiánmiàn",
+    "en": "front",
+    "ru": "спереди",
+    "tr": "ön",
+    "fa": "جلو",
+    "ar": "أمام"
+  },
+  {
+    "word": "晴",
+    "pinyin": "qíng",
+    "en": "sunny/clear",
+    "ru": "солнечный",
+    "tr": "güneşli",
+    "fa": "آفتابی",
+    "ar": "صاف"
+  },
+  {
+    "word": "球",
+    "pinyin": "qiú",
+    "en": "ball",
+    "ru": "мяч",
+    "tr": "top",
+    "fa": "توپ",
+    "ar": "كرة"
+  },
+  {
+    "word": "让",
+    "pinyin": "ràng",
+    "en": "let/allow",
+    "ru": "позволить",
+    "tr": "izin vermek",
+    "fa": "اجازه دادن",
+    "ar": "السماح"
+  },
+  {
+    "word": "肉",
+    "pinyin": "ròu",
+    "en": "meat",
+    "ru": "мясо",
+    "tr": "et",
+    "fa": "گوشت",
+    "ar": "لحم"
+  },
+  {
+    "word": "商场",
+    "pinyin": "shāngchǎng",
+    "en": "shopping mall",
+    "ru": "торговый центр",
+    "tr": "alışveriş merkezi",
+    "fa": "مرکز خرید",
+    "ar": "مركز تجاري"
+  },
+  {
+    "word": "上来",
+    "pinyin": "shànglái",
+    "en": "come up",
+    "ru": "подняться",
+    "tr": "yukarı çıkmak",
+    "fa": "بالا آمدن",
+    "ar": "الصعود"
+  },
+  {
+    "word": "上面",
+    "pinyin": "shàngmiàn",
+    "en": "above/on top",
+    "ru": "наверху / над",
+    "tr": "üst",
+    "fa": "بالا",
+    "ar": "أعلى"
+  },
+  {
+    "word": "上去",
+    "pinyin": "shàngqù",
+    "en": "go up",
+    "ru": "подняться",
+    "tr": "yukarı çıkmak",
+    "fa": "بالا رفتن",
+    "ar": "الصعود"
+  },
+  {
+    "word": "上网",
+    "pinyin": "shàngwǎng",
+    "en": "go online",
+    "ru": "выйти в интернет",
+    "tr": "internete girmek",
+    "fa": "آنلاین شدن",
+    "ar": "الاتصال بالإنترنت"
+  },
+  {
+    "word": "身体",
+    "pinyin": "shēntǐ",
+    "en": "body",
+    "ru": "тело",
+    "tr": "vücut",
+    "fa": "بدن",
+    "ar": "جسم"
+  },
+  {
+    "word": "生日",
+    "pinyin": "shēngrì",
+    "en": "birthday",
+    "ru": "день рождения",
+    "tr": "doğum günü",
+    "fa": "تولد",
+    "ar": "عيد ميلاد"
+  },
+  {
+    "word": "时",
+    "pinyin": "shí",
+    "en": "when/at that time",
+    "ru": "когда",
+    "tr": "...diğinde",
+    "fa": "وقتی",
+    "ar": "عندما"
+  },
+  {
+    "word": "事情",
+    "pinyin": "shìqing",
+    "en": "matter/thing",
+    "ru": "дело",
+    "tr": "iş",
+    "fa": "کار/اتفاق",
+    "ar": "أمر"
+  },
+  {
+    "word": "手",
+    "pinyin": "shǒu",
+    "en": "hand",
+    "ru": "рука",
+    "tr": "el",
+    "fa": "دست",
+    "ar": "يد"
+  },
+  {
+    "word": "手表",
+    "pinyin": "shǒubiǎo",
+    "en": "watch",
+    "ru": "часы",
+    "tr": "kol saati",
+    "fa": "ساعت مچی",
+    "ar": "ساعة اليد"
+  },
+  {
+    "word": "书包",
+    "pinyin": "shūbāo",
+    "en": "schoolbag",
+    "ru": "школьный рюкзак",
+    "tr": "okul çantası",
+    "fa": "کیف مدرسه",
+    "ar": "حقيبة مدرسة"
+  },
+  {
+    "word": "舒服",
+    "pinyin": "shūfu",
+    "en": "comfortable",
+    "ru": "комфортный",
+    "tr": "rahat",
+    "fa": "راحت",
+    "ar": "مريح"
+  },
+  {
+    "word": "送",
+    "pinyin": "sòng",
+    "en": "send/give",
+    "ru": "отправить / подарить",
+    "tr": "göndermek / hediye etmek",
+    "fa": "فرستادن/هدیه دادن",
+    "ar": "إرسال / هدية"
+  },
+  {
+    "word": "虽然",
+    "pinyin": "suīrán",
+    "en": "although",
+    "ru": "хотя",
+    "tr": "although",
+    "fa": "اگرچه",
+    "ar": "على الرغم من"
+  },
+  {
+    "word": "所以",
+    "pinyin": "suǒyǐ",
+    "en": "so/therefore",
+    "ru": "поэтому",
+    "tr": "bu yüzden",
+    "fa": "بنابراین",
+    "ar": "لذلك"
+  },
+  {
+    "word": "疼",
+    "pinyin": "téng",
+    "en": "ache/hurt",
+    "ru": "боль",
+    "tr": "ağrı",
+    "fa": "درد",
+    "ar": "ألم"
+  },
+  {
+    "word": "踢",
+    "pinyin": "tī",
+    "en": "kick",
+    "ru": "бить ногой",
+    "tr": "tekme atmak",
+    "fa": "زدن با پا",
+    "ar": "ركل"
+  },
+  {
+    "word": "题",
+    "pinyin": "tí",
+    "en": "question/topic",
+    "ru": "вопрос",
+    "tr": "soru",
+    "fa": "سوال",
+    "ar": "سؤال"
+  },
+  {
+    "word": "条",
+    "pinyin": "tiáo",
+    "en": "(measure word)",
+    "ru": "(счётное слово)",
+    "tr": "tane",
+    "fa": "عدد",
+    "ar": "وحدة"
+  },
+  {
+    "word": "跳舞",
+    "pinyin": "tiàowǔ",
+    "en": "dance",
+    "ru": "танцевать",
+    "tr": "dans etmek",
+    "fa": "رقصیدن",
+    "ar": "رقص"
+  },
+  {
+    "word": "头",
+    "pinyin": "tóu",
+    "en": "head",
+    "ru": "голова",
+    "tr": "baş",
+    "fa": "سر",
+    "ar": "رأس"
+  },
+  {
+    "word": "外国",
+    "pinyin": "wàiguó",
+    "en": "foreign country",
+    "ru": "иностранная страна",
+    "tr": "yabancı ülke",
+    "fa": "کشور خارجی",
+    "ar": "بلد أجنبي"
+  },
+  {
+    "word": "外面",
+    "pinyin": "wàimiàn",
+    "en": "outside",
+    "ru": "снаружи",
+    "tr": "dışarı",
+    "fa": "بیرون",
+    "ar": "خارج"
+  },
+  {
+    "word": "完",
+    "pinyin": "wán",
+    "en": "finish",
+    "ru": "закончить",
+    "tr": "bitirmek",
+    "fa": "تمام کردن",
+    "ar": "إنهاء"
+  },
+  {
+    "word": "万",
+    "pinyin": "wàn",
+    "en": "ten thousand",
+    "ru": "десять тысяч",
+    "tr": "on bin",
+    "fa": "ده هزار",
+    "ar": "عشرة آلاف"
+  },
+  {
+    "word": "往",
+    "pinyin": "wǎng",
+    "en": "towards",
+    "ru": "к / в направлении",
+    "tr": "...e doğru",
+    "fa": "به سمت",
+    "ar": "نحو"
+  },
+  {
+    "word": "网上",
+    "pinyin": "wǎngshang",
+    "en": "online",
+    "ru": "онлайн",
+    "tr": "çevrimiçi",
+    "fa": "آنلاین",
+    "ar": "على الإنترنت"
+  },
+  {
+    "word": "忘",
+    "pinyin": "wàng",
+    "en": "forget",
+    "ru": "забыть",
+    "tr": "unutmak",
+    "fa": "فراموش کردن",
+    "ar": "نسيان"
+  },
+  {
+    "word": "位",
+    "pinyin": "wèi",
+    "en": "(polite mw for person)",
+    "ru": "(вежливое счётное слово)",
+    "tr": "kişi",
+    "fa": "نفر",
+    "ar": "شخص"
+  },
+  {
+    "word": "为什么",
+    "pinyin": "wèishénme",
+    "en": "why",
+    "ru": "почему",
+    "tr": "neden",
+    "fa": "چرا",
+    "ar": "لماذا"
+  },
+  {
+    "word": "希望",
+    "pinyin": "xīwàng",
+    "en": "hope",
+    "ru": "надеяться",
+    "tr": "ummak",
+    "fa": "امید",
+    "ar": "أمل"
+  },
+  {
+    "word": "洗",
+    "pinyin": "xǐ",
+    "en": "wash",
+    "ru": "мыть",
+    "tr": "yıkamak",
+    "fa": "شستن",
+    "ar": "غسل"
+  },
+  {
+    "word": "洗手间",
+    "pinyin": "xǐshǒujiān",
+    "en": "restroom",
+    "ru": "туалет",
+    "tr": "tuvalet",
+    "fa": "دستشویی",
+    "ar": "مرحاض"
+  },
+  {
+    "word": "下来",
+    "pinyin": "xiàlái",
+    "en": "come down",
+    "ru": "спуститься",
+    "tr": "aşağı inmek",
+    "fa": "پایین آمدن",
+    "ar": "النزول"
+  },
+  {
+    "word": "下面",
+    "pinyin": "xiàmiàn",
+    "en": "below/under",
+    "ru": "внизу / под",
+    "tr": "alt",
+    "fa": "پایین",
+    "ar": "أسفل"
+  },
+  {
+    "word": "下去",
+    "pinyin": "xiàqù",
+    "en": "go down",
+    "ru": "спуститься",
+    "tr": "aşağı inmek",
+    "fa": "پایین رفتن",
+    "ar": "النزول"
+  },
+  {
+    "word": "小孩儿",
+    "pinyin": "xiǎoháir",
+    "en": "child",
+    "ru": "ребёнок",
+    "tr": "çocuk",
+    "fa": "بچه",
+    "ar": "طفل"
+  },
+  {
+    "word": "小时候",
+    "pinyin": "xiǎoshíhou",
+    "en": "childhood",
+    "ru": "детство",
+    "tr": "çocukluk",
+    "fa": "کودکی",
+    "ar": "طفولة"
+  },
+  {
+    "word": "笑",
+    "pinyin": "xiào",
+    "en": "laugh/smile",
+    "ru": "смеяться",
+    "tr": "gülmek",
+    "fa": "خندیدن",
+    "ar": "ضحك"
+  },
+  {
+    "word": "姓",
+    "pinyin": "xìng",
+    "en": "surname",
+    "ru": "фамилия",
+    "tr": "soyisim",
+    "fa": "نام خانوادگی",
+    "ar": "لقب"
+  },
+  {
+    "word": "姓名",
+    "pinyin": "xìngmíng",
+    "en": "full name",
+    "ru": "полное имя",
+    "tr": "ad soyad",
+    "fa": "نام و نام خانوادگی",
+    "ar": "الاسم الكامل"
+  },
+  {
+    "word": "颜色",
+    "pinyin": "yánsè",
+    "en": "color",
+    "ru": "цвет",
+    "tr": "renk",
+    "fa": "رنگ",
+    "ar": "لون"
+  },
+  {
+    "word": "眼睛",
+    "pinyin": "yǎnjing",
+    "en": "eyes",
+    "ru": "глаз",
+    "tr": "göz",
+    "fa": "چشم",
+    "ar": "عين"
+  },
+  {
+    "word": "药",
+    "pinyin": "yào",
+    "en": "medicine",
+    "ru": "лекарство",
+    "tr": "ilaç",
+    "fa": "دارو",
+    "ar": "دواء"
+  },
+  {
+    "word": "药店",
+    "pinyin": "yàodiàn",
+    "en": "pharmacy",
+    "ru": "аптека",
+    "tr": "eczane",
+    "fa": "داروخانه",
+    "ar": "صيدلية"
+  },
+  {
+    "word": "爷爷",
+    "pinyin": "yéye",
+    "en": "grandfather (paternal)",
+    "ru": "дедушка",
+    "tr": "dede",
+    "fa": "پدربزرگ",
+    "ar": "جد"
+  },
+  {
+    "word": "一会儿",
+    "pinyin": "yíhuìr",
+    "en": "a while",
+    "ru": "немного / недолго",
+    "tr": "biraz",
+    "fa": "یک کمی",
+    "ar": "فترة"
+  },
+  {
+    "word": "已经",
+    "pinyin": "yǐjīng",
+    "en": "already",
+    "ru": "уже",
+    "tr": "zaten",
+    "fa": "از قبل",
+    "ar": "بالفعل"
+  },
+  {
+    "word": "一起",
+    "pinyin": "yìqǐ",
+    "en": "together",
+    "ru": "вместе",
+    "tr": "birlikte",
+    "fa": "با هم",
+    "ar": "معاً"
+  },
+  {
+    "word": "意思",
+    "pinyin": "yìsi",
+    "en": "meaning",
+    "ru": "значение",
+    "tr": "anlam",
+    "fa": "معنی",
+    "ar": "معنى"
+  },
+  {
+    "word": "阴",
+    "pinyin": "yīn",
+    "en": "cloudy/overcast",
+    "ru": "облачный",
+    "tr": "bulutlu",
+    "fa": "ابری",
+    "ar": "غائم"
+  },
+  {
+    "word": "因为",
+    "pinyin": "yīnwèi",
+    "en": "because",
+    "ru": "потому что",
+    "tr": "çünkü",
+    "fa": "چون",
+    "ar": "لأن"
+  },
+  {
+    "word": "游",
+    "pinyin": "yóu",
+    "en": "swim",
+    "ru": "плавать",
+    "tr": "yüzmek",
+    "fa": "شنا",
+    "ar": "سباحة"
+  },
+  {
+    "word": "游泳",
+    "pinyin": "yóuyǒng",
+    "en": "swimming",
+    "ru": "плавание",
+    "tr": "yüzmek",
+    "fa": "شنا کردن",
+    "ar": "السباحة"
+  },
+  {
+    "word": "有意思",
+    "pinyin": "yǒuyìsi",
+    "en": "interesting",
+    "ru": "интересный",
+    "tr": "ilginç",
+    "fa": "جالب",
+    "ar": "ممتع"
+  },
+  {
+    "word": "有时",
+    "pinyin": "yǒushí",
+    "en": "sometimes",
+    "ru": "иногда",
+    "tr": "bazen",
+    "fa": "گاهی",
+    "ar": "أحياناً"
+  },
+  {
+    "word": "右",
+    "pinyin": "yòu",
+    "en": "right",
+    "ru": "правый",
+    "tr": "sağ",
+    "fa": "راست",
+    "ar": "يمين"
+  },
+  {
+    "word": "右边",
+    "pinyin": "yòubian",
+    "en": "right side",
+    "ru": "справа",
+    "tr": "sağ taraf",
+    "fa": "سمت راست",
+    "ar": "الجانب الأيمن"
+  },
+  {
+    "word": "鱼",
+    "pinyin": "yú",
+    "en": "fish",
+    "ru": "рыба",
+    "tr": "balık",
+    "fa": "ماهی",
+    "ar": "سمكة"
+  },
+  {
+    "word": "远",
+    "pinyin": "yuǎn",
+    "en": "far",
+    "ru": "далёкий",
+    "tr": "uzak",
+    "fa": "دور",
+    "ar": "بعيد"
+  },
+  {
+    "word": "运动",
+    "pinyin": "yùndòng",
+    "en": "exercise/sports",
+    "ru": "спорт / упражнение",
+    "tr": "spor",
+    "fa": "ورزش",
+    "ar": "رياضة"
+  },
+  {
+    "word": "站",
+    "pinyin": "zhàn",
+    "en": "stand/station",
+    "ru": "стоять / станция",
+    "tr": "durmak / istasyon",
+    "fa": "ایستادن / ایستگاه",
+    "ar": "الوقوف / محطة"
+  },
+  {
+    "word": "丈夫",
+    "pinyin": "zhàngfu",
+    "en": "husband",
+    "ru": "муж",
+    "tr": "koca",
+    "fa": "شوهر",
+    "ar": "زوج"
+  },
+  {
+    "word": "这么",
+    "pinyin": "zhème",
+    "en": "like this/so",
+    "ru": "так / столько",
+    "tr": "bu kadar",
+    "fa": "اینقدر",
+    "ar": "هكذا"
+  },
+  {
+    "word": "这样",
+    "pinyin": "zhèyàng",
+    "en": "like this",
+    "ru": "так",
+    "tr": "böyle",
+    "fa": "اینطور",
+    "ar": "هكذا"
+  },
+  {
+    "word": "着",
+    "pinyin": "zhe",
+    "en": "(particle)",
+    "ru": "(частица)",
+    "tr": "(particle)",
+    "fa": "(حرف)",
+    "ar": "(حرف)"
+  },
+  {
+    "word": "正",
+    "pinyin": "zhèng",
+    "en": "just/exactly",
+    "ru": "как раз",
+    "tr": "tam",
+    "fa": "دقیقاً",
+    "ar": "بالضبط"
+  },
+  {
+    "word": "周",
+    "pinyin": "zhōu",
+    "en": "week",
+    "ru": "неделя",
+    "tr": "hafta",
+    "fa": "هفته",
+    "ar": "أسبوع"
+  },
+  {
+    "word": "准备",
+    "pinyin": "zhǔnbèi",
+    "en": "prepare",
+    "ru": "готовить",
+    "tr": "hazırlamak",
+    "fa": "آماده کردن",
+    "ar": "تحضير"
+  },
+  {
+    "word": "自己",
+    "pinyin": "zìjǐ",
+    "en": "oneself/self",
+    "ru": "сам",
+    "tr": "kendisi",
+    "fa": "خود",
+    "ar": "نفسه"
+  },
+  {
+    "word": "走",
+    "pinyin": "zǒu",
+    "en": "walk/go",
+    "ru": "идти / ходить",
+    "tr": "yürümek",
+    "fa": "رفتن/پیاده‌روی",
+    "ar": "مشي"
+  },
+  {
+    "word": "走路",
+    "pinyin": "zǒulù",
+    "en": "walk",
+    "ru": "идти пешком",
+    "tr": "yürümek",
+    "fa": "پیاده‌روی",
+    "ar": "المشي"
+  },
+  {
+    "word": "足球",
+    "pinyin": "zúqiú",
+    "en": "football/soccer",
+    "ru": "футбол",
+    "tr": "futbol",
+    "fa": "فوتبال",
+    "ar": "كرة القدم"
+  },
+  {
+    "word": "最",
+    "pinyin": "zuì",
+    "en": "most",
+    "ru": "самый",
+    "tr": "en",
+    "fa": "بیشترین",
+    "ar": "الأكثر"
+  },
+  {
+    "word": "左",
+    "pinyin": "zuǒ",
+    "en": "left",
+    "ru": "левый",
+    "tr": "sol",
+    "fa": "چپ",
+    "ar": "يسار"
+  },
+  {
+    "word": "左边",
+    "pinyin": "zuǒbian",
+    "en": "left side",
+    "ru": "слева",
+    "tr": "sol taraf",
+    "fa": "سمت چپ",
+    "ar": "الجانب الأيسر"
+  }
+]
