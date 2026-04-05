@@ -1,5 +1,6 @@
-/// RTL 语言工具类
-/// 用于处理从右向左书写的语言（波斯语、阿拉伯语）
+// RTL 语言工具类
+// 用于处理从右向左书写的语言（波斯语、阿拉伯语）
+library;
 
 import 'package:flutter/material.dart';
 

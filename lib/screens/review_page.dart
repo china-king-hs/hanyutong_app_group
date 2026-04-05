@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import '../l10n/app_localizations.dart';
 
@@ -14,7 +14,6 @@ class ReviewPage extends StatelessWidget {
       {'emoji': '📝', 'title': loc.wordsReview, 'path': '/words-review'},
       {'emoji': '📖', 'title': loc.idiomsReview, 'path': '/idioms-review'},
       {'emoji': '💡', 'title': loc.proverbsReview, 'path': '/proverbs-review'},
-      {'emoji': '🎋', 'title': loc.poetryReview, 'path': '/poetry-review'},
     ];
     
     return Scaffold(
@@ -63,7 +62,7 @@ class ReviewPage extends StatelessWidget {
                       borderRadius: BorderRadius.circular(16),
                       boxShadow: [
                         BoxShadow(
-                            color: Colors.black.withOpacity(0.06),
+                            color: Colors.black.withValues(alpha: 0.06),
                             blurRadius: 6,
                             offset: const Offset(0, 2))
                       ],
@@ -71,25 +70,29 @@ class ReviewPage extends StatelessWidget {
                     child: Row(
                       children: [
                         Text(type['emoji']!,
-                            style: const TextStyle(fontSize: 44)),
-                        const SizedBox(width: 16),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(type['title']!,
-                                style: const TextStyle(
-                                    fontSize: 18,
-                                    fontWeight: FontWeight.bold,
-                                    color: Color(0xFF333333))),
-                            if (type['subtitle'] != null)
-                              Padding(
-                                padding: const EdgeInsets.only(top: 4),
-                                child: Text(type['subtitle']!,
-                                    style: const TextStyle(
-                                        fontSize: 13,
-                                        color: Color(0xFF666666))),
-                              ),
-                          ],
+                            style: const TextStyle(fontSize: 38)),
+                        const SizedBox(width: 14),
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(type['title']!,
+                                  maxLines: 1,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: const TextStyle(
+                                      fontSize: 15,
+                                      fontWeight: FontWeight.bold,
+                                      color: Color(0xFF333333))),
+                              if (type['subtitle'] != null)
+                                Padding(
+                                  padding: const EdgeInsets.only(top: 4),
+                                  child: Text(type['subtitle']!,
+                                      style: const TextStyle(
+                                          fontSize: 12,
+                                          color: Color(0xFF666666))),
+                                ),
+                            ],
+                          ),
                         ),
                       ],
                     ),

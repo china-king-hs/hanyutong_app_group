@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
 
 /// 带声波动画的喇叭按钮
 /// 点击后播放声波扩散动画，模拟正在播放音频的效果
@@ -135,7 +135,7 @@ class _SoundWaveButtonState extends State<SoundWaveButton>
                   shape: BoxShape.circle,
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.black.withOpacity(0.10),
+                      color: Colors.black.withValues(alpha: 0.10),
                       blurRadius: 4,
                     ),
                   ],
@@ -183,7 +183,7 @@ class _WaveRing extends AnimatedWidget {
       decoration: BoxDecoration(
         shape: BoxShape.circle,
         border: Border.all(
-          color: waveColor.withOpacity(opacity),
+          color: waveColor.withValues(alpha: opacity),
           width: 2.0,
         ),
       ),

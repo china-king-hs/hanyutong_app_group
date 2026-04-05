@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 import '../app_state.dart';
@@ -38,6 +38,10 @@ class _LearnTabState extends State<LearnTab> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            // 基础学习标题
+            Text(AppLocalizations.of(context)!.basicLearning,
+                style: const TextStyle(fontSize: 13, color: Color(0xFF999999))),
+            const SizedBox(height: 12),
             // Level Selector
             GestureDetector(
               onTap: () => setState(() => _showLevelSelector = !_showLevelSelector),
@@ -49,7 +53,7 @@ class _LearnTabState extends State<LearnTab> {
                   borderRadius: BorderRadius.circular(16),
                   boxShadow: [
                     BoxShadow(
-                        color: Colors.black.withOpacity(0.06),
+                        color: Colors.black.withValues(alpha: 0.06),
                         blurRadius: 4,
                         offset: const Offset(0, 2))
                   ],
@@ -76,7 +80,7 @@ class _LearnTabState extends State<LearnTab> {
                   borderRadius: BorderRadius.circular(16),
                   boxShadow: [
                     BoxShadow(
-                        color: Colors.black.withOpacity(0.1),
+                        color: Colors.black.withValues(alpha: 0.1),
                         blurRadius: 8,
                         offset: const Offset(0, 2))
                   ],
@@ -138,7 +142,7 @@ class _LearnTabState extends State<LearnTab> {
                     color: const Color(0xFFFFEDD8),
                     iconColor: Colors.orange,
                     icon: Icons.translate,
-                    onTap: () => context.push('/empty'),
+                    onTap: () => context.push('/grammar'),
                   ),
                 ),
               ],
@@ -163,7 +167,7 @@ class _LearnTabState extends State<LearnTab> {
                 _SimpleCard(emoji: '🎋', label: AppLocalizations.of(context)!.poetry,
                     onTap: () => context.push('/advanced/poetry')),
                 _SimpleCard(emoji: '🏮', label: AppLocalizations.of(context)!.culture,
-                    onTap: () => context.push('/advanced/culture')),
+                    onTap: () => context.push('/culture')),
               ],
             ),
             const SizedBox(height: 24),
@@ -220,7 +224,7 @@ class _PracticeCard extends StatelessWidget {
           borderRadius: BorderRadius.circular(16),
           boxShadow: [
             BoxShadow(
-                color: Colors.black.withOpacity(0.06),
+                color: Colors.black.withValues(alpha: 0.06),
                 blurRadius: 6,
                 offset: const Offset(0, 2))
           ],
@@ -272,7 +276,7 @@ class _SimpleCard extends StatelessWidget {
           borderRadius: BorderRadius.circular(16),
           boxShadow: [
             BoxShadow(
-                color: Colors.black.withOpacity(0.06),
+                color: Colors.black.withValues(alpha: 0.06),
                 blurRadius: 6,
                 offset: const Offset(0, 2))
           ],

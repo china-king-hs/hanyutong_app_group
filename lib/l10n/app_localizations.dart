@@ -20,6 +20,7 @@ class AppLocalizations {
       'selectNativeLanguage': 'What language do you use to learn Chinese?',
       'pleaseSelect': 'Please select your native language',
       'confirm': 'Confirm',
+      'back': 'Back',
       'chooseNativeLanguage': 'Choose Native Language',
       'dailyGoalMinutes': 'Daily Goal (per day)',
       'minutes': 'minutes',
@@ -35,7 +36,6 @@ class AppLocalizations {
       'words': 'Words',
       'sentences': 'Sentences',
       'advanced': 'Advanced',
-      'listening': 'Listening',
       'review': 'Review',
       'favorites': 'Favorites',
       // home_tab.dart中的文本
@@ -47,6 +47,9 @@ class AppLocalizations {
       'sentencesLabel': 'Sentences',
       'advancedLabel': 'Advanced',
       'grammarLabel': 'Grammar',
+      'idiomsLabel': 'Idioms',
+      'proverbsLabel': 'Proverbs',
+      'poetryLabel': 'Poetry',
       'unitDay': 'day',
       'unitDays': 'days',
       'unitHour': 'hour',
@@ -63,7 +66,7 @@ class AppLocalizations {
       'wordsPractice': 'Words Practice',
       'sentencesPractice': 'Sentences Practice',
       'grammarLearning': 'Grammar Learning',
-      'listeningPractice': 'Listening Practice',
+      'basicLearning': 'Basic Learning',
       'advancedReading': 'Advanced Reading · Chinese Culture',
       'idioms': 'Idioms',
       'proverbs': 'Proverbs/Sayings',
@@ -105,6 +108,11 @@ class AppLocalizations {
       'explainInNativeLanguage': 'Explain the meaning in your native language',
       'skip': 'Skip',
       'showAnswer': 'Show Answer',
+      'skipMasteredTitle': 'Have you already mastered this word?',
+      'skipMasteredNo': 'No',
+      'skipMasteredYes': 'Yes',
+      'skipIdiomMasteredTitle': 'Have you already mastered this idiom?',
+      'skipProverbMasteredTitle': 'Have you already mastered this proverb?',
       'pronunciationScore': 'Pronunciation Score 🎤',
       'toneAccuracy': 'Tone Accuracy',
       'soundAccuracy': 'Sound Accuracy',
@@ -125,17 +133,11 @@ class AppLocalizations {
       'holdToRecord': 'Hold to record',
       'slideUpToCancel': 'Slide up to cancel',
       // advanced_practice.dart
-      'idioms': 'Idioms',
-      'proverbs': 'Proverbs/Sayings',
-      'poetry': 'Poetry',
-      'culture': 'Cultural Knowledge',
       'chineseExplanation': 'Chinese Explanation',
       'dataNotLoaded': '(Data not loaded, temporarily blank)',
       'loading': 'Loading...',
       'retry': 'Retry',
       'noData': '(No data)',
-      // listening_practice.dart
-      'listeningPracticeTitle': 'Listening Practice',
       'optionA': 'Option A',
       'optionB': 'Option B',
       'optionC': 'Option C',
@@ -172,12 +174,8 @@ class AppLocalizations {
       'learnerName': 'Learner',
       'myAchievements': 'My Achievements',
       'learningProgress': 'Learning Progress',
-      // favorites_page.dart
-      'myFavorites': 'My Favorites',
-      'noFavoritesYet': 'No favorites yet',
       // review_page.dart
       'reviewTitle': 'Review',
-      'review': 'Review',
       'wordsReview': 'Words Review',
       'idiomsReview': 'Idioms Review',
       'proverbsReview': 'Proverbs Review',
@@ -193,12 +191,32 @@ class AppLocalizations {
       'confirmReset': 'Reset?',
       'resetSuccess': 'Reset successful. Please restart the app.',
       'reset': 'Reset',
+      'resetLearningRecord': 'Reset Learning Records',
+      'resetLearningRecordDesc': 'Clear all learning progress, favorites, and mastery records. Your language and settings will be kept.',
+      'resetLearningRecordSuccess': 'Learning records reset successful.',
+      // poetry explanation buttons
+      'showChineseMeaning': 'Chinese Meaning',
+      'showNativeMeaning': 'My Language Meaning',
+      'jumpToPoem': 'Jump to Poem',
+      'jumpToIdiom': 'Jump to Idiom',
+      'jumpToProverb': 'Jump to Proverb',
+      'jumpToWord': 'Jump to Word',
+      'wordAlreadyMastered': 'This word is already mastered.',
+      'invalidNumberHint': 'is not valid, please enter 1 ~ ',
+      // culture_practice_page.dart
+      'jumpToCulture': 'Jump to Item',
+      'nativeExplanation': 'Native Explanation',
+      'prevItem': 'Previous',
+      'nextItem': 'Next',
+      'cultureSolarTerm': 'Solar Term',
+      'cultureFestival': 'Festival',
     },
     'ru': {
       'appTitle': 'Chinese Go',
       'selectNativeLanguage': 'На каком языке вы изучаете китайский?',
       'pleaseSelect': 'Пожалуйста, выберите ваш родной язык',
       'confirm': 'Подтвердить',
+      'back': 'Назад',
       'chooseNativeLanguage': 'Выберите родной язык',
       'dailyGoalMinutes': 'Ежедневная цель (в день)',
       'minutes': 'минут',
@@ -213,7 +231,6 @@ class AppLocalizations {
       'words': 'Слова',
       'sentences': 'Предложения',
       'advanced': 'Продвинутые',
-      'listening': 'Аудирование',
       'review': 'Повторение',
       'favorites': 'Избранное',
       // home_tab.dart中的文本
@@ -225,6 +242,9 @@ class AppLocalizations {
       'sentencesLabel': 'Предложения',
       'advancedLabel': 'Продвинутые',
       'grammarLabel': 'Грамматика',
+      'idiomsLabel': 'Идиомы',
+      'proverbsLabel': 'Пословицы',
+      'poetryLabel': 'Поэзия',
       'unitDay': 'день',
       'unitDays': 'дней',
       'unitHour': 'час',
@@ -263,7 +283,7 @@ class AppLocalizations {
       'wordsPractice': 'Практика слов',
       'sentencesPractice': 'Практика предложений',
       'grammarLearning': 'Изучение грамматики',
-      'listeningPractice': 'Практика аудирования',
+      'basicLearning': 'Базовое обучение',
       'advancedReading': 'Продвинутое чтение · Китайская культура',
       'idioms': 'Идиомы',
       'proverbs': 'Поговорки/Пословицы',
@@ -281,6 +301,11 @@ class AppLocalizations {
       'explainInNativeLanguage': 'Объясните значение на вашем родном языке',
       'skip': 'Пропустить',
       'showAnswer': 'Показать ответ',
+      'skipMasteredTitle': 'Вы уже освоили это слово?',
+      'skipMasteredNo': 'Нет',
+      'skipMasteredYes': 'Да',
+      'skipIdiomMasteredTitle': 'Вы уже освоили эту идиому?',
+      'skipProverbMasteredTitle': 'Вы уже освоили эту пословицу?',
       'pronunciationScore': 'Оценка произношения 🎤',
       'toneAccuracy': 'Точность тонов',
       'soundAccuracy': 'Точность звуков',
@@ -301,17 +326,11 @@ class AppLocalizations {
       'holdToRecord': 'Удерживайте для записи',
       'slideUpToCancel': 'Проведите вверх для отмены',
       // advanced_practice.dart
-      'idioms': 'Идиомы',
-      'proverbs': 'Поговорки/Пословицы',
-      'poetry': 'Поэзия',
-      'culture': 'Культурные знания',
       'chineseExplanation': 'Китайское объяснение',
       'dataNotLoaded': '(Данные не загружены, временно пусто)',
       'loading': 'Загрузка...',
       'retry': 'Повторить',
       'noData': '(Нет данных)',
-      // listening_practice.dart
-      'listeningPracticeTitle': 'Практика аудирования',
       'optionA': 'Вариант A',
       'optionB': 'Вариант B',
       'optionC': 'Вариант C',
@@ -348,12 +367,8 @@ class AppLocalizations {
       'learnerName': 'Обучающийся',
       'myAchievements': 'Мои достижения',
       'learningProgress': 'Прогресс обучения',
-      // favorites_page.dart
-      'myFavorites': 'Мои избранные',
-      'noFavoritesYet': 'Пока нет избранных',
       // review_page.dart
       'reviewTitle': 'Обзор',
-      'review': 'Обзор',
       'wordsReview': 'Обзор слов',
       'idiomsReview': 'Обзор идиом',
       'proverbsReview': 'Обзор пословиц',
@@ -369,12 +384,32 @@ class AppLocalizations {
       'confirmReset': 'Сбросить?',
       'resetSuccess': 'Сброшено. Пожалуйста, перезапустите приложение.',
       'reset': 'Сбросить',
+      'resetLearningRecord': 'Сбросить записи обучения',
+      'resetLearningRecordDesc': 'Очистить весь прогресс, избранное и освоенные записи. Язык и настройки будут сохранены.',
+      'resetLearningRecordSuccess': 'Записи обучения успешно сброшены.',
+      // poetry explanation buttons
+      'showChineseMeaning': 'Китайское значение',
+      'showNativeMeaning': 'Значение на моём языке',
+      'jumpToPoem': 'Перейти к стиху',
+      'jumpToIdiom': 'Перейти к идиоме',
+      'jumpToProverb': 'Перейти к пословице',
+      'jumpToWord': 'Перейти к слову',
+      'wordAlreadyMastered': 'Это слово уже освоено.',
+      'invalidNumberHint': 'недопустимо, введите 1 ~ ',
+      // culture_practice_page.dart
+      'jumpToCulture': 'Перейти к элементу',
+      'nativeExplanation': 'Объяснение на родном языке',
+      'prevItem': 'Предыдущий',
+      'nextItem': 'Следующий',
+      'cultureSolarTerm': 'Солнечный термин',
+      'cultureFestival': 'Праздник',
     },
     'fa': {
       'appTitle': 'چینی گو',
       'selectNativeLanguage': 'برای یادگیری چینی از کدام زبان استفاده می‌کنید؟',
       'pleaseSelect': 'لطفاً زبان مادری خود را انتخاب کنید',
       'confirm': 'تأیید',
+      'back': 'بازگشت',
       'chooseNativeLanguage': 'انتخاب زبان مادری',
       'dailyGoalMinutes': 'هدف روزانه (در روز)',
       'minutes': 'دقیقه',
@@ -389,7 +424,6 @@ class AppLocalizations {
       'words': 'کلمات',
       'sentences': 'جمله‌ها',
       'advanced': 'پیشرفته',
-      'listening': 'شنیداری',
       'review': 'مرور',
       'favorites': 'موردعلاقه',
       // home_tab.dart中的文本
@@ -401,6 +435,9 @@ class AppLocalizations {
       'sentencesLabel': 'جمله‌ها',
       'advancedLabel': 'پیشرفته',
       'grammarLabel': 'دستور زبان',
+      'idiomsLabel': 'اصطلاحات',
+      'proverbsLabel': 'ضرب‌المثل‌ها',
+      'poetryLabel': 'شعر',
       'unitDay': 'روز',
       'unitDays': 'روز',
       'unitHour': 'ساعت',
@@ -439,7 +476,7 @@ class AppLocalizations {
       'wordsPractice': 'تمرین کلمات',
       'sentencesPractice': 'تمرین جملات',
       'grammarLearning': 'یادگیری دستور زبان',
-      'listeningPractice': 'تمرین شنیداری',
+      'basicLearning': 'یادگیری پایه',
       'advancedReading': 'خواندن پیشرفته · فرهنگ چینی',
       'idioms': 'اصطلاحات',
       'proverbs': 'ضرب‌المثل‌ها/گفتارها',
@@ -456,6 +493,11 @@ class AppLocalizations {
       'explainInNativeLanguage': 'معنی را به زبان مادری خود توضیح دهید',
       'skip': 'رد کردن',
       'showAnswer': 'نمایش پاسخ',
+      'skipMasteredTitle': 'آیا این کلمه را قبلاً یاد گرفته‌اید؟',
+      'skipMasteredNo': 'خیر',
+      'skipMasteredYes': 'بله',
+      'skipIdiomMasteredTitle': 'آیا این اصطلاح را قبلاً یاد گرفته‌اید؟',
+      'skipProverbMasteredTitle': 'آیا این ضرب‌المثل را قبلاً یاد گرفته‌اید؟',
       'pronunciationScore': 'امتیاز تلفظ 🎤',
       'toneAccuracy': 'دقت تون',
       'soundAccuracy': 'دقت صدا',
@@ -481,8 +523,6 @@ class AppLocalizations {
       'loading': 'بارگیری...',
       'retry': 'تلاش دوباره',
       'noData': '(داده‌ای وجود ندارد)',
-      // listening_practice.dart
-      'listeningPracticeTitle': 'تمرین شنیداری',
       'optionA': 'گزینه الف',
       'optionB': 'گزینه ب',
       'optionC': 'گزینه ج',
@@ -521,6 +561,7 @@ class AppLocalizations {
       'learningProgress': 'پیشرفت یادگیری',
       // favorites_page.dart
       'noFavoritesYet': 'هنوز موردعلاقه‌ای وجود ندارد',
+      'noFavoritesYetHint': 'برای افزودن موارد اینجا، روی آیکون ستاره ضربه بزنید',
       // review_page.dart
       'reviewTitle': 'مرور',
       'wordsReview': 'مرور کلمات',
@@ -538,12 +579,32 @@ class AppLocalizations {
       'confirmReset': 'بازنشانی؟',
       'resetSuccess': 'بازنشانی شد. لطفاً برنامه را مجدداً اجرا کنید.',
       'reset': 'بازنشانی',
+      'resetLearningRecord': 'بازنشانی سوابق یادگیری',
+      'resetLearningRecordDesc': 'پاک کردن تمام پیشرفت، موارد موردعلاقه و سوابق تسلط. زبان و تنظیمات شما حفظ خواهد شد.',
+      'resetLearningRecordSuccess': 'سوابق یادگیری با موفقیت بازنشانی شد.',
+      // poetry explanation buttons
+      'showChineseMeaning': 'معنی چینی',
+      'showNativeMeaning': 'معنی به زبان من',
+      'jumpToPoem': 'پرش به شعر',
+      'jumpToIdiom': 'پرش به اصطلاح',
+      'jumpToProverb': 'پرش به ضرب‌المثل',
+      'jumpToWord': 'پرش به کلمه',
+      'wordAlreadyMastered': 'این کلمه قبلاً یاد گرفته شده است.',
+      'invalidNumberHint': 'معتبر نیست، لطفاً ۱ ~ ',
+      // culture_practice_page.dart
+      'jumpToCulture': 'پرش به مورد',
+      'nativeExplanation': 'توضیح به زبان مادری',
+      'prevItem': 'قبلی',
+      'nextItem': 'بعدی',
+      'cultureSolarTerm': 'موقعیت خورشیدی',
+      'cultureFestival': 'جشنواره',
     },
     'ar': {
       'appTitle': 'تشين جو',
       'selectNativeLanguage': 'ما اللغة التي تستخدمها لتعلم الصينية؟',
       'pleaseSelect': 'يرجى اختيار لغتك الأم',
       'confirm': 'تأكيد',
+      'back': 'رجوع',
       'chooseNativeLanguage': 'اختر اللغة الأم',
       'dailyGoalMinutes': 'الهدف اليومي (في اليوم)',
       'minutes': 'دقيقة',
@@ -558,7 +619,6 @@ class AppLocalizations {
       'words': 'الكلمات',
       'sentences': 'الجمل',
       'advanced': 'متقدم',
-      'listening': 'الاستماع',
       'review': 'مراجعة',
       'favorites': 'المفضلة',
       // home_tab.dart中的文本
@@ -570,6 +630,9 @@ class AppLocalizations {
       'sentencesLabel': 'الجمل',
       'advancedLabel': 'متقدم',
       'grammarLabel': 'القواعد',
+      'idiomsLabel': 'الأمثال',
+      'proverbsLabel': 'الحكم',
+      'poetryLabel': 'الشعر',
       'unitDay': 'يوم',
       'unitDays': 'أيام',
       'unitHour': 'ساعة',
@@ -608,7 +671,7 @@ class AppLocalizations {
       'wordsPractice': 'تدريب الكلمات',
       'sentencesPractice': 'تدريب الجمل',
       'grammarLearning': 'تعلم القواعد',
-      'listeningPractice': 'تدريب الاستماع',
+      'basicLearning': 'التعلم الأساسي',
       'advancedReading': 'قراءة متقدمة · الثقافة الصينية',
       'idioms': 'أمثال',
       'proverbs': 'حكم / أقوال',
@@ -625,6 +688,11 @@ class AppLocalizations {
       'explainInNativeLanguage': 'اشرح المعنى بلغتك الأم',
       'skip': 'تخطي',
       'showAnswer': 'إظهار الإجابة',
+      'skipMasteredTitle': 'هل أتقنت هذه الكلمة بالفعل؟',
+      'skipMasteredNo': 'لا',
+      'skipMasteredYes': 'نعم',
+      'skipIdiomMasteredTitle': 'هل أتقنت هذه العبارة بالفعل؟',
+      'skipProverbMasteredTitle': 'هل أتقنت هذه الحكمة بالفعل؟',
       'pronunciationScore': 'نتيجة النطق 🎤',
       'toneAccuracy': 'دقة النغمة',
       'soundAccuracy': 'دقة الصوت',
@@ -650,8 +718,6 @@ class AppLocalizations {
       'loading': 'جارٍ التحميل...',
       'retry': 'إعادة المحاولة',
       'noData': '(لا توجد بيانات)',
-      // listening_practice.dart
-      'listeningPracticeTitle': 'تدريب الاستماع',
       'optionA': 'الخيار أ',
       'optionB': 'الخيار ب',
       'optionC': 'الخيار ج',
@@ -690,6 +756,7 @@ class AppLocalizations {
       'learningProgress': 'تقدم التعلم',
       // favorites_page.dart
       'noFavoritesYet': 'لا مفضلات حتى الآن',
+      'noFavoritesYetHint': 'اضغط على أيقونة النجمة لإضافة عناصر هنا',
       // review_page.dart
       'reviewTitle': 'مراجعة',
       'wordsReview': 'مراجعة الكلمات',
@@ -707,12 +774,32 @@ class AppLocalizations {
       'confirmReset': 'إعادة التعيين؟',
       'resetSuccess': 'تم إعادة التعيين. يرجى إعادة تشغيل التطبيق.',
       'reset': 'إعادة التعيين',
+      'resetLearningRecord': 'إعادة تعيين سجلات التعلم',
+      'resetLearningRecordDesc': 'مسح جميع التقدم والمفضلات وسجلات الإتقان. سيتم الاحتفاظ بلغتك وإعداداتك.',
+      'resetLearningRecordSuccess': 'تم إعادة تعيين سجلات التعلم بنجاح.',
+      // poetry explanation buttons
+      'showChineseMeaning': 'المعنى الصيني',
+      'showNativeMeaning': 'المعنى بلغتي',
+      'jumpToPoem': 'الانتقال إلى القصيدة',
+      'jumpToIdiom': 'الانتقال إلى المثل',
+      'jumpToProverb': 'الانتقال إلى الحكمة',
+      'jumpToWord': 'الانتقال إلى الكلمة',
+      'wordAlreadyMastered': 'هذه الكلمة تم إتقانها بالفعل.',
+      'invalidNumberHint': 'غير صالح، يرجى إدخال 1 ~ ',
+      // culture_practice_page.dart
+      'jumpToCulture': 'الانتقال إلى العنصر',
+      'nativeExplanation': 'شرح باللغة الأم',
+      'prevItem': 'السابق',
+      'nextItem': 'التالي',
+      'cultureSolarTerm': 'مصطلح شمسي',
+      'cultureFestival': 'مهرجان',
     },
     'tr': {
       'appTitle': 'Chinese Go',
       'selectNativeLanguage': 'Çince öğrenmek için hangi dili kullanıyorsunuz?',
       'pleaseSelect': 'Lütfen ana dilinizi seçin',
       'confirm': 'Onayla',
+      'back': 'Geri',
       'chooseNativeLanguage': 'Ana Dil Seç',
       'dailyGoalMinutes': 'Günlük Hedef (günde)',
       'minutes': 'dakika',
@@ -727,7 +814,6 @@ class AppLocalizations {
       'words': 'Kelimeler',
       'sentences': 'Cümleler',
       'advanced': 'Gelişmiş',
-      'listening': 'Dinleme',
       'review': 'Gözden Geçirme',
       'favorites': 'Favoriler',
       // home_tab.dart中的文本
@@ -739,6 +825,9 @@ class AppLocalizations {
       'sentencesLabel': 'Cümleler',
       'advancedLabel': 'Gelişmiş',
       'grammarLabel': 'Dilbilgisi',
+      'idiomsLabel': 'Deyimler',
+      'proverbsLabel': 'Atasözleri',
+      'poetryLabel': 'Şiir',
       'unitDay': 'gün',
       'unitDays': 'gün',
       'unitHour': 'saat',
@@ -777,7 +866,7 @@ class AppLocalizations {
       'wordsPractice': 'Kelime Pratiği',
       'sentencesPractice': 'Cümle Pratiği',
       'grammarLearning': 'Dilbilgisi Öğrenme',
-      'listeningPractice': 'Dinleme Pratiği',
+      'basicLearning': 'Temel Öğrenme',
       'advancedReading': 'İleri Okuma · Çin Kültürü',
       'idioms': 'Deyimler',
       'proverbs': 'Atasözleri/Sözler',
@@ -795,6 +884,11 @@ class AppLocalizations {
       'explainInNativeLanguage': 'Anlamını ana dilinizde açıklayın',
       'skip': 'Atla',
       'showAnswer': 'Cevabı Göster',
+      'skipMasteredTitle': 'Bu kelimeyi zaten öğrendiniz mi?',
+      'skipMasteredNo': 'Hayır',
+      'skipMasteredYes': 'Evet',
+      'skipIdiomMasteredTitle': 'Bu deyimi zaten öğrendiniz mi?',
+      'skipProverbMasteredTitle': 'Bu atasözünü zaten öğrendiniz mi?',
       'pronunciationScore': 'Telaffuz Puanı 🎤',
       'toneAccuracy': 'Ton Doğruluğu',
       'soundAccuracy': 'Ses Doğruluğu',
@@ -820,8 +914,6 @@ class AppLocalizations {
       'loading': 'Yükleniyor...',
       'retry': 'Tekrar Dene',
       'noData': '(Veri yok)',
-      // listening_practice.dart
-      'listeningPracticeTitle': 'Dinleme Pratiği',
       'optionA': 'Seçenek A',
       'optionB': 'Seçenek B',
       'optionC': 'Seçenek C',
@@ -858,12 +950,8 @@ class AppLocalizations {
       'learnerName': 'Öğrenen',
       'myAchievements': 'Başarılarım',
       'learningProgress': 'Öğrenme İlerlemesi',
-      // favorites_page.dart
-      'myFavorites': 'Favorilerim',
-      'noFavoritesYet': 'Henüz favori yok',
       // review_page.dart
       'reviewTitle': 'Gözden Geçirme',
-      'review': 'Gözden Geçirme',
       'wordsReview': 'Kelime Gözden Geçirme',
       'idiomsReview': 'Deyim Gözden Geçirme',
       'proverbsReview': 'Atasözü Gözden Geçirme',
@@ -879,6 +967,25 @@ class AppLocalizations {
       'confirmReset': 'Sıfırla?',
       'resetSuccess': 'Sıfırlandı. Lütfen uygulamayı yeniden başlatın.',
       'reset': 'Sıfırla',
+      'resetLearningRecord': 'Öğrenme Kayıtlarını Sıfırla',
+      'resetLearningRecordDesc': 'Tüm öğrenme ilerlemesini, favorileri ve öğrenilenleri temizle. Dil ve ayarlarınız korunacaktır.',
+      'resetLearningRecordSuccess': 'Öğrenme kayıtları başarıyla sıfırlandı.',
+      // poetry explanation buttons
+      'showChineseMeaning': 'Çince Anlam',
+      'showNativeMeaning': 'Kendi Dilimde Anlam',
+      'jumpToPoem': 'Şiire Git',
+      'jumpToIdiom': 'Deyime Git',
+      'jumpToProverb': 'Atasözüne Git',
+      'jumpToWord': 'Kelimeye Git',
+      'wordAlreadyMastered': 'Bu kelime zaten öğrenildi.',
+      'invalidNumberHint': 'geçersiz, lütfen 1 ~ ',
+      // culture_practice_page.dart
+      'jumpToCulture': 'Öğeye Git',
+      'nativeExplanation': 'Ana Dil Açıklaması',
+      'prevItem': 'Önceki',
+      'nextItem': 'Sonraki',
+      'cultureSolarTerm': 'Güneş Dönemi',
+      'cultureFestival': 'Festival',
     },
   };
 
@@ -886,6 +993,7 @@ class AppLocalizations {
   String get selectNativeLanguage => _localizedValues[locale.languageCode]?['selectNativeLanguage'] ?? 'What language do you use to learn Chinese?';
   String get pleaseSelect => _localizedValues[locale.languageCode]?['pleaseSelect'] ?? 'Please select your native language';
   String get confirm => _localizedValues[locale.languageCode]?['confirm'] ?? 'Confirm';
+  String get back => _localizedValues[locale.languageCode]?['back'] ?? 'Back';
   String get chooseNativeLanguage => _localizedValues[locale.languageCode]?['chooseNativeLanguage'] ?? 'Choose Native Language';
   String get dailyGoalMinutes => _localizedValues[locale.languageCode]?['dailyGoalMinutes'] ?? 'Daily Goal (minutes)';
   String get minutes => _localizedValues[locale.languageCode]?['minutes'] ?? 'minutes';
@@ -900,7 +1008,6 @@ class AppLocalizations {
   String get words => _localizedValues[locale.languageCode]?['words'] ?? 'Words';
   String get sentences => _localizedValues[locale.languageCode]?['sentences'] ?? 'Sentences';
   String get advanced => _localizedValues[locale.languageCode]?['advanced'] ?? 'Advanced';
-  String get listening => _localizedValues[locale.languageCode]?['listening'] ?? 'Listening';
   String get review => _localizedValues[locale.languageCode]?['review'] ?? 'Review';
   String get favorites => _localizedValues[locale.languageCode]?['favorites'] ?? 'Favorites';
   String get learn => _localizedValues[locale.languageCode]?['learn'] ?? 'Learn';
@@ -935,6 +1042,9 @@ class AppLocalizations {
   String get sentencesLabel => _localizedValues[locale.languageCode]?['sentencesLabel'] ?? 'Sentences';
   String get advancedLabel => _localizedValues[locale.languageCode]?['advancedLabel'] ?? 'Advanced';
   String get grammarLabel => _localizedValues[locale.languageCode]?['grammarLabel'] ?? 'Grammar';
+  String get idiomsLabel => _localizedValues[locale.languageCode]?['idiomsLabel'] ?? 'Idioms';
+  String get proverbsLabel => _localizedValues[locale.languageCode]?['proverbsLabel'] ?? 'Proverbs';
+  String get poetryLabel => _localizedValues[locale.languageCode]?['poetryLabel'] ?? 'Poetry';
   String get myFavorites => _localizedValues[locale.languageCode]?['myFavorites'] ?? 'My Favorites';
 
   // 单位文本
@@ -954,7 +1064,7 @@ class AppLocalizations {
   String get wordsPractice => _localizedValues[locale.languageCode]?['wordsPractice'] ?? 'Words Practice';
   String get sentencesPractice => _localizedValues[locale.languageCode]?['sentencesPractice'] ?? 'Sentences Practice';
   String get grammarLearning => _localizedValues[locale.languageCode]?['grammarLearning'] ?? 'Grammar Learning';
-  String get listeningPractice => _localizedValues[locale.languageCode]?['listeningPractice'] ?? 'Listening Practice';
+  String get basicLearning => _localizedValues[locale.languageCode]?['basicLearning'] ?? 'Basic Learning';
   String get advancedReading => _localizedValues[locale.languageCode]?['advancedReading'] ?? 'Advanced Reading · Chinese Culture';
   String get idioms => _localizedValues[locale.languageCode]?['idioms'] ?? 'Idioms';
   String get proverbs => _localizedValues[locale.languageCode]?['proverbs'] ?? 'Proverbs/Sayings';
@@ -972,6 +1082,11 @@ class AppLocalizations {
   String get explainInNativeLanguage => _localizedValues[locale.languageCode]?['explainInNativeLanguage'] ?? 'Explain the meaning in your native language';
   String get skip => _localizedValues[locale.languageCode]?['skip'] ?? 'Skip';
   String get showAnswer => _localizedValues[locale.languageCode]?['showAnswer'] ?? 'Show Answer';
+  String get skipMasteredTitle => _localizedValues[locale.languageCode]?['skipMasteredTitle'] ?? 'Have you already mastered this word?';
+  String get skipMasteredNo => _localizedValues[locale.languageCode]?['skipMasteredNo'] ?? 'No';
+  String get skipMasteredYes => _localizedValues[locale.languageCode]?['skipMasteredYes'] ?? 'Yes';
+  String get skipIdiomMasteredTitle => _localizedValues[locale.languageCode]?['skipIdiomMasteredTitle'] ?? 'Have you already mastered this idiom?';
+  String get skipProverbMasteredTitle => _localizedValues[locale.languageCode]?['skipProverbMasteredTitle'] ?? 'Have you already mastered this proverb?';
   String get pronunciationScore => _localizedValues[locale.languageCode]?['pronunciationScore'] ?? 'Pronunciation Score 🎤';
   String get toneAccuracy => _localizedValues[locale.languageCode]?['toneAccuracy'] ?? 'Tone Accuracy';
   String get soundAccuracy => _localizedValues[locale.languageCode]?['soundAccuracy'] ?? 'Sound Accuracy';
@@ -1001,8 +1116,6 @@ class AppLocalizations {
   String get noMasteredWordsYet => _localizedValues[locale.languageCode]?['noMasteredWordsYet'] ?? 'No words mastered yet';
   String get noMasteredWordsHint => _localizedValues[locale.languageCode]?['noMasteredWordsHint'] ?? 'Complete both steps in words practice to add words here';
 
-  // listening_practice.dart中的文本
-  String get listeningPracticeTitle => _localizedValues[locale.languageCode]?['listeningPracticeTitle'] ?? 'Listening Practice';
   String get questionProgress => _localizedValues[locale.languageCode]?['questionProgress'] ?? 'Question {current} of {total}';
   String get tapToPlay => _localizedValues[locale.languageCode]?['tapToPlay'] ?? 'Tap to Play';
   String get submit => _localizedValues[locale.languageCode]?['submit'] ?? 'Submit';
@@ -1021,6 +1134,11 @@ class AppLocalizations {
   // favorites_page.dart中的文本
   String get myFavoritesTitle => _localizedValues[locale.languageCode]?['myFavorites'] ?? 'My Favorites';
   String get noFavoritesYet => _localizedValues[locale.languageCode]?['noFavoritesYet'] ?? 'No favorites yet';
+  String get noFavoritesYetHint => _localizedValues[locale.languageCode]?['noFavoritesYetHint'] ?? 'Tap the star icon to add items here';
+
+  // empty_page.dart中的文本
+  String get comingSoon => _localizedValues[locale.languageCode]?['comingSoon'] ?? 'Coming Soon';
+  String get featureInDevelopment => _localizedValues[locale.languageCode]?['featureInDevelopment'] ?? 'Feature is under development...';
 
   // profile_tab.dart中的文本
   String get learnerName => _localizedValues[locale.languageCode]?['learnerName'] ?? 'Learner';
@@ -1033,6 +1151,24 @@ class AppLocalizations {
   String get confirmReset => _localizedValues[locale.languageCode]?['confirmReset'] ?? 'Reset?';
   String get resetSuccess => _localizedValues[locale.languageCode]?['resetSuccess'] ?? 'Reset successful. Please restart the app.';
   String get reset => _localizedValues[locale.languageCode]?['reset'] ?? 'Reset';
+  String get resetLearningRecord => _localizedValues[locale.languageCode]?['resetLearningRecord'] ?? 'Reset Learning Records';
+  String get resetLearningRecordDesc => _localizedValues[locale.languageCode]?['resetLearningRecordDesc'] ?? 'Clear all learning progress, favorites, and mastery records. Your language and settings will be kept.';
+  String get resetLearningRecordSuccess => _localizedValues[locale.languageCode]?['resetLearningRecordSuccess'] ?? 'Learning records reset successful.';
+  String get showChineseMeaning => _localizedValues[locale.languageCode]?['showChineseMeaning'] ?? 'Chinese Meaning';
+  String get showNativeMeaning => _localizedValues[locale.languageCode]?['showNativeMeaning'] ?? 'My Language Meaning';
+  String get jumpToPoem => _localizedValues[locale.languageCode]?['jumpToPoem'] ?? 'Jump to Poem';
+  String get jumpToIdiom => _localizedValues[locale.languageCode]?['jumpToIdiom'] ?? 'Jump to Idiom';
+  String get jumpToProverb => _localizedValues[locale.languageCode]?['jumpToProverb'] ?? 'Jump to Proverb';
+  String get jumpToWord => _localizedValues[locale.languageCode]?['jumpToWord'] ?? 'Jump to Word';
+  String get wordAlreadyMastered => _localizedValues[locale.languageCode]?['wordAlreadyMastered'] ?? 'This word is already mastered.';
+  String get invalidNumberHint => _localizedValues[locale.languageCode]?['invalidNumberHint'] ?? 'is not valid, please enter 1 ~ ';
+  // culture_practice_page.dart
+  String get jumpToCulture => _localizedValues[locale.languageCode]?['jumpToCulture'] ?? 'Jump to Item';
+  String get nativeExplanation => _localizedValues[locale.languageCode]?['nativeExplanation'] ?? 'Native Explanation';
+  String get prevItem => _localizedValues[locale.languageCode]?['prevItem'] ?? 'Previous';
+  String get nextItem => _localizedValues[locale.languageCode]?['nextItem'] ?? 'Next';
+  String get cultureSolarTerm => _localizedValues[locale.languageCode]?['cultureSolarTerm'] ?? 'Solar Term';
+  String get cultureFestival => _localizedValues[locale.languageCode]?['cultureFestival'] ?? 'Festival';
   String get cancel => _localizedValues[locale.languageCode]?['confirm'] ?? 'Cancel';
 
   // level_test.dart中的文本

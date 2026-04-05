@@ -2,7 +2,6 @@
 // 为波斯语和阿拉伯语提供全面的RTL支持
 
 import 'package:flutter/material.dart';
-import '../config/app_languages.dart';
 
 /// RTL布局相关工具类
 class RtlLayout {
@@ -157,13 +156,13 @@ class RtlLayout {
     TextBaseline? textBaseline,
   }) {
     return Row(
-      children: isRTLByCode(languageCode) ? children.reversed.toList() : children,
       mainAxisAlignment: adjustMainAxisAlignmentForRTL(mainAxisAlignment, languageCode),
       crossAxisAlignment: adjustCrossAxisAlignmentForRTL(crossAxisAlignment, languageCode),
       mainAxisSize: mainAxisSize,
       textDirection: textDirection ?? getTextDirection(languageCode),
       verticalDirection: verticalDirection,
       textBaseline: textBaseline,
+      children: isRTLByCode(languageCode) ? children.reversed.toList() : children,
     );
   }
 
@@ -179,13 +178,13 @@ class RtlLayout {
     TextBaseline? textBaseline,
   }) {
     return Column(
-      children: children,
       mainAxisAlignment: mainAxisAlignment,
       crossAxisAlignment: adjustCrossAxisAlignmentForRTL(crossAxisAlignment, languageCode),
       mainAxisSize: mainAxisSize,
       textDirection: textDirection ?? getTextDirection(languageCode),
       verticalDirection: verticalDirection,
       textBaseline: textBaseline,
+      children: children,
     );
   }
 }

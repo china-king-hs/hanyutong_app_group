@@ -26,7 +26,6 @@ class _MainLayoutState extends State<MainLayout> with RouteAware {
   bool _isInLearningPage(String location) {
     return location.startsWith('/app/learn') ||
            location.startsWith('/practice/') ||
-           location.startsWith('/listening') ||
            location.startsWith('/advanced/');
   }
 

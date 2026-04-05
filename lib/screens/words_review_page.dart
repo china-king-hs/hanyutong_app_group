@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 import '../app_state.dart';
@@ -53,10 +53,19 @@ class _WordsReviewPageState extends State<WordsReviewPage> {
   }
 
   /// 根据选中的难度 + AppState 的 masteredWordIds 实时过滤
+  /// masteredWordIds 是有序 List（越后面的越新掌握），倒序后最新掌握的排最上面
   List<WordModel> _filterMastered(AppState state) {
     final words = _wordsCache[_selectedLevel];
     if (words == null) return [];
-    return words.where((w) => state.masteredWordIds.contains(w.id)).toList();
+    final ids = state.masteredWordIds; // List<String>，保留掌握顺序
+    // 按 ids 中的先后顺序排列，然后反转（新的排最上）
+    final wordMap = {for (final w in words) w.id: w};
+    return ids
+        .where((id) => wordMap.containsKey(id))
+        .map((id) => wordMap[id]!)
+        .toList()
+        .reversed
+        .toList();
   }
 
   /// 当前选中难度下的已掌握词语数量
@@ -168,14 +177,16 @@ class _WordsReviewPageState extends State<WordsReviewPage> {
                             ),
                           )
                         : ListView.separated(
-                            padding: const EdgeInsets.all(24),
+                            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                             itemCount: masteredWords.length,
-                            separatorBuilder: (_, __) => const SizedBox(height: 12),
+                            separatorBuilder: (_, __) => const SizedBox(height: 8),
                             itemBuilder: (_, i) {
                               final word = masteredWords[i];
                               return _WordReviewCard(
                                 word: word,
                                 languageCode: state.language,
+                                isFavorite: state.favorites.contains(word.id),
+                                onToggleFavorite: () => state.toggleFavorite(word.id),
                               );
                             },
                           ),
@@ -214,80 +225,87 @@ class _WordsReviewPageState extends State<WordsReviewPage> {
   }
 }
 
-/// 单个词语复习卡片：中文 + 拼音 + 翻译（三个打包到一个显示框）
+/// 单个词语复习卡片：中文 + 拼音 + 翻译 + 播放 + 收藏
 class _WordReviewCard extends StatelessWidget {
   final WordModel word;
   final String languageCode;
+  final bool isFavorite;
+  final VoidCallback onToggleFavorite;
 
   const _WordReviewCard({
     required this.word,
     required this.languageCode,
+    required this.isFavorite,
+    required this.onToggleFavorite,
   });
 
   @override
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      padding: const EdgeInsets.all(20),
+      padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
       decoration: BoxDecoration(
         color: Colors.white,
-        borderRadius: BorderRadius.circular(16),
+        borderRadius: BorderRadius.circular(12),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.06),
-            blurRadius: 6,
-            offset: const Offset(0, 2),
+            color: Colors.black.withValues(alpha: 0.05),
+            blurRadius: 4,
+            offset: const Offset(0, 1),
           ),
         ],
       ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          // 中文 + 拼音 + 播放按钮行
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      word.word,
-                      style: const TextStyle(
-                        fontSize: 28,
-                        fontWeight: FontWeight.bold,
-                        color: Color(0xFF333333),
-                      ),
-                    ),
-                    const SizedBox(height: 4),
-                    Text(
-                      word.pinyin,
-                      style: const TextStyle(
-                        fontSize: 15,
-                        color: Color(0xFF999999),
-                      ),
-                    ),
-                  ],
+          // 中文 + 拼音
+          Expanded(
+            flex: 3,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  word.word,
+                  style: const TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Color(0xFF333333),
+                  ),
                 ),
-              ),
-              SoundWaveButton(size: 32),
-            ],
-          ),
-          const SizedBox(height: 16),
-
-          // 翻译
-          Container(
-            width: double.infinity,
-            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-            decoration: BoxDecoration(
-              color: const Color(0xFFF0F7FF),
-              borderRadius: BorderRadius.circular(10),
+                const SizedBox(height: 2),
+                Text(
+                  word.pinyin,
+                  style: const TextStyle(
+                    fontSize: 12,
+                    color: Color(0xFF999999),
+                  ),
+                ),
+              ],
             ),
+          ),
+          const SizedBox(width: 10),
+          // 翻译
+          Expanded(
+            flex: 4,
             child: Text(
               word.translationFor(languageCode),
               style: const TextStyle(
-                fontSize: 16,
+                fontSize: 13,
                 color: Color(0xFF4285F4),
+              ),
+            ),
+          ),
+          const SizedBox(width: 6),
+          const SoundWaveButton(size: 26),
+          // 星形收藏按钮
+          GestureDetector(
+            onTap: onToggleFavorite,
+            child: Padding(
+              padding: const EdgeInsets.all(6),
+              child: Icon(
+                isFavorite ? Icons.star : Icons.star_border,
+                color: isFavorite ? Colors.amber : Colors.grey,
+                size: 22,
               ),
             ),
           ),

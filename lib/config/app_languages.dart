@@ -1,5 +1,6 @@
-/// App 支持的语言配置
-/// 定义5种目标语言的完整信息
+// App 支持的语言配置
+// 定义5种目标语言的完整信息
+library;
 
 import 'package:flutter/material.dart';
 

@@ -1,0 +1,3002 @@
+[
+  {
+    "sentence": "半斤换八两——谁也不吃亏",
+    "pinyin": "bàn jīn huàn bā liǎng —— shuí yě bù chī kuī",
+    "explanation": "彼此相当，谁也不吃亏。",
+    "en": "Even match; neither side loses out.",
+    "ru": "Поровну; никто не в пролёте.",
+    "tr": "Denk; kimse zarar görmez.",
+    "fa": "برابرند؛ هیچ‌کس ضرر نمی‌کند.",
+    "ar": "متعادلان؛ لا خاسر."
+  },
+  {
+    "sentence": "铁打的公鸡——一毛不拔",
+    "pinyin": "tiě dǎ de gōng jī —— yī máo bù bá",
+    "explanation": "非常小气，一毛不拔。",
+    "en": "Extremely stingy; won't give a single coin.",
+    "ru": "Чрезвычайно скуп; ни копейки не даст.",
+    "tr": "Son derece cimri; tek kuruş vermez.",
+    "fa": "خیلی خسیس؛ یک سکه هم نمی‌دهد.",
+    "ar": "بخيل جدًّا؛ لا يعطي ولو فلسًا واحدًا."
+  },
+  {
+    "sentence": "张飞卖豆腐——人硬货不硬",
+    "pinyin": "zhāng fēi mài dòu fǔ —— rén yìng huò bù yìng",
+    "explanation": "表面硬，货色一般。",
+    "en": "Tough appearance but mediocre stuff inside.",
+    "ru": "Вид крутой, а товар слабый.",
+    "tr": "Dışı sert, malı sıradan.",
+    "fa": "ظاهر سخت، باطن معمولی.",
+    "ar": "قاسي الظاهرٍ وعاديّ الجوهر."
+  },
+  {
+    "sentence": "吃一堑，长一智",
+    "pinyin": "chī yī qiàn，zhǎng yī zhì",
+    "explanation": "指经历一次挫折，就能从中吸取教训，增长一分智慧。",
+    "en": "A setback teaches a lesson and adds wisdom.",
+    "ru": "Ошибка поучает и прибавляет мудрости.",
+    "tr": "Her terslik bir ders verir ve bilgeliği artırır.",
+    "fa": "یک شکست درس می‌آورد و خرد می‌افزاید.",
+    "ar": "كل عثرة تعلّم درسًا وتزيد الحكمة."
+  },
+  {
+    "sentence": "头顶上生眼睛——目中无人",
+    "pinyin": "tóu dǐng shàng shēng yǎn jīng —— mù zhōng wú rén",
+    "explanation": "骄傲，看不起人。",
+    "en": "Arrogant; looks down on everyone.",
+    "ru": "Надменен; презирает всех.",
+    "tr": "Kibirli; herkesi küçümser.",
+    "fa": "متکبر؛ همه را حقیر می‌بیند.",
+    "ar": "متعالٍ يحتقر الجميع."
+  },
+  {
+    "sentence": "孔夫子搬家——净是书（输）",
+    "pinyin": "kǒng fū zǐ bān jiā —— jìng shì shū",
+    "explanation": "净是输，老失败。",
+    "en": "Always losing; keeps failing.",
+    "ru": "Постоянно проигрывает; одни неудачи.",
+    "tr": "Sürekli kaybediyor; hep başarısız.",
+    "fa": "همیشه می‌بازد؛ مدام شکست می‌خورد.",
+    "ar": "دائم الخسارة؛ يفشل مرارًا."
+  },
+  {
+    "sentence": "箭在弦上——不得不发",
+    "pinyin": "jiàn zài xián shàng —— bù dé bù fā",
+    "explanation": "不得不发，势在必行。",
+    "en": "Must go ahead; there is no turning back now.",
+    "ru": "Нужно действовать; пути назад нет.",
+    "tr": "Geri dönüş yok; yapılacak.",
+    "fa": "باید جلو برود؛ برگشتی نیست.",
+    "ar": "لا بدّ من المضيّ؛ لا رجعةَ الآن."
+  },
+  {
+    "sentence": "杨家将上阵——全家出动",
+    "pinyin": "yáng jiā jiàng shàng zhèn —— quán jiā chū dòng",
+    "explanation": "全家一起出动。",
+    "en": "The whole family turns out together.",
+    "ru": "Выступает вся семья вместе.",
+    "tr": "Bütün aile birlikte hareket eder.",
+    "fa": "تمام خانواده با هم حرکت می‌کنند.",
+    "ar": "تتحرّك العائلة كلّها معًا."
+  },
+  {
+    "sentence": "姜太公钓鱼——愿者上钩",
+    "pinyin": "jiāng tài gōng diào yú —— yuàn zhě shàng gōu",
+    "explanation": "心甘情愿才会上当。",
+    "en": "Only those who want to will take the bait.",
+    "ru": "Попадётся только тот, кто сам захочет.",
+    "tr": "Yemeyi ancak isteyen yer.",
+    "fa": "فقط کسی گول می‌خورد که خودش بخواهد.",
+    "ar": "من أراد أن يُوقَع في الفخ وقع فيه طواعية."
+  },
+  {
+    "sentence": "浪子回头金不换",
+    "pinyin": "làng zǐ huí tóu jīn bù huàn",
+    "explanation": "比喻误入歧途的人只要能改正错误、回头是岸，其价值比黄金还要珍贵。",
+    "en": "A stray person who repents and returns is worth more than gold.",
+    "ru": "Сбившийся с пути, но исправившийся, дороже золота.",
+    "tr": "Yanlış yoldan dönenin değeri altından fazladır.",
+    "fa": "کسی که گمراه بوده و بازگردد گرانبهاتر از طلاست.",
+    "ar": "من ضل ثم تاب ورجع أثمن من الذهب."
+  },
+  {
+    "sentence": "开弓没有回头箭",
+    "pinyin": "kāi gōng méi yǒu huí tóu jiàn",
+    "explanation": "比喻事情一旦开始，就无法回头，必须坚持到底。",
+    "en": "Once started, there is no turning back; you must see it through.",
+    "ru": "Начав дело, назад дороги нет — нужно довести до конца.",
+    "tr": "İş bir kez başlayınca geri dönüş yoktur; sonuna kadar gitmek gerekir.",
+    "fa": "وقتی آغاز شد دورگرد نیست؛ باید تا پایان ماند.",
+    "ar": "بدا الأمر فلا عودة للوراء؛ ينبغي إتمامه."
+  },
+  {
+    "sentence": "天下兴亡，匹夫有责",
+    "pinyin": "tiān xià xīng wáng，pǐ fū yǒu zé",
+    "explanation": "指国家的兴盛和灭亡，每个普通人都有责任。",
+    "en": "Every ordinary person shares responsibility for the rise or fall of the country.",
+    "ru": "За процветание или гибель страны отвечает и простой человек.",
+    "tr": "Ülkenin yükselişi veya çöküşünde sıradan her vatandaşın sorumluluğu vardır.",
+    "fa": "هر شهروند عادی در سرنوشت شکوفایی یا فروپاشی کشور سهیم است.",
+    "ar": "للمواطن العادي نصيب من مسؤولية ازدهار الوطن أو انحداره."
+  },
+  {
+    "sentence": "一年之计在于春，一日之计在于晨",
+    "pinyin": "yī nián zhī jì zài yú chūn，yī rì zhī jì zài yú chén",
+    "explanation": "指一年的计划要在春天做好，一天的计划要在早晨做好，强调凡事早做打算。",
+    "en": "Plan the year in spring and the day in the morning; it stresses planning early.",
+    "ru": "Планируй год весной, день — утром; акцент на заблаговременном планировании.",
+    "tr": "Yıllık planı ilkbaharda, günlük planı sabah yapın; erken planlamayı vurgular.",
+    "fa": "برنامه سال را در بهار و برنامه روز را در صبح بچین؛ بر برنامه‌ریزی زودهنگام تأکید دارد.",
+    "ar": "يُخطَّط للسنة في الربيع ولليوم في الصباح؛ يؤكد على التخطيط مبكرًا."
+  },
+  {
+    "sentence": "病从口入，祸从口出",
+    "pinyin": "bìng cóng kǒu rù，huò cóng kǒu chū",
+    "explanation": "指疾病往往从饮食不当而来，灾祸常常因说话不谨慎引发。",
+    "en": "Illness often comes from careless eating; misfortune often from careless speech.",
+    "ru": "Болезни часто от неосторожного питания, беды — от неосторожных слов.",
+    "tr": "Hastalık çoğu zaman yanlış beslenmeden, felaket ise dikkatsiz sözlerden doğar.",
+    "fa": "بیماری اغلب از بدخوری و بلایا از بی‌احتیاطی در گفتار می‌آید.",
+    "ar": "المرض غالبًا من سوء التغذية، والمصائب من تهور اللسان."
+  },
+  {
+    "sentence": "蚊子衔秤砣——好大的口气",
+    "pinyin": "wén zi xián chèng tuó —— hǎo dà de kǒu qì",
+    "explanation": "口气很大，爱吹牛。",
+    "en": "Talks big; likes to brag.",
+    "ru": "Большие слова; любит хвастаться.",
+    "tr": "Büyük konuşur; böbürlenmeyi sever.",
+    "fa": "حرف بزرگ می‌زند؛ عاشق لاف زدن است.",
+    "ar": "يتكلم بكلام عظيم؛ يحب التباهي."
+  },
+  {
+    "sentence": "不怕人不敬，就怕己不正",
+    "pinyin": "bù pà rén bù jìng，jiù pà jǐ bù zhèng",
+    "explanation": "比喻不怕别人不尊重自己，就怕自己行为不端、品行不正。",
+    "en": "One should fear not others' disrespect but one's own misconduct.",
+    "ru": "Не страшно, если другие не уважают; страшнее собственное дурное поведение.",
+    "tr": "Korkulacak şey başkalarının saygısızlığı değil, kendi yanlış davranışındır.",
+    "fa": "نه بی‌احترامی دیگران که رفتار نادرست خود را باید ترسید.",
+    "ar": "لا تخشى احتقار الناس بقدر ما تخشى سوء سلوكك."
+  },
+  {
+    "sentence": "水涨船高",
+    "pinyin": "shuǐ zhǎng chuán gāo",
+    "explanation": "比喻事物随着它所凭借的基础的提高而提高。",
+    "en": "Things rise together with the foundation they rest on.",
+    "ru": "Всё поднимается вместе с той основой, на которой держится.",
+    "tr": "Şeyler, dayandığı temel yükseldikçe yükselir.",
+    "fa": "چیزها با بالا رفتن پایه و زیربنایشان بالا می‌روند.",
+    "ar": "ترتفع الأمور مع ارتقاء أساسها الذي تعتمد عليه."
+  },
+  {
+    "sentence": "靠山山倒，靠水水流",
+    "pinyin": "kào shān shān dǎo，kào shuǐ shuǐ liú",
+    "explanation": "比喻依靠别人是靠不住的，最终还是要靠自己。",
+    "en": "Relying on others is unreliable; in the end you must rely on yourself.",
+    "ru": "Полагаться на других ненадёжно; в конечном счёте опора на самого себя.",
+    "tr": "Başkasına dayanmak güvenilir değildir; sonunda kendine güvenmelisin.",
+    "fa": "اتکا به دیگران پایدار نیست؛ در نهایت باید بر خودت تکیه کنی.",
+    "ar": "الاعتماد على الناس غير موثوق؛ في النهاية تعتمد على نفسك."
+  },
+  {
+    "sentence": "一不做，二不休",
+    "pinyin": "yī bù zuò，èr bù xiū",
+    "explanation": "比喻事情既然已经开始，就索性做到底，不半途而废。",
+    "en": "Once begun, carry through to the end; do not quit halfway.",
+    "ru": "Уж начал — доводи до конца; не бросай на полпути.",
+    "tr": "Başladıysan sonuna kadar git; yarım bırakma.",
+    "fa": "اگر شروع کردی تا آخر برو؛ نیمه‌کاره رها نکن.",
+    "ar": "إذا بدأت فأتمّ؛ لا تترك العمل نصفًا."
+  },
+  {
+    "sentence": "冰糖煮黄连——同甘共苦",
+    "pinyin": "bīng táng zhǔ huáng lián —— tóng gān gòng kǔ",
+    "explanation": "同甘共苦。",
+    "en": "Share joys and hardships together.",
+    "ru": "Разделывают и радость, и горе.",
+    "tr": "Acıyı tatlıyı birlikte paylaşır.",
+    "fa": "شادی و سختی با هم.",
+    "ar": "يشاركان الفرح والشقاء."
+  },
+  {
+    "sentence": "听其言，观其行",
+    "pinyin": "tīng qí yán，guān qí xíng",
+    "explanation": "指判断一个人，不仅要听他说的话，还要看他做的事。",
+    "en": "Judge a person not only by words but by deeds.",
+    "ru": "Суди о человеке не только по словам, но и по поступкам.",
+    "tr": "İnsanı yalnız sözleriyle değil, yaptıklarıyla da değerlendir.",
+    "fa": "انسان را نه فقط از گفتار که از کردارش بسنج.",
+    "ar": "لا تحكم على الإنسان بالقول وحده بل بالفعل أيضًا."
+  },
+  {
+    "sentence": "晴天打伞——多此一举",
+    "pinyin": "qíng tiān dǎ sǎn —— duō cǐ yī jǔ",
+    "explanation": "多此一举。",
+    "en": "Utterly unnecessary.",
+    "ru": "Совершенно лишнее.",
+    "tr": "Tamamen gereksiz.",
+    "fa": "کاملاً بی‌مورد.",
+    "ar": "غير لازمٍ البتّة."
+  },
+  {
+    "sentence": "外甥打灯笼——照旧（舅）",
+    "pinyin": "wài shēng dǎ dēng lóng —— zhào jiù",
+    "explanation": "和以前一样（谐「舅」）。",
+    "en": "Same as before (pun on 'uncle').",
+    "ru": "Как раньше; без изменений (каламбур).",
+    "tr": "Eski tas eski hamam (kelime oyunu).",
+    "fa": "مثل قبل؛ بدون تغییر (بازی با «舅»).",
+    "ar": "كالسابقٍ بلا تغييرٍ (توريةٌ)."
+  },
+  {
+    "sentence": "人挪活，树挪死",
+    "pinyin": "rén nuó huó，shù nuó sǐ",
+    "explanation": "比喻人换一个环境，可能会有更好的发展；而树木挪动后，很容易枯萎死亡。",
+    "en": "A person may thrive in a new environment, while a transplanted tree often withers.",
+    "ru": "Человек в новой среде может расцвести, а пересаженное дерево нередко вянет.",
+    "tr": "İnsan ortam değiştirince gelişebilir; ağaç ise taşınınca çoğu kez kurur.",
+    "fa": "انسان با تغییر محیط شاید بهتر رشد کند، اما درخت پس از جابه‌جایی آسان خشک می‌شود.",
+    "ar": "الإنسان قد يزدهر بتغيير البيئة، أما الشجرة المنقولة فتذبل غالبًا."
+  },
+  {
+    "sentence": "冰冻三尺，非一日之寒",
+    "pinyin": "bīng dòng sān chǐ，fēi yī rì zhī hán",
+    "explanation": "比喻某种情况或后果的形成，是经过长时间积累、发展而成的，并非一朝一夕之事。",
+    "en": "Deep problems form over time, not overnight.",
+    "ru": "Серьёзные явления складываются долго, а не за один день.",
+    "tr": "Kök sorunlar bir gecede değil, uzun sürede oluşur.",
+    "fa": "پدیده‌های عمیق در طول زمان شکل می‌گیرند، نه یک‌شبه.",
+    "ar": "الأمور الجذرية تتكوّن بمرور الوقت لا دفعة واحدة."
+  },
+  {
+    "sentence": "麻雀虽小——五脏俱全",
+    "pinyin": "má què suī xiǎo —— wǔ zàng jù quán",
+    "explanation": "个头小，该有的却一样不少。",
+    "en": "Small in size but has everything essential.",
+    "ru": "Маленький, но со всем необходимым.",
+    "tr": "Küçük ama gereken her şey var.",
+    "fa": "جثه کوچک اما همهٔ لازم را دارد.",
+    "ar": "صغير الحجم لكنّه كامل العناصر المهمّة."
+  },
+  {
+    "sentence": "善有善报，恶有恶报",
+    "pinyin": "shàn yǒu shàn bào，è yǒu è bào",
+    "explanation": "比喻做好事会得到好的回报，做坏事会得到坏的报应。",
+    "en": "Good deeds bring good outcomes; evil deeds bring bad consequences.",
+    "ru": "За добро приходит добро, за зло — зло.",
+    "tr": "İyilik iyilikle, kötülük kötülükle karşılanır.",
+    "fa": "کار نیک پاداش نیک دارد، کار بد عاقبت بد.",
+    "ar": "الخير يعود بالخير والشر يعود بالشر."
+  },
+  {
+    "sentence": "孙悟空听见金箍咒——头疼",
+    "pinyin": "sūn wù kōng tīng jiàn jīn gū zhòu —— tóu téng",
+    "explanation": "一听就头疼，最怕的事来了。",
+    "en": "Makes one's head hurt—what you fear most has come.",
+    "ru": "Головная боль; случилось самое нежеланное.",
+    "tr": "Baş ağrıtır; en korkulan geldi.",
+    "fa": "سردرد می‌آورد؛ بدترین چیز آمده.",
+    "ar": "يصدّع الرأس؛ جاء أسوأ ما تخاف."
+  },
+  {
+    "sentence": "良药苦口利于病，忠言逆耳利于行",
+    "pinyin": "liáng yào kǔ kǒu lì yú bìng，zhōng yán nì ěr lì yú xíng",
+    "explanation": "比喻真诚的劝告虽刺耳，却能助人改正错误；有效的药虽味苦，却能治病。",
+    "en": "Sincere advice may be harsh but helps correct mistakes; effective medicine may taste bitter but cures illness.",
+    "ru": "Искренний совет резок, но помогает исправить ошибки; хорошее лекарство горькое, но лечит.",
+    "tr": "Samimi öğüt sert gelebilir ama hatayı düzeltir; etkili ilaç acı olsa da tedavi eder.",
+    "fa": "نصیحت صادقانه هرچند ناخوشایند است اما به اصلاح خطا کمک می‌کند؛ داروی مؤثر هرچند تلخ است اما بیماری را درمان می‌کند.",
+    "ar": "النصيحة الصادقة قد تكون لاذعة لكنها تصحح الأخطاء؛ والدواء الفعال قد يكون مرًا لكنه يشفي المرض."
+  },
+  {
+    "sentence": "打破砂锅——问到底",
+    "pinyin": "dǎ pò shā guō —— wèn dào dǐ",
+    "explanation": "追问到底，打破砂锅问到底。",
+    "en": "Keeps asking until the truth is clear; won't let it drop.",
+    "ru": "Допрашивает до конца; не отстанет.",
+    "tr": "Sonuna kadar sorar; peşini bırakmaz.",
+    "fa": "تا تهِ موضوع می‌پرسد؛ ول نمی‌کند.",
+    "ar": "يسأل حتى النهاية ولا يترك الأمر."
+  },
+  {
+    "sentence": "三十晚上盼月亮——没指望",
+    "pinyin": "sān shí wǎn shàng pàn yuè liàng —— méi zhǐ wàng",
+    "explanation": "没希望，等也是白等。",
+    "en": "No hope; waiting is pointless.",
+    "ru": "Нет надежды; ждать бесполезно.",
+    "tr": "Umut yok; beklemek boşa.",
+    "fa": "امیدی نیست؛ انتظار بی‌فایده است.",
+    "ar": "بلا أمل؛ العبث بالانتظار."
+  },
+  {
+    "sentence": "单丝不成线，独木不成林",
+    "pinyin": "dān sī bù chéng xiàn，dú mù bù chéng lín",
+    "explanation": "比喻个人的力量有限，只有团结协作，才能把事情做好。",
+    "en": "One person's strength is limited; only by working together can things be done well.",
+    "ru": "Силы одного человека малы; дело ладится лишь при совместных усилиях.",
+    "tr": "Tek kişinin gücü sınırlıdır; iş ancak birlikte çalışınca iyi yürür.",
+    "fa": "نیروی فرد محدود است؛ تنها با همکاری و اتحاد می‌توان کار را درست پیش برد.",
+    "ar": "قوة الفرد محدودة؛ لا يُنجَز العمل إلا بالتعاون والتكاتف."
+  },
+  {
+    "sentence": "强扭的瓜不甜",
+    "pinyin": "qiáng niǔ de guā bù tián",
+    "explanation": "比喻勉强促成的事情，往往不会有好的结果，尤其是感情方面。",
+    "en": "Things forced against their will usually do not end well, especially in relationships.",
+    "ru": "Навязанные силой вещи обычно плохо заканчиваются, особенно в сфере отношений.",
+    "tr": "Zorla oldurulan işler genelde iyi sonuç vermez, özellikle duygusal ilişkilerde.",
+    "fa": "کارهایی که با زور پیش می‌روند معمولا نتیجه خوبی ندارند، به‌ویژه در رابطه عاطفی.",
+    "ar": "الأمور التي تُفرض بالقوة غالبًا لا تكون عاقبتها طيبة، خصوصًا في العلاقات."
+  },
+  {
+    "sentence": "亡羊补牢，犹未为晚",
+    "pinyin": "wáng yáng bǔ láo，yóu wèi wéi wǎn",
+    "explanation": "比喻出了问题后，及时采取补救措施，还不算太晚，能避免更大的损失。",
+    "en": "After a mistake, timely fixes still help and can prevent worse loss.",
+    "ru": "После ошибки своевременные меры ещё помогают и уменьшают ущерб.",
+    "tr": "Hata sonrası zamanında önlem almak hâlâ işe yarar, daha büyük zararı önler.",
+    "fa": "پس از خطا، اقدام به‌موقع هنوز مفید است و زیان بزرگ‌تر را کم می‌کند.",
+    "ar": "بعد الزلل، الإصلاح السريع مفيد ويحد من الخسارة."
+  },
+  {
+    "sentence": "莫等闲，白了少年头，空悲切",
+    "pinyin": "mò děng xián，bái le shào nián tóu，kōng bēi qiè",
+    "explanation": "指不要虚度光阴，否则等到年老时，只会白白后悔、悲伤。",
+    "en": "Do not waste your youth, or you will regret and grieve in vain when old.",
+    "ru": "Не растрачивай молодость впустую, иначе в старости останутся лишь сожаление и печаль.",
+    "tr": "Gençliğini boşa harcama; yoksa yaşlanınca boşuna pişmanlık duyarsın.",
+    "fa": "جوانی را هدر نده، وگرنه در پیری فقط بیهوده پشیمان و اندوهگین می‌شوی.",
+    "ar": "لا تُضع وقت الشباب، وإلا فلن يبقى عند الكِبر إلا الندم والحسرة."
+  },
+  {
+    "sentence": "高射炮打蚊子——大材小用",
+    "pinyin": "gāo shè pào dǎ wén zi —— dà cái xiǎo yòng",
+    "explanation": "大才小用，浪费人才。",
+    "en": "Great talent wasted on a trivial task.",
+    "ru": "Большой талант на пустяки.",
+    "tr": "Büyük yetenek küçük işe harcanıyor.",
+    "fa": "استعداد بزرگ برای کار کوچک هدر می‌رود.",
+    "ar": "هدرٌ لموهبةٍ عظيمةٍ في أمرٍ تافهٍ."
+  },
+  {
+    "sentence": "泰山顶上观日出——高瞻远瞩",
+    "pinyin": "tài shān dǐng shàng guān rì chū —— gāo zhān yuǎn zhǔ",
+    "explanation": "眼光远，看得高。",
+    "en": "Far-sighted; sees the big picture from high up.",
+    "ru": "Дальновиден; видит перспективу.",
+    "tr": "Uzak görüşlü; büyük resmi görür.",
+    "fa": "دوراندیش؛ از بالا کل را می‌بیند.",
+    "ar": "بعيد النظرٍ؛ يرى الصورة الكبرى."
+  },
+  {
+    "sentence": "自食其果",
+    "pinyin": "zì shí qí guǒ",
+    "explanation": "指自己做了坏事或错事，最终要自己承担相应的后果。",
+    "en": "You reap what you sow; wrongdoing brings consequences on yourself.",
+    "ru": "За плохие поступки расплачиваешься сам.",
+    "tr": "Kötülüğün sonucunu kendin çekersin.",
+    "fa": "کار بد عاقبتش را خودت می‌خوری.",
+    "ar": "تأكل ثمرة فعلك السيئ بنفسك."
+  },
+  {
+    "sentence": "言而有信",
+    "pinyin": "yán ér yǒu xìn",
+    "explanation": "指说话算数，守信用，不轻易许诺，许诺了就一定做到。",
+    "en": "Mean what you say; keep promises, do not promise lightly, and deliver when you do.",
+    "ru": "Слово должно быть законом: не обещай легкомысленно и сдерживай обещанное.",
+    "tr": "Sözünün eri ol; kolayca söz verme, verdiysen yerine getir.",
+    "fa": "به قولت عمل کن؛ عهد سبک مده و اگر دادی وفا کن.",
+    "ar": "كن صادقًا في كلامك؛ لا تعِد بسهولة وأوفِ إذا وعدت."
+  },
+  {
+    "sentence": "木秀于林，风必摧之",
+    "pinyin": "mù xiù yú lín，fēng bì cuī zhī",
+    "explanation": "比喻才能或成就过于突出的人，容易受到别人的嫉妒和排挤。",
+    "en": "Those who stand out too much in talent or achievement are often envied and excluded.",
+    "ru": "Люди, слишком выделяющиеся талантом или успехом, чаще становятся объектом зависти и отторжения.",
+    "tr": "Yetenek ya da başarıda fazla öne çıkanlar kıskançlık ve dışlanmayla daha çok karşılaşır.",
+    "fa": "کسی که بیش از حد برجسته باشد، بیشتر در معرض حسادت و کنار زدن دیگران قرار می‌گیرد.",
+    "ar": "من يبرز كثيرًا في الموهبة أو الإنجاز يكون أكثر عرضة للحسد والإقصاء."
+  },
+  {
+    "sentence": "礼多人不怪",
+    "pinyin": "lǐ duō rén bù guài",
+    "explanation": "指待人接物时，多讲礼貌、多表达敬意，别人是不会反感的。",
+    "en": "Being polite and respectful in dealing with others usually does not offend people.",
+    "ru": "Вежливость и уважение в общении обычно не вызывают у людей неприязни.",
+    "tr": "İnsanlarla ilişkide nazik ve saygılı olmak genelde kimseyi rahatsız etmez.",
+    "fa": "یعنی در معاشرت با دیگران اگر مؤدب و محترمانه باشی، کسی دلخور نمی‌شود.",
+    "ar": "يعني أن كثرة الأدب وإظهار الاحترام في التعامل مع الناس لا تجعلهم ينفرون منك."
+  },
+  {
+    "sentence": "人怕出名猪怕壮",
+    "pinyin": "rén pà chū míng zhū pà zhuàng",
+    "explanation": "比喻人一旦出名，就容易受到别人的关注和非议；猪长得太壮，就会被宰杀。",
+    "en": "Once a person becomes famous, they attract scrutiny and criticism, just as a fat pig is likely to be slaughtered.",
+    "ru": "Как только человек прославляется, он попадает под внимание и пересуды, как откормленная свинья — под нож.",
+    "tr": "İnsan ünlenince göz önüne çıkıp eleştiri çeker; şişman domuz da kesilir.",
+    "fa": "آدم وقتی مشهور می‌شود زیر نگاه و حرف مردم می‌رود؛ همان‌طور که خوک خیلی چاق را می‌کشند.",
+    "ar": "إذا اشتهر المرء صار عرضة للأنظار والانتقاد، كما يُذبح الخنزير إذا سَمِن كثيرًا."
+  },
+  {
+    "sentence": "二一添作五——平分秋色",
+    "pinyin": "èr yī tiān zuò wǔ —— píng fēn qiū sè",
+    "explanation": "平均分配，各一半。",
+    "en": "Split evenly; each gets half.",
+    "ru": "Делят поровну; по половине.",
+    "tr": "Eşit bölünür; yarı yarıya.",
+    "fa": "مساوی تقسیم می‌شود؛ هر کس نصف.",
+    "ar": "يُقسَم بالتساوي؛ النصف لكلٍّ."
+  },
+  {
+    "sentence": "三天卖两条黄瓜——不慌不忙",
+    "pinyin": "sān tiān mài liǎng tiáo huáng guā —— bù huāng bù máng",
+    "explanation": "不慌不忙，慢慢来。",
+    "en": "Unhurried; takes it slowly.",
+    "ru": "Не спешит; неторопливо.",
+    "tr": "Acele etmez; yavaş yavaş.",
+    "fa": "عجله ندارد؛ آرام پیش می‌رود.",
+    "ar": "بلا عجلةٍ؛ يتقدّم بهدوءٍ."
+  },
+  {
+    "sentence": "芝麻开花——节节高",
+    "pinyin": "zhī má kāi huā —— jié jié gāo",
+    "explanation": "日子或成绩一天比一天好。",
+    "en": "Life or results keep getting better day by day.",
+    "ru": "Жизнь или успехи с каждым днём всё лучше.",
+    "tr": "Hayat veya sonuç günden güne iyileşir.",
+    "fa": "زندگی یا نتیجه روزبه‌روز بهتر می‌شود.",
+    "ar": "الحياة أو النتائج تتحسّن يومًا بعد يوم."
+  },
+  {
+    "sentence": "周幽王点烽火台——千金难买一笑",
+    "pinyin": "zhōu yōu wáng diǎn fēng huǒ tái —— qiān jīn nán mǎi yī xiào",
+    "explanation": "为博一笑代价极大。",
+    "en": "It costs a huge price just to win one smile.",
+    "ru": "Огромная цена ради одной улыбки.",
+    "tr": "Tek bir gülüşe çok büyük bedel ödenir.",
+    "fa": "برای یک خنده هزینهٔ بسیار سنگین می‌دهد.",
+    "ar": "ثمنٌ باهظٌ لمجرد ابتسامة واحدة."
+  },
+  {
+    "sentence": "唱戏的腿抽筋——下不来台",
+    "pinyin": "chàng xì de tuǐ chōu jīn —— xià bù lái tái",
+    "explanation": "下不来台，下不了场。",
+    "en": "Can't get off the stage; stuck in embarrassment.",
+    "ru": "Не сойти со сцены; неловкое положение.",
+    "tr": "Sahneden inemez; mahcup kalır.",
+    "fa": "از صحنه پایین نمی‌آید؛ شرمنده مانده.",
+    "ar": "عاجزٌ عن النزول؛ في حرجٍ."
+  },
+  {
+    "sentence": "患难见真情",
+    "pinyin": "huàn nàn jiàn zhēn qíng",
+    "explanation": "指在遇到困难和灾祸的时候，才能看出谁是真正的朋友，才能体现出真情实意。",
+    "en": "Hardship reveals who are true friends and shows genuine feeling.",
+    "ru": "В беде видны настоящие друзья и проявляется искренняя привязанность.",
+    "tr": "Sıkıntı gerçek dostları ve samimi duyguları ortaya çıkarır.",
+    "fa": "در سختی و بلا دوستان راستین آشکار می‌شوند و احساس واقعی نمایان می‌گردد.",
+    "ar": "الشدائد تكشف الأصدقاء الحقيقيين وتبرز المشاعر الصادقة."
+  },
+  {
+    "sentence": "好记性不如烂笔头",
+    "pinyin": "hǎo jì xìng bù rú làn bǐ tóu",
+    "explanation": "比喻记忆力再好，也不如用笔记下来可靠，强调记录的重要性。",
+    "en": "Even a good memory is less reliable than writing things down; it stresses the value of records.",
+    "ru": "Даже хорошая память уступает записям; подчёркивается важность фиксации на бумаге.",
+    "tr": "En iyi hafıza bile yazıya dökmek kadar güvenilir değildir; kayıt tutmanın önemini vurgular.",
+    "fa": "حتی حافظه قوی هم به پای یادداشت‌برداری نمی‌رسد؛ بر اهمیت ثبت تأکید دارد.",
+    "ar": "حتى الحفظ الجيد لا يضاهي التدوين؛ يؤكد أهمية تسجيل الملاحظات."
+  },
+  {
+    "sentence": "芭蕉插在古树上——粗枝大叶",
+    "pinyin": "bā jiāo chā zài gǔ shù shàng —— cū zhī dà yè",
+    "explanation": "做事马虎，不细心。",
+    "en": "Careless and rough; pays no attention to detail.",
+    "ru": "Небрежен; к мелочам не прислушивается.",
+    "tr": "Dikkatsiz ve özensiz; ayrıntıya aldırmaz.",
+    "fa": "سهل‌انگار و بی‌دقت؛ جزئیات را رعایت نمی‌کند.",
+    "ar": "مهملٌ غير دقيق؛ لا يبالي بالتفاصيل."
+  },
+  {
+    "sentence": "秀才遇到兵——有理说不清",
+    "pinyin": "xiù cái yù dào bīng —— yǒu lǐ shuō bù qīng",
+    "explanation": "跟不讲理的人说不清道理。",
+    "en": "Can't reason with someone who won't listen.",
+    "ru": "С тем, кто не слушает разум, не объяснишься.",
+    "tr": "Anlamazla akıl yürütülemez.",
+    "fa": "با آدم لجباز منطق نمی‌فهمد.",
+    "ar": "لا منطق مع من لا يسمع."
+  },
+  {
+    "sentence": "铁匠铺的料——挨打的货",
+    "pinyin": "tiě jiàng pù de liào —— ái dǎ de huò",
+    "explanation": "常挨打、挨训的角色。",
+    "en": "Always the one who gets hit or scolded.",
+    "ru": "Вечно получает нагоняи или побои.",
+    "tr": "Sürekli dayak yiyen veya azar işiten tip.",
+    "fa": "همیشه کسی است که می‌خورد یا سرزنش می‌شود.",
+    "ar": "دائمًا من يُضرَب أو يُوبَّخ."
+  },
+  {
+    "sentence": "打灯笼搬石头——照办（搬）",
+    "pinyin": "dǎ dēng lóng bān shí tou —— zhào bàn",
+    "explanation": "照办，按说的做（双关）。",
+    "en": "Do as told (pun on carry/move).",
+    "ru": "Делает как сказали (каламбур).",
+    "tr": "Söyleneni yapar (kelime oyunu).",
+    "fa": "طبق گفته عمل می‌کند (دو معنی).",
+    "ar": "ينفّذ كما قيل (توريةٌ)."
+  },
+  {
+    "sentence": "勤能补拙",
+    "pinyin": "qín néng bǔ zhuō",
+    "explanation": "比喻通过勤奋努力，可以弥补自身的不足和笨拙。",
+    "en": "Diligence can make up for one's shortcomings and lack of talent.",
+    "ru": "Усердие может компенсировать недостатки и нехватку природных способностей.",
+    "tr": "Çalışkanlık, eksik yetenek ve kusurları telafi edebilir.",
+    "fa": "کوشش و پشتکار می‌تواند کمبود استعداد یا ضعف‌ها را جبران کند.",
+    "ar": "الاجتهاد يستطيع تعويض النقص والضعف في القدرات."
+  },
+  {
+    "sentence": "世上无难事，只怕有心人",
+    "pinyin": "shì shàng wú nán shì，zhǐ pà yǒu xīn rén",
+    "explanation": "比喻只要有决心、有毅力，再难的事情也能做好。",
+    "en": "Nothing is too hard if you are determined and persistent.",
+    "ru": "При решимости и упорстве нет непосильных дел.",
+    "tr": "Azim ve sebatla zor diye bir şey yoktur.",
+    "fa": "با اراده و پشتکار هیچ کاری غیرممکن نیست.",
+    "ar": "لا شيء مستحيل مع العزيمة والمثابرة."
+  },
+  {
+    "sentence": "打蛇打七寸",
+    "pinyin": "dǎ shé dǎ qī cùn",
+    "explanation": "比喻做事要抓住关键、击中要害，才能彻底解决问题。",
+    "en": "Strike the vital point to solve a problem thoroughly.",
+    "ru": "Чтобы решить проблему до конца, нужно бить в самое уязвимое место.",
+    "tr": "Sorunu kökünden çözmek için kritik noktayı vurmalısın.",
+    "fa": "برای حل ریشه‌ای مسئله باید نقطه کلیدی را نشانه رفت.",
+    "ar": "اضرب في الموضع الحاسم لحل المشكلة جذريًا."
+  },
+  {
+    "sentence": "黄鼠狼给鸡拜年——没安好心",
+    "pinyin": "huáng shǔ láng gěi jī bài nián —— méi ān hǎo xīn",
+    "explanation": "表面亲热，心里打着坏主意。",
+    "en": "Warm on the outside but secretly plotting something bad.",
+    "ru": "С виду дружелюбный, а втайне замышляет плохое.",
+    "tr": "Dışarıdan sıcak görünür, içeride kötü niyet besler.",
+    "fa": "ظاهراً مهربان، باطناً نقشهٔ بد دارد.",
+    "ar": "ودود في الظاهر ويخطط للشرّ في السر."
+  },
+  {
+    "sentence": "沙滩上走路——一步一个脚印",
+    "pinyin": "shā tān shàng zǒu lù —— yī bù yī gè jiǎo yìn",
+    "explanation": "踏实，一步一个脚印。",
+    "en": "Steady and down-to-earth, one step at a time.",
+    "ru": "Твёрдо, шаг за шагом.",
+    "tr": "Sağlam, adım adım ilerler.",
+    "fa": "محکم و قدم‌به‌قدم پیش می‌رود.",
+    "ar": "ثابتٌ خطوةً فخطوة."
+  },
+  {
+    "sentence": "人心齐，泰山移",
+    "pinyin": "rén xīn qí，tài shān yí",
+    "explanation": "比喻大家齐心协力，即使是像泰山一样沉重的东西也能移动，强调团结的力量。",
+    "en": "When people unite, even something as heavy as Mount Tai can be moved; it stresses the power of solidarity.",
+    "ru": "Когда люди сплочены, можно сдвинуть и такую тяжесть, как гора; подчёркивается сила единства.",
+    "tr": "İnsanlar birleşince Taş Dağı bile oynatılır; dayanışmanın gücünü vurgular.",
+    "fa": "وقتی همه یک‌دل شوند، حتی چیز سنگینی مثل کوه تای هم جابه‌جا می‌شود؛ بر قدرت اتحاد تأکید دارد.",
+    "ar": "إذا اتحد الناس، يمكن حتى تحريك ما يثقل كالجبل؛ يؤكد قوة التكاتف."
+  },
+  {
+    "sentence": "君子爱财，取之有道",
+    "pinyin": "jūn zǐ ài cái，qǔ zhī yǒu dào",
+    "explanation": "指君子也喜欢钱财，但会通过正当、合法的方式获取。",
+    "en": "A decent person may pursue wealth, but only by fair and lawful means.",
+    "ru": "Порядочный человек тоже ценит богатство, но добывает его честно и законно.",
+    "tr": "Erdemli insan da para sever ama yasal ve meşru yoldan kazanır.",
+    "fa": "آدم درست هم ثروت می‌خواهد، اما مشروع و قانونی به دست می‌آورد.",
+    "ar": "الإنسان النبيل قد يحب المال لكن يأخذه بالحلال والشرع."
+  },
+  {
+    "sentence": "麻布袋做龙袍——不是这块料",
+    "pinyin": "má bù dài zuò lóng páo —— bú shì zhè kuài liào",
+    "explanation": "不是干大事的材料。",
+    "en": "Not the right material for a big job.",
+    "ru": "Не тот материал для большого дела.",
+    "tr": "Büyük işe uygun malzeme değil.",
+    "fa": "جنسش به کار بزرگ نمی‌خورد.",
+    "ar": "ليس أهلاً للعمل الكبير."
+  },
+  {
+    "sentence": "临渊羡鱼，不如退而结网",
+    "pinyin": "lín yuān xiàn yú，bù rú tuì ér jié wǎng",
+    "explanation": "比喻只空有愿望而不付诸行动，不如脚踏实地去做好准备、努力实践。",
+    "en": "Better to weave a net than envy fish from the bank—act and prepare.",
+    "ru": "Лучше сплести сеть, чем завидовать рыбе с берега — действуй и готовься.",
+    "tr": "Kıyıda balığa özenmektense geri dönüp ağ ör; hazırlan ve yap.",
+    "fa": "به جای حسرت از کنار چاه، برگرد و تور بباف؛ عمل و آماده‌سازی کن.",
+    "ar": "أفضل من حسد السمك أن تعود وتنسج الشبكة؛ اعمل وأعدّ."
+  },
+  {
+    "sentence": "穿钉鞋挂拐棍——步步扎实",
+    "pinyin": "chuān dīng xié guà guǎi gùn —— bù bù zhā shí",
+    "explanation": "做事扎实、牢靠。",
+    "en": "Does things solidly and reliably.",
+    "ru": "Делает дело крепко и надёжно.",
+    "tr": "İşi sağlam ve güvenilir yapar.",
+    "fa": "کار را محکم و مطمئن انجام می‌دهد.",
+    "ar": "يعمل بثباتٍ وموثوقيّة."
+  },
+  {
+    "sentence": "机不可失，时不再来",
+    "pinyin": "jī bù kě shī，shí bù zài lái",
+    "explanation": "比喻机会难得，一旦错过就不会再有，要及时抓住。",
+    "en": "Opportunities are rare; miss them and they may not return—act in time.",
+    "ru": "Возможности редки; упустив, можно их уже не дождаться — воспользуйся вовремя.",
+    "tr": "Fırsatlar enderdir; kaçırırsan bir daha gelmeyebilir — zamanında yakala.",
+    "fa": "فرصت کم‌یاب است؛ از دست رفت دیگر برنمی‌گردد؛ به‌موقع آن را بگیر.",
+    "ar": "الفرص نادرة؛ إن فوتها قد لا تعود—بادِر بالاغتنام."
+  },
+  {
+    "sentence": "万事开头难",
+    "pinyin": "wàn shì kāi tóu nán",
+    "explanation": "比喻做任何事情，刚开始的时候都会遇到困难，只要坚持下去，就会越来越顺利。",
+    "en": "Everything is hard at the start; keep going and it gets easier.",
+    "ru": "В начале всего трудно; если держаться, дальше идёт легче.",
+    "tr": "Her işin başı zordur; devam edince yol açılır.",
+    "fa": "آغاز هر کاری سخت است؛ ادامه بدهی روان‌تر می‌شود.",
+    "ar": "البدايات صعبة؛ مع الإصرار يصير الأمر أسهل."
+  },
+  {
+    "sentence": "百年的歪脖子树——一定型了",
+    "pinyin": "bǎi nián de wāi bó zi shù —— yí dìng xíng le",
+    "explanation": "思想顽固，改不了。",
+    "en": "Set in one's ways; impossible to change their mind.",
+    "ru": "Упрямо держится своего; не переубедить.",
+    "tr": "İnatçı ve değişmez.",
+    "fa": "عقیده‌اش سفت است؛ عوض نمی‌شود.",
+    "ar": "عنيدٌ راسخٌ؛ لا يتغيّر."
+  },
+  {
+    "sentence": "裁缝的尺子——量人不量己",
+    "pinyin": "cái féng de chǐ zi —— liàng rén bù liàng jǐ",
+    "explanation": "光会挑别人毛病，不反省自己。",
+    "en": "Judges others harshly but never reflects on oneself.",
+    "ru": "Придирается к другим, а себя не критикует.",
+    "tr": "Başkasının kusurunu bulur; kendine bakmaz.",
+    "fa": "فقط عیب دیگران را می‌گیرد؛ خودش را نمی‌بیند.",
+    "ar": "يعيب غيره ولا يراجع نفسه."
+  },
+  {
+    "sentence": "肉包子打狗——有去无回",
+    "pinyin": "ròu bāo zi dǎ gǒu —— yǒu qù wú huí",
+    "explanation": "东西送出去就要不回来。",
+    "en": "What you give away won't come back (like money or favors).",
+    "ru": "Отданное не вернётся (деньги, одолжение).",
+    "tr": "Verdiğiniz geri gelmez (para veya iyilik).",
+    "fa": "چیزی که بدهید برنمی‌گردد (پول یا لطف).",
+    "ar": "ما تقدّمه لا يعود (مالًا أو معروفًا)."
+  },
+  {
+    "sentence": "春天的竹笋——节节向上",
+    "pinyin": "chūn tiān de zhú sǔn —— jié jié xiàng shàng",
+    "explanation": "不断进步，往上走。",
+    "en": "Keeps improving and moving upward.",
+    "ru": "Постоянно растёт и движется вверх.",
+    "tr": "Sürekli gelişiyor ve yükseliyor.",
+    "fa": "مدام پیشرفت می‌کند و بالا می‌رود.",
+    "ar": "يتقدّم باستمرار ويرتقي."
+  },
+  {
+    "sentence": "玉不琢，不成器",
+    "pinyin": "yù bù zhuó，bù chéng qì",
+    "explanation": "比喻人如果不经过教育和磨练，就不能成为有用的人才。",
+    "en": "Without education and tempering, a person cannot become truly useful.",
+    "ru": "Без воспитания и закалки человек не станет по-настоящему полезной личностью.",
+    "tr": "Eğitim ve terbiye olmadan insan gerçek anlamda yetkin olamaz.",
+    "fa": "بدون آموزش و پالایش، انسان به فرد مفید تبدیل نمی‌شود.",
+    "ar": "من دون تربية وتمرين لا يصبح الإنسان ذا فائدة حقيقية."
+  },
+  {
+    "sentence": "安禄山起兵——反了",
+    "pinyin": "ān lù shān qǐ bīng —— fǎn le",
+    "explanation": "造反、翻脸，闹大了。",
+    "en": "Rebels or turns against someone; the row blows up.",
+    "ru": "Бунт или срыв; скандал разрастается.",
+    "tr": "İsyan veya ters düşme; olay büyür.",
+    "fa": "شورش می‌کند یا برمی‌گردد؛ دعوا بزرگ می‌شود.",
+    "ar": "ينقلب أو يتمرد؛ يشتدّ الخلاف."
+  },
+  {
+    "sentence": "张飞穿针——大眼瞪小眼",
+    "pinyin": "zhāng fēi chuān zhēn —— dà yǎn dèng xiǎo yǎn",
+    "explanation": "干着急，对不上眼。",
+    "en": "Anxious staring; can't make things line up.",
+    "ru": "Таращится в тревоге; никак не сходится.",
+    "tr": "Telaşla bakıyor; uyuşmuyor.",
+    "fa": "نگران خیره؛ جور نمی‌شود.",
+    "ar": "قلقٌ وحدّقٌ ولا ينطبق الأمر."
+  },
+  {
+    "sentence": "三人行，必有我师焉",
+    "pinyin": "sān rén xíng，bì yǒu wǒ shī yān",
+    "explanation": "指几个人同行，其中必定有人可以做我的老师，强调要虚心向他人学习。",
+    "en": "Walking with others, there is always someone to learn from; it urges humility in learning from others.",
+    "ru": "Среди попутчиков всегда найдётся, у кого поучиться; призыв смиренно учиться у других.",
+    "tr": "Birlikte yürüdüğün insanlardan mutlaka öğreneceğin biri vardır; alçakgönüllülükle öğrenmeyi vurgular.",
+    "fa": "در همراهی با دیگران همیشه کسی هست که بتوان از او آموخت؛ بر فروتنی در یادگیری تأکید دارد.",
+    "ar": "مع الآخرين تجد من تتعلم منه؛ يحث على التواضع في التعلم من الغير."
+  },
+  {
+    "sentence": "捋着胡子过河——谦虚过度",
+    "pinyin": "lǚ zhe hú zi guò hé —— qiān xū guò dù",
+    "explanation": "谦虚过了头。",
+    "en": "Too much modesty; overdone politeness.",
+    "ru": "Чрезмерная скромность.",
+    "tr": "Aşırı tevazu.",
+    "fa": "تعظیم بیش از حد.",
+    "ar": "مبالغٌ في التواضع."
+  },
+  {
+    "sentence": "山高皇帝远",
+    "pinyin": "shān gāo huáng dì yuǎn",
+    "explanation": "比喻地方偏远，中央的政令难以到达，或不受上级管束。",
+    "en": "Remote places are far from the center, so orders barely reach or local control is weak.",
+    "ru": "В отдалённых местах власть центра слаба: указы доходят плохо или надзор слабый.",
+    "tr": "Uzak yerler merkeze uzaktır; buyruklar zor ulaşır veya üst denetim zayıftır.",
+    "fa": "جاهای دور از مرکز کمتر تحت فرمان مرکزی‌اند یا نظارت بالادستی ضعیف است.",
+    "ar": "الأماكن النائية بعيدة عن المركز فلا تصل الأوامر بسهولة أو يضعف الرقابة."
+  },
+  {
+    "sentence": "九曲桥上散步——尽走些弯路",
+    "pinyin": "jiǔ qū qiáo shàng sàn bù —— jǐn zǒu xiē wān lù",
+    "explanation": "尽走弯路。",
+    "en": "Keeps taking the long, winding road.",
+    "ru": "Ходит кругами; только окольные пути.",
+    "tr": "Sürekli dolambaçlı yol tutar.",
+    "fa": "همیشه راه دور و پیچ‌درپیچ می‌رود.",
+    "ar": "يسلك طريقًا ملتويًا طويلًا."
+  },
+  {
+    "sentence": "知己知彼，方能百战百胜",
+    "pinyin": "zhī jǐ zhī bǐ，fāng néng bǎi zhàn bǎi shèng",
+    "explanation": "指只有了解自己和对方，才能在每次较量中都取得胜利。",
+    "en": "Only by knowing both sides can you win every contest.",
+    "ru": "Побеждаешь в каждом столкновении лишь зная и себя, и другую сторону.",
+    "tr": "Her iki tarafı da tanırsan her mücadeleyi kazanırsın.",
+    "fa": "تنها با شناخت خود و طرف مقابل است که در هر رویارویی پیروز می‌شوی.",
+    "ar": "لا غلبة إلا بمعرفة الطرفين ذاتهما."
+  },
+  {
+    "sentence": "众人拾柴火焰高",
+    "pinyin": "zhòng rén shí chái huǒ yàn gāo",
+    "explanation": "比喻人多力量大，大家齐心协力，就能把事情做好。",
+    "en": "Many hands make light work; when people pull together, things are done well.",
+    "ru": "Объединив усилия, люди справляются с делом лучше — много рук облегчают труд.",
+    "tr": "Çok el hafif iş; birlikte hareket edilince işler daha iyi görülür.",
+    "fa": "با اتحاد و همکاری، نیروی بیشتری پدید می‌آید و کارها بهتر پیش می‌رود.",
+    "ar": "كثرة العاملين تزيد القوة؛ بالتعاون يُنجَز العمل على الوجه الأحسن."
+  },
+  {
+    "sentence": "担着胡子过河——谦虚过度",
+    "pinyin": "dān zhe hú zi guò hé —— qiān xū guò dù",
+    "explanation": "谦虚过了头，假客气。",
+    "en": "Excessive modesty; false politeness.",
+    "ru": "Чрезмерная скромность; фальшивая вежливость.",
+    "tr": "Aşırı tevazu; sahte nezaket.",
+    "fa": "تعظیم بیش از حد؛ مودبانگی زورکی.",
+    "ar": "مبالغٌ في التواضع؛ مجاملةٌ زائفة."
+  },
+  {
+    "sentence": "知足常乐",
+    "pinyin": "zhī zú cháng lè",
+    "explanation": "指懂得满足，就能经常感受到快乐，不被欲望所困扰。",
+    "en": "Contentment brings lasting joy and frees you from endless craving.",
+    "ru": "Умение быть довольным даёт постоянную радость и избавляет от безграничных желаний.",
+    "tr": "Kanaat etmek sürekli mutluluk verir, sonsuz arzudan kurtarır.",
+    "fa": "قناعت شادی پایدار می‌آورد و از هوس بی‌پایان رهایت می‌دهد.",
+    "ar": "القناعة تمنح سرورًا دائمًا وتبعدك عن جشع لا ينتهي."
+  },
+  {
+    "sentence": "蛇吞大象——好大的胃口",
+    "pinyin": "shé tūn dà xiàng —— hǎo dà de wèi kǒu",
+    "explanation": "贪心太大，胃口不小。",
+    "en": "Greedy; wants far more than is reasonable.",
+    "ru": "Жадный; жаждет невозможного.",
+    "tr": "Açgözlü; mantığın üstünde istiyor.",
+    "fa": "حریص؛ بیش از حد معقول می‌خواهد.",
+    "ar": "جشع؛ يطلب أكثر مما يعقل."
+  },
+  {
+    "sentence": "门缝里看人——把人看扁了",
+    "pinyin": "mén fèng lǐ kàn rén —— bǎ rén kàn biǎn le",
+    "explanation": "小看人，把人看扁了。",
+    "en": "Underestimates others; looks down on them.",
+    "ru": "Преуменьшает людей; смотрит свысока.",
+    "tr": "İnsanları küçümser.",
+    "fa": "آدم‌ها را کوچک می‌بیند.",
+    "ar": "يحقر الناس ويقلّل منهم."
+  },
+  {
+    "sentence": "出土的甘蔗——节节甜",
+    "pinyin": "chū tǔ de gān zhè —— jié jié tián",
+    "explanation": "越来越甜、越来越好。",
+    "en": "Sweeter and better all the time.",
+    "ru": "Становится всё слаще и лучше.",
+    "tr": "Gittikçe daha tatlı ve daha iyi oluyor.",
+    "fa": "همیشه شیرین‌تر و بهتر می‌شود.",
+    "ar": "يزداد حلاوةً وجودًا مع الوقت."
+  },
+  {
+    "sentence": "坐吃山空",
+    "pinyin": "zuò chī shān kōng",
+    "explanation": "比喻只消费不生产，即使有再多的财富，也会慢慢消耗殆尽。",
+    "en": "Spending without earning empties even a mountain of wealth.",
+    "ru": "Только тратить, не создавая, — и любое богатство растает.",
+    "tr": "Üretmeden tüketmek dağ gibi serveti de eritir.",
+    "fa": "مصرف بی‌تولید حتی کوه ثروت را خالی می‌کند.",
+    "ar": "الإنفاق بلا إنتاج يفرغ حتى جبل المال."
+  },
+  {
+    "sentence": "白娘娘喝雄黄酒——现了原形",
+    "pinyin": "bái niáng niáng hē xióng huáng jiǔ —— xiàn le yuán xíng",
+    "explanation": "真相暴露，藏不住。",
+    "en": "The truth comes out; can't hide anymore.",
+    "ru": "Правда вылезла наружу; не скрыть.",
+    "tr": "Gerçek ortaya çıkar; saklanamaz.",
+    "fa": "حقیقت بیرون می‌آید؛ دیگر پنهان نمی‌ماند.",
+    "ar": "انكشف الحقّ؛ لا يمكن إخفاؤه."
+  },
+  {
+    "sentence": "盲人买喇叭——瞎吹",
+    "pinyin": "máng rén mǎi lǎ bā —— xiā chuī",
+    "explanation": "瞎吹牛，没根据。",
+    "en": "Brags blindly; no basis for the talk.",
+    "ru": "Хвастается вслепую; не на чем держаться.",
+    "tr": "Temelsiz böbürlenir.",
+    "fa": "بی‌پایه لاف می‌زند.",
+    "ar": "يتباهى بلا أساس."
+  },
+  {
+    "sentence": "冰库里点蜡——洞（冻）房花烛",
+    "pinyin": "bīng kù lǐ diǎn là —— dòng fáng huā zhú",
+    "explanation": "双关洞房花烛，又指环境冷。",
+    "en": "Puns on wedding night candles and a freezing room.",
+    "ru": "Игра слов: брачная ночь и морозная комната.",
+    "tr": "Düğün gecesi ile soğuk ortam kelime oyunu.",
+    "fa": "بازی با «شب زفاف» و اتاق یخ‌زده.",
+    "ar": "توريةٌ بين ليلة الدخلة والبرد القارس."
+  },
+  {
+    "sentence": "山重水复疑无路，柳暗花明又一村",
+    "pinyin": "shān chóng shuǐ fù yí wú lù，liǔ àn huā míng yòu yī cūn",
+    "explanation": "比喻在困境中，突然出现转机，看到希望。",
+    "en": "In a dead end, a sudden turn brings hope and a way forward.",
+    "ru": "В тупике внезапно появляется поворот и надежда.",
+    "tr": "Çıkmazda aniden umut ve yeni bir çıkış belirir.",
+    "fa": "در بن‌بست ناگهان راهی باز می‌شود و امید پدید می‌آید.",
+    "ar": "في الضيق قد يفاجئك انفراج يبعث الأمل."
+  },
+  {
+    "sentence": "近朱者赤，近墨者黑",
+    "pinyin": "jìn zhū zhě chì，jìn mò zhě hēi",
+    "explanation": "比喻接近好人会受到好的影响，接近坏人会受到坏的影响，强调环境对人的影响。",
+    "en": "Good company improves you, bad company harms you; it stresses how environment shapes people.",
+    "ru": "Общение с хорошими людьми благо, с плохими — вред; подчёркивается влияние среды на человека.",
+    "tr": "İyi çevre sana iyi, kötü çevre kötü etki eder; ortamın insanı şekillendirdiğini vurgular.",
+    "fa": "نزدیکی به نیکان تأثیر نیک می‌گذارد، به بدان بد؛ بر اثر محیط بر انسان تأکید دارد.",
+    "ar": "صحبة الأخيار تصلحك وصحبة الأشرار تضرّك؛ يؤكد تأثير البيئة على الإنسان."
+  },
+  {
+    "sentence": "猫儿抓老鼠——祖传手艺",
+    "pinyin": "māo ér zhuā lǎo shǔ —— zǔ chuán shǒu yì",
+    "explanation": "老本行，干惯了。",
+    "en": "An old trade; done it for ages.",
+    "ru": "Старый промысел; делает давно.",
+    "tr": "Eski meslek; yıllardır yapıyor.",
+    "fa": "کار قدیمی و دست‌رفته؛ سال‌هاست انجام می‌دهد.",
+    "ar": "مهنة قديمة؛ متمرّس فيها منذ زمن."
+  },
+  {
+    "sentence": "人勤地不懒",
+    "pinyin": "rén qín dì bù lǎn",
+    "explanation": "比喻只要人勤奋努力，土地就会给予回报，不会让人白白付出。",
+    "en": "If people work diligently, the land will reward them and their effort will not be in vain.",
+    "ru": "Если человек трудолюбив, земля отблагодарит его — труд не пропадёт зря.",
+    "tr": "İnsan çalışkan olursa toprak karşılığını verir; emek boşa gitmez.",
+    "fa": "اگر انسان سخت‌کوش باشد، زمین هم پاداش می‌دهد و زحمتش هدر نمی‌رود.",
+    "ar": "إذا اجتهد الإنسان، أعطته الأرض ثمرة عمله ولن يضيع تعبه."
+  },
+  {
+    "sentence": "狗头上长角——装羊",
+    "pinyin": "gǒu tóu shàng zhǎng jiǎo —— zhuāng yáng",
+    "explanation": "装羊，装老实（双关）。",
+    "en": "Pretends to be a sheep—acts innocent (pun).",
+    "ru": "Притворяется овечкой; наивный вид (каламбур).",
+    "tr": "Masum koyun numarası (kelime oyunu).",
+    "fa": "خود را گوسفند جا می‌زند؛ بی‌گناه نمایان (بازی واژه).",
+    "ar": "يتظاهر بالبراءةٍ (توريةٌ)."
+  },
+  {
+    "sentence": "白藕绿叶荷花——原来是一家",
+    "pinyin": "bái ǒu lǜ yè hé huā —— yuán lái shì yī jiā",
+    "explanation": "本是一家人或一路人。",
+    "en": "They were always one family or on the same side.",
+    "ru": "Изначально одна семья или одна команда.",
+    "tr": "Aslında aynı aileden veya aynı taraftan.",
+    "fa": "اصلًا یک خانواده یا یک دست بوده‌اند.",
+    "ar": "كانوا أصلًا عائلة واحدة أو في جهة واحدة."
+  },
+  {
+    "sentence": "万丈高楼平地起",
+    "pinyin": "wàn zhàng gāo lóu píng dì qǐ",
+    "explanation": "比喻任何伟大的成就，都是从基础做起，一步一步积累起来的。",
+    "en": "Great achievements start from the ground up, built step by step from a solid base.",
+    "ru": "Любой великий успех начинается с основы и накапливается шаг за шагом.",
+    "tr": "Büyük başarılar zeminden başlar, adım adım birikir.",
+    "fa": "هر موفقیت بزرگی از پایه و قدم‌به‌قدم ساخته می‌شود.",
+    "ar": "كل إنجاز عظيم يبدأ من الأساس ويُبنى خطوة بخطوة."
+  },
+  {
+    "sentence": "不经历风雨，怎么见彩虹",
+    "pinyin": "bù jīng lì fēng yǔ，zěn me jiàn cǎi hóng",
+    "explanation": "比喻不经历困难和挫折，就无法获得成功和成长。",
+    "en": "Without trials and setbacks, there is no real success or growth.",
+    "ru": "Без трудностей и поражений не бывает подлинного успеха и роста.",
+    "tr": "Zorluk ve başarısızlık olmadan gerçek başarı ve gelişim olmaz.",
+    "fa": "بدون سختی و شکست، موفقیت و رشد واقعی حاصل نمی‌شود.",
+    "ar": "لا نجاح ولا نمو حقيقي بلا صعوبات وانتكاسات."
+  },
+  {
+    "sentence": "日月经天，江河行地",
+    "pinyin": "rì yuè jīng tiān，jiāng hé xíng dì",
+    "explanation": "比喻事物的发展有其客观规律，永恒不变。",
+    "en": "Things follow objective laws and move in an enduring, unchanging pattern.",
+    "ru": "Развитие подчинено объективным законам и устойчивому порядку.",
+    "tr": "Olaylar nesnel yasalara göre yürür; kalıcı bir düzen vardır.",
+    "fa": "پدیده‌ها بر اساس قوانین عینی پیش می‌روند و الگویی پایدار دارند.",
+    "ar": "تسير الأمور وفق قوانين موضوعية وبنمط دائم."
+  },
+  {
+    "sentence": "五朵梅花开一朵——四肢（枝）无力",
+    "pinyin": "wǔ duǒ méi huā kāi yī duǒ —— sì zhī wú lì",
+    "explanation": "浑身无力、使不上劲。",
+    "en": "Utterly weak; no strength left.",
+    "ru": "Совсем без сил.",
+    "tr": "Tamamen güçsüz; takat kalmadı.",
+    "fa": "کاملاً بی‌حال؛ نیرویی نیست.",
+    "ar": "ضعفٌ تامٌّ بلا قوّةٍ."
+  },
+  {
+    "sentence": "看三国掉泪——替古人担忧",
+    "pinyin": "kàn sān guó diào lèi —— tì gǔ rén dān yōu",
+    "explanation": "替古人瞎操心。",
+    "en": "Worries pointlessly about people long gone.",
+    "ru": "Зря переживает за давно ушедших.",
+    "tr": "Geçmiştekiler için boşa dert edinir.",
+    "fa": "بی‌جهت برای کهن‌الگوان نگران است.",
+    "ar": "يهتمّ بلا فائدةٍ بأشخاصٍ من الماضي."
+  },
+  {
+    "sentence": "留得青山在，不怕没柴烧",
+    "pinyin": "liú dé qīng shān zài，bù pà méi chái shāo",
+    "explanation": "比喻只要保住根本、留有余地，就不怕将来没有发展的机会。",
+    "en": "As long as you preserve the fundamentals and leave room, you will still have chances to develop later.",
+    "ru": "Если сохранить основу и пространство для манёвра, в будущем всегда найдутся возможности для развития.",
+    "tr": "Temelini koruyup kendine pay bırakırsan, gelecekte gelişme fırsatı yine bulunur.",
+    "fa": "تا وقتی اصل کار و پشتوانه حفظ شود و راهی باز بماند، بعدا فرصت پیشرفت هست.",
+    "ar": "ما دام الأصل محفوظًا وهناك مجال للمناورة، فلا خوف من غياب فرص التطور مستقبلًا."
+  },
+  {
+    "sentence": "庙里失火——慌了神",
+    "pinyin": "miào lǐ shī huǒ —— huāng le shén",
+    "explanation": "慌了神，不知所措。",
+    "en": "Panics and loses one's head.",
+    "ru": "Паникует; теряет голову.",
+    "tr": "Panikleyip ne yapacağını şaşırır.",
+    "fa": "وحشت می‌کند؛ از دست می‌دهد.",
+    "ar": "فزعٌ وفقدان التروّي."
+  },
+  {
+    "sentence": "热锅上的青豆——蹦得欢",
+    "pinyin": "rè guō shàng de qīng dòu —— bèng dé huān",
+    "explanation": "高兴得蹦跳，很活跃。",
+    "en": "Jumps for joy; very lively and excited.",
+    "ru": "Прыгает от радости; очень оживлённо.",
+    "tr": "Neşeyle zıplıyor; çok canlı.",
+    "fa": "شاد و پرجنب‌وجوش؛ می‌پرد.",
+    "ar": "مرحٌ نشيطٌ ينط."
+  },
+  {
+    "sentence": "爆竹店里起火了——全响了",
+    "pinyin": "bào zhú diàn lǐ qǐ huǒ le —— quán xiǎng le",
+    "explanation": "一下子全爆发、全知道了。",
+    "en": "Everything blows up or becomes known at once.",
+    "ru": "Всё взрывается или становится известным разом.",
+    "tr": "Her şey bir anda patlar veya ortaya çıkar.",
+    "fa": "یک‌دفعه همه چیز منفجر می‌شود یا همه می‌فهمند.",
+    "ar": "ينفجر كلّ شيء دفعةً واحدة أو ينكشف."
+  },
+  {
+    "sentence": "花盆里栽松树——成不了材",
+    "pinyin": "huā pén lǐ zāi sōng shù —— chéng bù liǎo cái",
+    "explanation": "不是那块材料，成不了才。",
+    "en": "Not the right stuff to succeed; won't make the grade.",
+    "ru": "Не тот материал; до успеха не дотянет.",
+    "tr": "O işe uygun değil; başarılı olamaz.",
+    "fa": "جنسش به درد آن کار نمی‌خورد؛ به جایی نمی‌رسد.",
+    "ar": "ليس من أهل النجاح؛ لا يصلح لهذا."
+  },
+  {
+    "sentence": "天下没有免费的午餐",
+    "pinyin": "tiān xià méi yǒu miǎn fèi de wǔ cān",
+    "explanation": "比喻没有不劳而获的事情，想要得到好处，就必须付出相应的代价。",
+    "en": "Nothing is free; gain requires paying a price.",
+    "ru": "Бесплатных обедов не бывает: за выгоду нужно платить.",
+    "tr": "Bedava öğle yemeği yoktur; kazanç bir bedel ister.",
+    "fa": "چیزی رایگان نیست؛ برای بهره باید بهایش را پرداخت.",
+    "ar": "لا غداء مجاني؛ المكسب يتطلب ثمنًا."
+  },
+  {
+    "sentence": "家丑不可外扬",
+    "pinyin": "jiā chǒu bù kě wài yáng",
+    "explanation": "指家庭内部的不光彩事情，不要对外人宣扬。",
+    "en": "Keep family shame private; do not broadcast it to outsiders.",
+    "ru": "Домашний позор не выносите за порог — не афишируйте посторонним.",
+    "tr": "Aile içi ayıpları dışarıya yırtma.",
+    "fa": "رسوایی درون خانواده را با بیرونی‌ها در میان نگذار.",
+    "ar": "لا تذيع فضائح الأسرة للغرباء."
+  },
+  {
+    "sentence": "裁缝不带尺——存心不量（良）",
+    "pinyin": "cái féng bù dài chǐ —— cún xīn bù liàng",
+    "explanation": "存心不良。",
+    "en": "Ill intent; means harm on purpose.",
+    "ru": "Злой умысел; нарочно.",
+    "tr": "Kötü niyetli; kasıtlı.",
+    "fa": "نیت بد دارد؛ عمداً آسیب می‌زند.",
+    "ar": "سوء نيّةٍ عمديّة."
+  },
+  {
+    "sentence": "厨师的帽子——高高在上",
+    "pinyin": "chú shī de mào zi —— gāo gāo zài shàng",
+    "explanation": "摆架子，自视甚高。",
+    "en": "Puts on airs; thinks too highly of oneself.",
+    "ru": "Зазнаётся; слишком высокого себя мнит.",
+    "tr": "Hava atar; kendini çok görür.",
+    "fa": "غرور می‌فروشد؛ خود را بالاتر می‌بیند.",
+    "ar": "يتعالى ويتصنع الفضل."
+  },
+  {
+    "sentence": "事实胜于雄辩",
+    "pinyin": "shì shí shèng yú xióng biàn",
+    "explanation": "比喻事实比华丽的言辞更有说服力，真相终究会被认可。",
+    "en": "Facts beat fine words; truth wins recognition in the end.",
+    "ru": "Факты убедительнее красивых речей; правда в итоге признаётся.",
+    "tr": "Gerçekler süslü sözlerden üstündür; doğru sonunda kabul görür.",
+    "fa": "واقعیت از سخن‌وری پرطمطراق قوی‌تر است؛ حقیقت سرانجام پذیرفته می‌شود.",
+    "ar": "الحقائق أقوى من الخطاب البليغ؛ الحقيقة تُعترف بها في النهاية."
+  },
+  {
+    "sentence": "韩信点兵——多多益善",
+    "pinyin": "hán xìn diǎn bīng —— duō duō yì shàn",
+    "explanation": "越多越好，多多益善。",
+    "en": "The more the better.",
+    "ru": "Чем больше, тем лучше.",
+    "tr": "Ne kadar çok o kadar iyi.",
+    "fa": "هر چه بیشتر بهتر.",
+    "ar": "كلّما زاد كان أفضل."
+  },
+  {
+    "sentence": "忍一时风平浪静，退一步海阔天空",
+    "pinyin": "rěn yī shí fēng píng làng jìng，tuì yī bù hǎi kuò tiān kōng",
+    "explanation": "比喻遇到矛盾或冲突时，忍耐一下、退让一步，就能化解矛盾，获得更大的空间。",
+    "en": "In conflict, a little patience and a step back can defuse tension and open up room.",
+    "ru": "В конфликте терпение и уступка снимают напряжение и дают больше пространства.",
+    "tr": "Anlaşmazlıkta biraz sabır ve geri adım gerginliği azaltır, alan açar.",
+    "fa": "در اختلاف، کمی تحمل و یک قدم عقب‌نشینی می‌تواند تنش را بشکند و فضای بیشتری بدهد.",
+    "ar": "في الخلاف، قليل من الصبر وخطوة للوراء يهدئان الوضع ويفسحان المجال."
+  },
+  {
+    "sentence": "作坊里的石磨——推一推，动一动",
+    "pinyin": "zuō fang lǐ de shí mò —— tuī yī tuī ， dòng yī dòng",
+    "explanation": "不推就不动，很被动。",
+    "en": "Won't move unless pushed; very passive.",
+    "ru": "Без толчка не двигается; пассивен.",
+    "tr": "İtilmeden kıpırdamaz; çok pasif.",
+    "fa": "بدون هل دادن حرکت نمی‌کند؛ منفعل.",
+    "ar": "لا يتحرّك إلا بدفعه؛ سلبيٌّ جدًّا."
+  },
+  {
+    "sentence": "有志者事竟成",
+    "pinyin": "yǒu zhì zhě shì jìng chéng",
+    "explanation": "指有志向、有决心的人，最终一定能把事情做成。",
+    "en": "Where there is a will, there is a way; determined people succeed in the end.",
+    "ru": "У кого есть цель и решимость, тот в конце концов добьётся успеха.",
+    "tr": "Azimli insan sonunda işi başarır.",
+    "fa": "کسی که اراده و عزم دارد، سرانجام به هدف می‌رسد.",
+    "ar": "من له عزيمة يبلغ غايته في النهاية."
+  },
+  {
+    "sentence": "台上一分钟，台下十年功",
+    "pinyin": "tái shàng yī fēn zhōng，tái xià shí nián gōng",
+    "explanation": "形容任何成功的背后，都离不开长期的刻苦练习和付出。",
+    "en": "It describes how behind every success lie long, hard practice and effort.",
+    "ru": "За любым успехом стоят долгие усердные тренировки и труд.",
+    "tr": "Her başarının arkasında uzun süreli sıkı çalışma ve emek olduğunu anlatır.",
+    "fa": "پشت هر موفقیت، تمرین و تلاش طولانی و سخت نهفته است.",
+    "ar": "يصف أن وراء كل نجاح تدريبًا طويلًا وجهدًا كبيرًا."
+  },
+  {
+    "sentence": "早开的红梅——一枝独秀",
+    "pinyin": "zǎo kāi de hóng méi —— yī zhī dú xiù",
+    "explanation": "在众人里特别突出。",
+    "en": "Stands out clearly among everyone else.",
+    "ru": "Явно выделяется среди всех.",
+    "tr": "Herkesin arasında belirgin şekilde öne çıkar.",
+    "fa": "در میان همه به‌وضوح برجسته است.",
+    "ar": "بارز بين الجميع بوضوح."
+  },
+  {
+    "sentence": "树高千丈，叶落归根",
+    "pinyin": "shù gāo qiān zhàng，yè luò guī gēn",
+    "explanation": "比喻人无论走得再远，最终还是要回到自己的故乡。",
+    "en": "No matter how far one goes, one eventually returns to one's roots or homeland.",
+    "ru": "Как бы далеко человек ни ушёл, в конце концов он возвращается к корням и родине.",
+    "tr": "Ne kadar uzakta olursan ol, sonunda köklerine ve yurduna dönersin.",
+    "fa": "هرچقدر هم دور بروی، سرانجام به خاک و ریشه‌ات بازمی‌گردی.",
+    "ar": "مهما ابتعد الإنسان، يعود في النهاية إلى أصله ووطنه."
+  },
+  {
+    "sentence": "恨铁不成钢",
+    "pinyin": "hèn tiě bù chéng gāng",
+    "explanation": "比喻对所期望的人不争气、不成才感到惋惜和着急。",
+    "en": "It expresses frustration and worry that someone you expect much from does not measure up.",
+    "ru": "Выражает досаду и тревогу, когда человек, от которого ждёшь многого, не оправдывает надежд.",
+    "tr": "Çok umut bağladığın birinin hakkını vermemesine duyulan üzüntü ve telaştır.",
+    "fa": "اندوه و نگرانی از اینکه کسی که از او انتظار داری شایسته نباشد یا تلاش نکند.",
+    "ar": "يعبّر عن الأسف والقلق لأن من نرجو منه الكثير لا يُجيب التوقعات."
+  },
+  {
+    "sentence": "啃着鱼骨聊天——话中带刺",
+    "pinyin": "kěn zhe yú gǔ liáo tiān —— huà zhōng dài cì",
+    "explanation": "话里带刺。",
+    "en": "Words carry barbs and sting.",
+    "ru": "Слова колкие.",
+    "tr": "Sözlerinde diken var.",
+    "fa": "حرف‌ها تیغ دارد.",
+    "ar": "كلامٌ شائكٌ."
+  },
+  {
+    "sentence": "为山九仞，功亏一篑",
+    "pinyin": "wéi shān jiǔ rèn，gōng kuī yī kuì",
+    "explanation": "比喻做事情只差最后一步，就功败垂成，非常可惜。",
+    "en": "Failing at the final step ruins the whole effort—deeply regrettable.",
+    "ru": "Провал на последнем шаге обесценивает весь труд — большая досада.",
+    "tr": "Son adımda yenilmek bütün emeği çöpe atar; çok yazık.",
+    "fa": "شکست در آخرین قدم همه تلاش را هدر می‌دهد؛ بسیار تأسف‌آور است.",
+    "ar": "الفشل في الخطوة الأخيرة يهدم كل الجهد؛ أمر مؤسف جدًا."
+  },
+  {
+    "sentence": "坐享其成",
+    "pinyin": "zuò xiǎng qí chéng",
+    "explanation": "指自己不付出努力，却享受别人劳动的成果。",
+    "en": "Enjoying others' fruits without effort of your own.",
+    "ru": "Пользоваться плодами чужого труда, ничего не вкладывая самому.",
+    "tr": "Kendi emeğin olmadan başkasının emeğinin meyvesini yersin.",
+    "fa": "بدون زحمت خودت بهره کار دیگران را می‌بری.",
+    "ar": "تنعم بثمار عمل غيرك بلا جهد منك."
+  },
+  {
+    "sentence": "刘备编草鞋——内行",
+    "pinyin": "liú bèi biān cǎo xié —— nèi háng",
+    "explanation": "内行、懂行。",
+    "en": "A real expert who knows the trade.",
+    "ru": "Настоящий знаток дела.",
+    "tr": "İşin ehli; bilir.",
+    "fa": "کارشناس واقعی؛ بلد است.",
+    "ar": "خبيرٌ حقيقيٌّ بالمهنة."
+  },
+  {
+    "sentence": "有则改之，无则加勉",
+    "pinyin": "yǒu zé gǎi zhī，wú zé jiā miǎn",
+    "explanation": "指如果有错误，就加以改正；如果没有错误，就加以勉励，继续保持。",
+    "en": "If there is fault, correct it; if not, encourage yourself to keep doing well.",
+    "ru": "Если есть ошибка — исправь; если нет — поощряй себя и продолжай в том же духе.",
+    "tr": "Hata varsa düzelt; yoksa iyi gitmeye devam etmeyi kendine telkin et.",
+    "fa": "اگر خطایی هست اصلاحش کن؛ اگر نیست، خود را به ادامه خوب بودن تشویق کن.",
+    "ar": "إن وُجد خطأ فصححه، وإلا فشجع نفسك على الاستمرار في الحسن."
+  },
+  {
+    "sentence": "木匠戴枷——自作自受",
+    "pinyin": "mù jiàng dài jiā —— zì zuò zì shòu",
+    "explanation": "自己造成的后果自己承担。",
+    "en": "You suffer the consequences you brought on yourself.",
+    "ru": "Сам пожинает плоды своих поступков.",
+    "tr": "Kendi yaptığının sonucunu çeker.",
+    "fa": "عواقب کار خودش را خودش می‌کشد.",
+    "ar": "يتحمّل تبعات فعله بنفسه."
+  },
+  {
+    "sentence": "井底下写文章——学问不浅",
+    "pinyin": "jǐng dǐ xià xiě wén zhāng —— xué wèn bù qiǎn",
+    "explanation": "讽刺学问深（其实挖苦）。",
+    "en": "Ironically says 'deep learning'—actually mocking pretension.",
+    "ru": "Насмешка над притворной учёностью.",
+    "tr": "Bilgi taklidiyle alay eder.",
+    "fa": "کنایه به «دانش عمیق»؛ در واقع مسخره می‌کند.",
+    "ar": "سخريةٌ من التظاهر بالعلم."
+  },
+  {
+    "sentence": "人贵有自知之明",
+    "pinyin": "rén guì yǒu zì zhī zhī míng",
+    "explanation": "指人最可贵的是能够清楚地认识自己的优点和缺点。",
+    "en": "What is most valuable in a person is clear self-knowledge of both strengths and weaknesses.",
+    "ru": "Самое ценное в человеке — трезвое понимание своих сильных и слабых сторон.",
+    "tr": "İnsanın en değerli niteliği, güçlü ve zayıf yanlarını açıkça bilmesidir.",
+    "fa": "باارزش‌ترین ویژگی انسان این است که قوت‌ها و ضعف‌های خود را روشن بشناسد.",
+    "ar": "أثمن ما في الإنسان أن يعرف بوضوح مزاياه وعيوبه."
+  },
+  {
+    "sentence": "踏破铁鞋无觅处，得来全不费工夫",
+    "pinyin": "tà pò tiě xié wú mì chù，dé lái quán bù fèi gōng fū",
+    "explanation": "比喻寻找了很久都没有找到的东西，却在不经意间轻易得到了。",
+    "en": "What you sought long in vain may come easily when you least expect it.",
+    "ru": "То, что долго искали безуспешно, может неожиданно достаться без труда.",
+    "tr": "Uzun süre arayıp bulamadığın şey, en ummadığın anda kolayca eline geçer.",
+    "fa": "آنچه مدت‌ها جستی و نیافتی، گاه ناگهان بی‌زحمت به دست می‌آید.",
+    "ar": "ما طال البحث عنه دون جدوى قد يأتيك بسهولة دون أن تتوقع."
+  },
+  {
+    "sentence": "人非圣贤，孰能无过",
+    "pinyin": "rén fēi shèng xián，shú néng wú guò",
+    "explanation": "指人不是圣人贤人，谁都会犯错误，强调要宽容他人的过失。",
+    "en": "No one is a sage; everyone makes mistakes, so we should be tolerant of others' faults.",
+    "ru": "Никто не святой: ошибаются все, поэтому к чужим промахам следует относиться терпимее.",
+    "tr": "Kimse kusursuz değildir; herkes hata yapar, bu yüzden başkalarının hatalarına hoşgörülü olmak gerekir.",
+    "fa": "هیچ‌کس قدیس نیست؛ همه خطا می‌کنند، پس باید نسبت به لغزش دیگران بردبار بود.",
+    "ar": "لا أحد معصوم؛ الجميع يخطئون، لذا ينبغي التسامح مع أخطاء الآخرين."
+  },
+  {
+    "sentence": "静以修身，俭以养德",
+    "pinyin": "jìng yǐ xiū shēn，jiǎn yǐ yǎng dé",
+    "explanation": "指通过内心的宁静来修养身心，通过节俭来培养品德。",
+    "en": "Calmness cultivates the self; frugality builds virtue.",
+    "ru": "Спокойствие ума воспитывает человека; бережливость крепит нравственность.",
+    "tr": "İç huzur kişiyi olgunlaştırır; tutumluluk erdemi yeşertir.",
+    "fa": "آرامش درونی جسم و روان را می‌پرورد؛ صرفه‌جویی فضیلت می‌آفریند.",
+    "ar": "السكينة تربّي النفس، والاقتصاد يغرس الفضيلة."
+  },
+  {
+    "sentence": "媒婆提亲——净拣好听的说",
+    "pinyin": "méi pó tí qīn —— jìng jiǎn hǎo tīng de shuō",
+    "explanation": "专拣好听的说，未必真实。",
+    "en": "Only picks the nice things to say; not necessarily true.",
+    "ru": "Говорит лишь приятное; не обязательно правда.",
+    "tr": "Sadece güzelini söyler; doğru olmayabilir.",
+    "fa": "فقط حرف‌های خوش را می‌گوید؛ لزوماً راست نیست.",
+    "ar": "يقول الجميل فقط؛ ليس بالضرورة حقيقيًا."
+  },
+  {
+    "sentence": "英雄所见略同",
+    "pinyin": "yīng xióng suǒ jiàn lüè tóng",
+    "explanation": "比喻有才能、有眼光的人，看法往往是相同的。",
+    "en": "Great minds often think alike.",
+    "ru": "Способные и дальновидные люди часто сходятся во мнении.",
+    "tr": "Yetenekli ve görüşü açık insanlar çoğu zaman aynı fikirdedir.",
+    "fa": "آدم‌های توانا و بصیر اغلب به یک نتیجه می‌رسند.",
+    "ar": "أصحاب الرأي والموهبة غالبًا يتفقون."
+  },
+  {
+    "sentence": "滴水之恩，当涌泉相报",
+    "pinyin": "dī shuǐ zhī ēn，dāng yǒng quán xiāng bào",
+    "explanation": "比喻别人给予自己微小的帮助，自己要以更大的恩情去回报。",
+    "en": "Even small kindnesses from others should be repaid with greater gratitude.",
+    "ru": "Даже малую помощь следует отплатить большей благодарностью.",
+    "tr": "Başkalarından gördüğün küçük iyilikleri daha büyük bir minnetle karşılamalısın.",
+    "fa": "حتی کمک کوچک دیگران را باید با سپاس و احسان بیشتر پاسخ داد.",
+    "ar": "حتى الإحسان اليسير يجب رده بامتنان وكرم أكبر."
+  },
+  {
+    "sentence": "一把钥匙开一把锁",
+    "pinyin": "yī bǎ yào shi kāi yī bǎ suǒ",
+    "explanation": "比喻解决不同的问题，要采用不同的方法，不能一概而论。",
+    "en": "Different problems need different solutions; one size does not fit all.",
+    "ru": "Разные задачи требуют разных подходов; универсального рецепта нет.",
+    "tr": "Her sorunun ayrı çözümü vardır; tek kalıp olmaz.",
+    "fa": "مسائل گوناگون راه‌حل‌های گوناگون می‌خواهند؛ یک نسخه برای همه نیست.",
+    "ar": "لكل مشكلة حل خاص؛ لا يصلح حل واحد للجميع."
+  },
+  {
+    "sentence": "人穷志不短",
+    "pinyin": "rén qióng zhì bù duǎn",
+    "explanation": "指即使生活贫穷，也不能丧失志气和尊严。",
+    "en": "Even if life is poor, one must not lose ambition or dignity.",
+    "ru": "Даже в бедности нельзя терять стремления и достоинства.",
+    "tr": "Yaşam yoksul olsa bile insan özgüvenini ve onurunu yitirmemelidir.",
+    "fa": "حتی اگر زندگی تنگدستی باشد، نباید اراده و کرامت از دست برود.",
+    "ar": "حتى مع الفقر، لا ينبغي أن يفقد الإنسان همته وكرامته."
+  },
+  {
+    "sentence": "刘姥姥坐席——洋相百出",
+    "pinyin": "liú lǎo lao zuò xí —— yáng xiàng bǎi chū",
+    "explanation": "出洋相，闹笑话。",
+    "en": "Makes a fool of oneself; one blunder after another.",
+    "ru": "Комично позорится; сплошные казусы.",
+    "tr": "Rezalet çıkarır; komik hatalar.",
+    "fa": "آبرو می‌ریزد؛ یک اشتباه بعد از دیگری.",
+    "ar": "يفضح نفسهٌ بمواقفٍ مضحكةٍ."
+  },
+  {
+    "sentence": "冰块掉进醋缸里——寒酸",
+    "pinyin": "bīng kuài diào jìn cù gāng lǐ —— hán suān",
+    "explanation": "寒酸、小气。",
+    "en": "Pathetically poor or stingy.",
+    "ru": "Жалко беден или скуп.",
+    "tr": "Zavallıca fakir veya çok cimri.",
+    "fa": "تهیدست یا خیلی خسیس.",
+    "ar": "بائسٌ أو شحيحٌ جدًّا."
+  },
+  {
+    "sentence": "草把做灯——粗心（芯）",
+    "pinyin": "cǎo bǎ zuò dēng —— cū xīn",
+    "explanation": "太粗心。",
+    "en": "Very careless.",
+    "ru": "Очень небрежен.",
+    "tr": "Çok dikkatsiz.",
+    "fa": "خیلی سهل‌انگار.",
+    "ar": "غير منتبهٍ جدًّا."
+  },
+  {
+    "sentence": "一寸光阴一寸金",
+    "pinyin": "yī cùn guāng yīn yī cùn jīn",
+    "explanation": "形容时间非常宝贵，要珍惜每一分每一秒。",
+    "en": "Time is as precious as gold; cherish every moment.",
+    "ru": "Время ценно, как золото; береги каждую минуту.",
+    "tr": "Zaman altın kadar değerlidir; her anı koru.",
+    "fa": "زمان مانند طلا گرانبهاست؛ هر لحظه را دریاب.",
+    "ar": "الوقت ثمين كالذهب؛ احرص على كل لحظة."
+  },
+  {
+    "sentence": "老和尚住山洞——没事（寺）",
+    "pinyin": "lǎo hé shàng zhù shān dòng —— méi shì",
+    "explanation": "没事、闲着（谐「寺」）。",
+    "en": "Nothing to do; idle (pun on 'temple').",
+    "ru": "Нечего делать; безделье (каламбур).",
+    "tr": "İş yok; boş (kelime oyunu).",
+    "fa": "کاری نیست؛ بیکار (بازی با «寺»).",
+    "ar": "بلا شغلٍ؛ فراغٌ (توريةٌ)."
+  },
+  {
+    "sentence": "黄豆切细丝——功夫到家了",
+    "pinyin": "huáng dòu qiè xì sī —— gōng fu dào jiā le",
+    "explanation": "功夫深，手艺到家。",
+    "en": "Skill is masterful; craft perfected.",
+    "ru": "Мастерство на высоте.",
+    "tr": "Ustalık tam; işi mükemmel.",
+    "fa": "مهارت عالی؛ دستش به کار آمد است.",
+    "ar": "براعةٌ كاملةٌ في الحرفة."
+  },
+  {
+    "sentence": "狗咬吕洞宾——不识好人心",
+    "pinyin": "gǒu yǎo lǚ dòng bīn —— bù shí hǎo rén xīn",
+    "explanation": "好心帮人，反被当成坏人。",
+    "en": "You mean well helping someone, but they treat you as the bad guy.",
+    "ru": "Хотел помочь с добрыми намерениями, а его считают злодеем.",
+    "tr": "İyi niyetle yardım eder; karşı taraf onu kötü sanır.",
+    "fa": "با نیت خوب کمک می‌کند، اما طرف او را بد جلوه می‌دهد.",
+    "ar": "يحسن النية بالمساعدة فيُنظر إليه على أنه شرير."
+  },
+  {
+    "sentence": "子欲养而亲不待",
+    "pinyin": "zǐ yù yǎng ér qīn bù dài",
+    "explanation": "指子女想要赡养父母的时候，父母却已经不在了，强调要及时尽孝。",
+    "en": "When children wish to care for parents, it may be too late—honor them in time.",
+    "ru": "Когда дети хотят заботиться о родителях, может быть поздно — будь добрым к ним при жизни.",
+    "tr": "Çocuklar bakmak istediğinde anne baba gitmiş olabilir; zamanında vefa göster.",
+    "fa": "وقتی فرزند بخواهد والدین را نگاه دارد، شاید دیر شده باشد؛ به‌موقع احترام بگذار.",
+    "ar": "قد يفوت الأوان حين يريد الولدان برّ الوالدين؛ برّهما في حياتهما."
+  },
+  {
+    "sentence": "以其人之道，还治其人之身",
+    "pinyin": "yǐ qí rén zhī dào，huán zhì qí rén zhī shēn",
+    "explanation": "比喻用别人对待自己的方式，去对待别人。",
+    "en": "Treat others as they have treated you.",
+    "ru": "Поступай с другими так, как они поступили с тобой.",
+    "tr": "Sana nasıl davrandılarsa sen de onlara öyle davran.",
+    "fa": "با همان روشی که دیگری با تو کرده، با او رفتار کن.",
+    "ar": "عامل الآخرين بما عاملوك به."
+  },
+  {
+    "sentence": "热锅上的蚂蚁——团团转",
+    "pinyin": "rè guō shàng de mǎ yǐ —— tuán tuán zhuàn",
+    "explanation": "心里着急，坐立不安。",
+    "en": "Anxious and restless, unable to sit still.",
+    "ru": "Тревожится и не может усидеть на месте.",
+    "tr": "Endişeli ve huzursuz; duramıyor.",
+    "fa": "نگران و بی‌قرار؛ نمی‌تواند آرام بگیرد.",
+    "ar": "قلقٌ ولا يهدأ ولا يستقر."
+  },
+  {
+    "sentence": "七窍通了六窍——一窍不通",
+    "pinyin": "qī qiào tōng le liù qiào —— yī qiào bù tōng",
+    "explanation": "一点也不懂。",
+    "en": "Understands nothing at all.",
+    "ru": "Ничего не смыслит.",
+    "tr": "Hiçbir şey anlamıyor.",
+    "fa": "اصلاً چیزی نمی‌فهمد.",
+    "ar": "لا يفهم شيئًا البتّة."
+  },
+  {
+    "sentence": "林黛玉进贾府——谨小慎微",
+    "pinyin": "lín dài yù jìn jiǎ fǔ —— jǐn xiǎo shèn wēi",
+    "explanation": "非常小心，怕出错。",
+    "en": "Extremely cautious, afraid of mistakes.",
+    "ru": "Чрезвычайно осторожен; боится ошибиться.",
+    "tr": "Çok dikkatli; hatadan korkar.",
+    "fa": "بسیار محتاط؛ از اشتباه می‌ترسد.",
+    "ar": "حذرٌ جدًّا يخاف الخطأ."
+  },
+  {
+    "sentence": "宁可信其有，不可信其无",
+    "pinyin": "níng kě xìn qí yǒu，bù kě xìn qí wú",
+    "explanation": "指对于不确定的事情，宁愿相信它存在，也要做好防范，避免遭受损失。",
+    "en": "For uncertain matters, it is safer to assume they may be true and take precautions to avoid loss.",
+    "ru": "В сомнительных случаях лучше допустить, что это возможно, и заранее принять меры, чтобы избежать ущерба.",
+    "tr": "Belirsiz durumlarda, var olabileceğini kabul edip önlem almak kaybı önlemek için daha güvenlidir.",
+    "fa": "در امور نامطمئن بهتر است احتمال وجود را جدی بگیری و پیشگیری کنی تا زیان نبینی.",
+    "ar": "في الأمور غير المؤكدة، الأفضل افتراض احتمال وجودها واتخاذ الاحتياط لتفادي الخسارة."
+  },
+  {
+    "sentence": "知彼知己，百战不殆",
+    "pinyin": "zhī bǐ zhī jǐ，bǎi zhàn bù dài",
+    "explanation": "指了解自己和对手的情况，就能在战争中永远立于不败之地，也比喻做任何事情都要知己知彼。",
+    "en": "Know yourself and your rival and you will not be imperiled; the same applies to any undertaking.",
+    "ru": "Зная себя и противника, не попадёшь в опасность; это верно для любого дела.",
+    "tr": "Kendini ve rakibini bilersen tehlikeye düşmezsin; her işte geçerli.",
+    "fa": "خود و حریف را بشناسی در خطر نمی‌افتی؛ در هر کاری همین اصل است.",
+    "ar": "من عرف نفسه وخصمه لم يُهْدَد؛ وهذا ينطبق على أي مسعى."
+  },
+  {
+    "sentence": "麻雀虽小，五脏俱全",
+    "pinyin": "má què suī xiǎo，wǔ zàng jù quán",
+    "explanation": "比喻事物虽然体积小，但各种必要的部分都齐全。",
+    "en": "Although something is small, it can still have all the necessary parts.",
+    "ru": "Даже небольшая вещь может иметь полный набор необходимых частей.",
+    "tr": "Bir şey küçük olsa da gerekli tüm parçaları tam olabilir.",
+    "fa": "یعنی چیزی با اینکه کوچک است، همه اجزای لازم را کامل دارد.",
+    "ar": "رغم صغر الحجم، قد يكون الشيء مكتمل الأجزاء الضرورية."
+  },
+  {
+    "sentence": "老虎拉车——谁赶（敢）",
+    "pinyin": "lǎo hǔ lā chē —— shuí gǎn",
+    "explanation": "谁敢？没人敢（双关）。",
+    "en": "Who dares? No one dares (pun on drive/dare).",
+    "ru": "Кто осмелится? Никто (игра слов).",
+    "tr": "Kim cesaret eder? Kimse (çift anlam).",
+    "fa": "کی جرأت دارد؟ هیچ‌کس (دو معنی).",
+    "ar": "من يجرؤ؟ لا أحدٌ (ازدواجيّةٌ معنويّة)."
+  },
+  {
+    "sentence": "一失足成千古恨",
+    "pinyin": "yī shī zú chéng qiān gǔ hèn",
+    "explanation": "比喻一旦犯下严重的错误，就会留下终身的遗憾和悔恨。",
+    "en": "One grave mistake can leave lifelong regret.",
+    "ru": "Одна тяжёлая ошибка может оставить пожизненное сожаление.",
+    "tr": "Bir büyük hata ömür boyu pişmanlık bırakır.",
+    "fa": "یک خطای جدی پشیمانی مادام‌العمر می‌گذارد.",
+    "ar": "زلّة جسيمة واحدة تترك ندمًا دائمًا."
+  },
+  {
+    "sentence": "聋子看戏——饱眼福",
+    "pinyin": "lóng zi kàn xì —— bǎo yǎn fú",
+    "explanation": "光看热闹，图个眼饱。",
+    "en": "Just watching for fun; feasts the eyes only.",
+    "ru": "Только смотрит для удовольствия; глазам пир.",
+    "tr": "Sadece seyreder; gözü doyurur.",
+    "fa": "فقط تماشا برای تفریح؛ چشم را سیر می‌کند.",
+    "ar": "مشاهدةٌ للمتعة فقط؛ تشبع العين."
+  },
+  {
+    "sentence": "司马昭之心——路人皆知",
+    "pinyin": "sī mǎ zhāo zhī xīn —— lù rén jiē zhī",
+    "explanation": "心思很明显，谁都看得出。",
+    "en": "What you plan is obvious to everyone.",
+    "ru": "Замысел виден всем и каждому.",
+    "tr": "Niyeti herkesçe belli.",
+    "fa": "نیتش برای همه روشن است.",
+    "ar": "مقصده واضحٌ للجميع."
+  },
+  {
+    "sentence": "一双筷子夹骨头——三条光棍",
+    "pinyin": "yī shuāng kuài zi jiā gǔ tou —— sān tiáo guāng gùn",
+    "explanation": "全是光棍，没家室之类。",
+    "en": "All bachelors; no families in the picture.",
+    "ru": "Все холостяки; без семей.",
+    "tr": "Hepsi bekâr; aile yok.",
+    "fa": "همه مجرد؛ خانواده‌ای در کار نیست.",
+    "ar": "كلّهم عزّابٌ بلا عائلاتٍ."
+  },
+  {
+    "sentence": "塞翁失马，焉知非福",
+    "pinyin": "sài wēng shī mǎ，yān zhī fēi fú",
+    "explanation": "比喻一时受到损失，未必是坏事，也可能因此换来好的结果，说明祸福可以相互转化。",
+    "en": "A loss may turn to gain; fortune and misfortune can swap places.",
+    "ru": "Потеря может обернуться выгодой; беда и удача переходят друг в друга.",
+    "tr": "Kayıp iyi sonuç doğurabilir; talih ve talihsizlik yer değiştirir.",
+    "fa": "زیان موقت شاید به سود تبدیل شود؛ بلا و نعمت جایشان را عوض می‌کنند.",
+    "ar": "قد يتحول الضرر إلى نفع؛ السراء والضراء يتبادلان."
+  },
+  {
+    "sentence": "苍蝇采蜜——装疯（蜂）",
+    "pinyin": "cāng yíng cǎi mì —— zhuāng fēng",
+    "explanation": "装疯卖傻，不正经。",
+    "en": "Acts silly or crazy; not being serious.",
+    "ru": "Притворяется дурачком; ведёт себя несерьёзно.",
+    "tr": "Aptal veya deli taklidi yapıyor; ciddi değil.",
+    "fa": "خود را احمق یا دیوانه جا می‌زند؛ جدی نیست.",
+    "ar": "يتصنع الغباء أو الجنون؛ غير جادّ."
+  },
+  {
+    "sentence": "包公断案——铁面无私",
+    "pinyin": "bāo gōng duàn àn —— tiě miàn wú sī",
+    "explanation": "办事公正，不徇私。",
+    "en": "Fair and impartial; shows no favoritism.",
+    "ru": "Справедлив и беспристрастен.",
+    "tr": "Adil ve tarafsız; kayırma yok.",
+    "fa": "منصف و بی‌طرف؛ طرفداری نمی‌کند.",
+    "ar": "عادلٌ بلا محاباة."
+  },
+  {
+    "sentence": "东洋人戴高帽——假充大个",
+    "pinyin": "dōng yáng rén dài gāo mào —— jiǎ chōng dà gè",
+    "explanation": "装大、装样子。",
+    "en": "Pretends to be a big shot.",
+    "ru": "Корчит из себя важную персону.",
+    "tr": "Büyük adam numarası yapıyor.",
+    "fa": "خود را آدم بزرگ جا می‌زند.",
+    "ar": "يتظاهر بالعظمة."
+  },
+  {
+    "sentence": "霸王被围——四面楚歌",
+    "pinyin": "bà wáng bèi wéi —— sì miàn chǔ gē",
+    "explanation": "被包围，处境孤立。",
+    "en": "Surrounded and cut off; utterly isolated.",
+    "ru": "В осаде и изолирован; без поддержки.",
+    "tr": "Kuşatılmış ve yalnız; çıkış yok.",
+    "fa": "محاصره و منزوی؛ راه فرار نیست.",
+    "ar": "محاصَرٌ معزولٌ بلا مهرب."
+  },
+  {
+    "sentence": "笨鸟先飞早入林",
+    "pinyin": "bèn niǎo xiān fēi zǎo rù lín",
+    "explanation": "比喻能力较弱的人，提前行动、付出更多努力，才能赶上别人。",
+    "en": "Weaker abilities need an early start and extra effort to catch up.",
+    "ru": "Кому дано меньше способностей, нужно начать раньше и стараться больше, чтобы угнаться за другими.",
+    "tr": "Yeteneği daha zayıf olanlar yetişmek için erken başlayıp daha çok çalışmalıdır.",
+    "fa": "کسی که توان کمتری دارد باید زودتر شروع کند و بیشتر تلاش کند تا به دیگران برسد.",
+    "ar": "من ضعفت قدرته يحتاج أن يبكر ويجتهد أكثر ليلحق بالآخرين."
+  },
+  {
+    "sentence": "周瑜打黄盖——一个愿打一个愿挨",
+    "pinyin": "zhōu yú dǎ huáng gài —— yí gè yuàn dǎ yí gè yuàn āi",
+    "explanation": "你情我愿，一个打一个挨。",
+    "en": "Both sides are willing—one hits, the other takes it.",
+    "ru": "Оба согласны: один бьёт, другой терпит.",
+    "tr": "İkisi de razı; biri vurur, biri yer.",
+    "fa": "هر دو راضی‌اند؛ یکی می‌زند، یکی تحمل می‌کند.",
+    "ar": "الطرفان راضيان؛ ضاربٌ ومضروبٌ طوعًا."
+  },
+  {
+    "sentence": "财神爷要饭——装穷",
+    "pinyin": "cái shén yé yào fàn —— zhuāng qióng",
+    "explanation": "装穷，其实有钱。",
+    "en": "Pretends to be poor though actually well-off.",
+    "ru": "Притворяется бедным, хотя деньги есть.",
+    "tr": "Fakir numarası yapıyor; aslında varlıklı.",
+    "fa": "فقیر جا می‌زند؛ در واقع پولدار است.",
+    "ar": "يتظاهر بالفقر وهو ميسور."
+  },
+  {
+    "sentence": "刘备的江山——哭出来的",
+    "pinyin": "liú bèi de jiāng shān —— kū chū lái de",
+    "explanation": "江山是哭求来的（戏说刘皇叔）。",
+    "en": "The realm was won by tears (joke about Liu Bei).",
+    "ru": "Страна достигнута слезами (шутка про Лю Бэя).",
+    "tr": "Hüküm gözyaşıyla (Liu Bei şakası).",
+    "fa": "قلمرو با گریه به دست آمده (شوخی با لیو بی).",
+    "ar": "المُلك بالبكاءٍ (نكتةٌ تاريخيّةٌ)."
+  },
+  {
+    "sentence": "三百六十行，行行出状元",
+    "pinyin": "sān bǎi liù shí háng，háng háng chū zhuàng yuán",
+    "explanation": "指无论从事哪一种职业，只要认真努力，都能做出成绩，成为行业里的佼佼者。",
+    "en": "In any trade, earnest effort can lead to excellence and standing out in one's field.",
+    "ru": "В любой профессии при усердии можно добиться успеха и стать лучшим в своём деле.",
+    "tr": "Her meslekte ciddi çabayla başarı ve alanda öne çıkmak mümkündür.",
+    "fa": "در هر حرفه‌ای با تلاش جدی می‌توان به موفقیت و برتری رسید.",
+    "ar": "في أي مهنة، الجد والاجتهاد يؤديان إلى التميز والتفوق."
+  },
+  {
+    "sentence": "白骨精骗唐僧——一计不成又生一计",
+    "pinyin": "bái gǔ jīng piàn táng sēng —— yī jì bù chéng yòu shēng yī jì",
+    "explanation": "一计不成又生一计。",
+    "en": "One plot fails and another is hatched at once.",
+    "ru": "Один коварный план провалился — тут же новый.",
+    "tr": "Bir oyun çöker; hemen yenisi.",
+    "fa": "یک نقشه شکست خورد؛ فوراً نقشهٔ دیگر.",
+    "ar": "فشل مكرٌ فأتى مكرٌ آخرٌ فورًا."
+  },
+  {
+    "sentence": "言者无罪，闻者足戒",
+    "pinyin": "yán zhě wú zuì，wén zhě zú jiè",
+    "explanation": "指提意见的人没有罪过，听意见的人要从中吸取教训，加以警戒。",
+    "en": "Speakers of criticism are not to blame; listeners should take warning from it.",
+    "ru": "Критикующий не виноват; слушающий должен извлечь урок и насторожиться.",
+    "tr": "Eleştiren suçlu değildir; dinleyen ders çıkarıp tedbir almalıdır.",
+    "fa": "منتقد گناهی ندارد؛ شنونده باید عبرت گیرد و مراقب باشد.",
+    "ar": "المُنتقد بريء؛ على المستمع أن يتعظ ويتحفظ."
+  },
+  {
+    "sentence": "十五个婆娘吵架——七嘴八舌",
+    "pinyin": "shí wǔ gè pó niáng chǎo jià —— qī zuǐ bā shé",
+    "explanation": "人多嘴杂，你说我说。",
+    "en": "Too many voices talking at once.",
+    "ru": "Слишком много ртов; все говорят разом.",
+    "tr": "Çok ağız bir anda konuşuyor.",
+    "fa": "دهان‌های زیاد؛ همه با هم حرف می‌زنند.",
+    "ar": "ألسنةٌ كثيرةٌ تتكلم معًا."
+  },
+  {
+    "sentence": "出水的荷花——不沾泥",
+    "pinyin": "chū shuǐ de hé huā —— bù zhān ní",
+    "explanation": "保持清白，不沾染坏事。",
+    "en": "Stays clean and upright; won't touch dirty business.",
+    "ru": "Сохраняет чистоту; не пачкается в грязи.",
+    "tr": "Temiz kalır; pis işlere bulaşmaz.",
+    "fa": "پاک و بی‌گناه می‌ماند؛ به کار زشت دست نمی‌زند.",
+    "ar": "يبقى نظيفًا بعيدًا عن القذارة."
+  },
+  {
+    "sentence": "巧妇难为无米之炊",
+    "pinyin": "qiǎo fù nán wéi wú mǐ zhī chuī",
+    "explanation": "比喻即使有才能的人，没有必要的条件，也无法完成任务。",
+    "en": "Even a capable person cannot complete a task without the necessary conditions.",
+    "ru": "Даже способный человек не выполнит задачу без необходимых условий и ресурсов.",
+    "tr": "Yetenekli biri bile gerekli koşullar olmadan işi tamamlayamaz.",
+    "fa": "حتی آدم توانمند هم بدون امکانات لازم نمی‌تواند کار را انجام دهد.",
+    "ar": "حتى الماهر لا يستطيع إتمام المهمة إذا غابت الشروط والموارد اللازمة."
+  },
+  {
+    "sentence": "黄连树下种苦瓜——苦生苦长",
+    "pinyin": "huáng lián shù xià zhǒng kǔ guā —— kǔ shēng kǔ zhǎng",
+    "explanation": "苦上加苦，越来越难。",
+    "en": "Misery piles on misery; things get harder and harder.",
+    "ru": "Беда на беду; всё труднее и труднее.",
+    "tr": "Dert üstüne dert; giderek zorlaşıyor.",
+    "fa": "بدبختی روی بدبختی؛ اوضاع سخت‌تر و سخت‌تر می‌شود.",
+    "ar": "يتراكم الشقاء؛ الأمور أصعب فأصعب."
+  },
+  {
+    "sentence": "按老方子吃药——还是老一套",
+    "pinyin": "àn lǎo fāng zi chī yào —— hái shì lǎo yī tào",
+    "explanation": "老办法、没新意。",
+    "en": "Same old ways; nothing new.",
+    "ru": "По-старому; ничего нового.",
+    "tr": "Eski yöntemler; yenilik yok.",
+    "fa": "همان روش‌های قدیمی؛ چیز تازه‌ای نیست.",
+    "ar": "نفس الأساليب القديمة؛ بلا جديد."
+  },
+  {
+    "sentence": "宁为玉碎，不为瓦全",
+    "pinyin": "níng wéi yù suì，bù wéi wǎ quán",
+    "explanation": "比喻宁愿保持高尚的气节而牺牲，也不愿苟且偷生、丧失尊严。",
+    "en": "It is better to sacrifice with integrity than to live dishonorably without dignity.",
+    "ru": "Лучше погибнуть, сохранив честь, чем жить бесчестно и без достоинства.",
+    "tr": "Onuru koruyarak bedel ödemek, onursuzca yaşamaktan daha iyidir.",
+    "fa": "بهتر است با حفظ شرافت فدا شوی تا اینکه بی‌آبرو و ذلیل زنده بمانی.",
+    "ar": "الأفضل التضحية مع حفظ الكرامة على العيش بذلّ وفقدان الشرف."
+  },
+  {
+    "sentence": "葫芦瓢捞饺子——滴水不漏",
+    "pinyin": "hú lú piáo lāo jiǎo zi —— dī shuǐ bù lòu",
+    "explanation": "做事严密，不漏破绽。",
+    "en": "Does things tightly; leaves no gaps.",
+    "ru": "Действует плотно; без щелей.",
+    "tr": "İşi sıkı tutar; boşluk bırakmaz.",
+    "fa": "کار را محکم می‌کند؛ رخنه‌ای نیست.",
+    "ar": "يضبط الأمر بدقّةٍ بلا ثغراتٍ."
+  },
+  {
+    "sentence": "出土的笋子——冒尖了",
+    "pinyin": "chū tǔ de sǔn zi —— mào jiān le",
+    "explanation": "冒尖、出头，引人注目。",
+    "en": "Suddenly stands out and draws attention.",
+    "ru": "Внезапно выделяется и привлекает внимание.",
+    "tr": "Birden öne çıkar, dikkat çeker.",
+    "fa": "ناگهان سر می‌زند و توجه می‌گیرد.",
+    "ar": "برز فجأةً ولفت الأنظار."
+  },
+  {
+    "sentence": "君子之交淡如水",
+    "pinyin": "jūn zǐ zhī jiāo dàn rú shuǐ",
+    "explanation": "指君子之间的友谊平淡而真挚，不掺杂功利之心。",
+    "en": "Friendship among the upright is plain yet sincere, without calculation of gain.",
+    "ru": "Дружба благородных людей сдержанна и искренна, без расчёта на выгоду.",
+    "tr": "Dürüst insanların dostluğu sade ama samimi; çıkar hesabı yoktur.",
+    "fa": "دوستی نیکان ساده و صمیمی است، بدون منفعت‌جویی.",
+    "ar": "صداقة أهل الفضيلة بسيطة وصادقة بلا رغبة في المنفعة."
+  },
+  {
+    "sentence": "喝风油精长大的——净说风凉话",
+    "pinyin": "hē fēng yóu jīng zhǎng dà de —— jìng shuō fēng liáng huà",
+    "explanation": "尽说风凉话，不体谅人。",
+    "en": "Only makes sarcastic remarks; shows no sympathy.",
+    "ru": "Лишь язвит; без сочувствия.",
+    "tr": "Sadece laf sokar; acımaz.",
+    "fa": "فقط حرف طعنه‌زن می‌زند؛ همدلی ندارد.",
+    "ar": "يقول السخرية فقط بلا تعاطف."
+  },
+  {
+    "sentence": "摸着石头过河——稳稳当当",
+    "pinyin": "mō zhe shí tou guò hé —— wěn wěn dāng dāng",
+    "explanation": "稳妥，摸着来。",
+    "en": "Careful and steady; feel your way forward.",
+    "ru": "Осторожно и уверенно; на ощупь вперёд.",
+    "tr": "Dikkatli ve sağlam; yolu yoklayarak.",
+    "fa": "محتاط و مطمئن؛ قدم‌به‌قدم جلو می‌رود.",
+    "ar": "حذرٌ ثابتٌ يتقدّم بحسٍّ للطريق."
+  },
+  {
+    "sentence": "宋江的军师——吴（无）用",
+    "pinyin": "sòng jiāng de jūn shī —— wú yòng",
+    "explanation": "没用、没能耐（谐「吴用」）。",
+    "en": "Useless or incompetent (pun on the name Wu Yong).",
+    "ru": "Бесполезен или бездарен (игра слов с именем).",
+    "tr": "İşe yaramaz veya beceriksiz (isim kelime oyunu).",
+    "fa": "بی‌فایده یا بی‌عرضه (بازی با نام «吴用»).",
+    "ar": "بلا فائدةٍ أو بلا مهارةٍ (توريةٌ على اسمٍ)."
+  },
+  {
+    "sentence": "里弄里扛竹竿——直来直去",
+    "pinyin": "lǐ lòng lǐ káng zhú gān —— zhí lái zhí qù",
+    "explanation": "说话做事直来直去。",
+    "en": "Speaks and acts straight, without beating around the bush.",
+    "ru": "Говорит и действует прямо.",
+    "tr": "Doğrudan konuşur ve davranır.",
+    "fa": "رک و بی‌پرده حرف می‌زند و عمل می‌کند.",
+    "ar": "مباشرٌ بلا لفٍ ودوران."
+  },
+  {
+    "sentence": "因地制宜",
+    "pinyin": "yīn dì zhì yí",
+    "explanation": "指根据不同的地方的具体情况，制定相应的措施和方法。",
+    "en": "Adapt measures to local conditions.",
+    "ru": "Принимай меры с учётом местных условий.",
+    "tr": "Önlemleri yerel koşullara göre uyarla.",
+    "fa": "اقدامات را متناسب با شرایط هر مکان تنظیم کن.",
+    "ar": "اضبط الإجراءات وفق ظروف كل مكان."
+  },
+  {
+    "sentence": "山中无老虎——猴子称大王",
+    "pinyin": "shān zhōng wú lǎo hǔ —— hóu zi chēng dà wáng",
+    "explanation": "没有强者，普通人就称老大。",
+    "en": "With no real leader, a nobody acts like the boss.",
+    "ru": "Когда нет настоящего лидера, обычный человек ведёт себя как главный.",
+    "tr": "Gerçek lider yokken sıradan biri patron kesilir.",
+    "fa": "بدون رهبر واقعی، آدم معمولی خودش را رئیس می‌داند.",
+    "ar": "بلا زعيم حقيقي يتصرف العاديّ كالرئيس."
+  },
+  {
+    "sentence": "老虎的屁股——摸不得",
+    "pinyin": "lǎo hǔ de pì gǔ —— mō bù dé",
+    "explanation": "脾气大、惹不起，别去碰。",
+    "en": "Short-tempered and dangerous to provoke—better leave them alone.",
+    "ru": "Вспыльчивый, лучше не трогать.",
+    "tr": "Huysuz ve üstüne gidilmez; karışmayın.",
+    "fa": "تندخو و دست‌نداشتنی؛ بهتر است کاری نداشته باشید.",
+    "ar": "سريع الغضب ولا يُستفزّ؛ من الأفضل تركه وشأنه."
+  },
+  {
+    "sentence": "墙上茅草——风吹两边倒",
+    "pinyin": "qiáng shàng máo cǎo —— fēng chuī liǎng biān dǎo",
+    "explanation": "没有主见，两边倒。",
+    "en": "No firm views; blows with the wind.",
+    "ru": "Без собственного мнения; куда ветер — туда и он.",
+    "tr": "Kendi fikri yok; rüzgâr nereden eserse oraya yatar.",
+    "fa": "نظر محکم ندارد؛ هر طرف باد بزند همان طرف می‌رود.",
+    "ar": "بلا رأي ثابت؛ يميل مع الريح."
+  },
+  {
+    "sentence": "满招损，谦受益",
+    "pinyin": "mǎn zhāo sǔn，qiān shòu yì",
+    "explanation": "指骄傲自满会带来损失，谦虚谨慎会得到益处。",
+    "en": "Arrogance brings loss, while humility and caution bring benefit.",
+    "ru": "Самодовольство приводит к потерям, а скромность и осторожность приносят пользу.",
+    "tr": "Kibir zarar getirir; tevazu ve temkin fayda sağlar.",
+    "fa": "غرور و خودپسندی زیان می‌آورد، اما فروتنی و احتیاط سود می‌دهد.",
+    "ar": "الغرور يجرّ الخسارة، أما التواضع والحذر فيجلبان المنفعة."
+  },
+  {
+    "sentence": "三人行，必有我师",
+    "pinyin": "sān rén xíng，bì yǒu wǒ shī",
+    "explanation": "指几个人同行，其中必定有人有值得自己学习的地方，强调要虚心向他人请教。",
+    "en": "Among those walking together, someone always has something to teach you; stay humble and ask others.",
+    "ru": "Среди попутчиков всегда найдётся, у кого поучиться; будь скромен и обращайся за советом.",
+    "tr": "Birlikte yürüyenler arasında öğreneceğin biri mutlaka vardır; alçakgönüllü ol ve sor.",
+    "fa": "در جمع همیشه کسی هست که چیزی برای آموختن دارد؛ فروتن باش و از دیگران بپرس.",
+    "ar": "مع القوم يوجد من يستحق أن تتعلم منه؛ تواضع واسأل."
+  },
+  {
+    "sentence": "话到嘴边留半句",
+    "pinyin": "huà dào zuǐ biān liú bàn jù",
+    "explanation": "指说话要谨慎，不要把话说得太满、太绝对，留有余地。",
+    "en": "Speak carefully; do not be too absolute—leave room for nuance.",
+    "ru": "Говори осмотрительно; не будь чрезмерно категоричен — оставь пространство для манёвра.",
+    "tr": "Dikkatli konuş; fazla kesin ve kapalı olma—pay bırak.",
+    "fa": "در گفتار احتیاط کن؛ سخن را تمام‌کننده و مطلق نگو؛ راه باز بگذار.",
+    "ar": "تكلم بحذر؛ لا تُقطع الكلمة قطعًا مطلقًا—اترك مجالًا للمرونة."
+  },
+  {
+    "sentence": "真金不怕火炼",
+    "pinyin": "zhēn jīn bù pà huǒ liàn",
+    "explanation": "比喻真正有才华、有品质的人，经过考验后，依然能保持本色，不会被埋没。",
+    "en": "True talent and character survive trial and are not hidden.",
+    "ru": "Подлинный талант и нрав выдерживают испытание и не остаются незамеченными.",
+    "tr": "Gerçek yetenek ve karakter sınavdan çıkar, gizlenmez.",
+    "fa": "استعداد و اخلاق راستین از آزمون سربلند بیرون می‌آید و پنهان نمی‌ماند.",
+    "ar": "الموهبة والأخلاق الحقيقيتان تصمدان أمام الاختبار ولا تُطمس."
+  },
+  {
+    "sentence": "半夜吃柿子——专拣软的捏",
+    "pinyin": "bàn yè chī shì zi —— zhuān jiǎn ruǎn de niē",
+    "explanation": "专挑软弱的欺负。",
+    "en": "Bullies only those who seem weak.",
+    "ru": "Обижает только слабых.",
+    "tr": "Sadece güçsüze bulaşır.",
+    "fa": "ضعیف‌ها را هدف می‌گیرد.",
+    "ar": "يستضعف الضعفاء فقط."
+  },
+  {
+    "sentence": "旁观者清，当局者迷",
+    "pinyin": "páng guān zhě qīng，dāng jú zhě mí",
+    "explanation": "比喻当事人因为身处其中，容易看不清事情的真相，而旁观者却能看得很清楚。",
+    "en": "People involved in a matter may not see it clearly, while outsiders often see it better.",
+    "ru": "Участник ситуации часто видит её хуже, чем сторонний наблюдатель.",
+    "tr": "Olayın içindeki kişi gerçeği net göremeyebilir; dışarıdan bakan ise daha açık görür.",
+    "fa": "کسی که درگیر ماجراست گاهی حقیقت را خوب نمی‌بیند، اما ناظر بیرونی روشن‌تر می‌بیند.",
+    "ar": "المنغمس في القضية قد لا يرى حقيقتها بوضوح، بينما يراها المراقب الخارجي أوضح."
+  },
+  {
+    "sentence": "药铺里的甘草——百搭（配）",
+    "pinyin": "yào pù lǐ de gān cǎo —— bǎi dā",
+    "explanation": "什么都配，和谁都合得来。",
+    "en": "Goes with anything; gets along with everyone.",
+    "ru": "Подходит ко всему; со всеми ладит.",
+    "tr": "Her şeye uyar; herkesle geçinir.",
+    "fa": "با همه چیز می‌سازد؛ با همه سازگار است.",
+    "ar": "يُلائم كلّ شيء ويتفق مع الجميع."
+  },
+  {
+    "sentence": "一二三五六——没事（四）",
+    "pinyin": "yī èr sān wǔ liù —— méi shì",
+    "explanation": "没事、没关系（谐「四」）。",
+    "en": "It's fine; no problem (pun on 'four').",
+    "ru": "Всё в порядке; ничего страшного (каламбур).",
+    "tr": "Sorun yok (sayı kelime oyunu).",
+    "fa": "اشکالی ندارد؛ ربطی نیست (بازی با «四»).",
+    "ar": "بلا مشكلةٍ (توريةٌ على رقمٍ)."
+  },
+  {
+    "sentence": "无事不登三宝殿",
+    "pinyin": "wú shì bù dēng sān bǎo diàn",
+    "explanation": "比喻没有事情，就不会主动上门，多用来指人上门必有目的。",
+    "en": "People do not visit without a reason; a caller usually wants something.",
+    "ru": "Без дела не ходят в гости; пришедший обычно чего-то хочет.",
+    "tr": "İnsanlar boş yere kapıya gelmez; gelenin bir amacı vardır.",
+    "fa": "کسی بی‌کار به دیدن نمی‌آید؛ آمدن معمولاً هدفی دارد.",
+    "ar": "لا يزور الناس بلا غرض؛ الزائر غالبًا له مطلب."
+  },
+  {
+    "sentence": "十五只吊桶打水——七上八下",
+    "pinyin": "shí wǔ zhǐ diào tǒng dǎ shuǐ —— qī shàng bā xià",
+    "explanation": "心里七上八下，不安稳。",
+    "en": "On edge; anxious and unsettled.",
+    "ru": "Тревожно; не по себе.",
+    "tr": "Endişeli, huzursuz.",
+    "fa": "اضطراب و بی‌قراری.",
+    "ar": "قلقٌ وعدم اطمئنان."
+  },
+  {
+    "sentence": "无风不起浪",
+    "pinyin": "wú fēng bù qǐ làng",
+    "explanation": "比喻事情的发生，一定有其原因，不会凭空出现。",
+    "en": "Nothing happens without a cause; events do not arise from nowhere.",
+    "ru": "Ничто не происходит без причины; из ниоткуда события не берутся.",
+    "tr": "Her olayın bir nedeni vardır; boş yere çıkmaz.",
+    "fa": "هیچ رویدادی بی‌علت نیست؛ از هیچ پدید نمی‌آید.",
+    "ar": "لا يحدث شيء بلا سبب؛ لا يخرج من العدم."
+  },
+  {
+    "sentence": "包子铺的笼屉——气往上冲",
+    "pinyin": "bāo zi pù de lóng tì —— qì wǎng shàng chōng",
+    "explanation": "一肚子气，忍不住。",
+    "en": "Full of anger that can't be held back.",
+    "ru": "Переполнен злостью; не может сдержать.",
+    "tr": "Öfkeyle dolu; içinde tutamaz.",
+    "fa": "از عصبانیت پر است؛ نمی‌تواند فرو بخورد.",
+    "ar": "ممتلئٌ بالغضب ولا يستطيع كظمه."
+  },
+  {
+    "sentence": "二十一天不出鸡——坏蛋",
+    "pinyin": "èr shí yī tiān bù chū jī —— huài dàn",
+    "explanation": "坏蛋、靠不住。",
+    "en": "A bad egg; unreliable.",
+    "ru": "Плохиш; ненадёжен.",
+    "tr": "Kötü adam; güvenilmez.",
+    "fa": "آدم بد؛ قابل اعتماد نیست.",
+    "ar": "شريرٌ غير موثوق."
+  },
+  {
+    "sentence": "刺猬钻进丝线铺——纠缠不清",
+    "pinyin": "cì wèi zuān jìn sī xiàn pù —— jiū chán bù qīng",
+    "explanation": "纠缠不清，理不顺。",
+    "en": "Hopelessly tangled; can't sort it out.",
+    "ru": "Запутано без конца; не разрулить.",
+    "tr": "Çözülemeyecek şekilde dolaşmış.",
+    "fa": "سرگردان و درهم؛ جدا نمی‌شود.",
+    "ar": "متشابكٌ بلا فكّ."
+  },
+  {
+    "sentence": "猫哭耗子——假慈悲",
+    "pinyin": "māo kū hào zi —— jiǎ cí bēi",
+    "explanation": "假装同情，其实不是真心。",
+    "en": "Pretends to pity others; the sympathy is not real.",
+    "ru": "Притворяется сочувствующим; на самом деле неискренен.",
+    "tr": "Acıyormuş gibi yapar; içten değildir.",
+    "fa": "دلسوزی را نقش بازی می‌کند؛ واقعاً دلسوز نیست.",
+    "ar": "يتظاهر بالشفقة وليست صادقة."
+  },
+  {
+    "sentence": "一叶障目，不见泰山",
+    "pinyin": "yī yè zhàng mù，bù jiàn tài shān",
+    "explanation": "比喻被局部的、细小的事物所蒙蔽，看不到整体和全局。",
+    "en": "A small thing blocks the view of the whole; you miss the big picture.",
+    "ru": "Мелочь заслоняет взгляд от целого и общей картины.",
+    "tr": "Ufak bir şey gözünü büyük resimden alıkoyar.",
+    "fa": "چیز کوچک محلی دید کل را می‌پوشاند.",
+    "ar": "الجزء الصغير يحجب رؤية الكل."
+  },
+  {
+    "sentence": "以小人之心，度君子之腹",
+    "pinyin": "yǐ xiǎo rén zhī xīn，duó jūn zǐ zhī fù",
+    "explanation": "比喻用狭隘、自私的心态，去揣测品德高尚的人的想法。",
+    "en": "Judging the noble by a petty, selfish mindset.",
+    "ru": "Мерить порядочного человека узкой, эгоистичной меркой.",
+    "tr": "Asil insanın niyetini dar ve bencil bir zihniyetle ölçmek.",
+    "fa": "قضاوت درباره آدم نیک‌سرشت با ذهن تنگ و خودخواه.",
+    "ar": "تقدير نوايا النبلاء بعقل ضيق أناني."
+  },
+  {
+    "sentence": "言多必失",
+    "pinyin": "yán duō bì shī",
+    "explanation": "指说话太多，容易出现失误或泄露秘密，强调说话要谨慎。",
+    "en": "Too much talk risks mistakes or leaks; speak with care.",
+    "ru": "Многословие ведёт к ошибкам и проболчкам; говори осторожно.",
+    "tr": "Çok konuşmak hata veya sır sızdırmaya yol açar; dikkatli ol.",
+    "fa": "زیاد گفتن خطا یا افشای راز می‌آورد؛ در سخن احتیاط کن.",
+    "ar": "كثرة الكلام تجرّ الزلل أو كشف الأسرار؛ كن حذرًا في القول."
+  },
+  {
+    "sentence": "人不可貌相，海水不可斗量",
+    "pinyin": "rén bù kě mào xiàng，hǎi shuǐ bù kě dǒu liàng",
+    "explanation": "比喻不能根据一个人的外表来判断他的才能和品质，就像不能用斗来衡量海水的多少一样。",
+    "en": "Do not judge a person's ability or character by appearance, just as the sea cannot be measured with a small bucket.",
+    "ru": "Нельзя судить о способностях и характере человека по внешности, как нельзя измерить море ковшом.",
+    "tr": "İnsanı dış görünüşüne bakarak değerlendirme; deniz küçük kapla ölçülmez.",
+    "fa": "نباید از ظاهر درباره توانایی و شخصیت کسی قضاوت کرد، همان‌طور که دریا را با پیمانه نمی‌سنجند.",
+    "ar": "لا تُحكَم قدرات الإنسان وخُلقه من مظهره، كما لا يُقاس البحر بمكيال صغير."
+  },
+  {
+    "sentence": "姜还是老的辣",
+    "pinyin": "jiāng hái shì lǎo de là",
+    "explanation": "比喻老年人经验丰富，考虑问题更周全、更有办法。",
+    "en": "The old are seasoned; they see issues more thoroughly and know what to do.",
+    "ru": "Старшие опытнее — рассматривают вопросы обстоятельнее и знают, как поступить.",
+    "tr": "Yaşlılar tecrübelidir; işi daha bütünsel görür ve çare bilir.",
+    "fa": "سال‌خورده‌ها تجربه دارند؛ مسائل را جامع‌تر می‌بینند و راه‌حل بهتری می‌دانند.",
+    "ar": "كبار السن أصحاب تجربة فيرون الأمور أشمل ويعرفون ما ينبغي فعله."
+  },
+  {
+    "sentence": "自食其力",
+    "pinyin": "zì shí qí lì",
+    "explanation": "指依靠自己的劳动来养活自己，不依赖别人。",
+    "en": "Live by your own labor without depending on others.",
+    "ru": "Корми себя своим трудом, не завися от других.",
+    "tr": "Başkasına muhtaç olmadan kendi emeğinle geçin.",
+    "fa": "با کار خودت زندگی کن، وابسته نباش.",
+    "ar": "اعش على كدّ يدك دون الاتكال على الغير."
+  },
+  {
+    "sentence": "千里之堤，溃于蚁穴",
+    "pinyin": "qiān lǐ zhī dī，kuì yú yǐ xué",
+    "explanation": "比喻小事不注意，就会酿成大祸，强调防患于未然的道理。",
+    "en": "Small neglect can ruin a great work; prevent trouble early.",
+    "ru": "Мелкая небрежность губит большое дело; беду лучше предупредить заранее.",
+    "tr": "Küçük ihmaller büyük felakete yol açar; baştan önle.",
+    "fa": "غفلت در جزئیات فاجعه می‌آورد؛ از اول پیشگیری کن.",
+    "ar": "إهمال التفاصيل الصغيرة يهدم العظيم؛ وقِ البلاء مبكرًا."
+  },
+  {
+    "sentence": "纸上得来终觉浅，绝知此事要躬行",
+    "pinyin": "zhǐ shàng dé lái zhōng jué qiǎn，jué zhī cǐ shì yào gōng xíng",
+    "explanation": "指从书本上得到的知识终究是肤浅的，要真正理解事情，还必须亲自去实践。",
+    "en": "Book learning stays shallow until you practice and experience it yourself.",
+    "ru": "Знание из книг остаётся поверхностным, пока не попробуешь сам на практике.",
+    "tr": "Kitaptan gelen bilgi, kendin yapmadıkça yüzeysel kalır.",
+    "fa": "دانش کتابی سطحی می‌ماند تا خود عمل نکنی و تجربه نکنی.",
+    "ar": "علم الكتب يبقى سطحيًا دون ممارسة وتجربة ذاتية."
+  },
+  {
+    "sentence": "背着娃娃推磨——添人不添劲",
+    "pinyin": "bèi zhe wá wá tuī mò —— tiān rén bù tiān jìn",
+    "explanation": "人多不顶用，不出力。",
+    "en": "More people but no extra effort; they don't pull their weight.",
+    "ru": "Народу больше, толку нет; никто не тянет.",
+    "tr": "Çok insan, az iş; kimse yüklenmiyor.",
+    "fa": "آدم بیشتر، زحمت همان؛ کسی زور نمی‌زند.",
+    "ar": "أكثر ناسًا بلا جهدٍ إضافي."
+  },
+  {
+    "sentence": "猪八戒照镜子——里外不是人",
+    "pinyin": "zhū bā jiè zhào jìng zi —— lǐ wài bú shì rén",
+    "explanation": "两边不讨好，难堪。",
+    "en": "Pleases neither side; caught in the middle.",
+    "ru": "Ни туда ни сюда; всем не угодил.",
+    "tr": "İki tarafı da memnun etmez; sıkışmış.",
+    "fa": "هیچ طرف را راضی نمی‌کند؛ درمانده.",
+    "ar": "لا يرضي طرفًا؛ في ورطةٍ."
+  },
+  {
+    "sentence": "针尖对麦芒——谁也不让谁",
+    "pinyin": "zhēn jiān duì mài máng —— shuí yě bù ràng shuí",
+    "explanation": "互不相让，针锋相对。",
+    "en": "Neither side gives way; they clash head-on.",
+    "ru": "Никто не уступает; острый противостояние.",
+    "tr": "Kimse geri adım atmaz; doğrudan çatışır.",
+    "fa": "هیچ‌کس عقب نمی‌کشد؛ رودررو و تند.",
+    "ar": "لا يتنازل أحد؛ مواجهة حادة."
+  },
+  {
+    "sentence": "兔子拉车——连蹦带跳",
+    "pinyin": "tù zi lā chē —— lián bèng dài tiào",
+    "explanation": "一路蹦跳，不平稳。",
+    "en": "Bumpy and uneven, like hopping along.",
+    "ru": "Неровно, как скачками.",
+    "tr": "Tümsek tümsek; zıplar gibi.",
+    "fa": "ناصاف و پرتکان؛ مثل پریدن‌های پیاپی.",
+    "ar": "غير مستقرّ؛ كالقفز المتقطّع."
+  },
+  {
+    "sentence": "顺藤摸瓜",
+    "pinyin": "shùn téng mō guā",
+    "explanation": "比喻沿着线索一步步追查，就能找到事情的真相或解决问题的方法。",
+    "en": "Follow the thread step by step to reach the truth or a solution.",
+    "ru": "По ниточке, шаг за шагом, можно дойти до правды или способа решения.",
+    "tr": "İpuçlarını adım adım izleyerek gerçeğe veya çözüme ulaşırsın.",
+    "fa": "با دنبال کردن سرنخ‌ها قدم‌به‌قدم به حقیقت یا راه‌حل می‌رسی.",
+    "ar": "اتبع الخيوط خطوة بخطوة لتصل إلى الحقيقة أو الحل."
+  },
+  {
+    "sentence": "不怕慢，就怕站",
+    "pinyin": "bù pà màn，jiù pà zhàn",
+    "explanation": "比喻做事不怕进度慢，就怕停滞不前、半途而废。",
+    "en": "It is not slowness that is feared, but standing still or giving up halfway.",
+    "ru": "Пугает не медлительность, а остановка или бросание на полпути.",
+    "tr": "Yavaşlık değil, durmak veya yarıda bırakmak tehlikelidir.",
+    "fa": "نه کندی که توقف یا نیمه‌کاره رها کردن خطرناک است.",
+    "ar": "ليس البطء هو المشكلة، بل التوقف أو الترك في المنتصف."
+  },
+  {
+    "sentence": "赠人玫瑰，手有余香",
+    "pinyin": "zèng rén méi guī，shǒu yǒu yú xiāng",
+    "explanation": "比喻帮助别人之后，自己也会感受到快乐和温暖。",
+    "en": "After helping others, you yourself feel joy and warmth.",
+    "ru": "Помогая другим, сам чувствуешь радость и тепло.",
+    "tr": "Başkasına yardım ettikten sonra sen de mutluluk ve sıcaklık hissedersin.",
+    "fa": "پس از کمک به دیگران، خودت هم شادی و گرمی احساس می‌کنی.",
+    "ar": "بعد مساعدة الآخرين تشعر أنت أيضًا بالسرور والدفء."
+  },
+  {
+    "sentence": "擒贼先擒王",
+    "pinyin": "qín zéi xiān qín wáng",
+    "explanation": "比喻做事要抓住关键人物或核心问题，才能彻底解决问题。",
+    "en": "To solve a problem thoroughly, target the key person or core issue first.",
+    "ru": "Чтобы решить проблему основательно, нужно сначала бить по ключевой фигуре или сути вопроса.",
+    "tr": "Sorunu kökten çözmek için önce kilit kişiyi ya da temel noktayı hedefle.",
+    "fa": "برای حل ریشه‌ای مسئله باید اول سراغ فرد کلیدی یا هسته اصلی مشکل رفت.",
+    "ar": "لحل المشكلة جذريًا، ابدأ بالشخص المحوري أو بجوهر المشكلة."
+  },
+  {
+    "sentence": "二两铁打大刀——不够料",
+    "pinyin": "èr liǎng tiě dǎ dà dāo —— bù gòu liào",
+    "explanation": "材料不够，做不成事。",
+    "en": "Not enough material to get the job done.",
+    "ru": "Материала не хватает; не сделать дело.",
+    "tr": "Malzeme yetmez; iş olmaz.",
+    "fa": "مواد کافی نیست؛ کار ساخته نمی‌شود.",
+    "ar": "المادة غير كافية لإنجاز العمل."
+  },
+  {
+    "sentence": "金玉其外，败絮其中",
+    "pinyin": "jīn yù qí wài，bài xù qí zhōng",
+    "explanation": "比喻外表看起来华丽美好，内部却十分破败、糟糕。",
+    "en": "Fine on the outside but rotten within.",
+    "ru": "Снаружи блистательно, внутри всё запущено и плохо.",
+    "tr": "Dışı süslü ve parlak, içi çürük ve perişan.",
+    "fa": "ظاهر آراسته و زرین، باطن فاسد و ویران.",
+    "ar": "لامع من الخارج، فاسد من الداخل."
+  },
+  {
+    "sentence": "铁匠铺的买卖——样样都过硬",
+    "pinyin": "tiě jiàng pù de mǎi mài —— yàng yàng dōu guò yìng",
+    "explanation": "过硬、靠得住。",
+    "en": "Solid and reliable in every way.",
+    "ru": "Во всём крепкий и надёжный.",
+    "tr": "Her konuda sağlam ve güvenilir.",
+    "fa": "در هر چیز محکم و قابل اعتماد.",
+    "ar": "متينٌ موثوقٌ في كلّ شيء."
+  },
+  {
+    "sentence": "哑巴吃黄连——有苦难言",
+    "pinyin": "yǎ bā chī huáng lián —— yǒu kǔ nàn yán",
+    "explanation": "有苦说不出。",
+    "en": "Has suffering inside but can't speak of it.",
+    "ru": "Страдает, но не может вымолвить.",
+    "tr": "İçi acıyla dolu; anlatamıyor.",
+    "fa": "درد دارد اما نمی‌تواند بگوید.",
+    "ar": "له ألمٌ باطنٌ ولا يستطيع البوح."
+  },
+  {
+    "sentence": "茶壶里开染房——不好摆布",
+    "pinyin": "chá hú lǐ kāi rǎn fáng —— bù hǎo bǎi bù",
+    "explanation": "局面小却难收拾。",
+    "en": "The situation is too tight to manage easily.",
+    "ru": "Тесная ситуация; трудно всё уладить.",
+    "tr": "Dar bir durum; yönetmesi zor.",
+    "fa": "موقعیت تنگ است؛ سخت جمع‌وجور می‌شود.",
+    "ar": "وضعٌ ضيّقٌ يصعب ضبطه."
+  },
+  {
+    "sentence": "少壮不努力，老大徒伤悲",
+    "pinyin": "shào zhuàng bù nǔ lì，lǎo dà tú shāng bēi",
+    "explanation": "指年轻时不努力奋斗，到老了只会白白后悔、悲伤。",
+    "en": "If you do not strive in youth, in old age you will only regret in vain.",
+    "ru": "Кто не трудится в молодости, в старости лишь тщетно жалеет.",
+    "tr": "Gençliğinde çabalamazsan yaşlılıkta boşuna pişman olursun.",
+    "fa": "اگر در جوانی تلاش نکنی، در پیری جز پشیمانی بی‌ثمر نخواهی داشت.",
+    "ar": "من لا يجتهد في الشباب يبقى نادمًا عبثًا في الشيخوخة."
+  },
+  {
+    "sentence": "冰天雪地发牢骚——冷言冷语",
+    "pinyin": "bīng tiān xuě dì fā láo sāo —— lěng yán lěng yǔ",
+    "explanation": "说话带刺、冷冰冰。",
+    "en": "Barbed, icy remarks.",
+    "ru": "Колкие, ледяные слова.",
+    "tr": "Sinsi, soğuk sözler.",
+    "fa": "حرف‌های تند و سرد.",
+    "ar": "أقوالٌ باردةٌ لاذعة."
+  },
+  {
+    "sentence": "天作孽，犹可违；自作孽，不可活",
+    "pinyin": "tiān zuò niè，yóu kě wéi；zì zuò niè，bù kě huó",
+    "explanation": "指上天造成的灾祸，还可以设法躲避；自己造成的灾祸，就无法逃避，终将自食恶果。",
+    "en": "Calamity from heaven may still be avoided; self-inflicted harm cannot be escaped and brings its own punishment.",
+    "ru": "Небесное бедствие ещё можно обойти; сам наделал — не уйдёшь от последствий.",
+    "tr": "Dışarıdan gelen bela bazen savunulabilir; kendi elinle yarattığın felaketten kaçış olmaz.",
+    "fa": "بلای نازل‌شده شاید بتوان دفع کرد؛ اما آسیب خودساخته گریزناپذیر است و عاقبت به خودت برمی‌گردد.",
+    "ar": "قد يُتقى بعض بلاء السماء، أما ما ارتكبته بنفسك فلا مفر من عواقبه."
+  },
+  {
+    "sentence": "厨师进厨房——来了内行",
+    "pinyin": "chú shī jìn chú fáng —— lái le nèi háng",
+    "explanation": "内行一到，事情好办。",
+    "en": "An expert arrives and things get easier.",
+    "ru": "Пришёл знаток — дело пошло легче.",
+    "tr": "Uzman gelince iş kolaylaşır.",
+    "fa": "کارشناس آمد؛ کار راحت می‌شود.",
+    "ar": "جاء الخبير فسهُل الأمر."
+  },
+  {
+    "sentence": "十年树木，百年树人",
+    "pinyin": "shí nián shù mù，bǎi nián shù rén",
+    "explanation": "比喻培养人才是一件长期而艰巨的事情，需要花费大量的时间和精力。",
+    "en": "Growing talent takes generations of time and effort, harder than growing trees.",
+    "ru": "Воспитание людей долгое и трудное дело, требует гораздо больше времени и сил, чем выращивание деревьев.",
+    "tr": "İnsan yetiştirmek ağaç yetiştirmekten uzun ve zordur; çok zaman ve emek ister.",
+    "fa": "پرورش انسان سال‌ها زمان و تلاش می‌خواهد؛ سخت‌تر از رشد درخت است.",
+    "ar": "تربية الناس أطول وأصعب من نمو الأشجار وتحتاج وقتًا وجهدًا كبيرين."
+  },
+  {
+    "sentence": "凡事预则立，不预则废",
+    "pinyin": "fán shì yù zé lì，bù yù zé fèi",
+    "explanation": "指做任何事情，提前做好准备就能成功，没有准备就会失败。",
+    "en": "With preparation you succeed; without it you fail.",
+    "ru": "Кто заранее готовится — преуспевает; кто нет — терпит неудачу.",
+    "tr": "Önceden hazırlıklı olursan başarırsın; hazırlıksız kalırsan başarısız olursun.",
+    "fa": "با آمادگی از پیش موفق می‌شوی؛ بی‌آمادگی به شکست می‌انجامد.",
+    "ar": "من أعدّ نجح؛ من لم يُعدّ فشل."
+  },
+  {
+    "sentence": "冤冤相报何时了",
+    "pinyin": "yuān yuān xiāng bào hé shí liǎo",
+    "explanation": "比喻冤仇之间互相报复，永远没有结束的时候，强调要宽容待人，化解矛盾。",
+    "en": "Tit-for-tat revenge never ends; be tolerant and resolve conflict.",
+    "ru": "Взаимная месть бесконечна; нужно прощать и снимать противоречия.",
+    "tr": "Göz göre göre intikam bitmez; hoşgörülü ol, anlaşmazlığı çöz.",
+    "fa": "انتقام متقابل پایانی ندارد؛ ببخش و اختلاف را حل کن.",
+    "ar": "ثأرٌ بثأر لا ينتهي؛ تسامح وحل الخلاف."
+  },
+  {
+    "sentence": "欲速则不达",
+    "pinyin": "yù sù zé bù dá",
+    "explanation": "比喻急于求成，反而会达不到预期的目标，强调做事要循序渐进。",
+    "en": "Haste makes waste; go step by step to reach your goal.",
+    "ru": "Торопливость мешает достичь цели; нужно двигаться постепенно.",
+    "tr": "Acele hedefe ulaşmayı engeller; adım adım ilerle.",
+    "fa": "عجله مانع رسیدن به هدف می‌شود؛ قدم‌به‌قدم پیش برو.",
+    "ar": "الاستعجال يعيق الوصول؛ تقدم تدريجيًا."
+  },
+  {
+    "sentence": "水仙不开花——装蒜",
+    "pinyin": "shuǐ xiān bù kāi huā —— zhuāng suàn",
+    "explanation": "装糊涂，装不知道。",
+    "en": "Playing dumb; pretending not to know.",
+    "ru": "Притворяется дурачком; делает вид, что не знает.",
+    "tr": "Aptal numarası yapıyor; bilmiyormuş gibi.",
+    "fa": "خود را نفهم جا می‌زند؛ وانمود می‌کند نمی‌داند.",
+    "ar": "يتظاهر بالغباء أو الجهل."
+  },
+  {
+    "sentence": "磨刀不误砍柴工",
+    "pinyin": "mó dāo bù wù kǎn chái gōng",
+    "explanation": "比喻事先做好准备工作，反而能提高效率，不会耽误正事。",
+    "en": "It means preparing beforehand actually improves efficiency and does not delay the main task.",
+    "ru": "Заблаговременная подготовка повышает эффективность и не мешает основному делу.",
+    "tr": "Önceden hazırlık yapmanın verimi artırdığını ve asıl işi geciktirmediğini anlatır.",
+    "fa": "یعنی آماده‌سازی از پیش کار را مؤثرتر می‌کند و مانع انجام کار اصلی نمی‌شود.",
+    "ar": "يعني أن التحضير المسبق يزيد الكفاءة ولا يؤخر العمل الجوهري."
+  },
+  {
+    "sentence": "甘蔗地里长草——荒糖（唐）",
+    "pinyin": "gān zhè dì lǐ zhǎng cǎo —— huāng táng",
+    "explanation": "乱七八糟（谐「荒唐」）。",
+    "en": "Total mess (pun on 'absurd').",
+    "ru": "Полный бардак (каламбур).",
+    "tr": "Tam bir karmaşa (kelime oyunu).",
+    "fa": "آشفتگی کامل (بازی با «荒唐»).",
+    "ar": "فوضى تامّةٌ (توريةٌ)."
+  },
+  {
+    "sentence": "文武之道，一张一弛",
+    "pinyin": "wén wǔ zhī dào，yī zhāng yī chí",
+    "explanation": "比喻治理国家、做人做事，要松紧结合，有张有弛，不能一味紧张或松懈。",
+    "en": "In governing or living, alternate tension with relaxation; neither constant strain nor slack.",
+    "ru": "В управлении и в жизни нужны чередование напряжения и отдыха, без крайностей.",
+    "tr": "Yönetimde ve hayatta gerginlik ile gevşeme dengelenmeli; sürekli ya gergin ya gevşek olunmaz.",
+    "fa": "در مدیریت و زندگی باید تناوب میان سخت‌گیری و آسودگی بود؛ نه همیشه فشار و نه همیشه سستی.",
+    "ar": "في الحكم والحياة ينبغي الجمع بين الشد والرخاء دون إفراط في أحدهما."
+  },
+  {
+    "sentence": "好事多磨",
+    "pinyin": "hǎo shì duō mó",
+    "explanation": "比喻美好的事情往往要经历很多波折才能实现。",
+    "en": "Good things often take many twists and turns before they come about.",
+    "ru": "Хорошее нередко сбывается лишь после многих испытаний и препятствий.",
+    "tr": "Güzel şeyler çoğu zaman çok engel ve sıkıntıdan sonra gerçekleşir.",
+    "fa": "کارهای نیکو اغلب پس از فرازونشیب بسیار به بار می‌نشینند.",
+    "ar": "الأمور الجميلة لا تتحقق إلا بعد منعرجات وعقبات كثيرة."
+  },
+  {
+    "sentence": "麻绳串豆腐——提不起来",
+    "pinyin": "má shéng chuàn dòu fǔ —— tí bù qǐ lái",
+    "explanation": "提不起来，没法扶持。",
+    "en": "Can't be lifted or supported; useless to help.",
+    "ru": "Не поднять; не на что опереться.",
+    "tr": "Kaldırılamaz; tutup kaldıramazsın.",
+    "fa": "بلند نمی‌شود؛ نمی‌شود نگهش داشت.",
+    "ar": "لا يُرفع ولا يُسند."
+  },
+  {
+    "sentence": "远亲不如近邻",
+    "pinyin": "yuǎn qīn bù rú jìn lín",
+    "explanation": "比喻远方的亲戚，不如身边的邻居更能及时提供帮助。",
+    "en": "A distant relative is less help than a neighbor close by when you need aid.",
+    "ru": "Дальний родственник не так полезен, как близкий сосед, когда нужна срочная помощь.",
+    "tr": "Uzak akraba, yardım gerektiğinde yakın komşu kadar yetişmez.",
+    "fa": "خویشاوند دور از همسایه نزدیک در کمک به‌موقع نمی‌رسد.",
+    "ar": "القريب البعيد لا ينفع كالجار القريب وقت الحاجة."
+  },
+  {
+    "sentence": "画蛇添足——多此一举",
+    "pinyin": "huà shé tiān zú —— duō cǐ yī jǔ",
+    "explanation": "做多余的事，反而坏事。",
+    "en": "An extra step that ruins things.",
+    "ru": "Лишнее действие портит дело.",
+    "tr": "Fazladan iş işi berbat eder.",
+    "fa": "کار اضافه که خراب می‌کند.",
+    "ar": "زيادةٌ تفسد الأمر."
+  },
+  {
+    "sentence": "霉烂了的莲藕——坏心眼",
+    "pinyin": "méi làn le de lián ǒu —— huài xīn yǎn",
+    "explanation": "心眼坏，不善良。",
+    "en": "Mean-spirited; not a kind heart.",
+    "ru": "Злой дух; не добрый человек.",
+    "tr": "Kötü niyetli; yüreği iyi değil.",
+    "fa": "بددل و بدجنس؛ مهربان نیست.",
+    "ar": "سيّئ النيّة؛ ليس طيب القلب."
+  },
+  {
+    "sentence": "大蒜发芽——多心",
+    "pinyin": "dà suàn fā yá —— duō xīn",
+    "explanation": "想太多，多心。",
+    "en": "Overthinking; reading too much into things.",
+    "ru": "Слишком много думает; подозрителен без причины.",
+    "tr": "Fazla düşünüyor; her şeyden şüpheleniyor.",
+    "fa": "زیادی فکر می‌کند؛ به خودش شک دارد.",
+    "ar": "كثرة التفكير والوسواس."
+  },
+  {
+    "sentence": "不开花的玫瑰——净刺",
+    "pinyin": "bù kāi huā de méi guī —— jìng cì",
+    "explanation": "说话带刺，不好接近。",
+    "en": "Speaks with barbs; hard to get close to.",
+    "ru": "Говорит язвительно; к нему трудно подступиться.",
+    "tr": "Sözleri dikenli; yakınlaşmak zor.",
+    "fa": "حرف‌هایش تیغ دارد؛ نزدیک شدن سخت است.",
+    "ar": "كلامه شائك؛ صعب الاقتراب منه."
+  },
+  {
+    "sentence": "天有不测风云，人有旦夕祸福",
+    "pinyin": "tiān yǒu bù cè fēng yún，rén yǒu dàn xī huò fú",
+    "explanation": "比喻天气变化无常，人生也难免会遇到意外的灾祸和福气。",
+    "en": "Weather is unpredictable; life too brings sudden fortune or misfortune.",
+    "ru": "Погода непредсказуема; в жизни тоже внезапно случаются и удача, и беда.",
+    "tr": "Hava beklenmedik değişir; hayatta da ansızın talih veya felaket gelir.",
+    "fa": "آسمان غیرقابل پیش‌بینی است؛ زندگی هم ناگهان بلا یا نعمت می‌آورد.",
+    "ar": "الطقس لا يُضبط؛ والحياة تحمل بغتة سراء وضراء."
+  },
+  {
+    "sentence": "钱不是万能的，但没有钱是万万不能的",
+    "pinyin": "qián bù shì wàn néng de，dàn méi yǒu qián shì wàn wàn bù néng de",
+    "explanation": "指金钱虽然不能解决所有问题，但没有金钱，很多事情都无法开展。",
+    "en": "Money cannot solve everything, but without money many things cannot even begin.",
+    "ru": "Деньги не всесильны, но без денег многие дела вообще невозможно начать.",
+    "tr": "Para her şeyi çözmez, ama para olmadan birçok işe başlanamaz.",
+    "fa": "پول همه‌چیز را حل نمی‌کند، اما بدون پول خیلی کارها اصلا شروع نمی‌شوند.",
+    "ar": "المال لا يحل كل المشكلات، لكن من دونه لا يمكن بدء كثير من الأمور."
+  },
+  {
+    "sentence": "老鼠过街——人人喊打",
+    "pinyin": "lǎo shǔ guò jiē —— rén rén hǎn dǎ",
+    "explanation": "坏人坏事，人人都痛恨、反对。",
+    "en": "Everyone hates bad people and bad deeds and stands against them.",
+    "ru": "Плохих людей и дурные поступки все ненавидят и отвергают.",
+    "tr": "Kötü insanlar ve kötülükler herkesçe nefret edilir ve karşı çıkılır.",
+    "fa": "آدم‌های بد و کارهای بد را همه منفور می‌دانند و با آن‌ها مخالف‌اند.",
+    "ar": "الناس يكرهون الأشرار والأعمال السيئة ويعارضونها."
+  },
+  {
+    "sentence": "前车之鉴，后车之师",
+    "pinyin": "qián chē zhī jiàn，hòu chē zhī shī",
+    "explanation": "比喻把前人的失败当作教训，避免自己重蹈覆辙。",
+    "en": "Take others' past failures as lessons, so you do not repeat the same mistakes.",
+    "ru": "Чужие прошлые неудачи должны служить уроком, чтобы не наступать на те же грабли.",
+    "tr": "Öncekilerin başarısızlığını ders al ki aynı hataya düşmeyesin.",
+    "fa": "شکست پیشینیان را درس بگیر تا خودت همان اشتباه را تکرار نکنی.",
+    "ar": "اجعل إخفاقات من سبقوك عِبرةً لك حتى لا تكرر الأخطاء نفسها."
+  },
+  {
+    "sentence": "熟过头的石榴——不攻自破",
+    "pinyin": "shú guò tóu de shí liú —— bù gōng zì pò",
+    "explanation": "漏洞自己露出来，不攻自破。",
+    "en": "The weak points show by themselves; the case collapses without attack.",
+    "ru": "Слабые места сами вылезают; без нападения всё рушится.",
+    "tr": "Zayıf noktalar kendiliğinden ortaya çıkar; saldırı olmadan çöker.",
+    "fa": "نقاط ضعف خودش بیرون می‌آید؛ بدون حمله می‌ریزد.",
+    "ar": "تنكشف الثغرات وحدها وينهار الأمر دون هجومٍ."
+  },
+  {
+    "sentence": "船到桥头自然直",
+    "pinyin": "chuán dào qiáo tóu zì rán zhí",
+    "explanation": "比喻事情发展到一定程度，自然会有解决的办法，不必过分担心。",
+    "en": "When things mature, a solution appears naturally; there is no need to worry excessively.",
+    "ru": "Дойдя до известной стадии, дело само найдёт решение; не стоит чрезмерно волноваться.",
+    "tr": "İş olgunlaşınca çözüm doğal olarak çıkar; aşırı endişeye gerek yok.",
+    "fa": "وقتی کار به مرحله‌ای برسد، راه‌حل خود به خود پدید می‌آید؛ نگرانی بی‌مورد لازم نیست.",
+    "ar": "عندما ينضج الأمر، يظهر الحل من تلقاء نفسه؛ لا داعي للقلق المفرط."
+  },
+  {
+    "sentence": "裁缝铺的衣服——成套成套的",
+    "pinyin": "cái féng pù de yī fú —— chéng tào chéng tào de",
+    "explanation": "成套搭配，一整套。",
+    "en": "Comes in full sets; everything matches.",
+    "ru": "Полные комплекты; всё подобрано.",
+    "tr": "Tam takım; hepsi uyumlu.",
+    "fa": "مجموعه‌ای کامل؛ همه‌چیز جور است.",
+    "ar": "مجموعات كاملة متناسقة."
+  },
+  {
+    "sentence": "关帝庙里拜观音——找错了门",
+    "pinyin": "guān dì miào lǐ bài guān yīn —— zhǎo cuò le mén",
+    "explanation": "找错对象、找错门。",
+    "en": "Went to the wrong place or asked the wrong person.",
+    "ru": "Не туда зашёл; не к тому человеку.",
+    "tr": "Yanlış kapı; yanlış adres.",
+    "fa": "جای یا آدم اشتباه.",
+    "ar": "مكانٌ أو شخصٌ خاطئٌ."
+  },
+  {
+    "sentence": "精诚所至，金石为开",
+    "pinyin": "jīng chéng suǒ zhì，jīn shí wéi kāi",
+    "explanation": "比喻只要心意真诚，即使是坚硬的金石也能被感动、被打开，强调真诚的力量。",
+    "en": "Sincerity can move even metal and stone; it highlights the power of genuineness.",
+    "ru": "Искренность трогает даже камень и металл; подчёркивается сила подлинности.",
+    "tr": "Samimiyet taşı bile eritir; içtenliğin gücünü vurgular.",
+    "fa": "اگر دل پاک و راست باشد حتی سنگ و فلز هم نرم می‌شود؛ بر قدرت صداقت تأکید دارد.",
+    "ar": "الإخلاص يحرك حتى المعدن والحجر؛ يبرز قوة الصدق."
+  },
+  {
+    "sentence": "怀里抱冰——心寒",
+    "pinyin": "huái lǐ bào bīng —— xīn hán",
+    "explanation": "心里失望、发凉。",
+    "en": "Feels bitterly disappointed inside.",
+    "ru": "На душе холодно и пусто от разочарования.",
+    "tr": "İçi üşümüş, hayal kırıklığı.",
+    "fa": "دلش سرد و ناامید است.",
+    "ar": "قلبٌ باردٌ من خيبة الأمل."
+  },
+  {
+    "sentence": "浑身贴膏药——毛病不少",
+    "pinyin": "hún shēn tiē gāo yào —— máo bìng bù shǎo",
+    "explanation": "一身毛病、问题不少。",
+    "en": "Lots of problems or bad habits.",
+    "ru": "Много недостатков и проблем.",
+    "tr": "Bir sürü kusur veya sorun.",
+    "fa": "مشکلات یا عادت‌های بد زیاد.",
+    "ar": "كثرة العيوب أو المشكلات."
+  },
+  {
+    "sentence": "刀子刻碑——尽说石话（实）",
+    "pinyin": "dāo zi kè bēi —— jǐn shuō shí huà",
+    "explanation": "说的都是实话（双关）。",
+    "en": "Telling plain truth (pun on stone/real).",
+    "ru": "Говорит чистую правду (игра слов).",
+    "tr": "Dürüst konuşuyor; saf gerçek (çift anlam).",
+    "fa": "راست می‌گوید؛ حقیقت محض (دو معنی).",
+    "ar": "يقول الحقّ الصريحٌ (توريةٌ)."
+  },
+  {
+    "sentence": "清官难断家务事",
+    "pinyin": "qīng guān nán duàn jiā wù shì",
+    "explanation": "比喻家庭内部的矛盾复杂，即使是公正的人也难以判断是非。",
+    "en": "Family disputes are so complex that even a fair person finds it hard to judge right and wrong.",
+    "ru": "Семейные конфликты настолько сложны, что даже справедливому человеку трудно рассудить, кто прав.",
+    "tr": "Aile içi anlaşmazlıklar o kadar karmaşıktır ki adil biri bile hüküm vermekte zorlanır.",
+    "fa": "اختلافات خانوادگی آن‌قدر پیچیده است که حتی آدم عادل هم به‌سختی می‌تواند داوری کند.",
+    "ar": "خلافات الأسرة معقدة لدرجة أن حتى العادل يصعب عليه الفصل فيها."
+  },
+  {
+    "sentence": "祸不单行",
+    "pinyin": "huò bù dān xíng",
+    "explanation": "指不幸的事情往往会接连发生。",
+    "en": "Misfortunes often come in clusters.",
+    "ru": "Несчастья нередко сыплются одно за другим.",
+    "tr": "Talihsizlikler çoğu zaman peş peşe gelir.",
+    "fa": "بلایا اغلب پشت سر هم می‌آیند.",
+    "ar": "المصائب غالبًا تتتابع."
+  },
+  {
+    "sentence": "往者不可谏，来者犹可追",
+    "pinyin": "wǎng zhě bù kě jiàn，lái zhě yóu kě zhuī",
+    "explanation": "指过去的事情已经无法挽回，未来的事情还可以努力争取。",
+    "en": "The past cannot be changed; the future can still be shaped by effort.",
+    "ru": "Прошлого не вернёшь; будущее ещё можно изменить усилиями.",
+    "tr": "Geçmişi değiştiremezsin; geleceği hâlâ çabayla şekillendirebilirsin.",
+    "fa": "گذشته را نمی‌توان عوض کرد؛ آینده را هنوز می‌توان با تلاش ساخت.",
+    "ar": "الماضي لا يُرد، أما المستقبل فيمكن العمل من أجله."
+  },
+  {
+    "sentence": "刘备借荆州——有借无还",
+    "pinyin": "liú bèi jiè jīng zhōu —— yǒu jiè wú huán",
+    "explanation": "借东西不还。",
+    "en": "Borrows but never returns.",
+    "ru": "Берёт в долг и не возвращает.",
+    "tr": "Alır, geri vermez.",
+    "fa": "قرض می‌گیرد و پس نمی‌دهد.",
+    "ar": "يقترض ولا يعيد."
+  },
+  {
+    "sentence": "煤铺的掌柜——赚黑钱",
+    "pinyin": "méi pù de zhǎng guì —— zhuàn hēi qián",
+    "explanation": "赚黑心钱。",
+    "en": "Makes dirty or ill-gotten money.",
+    "ru": "Зарабатывает грязные деньги.",
+    "tr": "Kirli veya haksız para kazanır.",
+    "fa": "پول حرام یا ناپاک درمی‌آورد.",
+    "ar": "يكسب مالًا قذرًا أو حرامًا."
+  },
+  {
+    "sentence": "养兵千日，用兵一时",
+    "pinyin": "yǎng bīng qiān rì，yòng bīng yī shí",
+    "explanation": "比喻长期培养人才或准备力量，就是为了在关键时刻派上用场。",
+    "en": "Long preparation exists for the moment when it is finally needed.",
+    "ru": "Долгая подготовка ради того решающего момента, когда она понадобится.",
+    "tr": "Uzun hazırlık, gerektiği kritik an için yapılır.",
+    "fa": "آماده‌سازی درازمدت برای لحظه‌ای است که واقعا به کار آید.",
+    "ar": "الإعداد الطويل لأجل اللحظة الحاسمة التي يُستدعى فيها."
+  },
+  {
+    "sentence": "不听老人言，吃亏在眼前",
+    "pinyin": "bù tīng lǎo rén yán，chī kuī zài yǎn qián",
+    "explanation": "指老年人经验丰富，不听他们的劝告，很容易遇到麻烦、吃亏上当。",
+    "en": "The elderly are experienced; ignoring their advice often leads to trouble and loss.",
+    "ru": "У пожилых большой опыт; не слушать их советы часто ведёт к неприятностям и убыткам.",
+    "tr": "Yaşlıların deneyimi boldur; öğütlerini dinlememek çoğu zaman baş belası ve zarar getirir.",
+    "fa": "سالمندان تجربه زیادی دارند؛ نادیده گرفتن نصیحتشان اغلب به دردسر و ضرر می‌انجامد.",
+    "ar": "كبار السن ذوو خبرة؛ تجاهل نصائحهم يوقعك في مشاكل وخسائر."
+  },
+  {
+    "sentence": "言必信，行必果",
+    "pinyin": "yán bì xìn，xíng bì guǒ",
+    "explanation": "指说话一定要守信用，做事一定要有结果，强调诚信和执行力。",
+    "en": "Keep your word and finish what you start; stress on integrity and follow-through.",
+    "ru": "Слово держи, дело доводи до результата; акцент на честности и исполнительности.",
+    "tr": "Sözünü tut, işi sonuçlandır; dürüstlük ve icrayı vurgular.",
+    "fa": "به گفته‌ات وفا کن و کار را به نتیجه برسان؛ بر صداقت و اجرا تأکید است.",
+    "ar": "أوفِ بقولك وأتمّ عملك؛ يؤكد على الأمانة والتنفيذ."
+  },
+  {
+    "sentence": "林黛玉葬花——多愁善感",
+    "pinyin": "lín dài yù zàng huā —— duō chóu shàn gǎn",
+    "explanation": "多愁善感，爱伤心。",
+    "en": "Melancholy; prone to sadness.",
+    "ru": "Меланхоличен; склонен к грусти.",
+    "tr": "Hüzünlü; kolay üzülür.",
+    "fa": "افسرده و غمگین؛ آسان می‌گرید.",
+    "ar": "كئيبٌ سريع الحزن."
+  },
+  {
+    "sentence": "瓜熟蒂落，水到渠成",
+    "pinyin": "guā shú dì luò，shuǐ dào qú chéng",
+    "explanation": "比喻条件成熟了，事情自然会成功，不必急于求成。",
+    "en": "When conditions ripen, success comes naturally; there is no need to rush.",
+    "ru": "Когда условия созрели, успех приходит естественно; торопиться не нужно.",
+    "tr": "Koşullar olgunlaşınca iş kendiliğinden yoluna girer; acele etmeye gerek yok.",
+    "fa": "وقتی شرایط فراهم شد، کار خودبه‌خود به نتیجه می‌رسد؛ نیازی به شتاب بی‌جا نیست.",
+    "ar": "إذا اكتملت الشروط نجح الأمر تلقائيًا دون حاجة إلى الاستعجال."
+  },
+  {
+    "sentence": "八级工拜师傅——精益求精",
+    "pinyin": "bā jí gōng bài shī fù —— jīng yì qiú jīng",
+    "explanation": "技术或要求越来越高。",
+    "en": "Skills or standards keep getting higher.",
+    "ru": "Мастерство или требования всё выше.",
+    "tr": "Ustalık veya beklenti sürekli yükselir.",
+    "fa": "مهارت یا معیارها مدام بالاتر می‌رود.",
+    "ar": "تتصاعد المهارات أو المعايير."
+  },
+  {
+    "sentence": "梅兰芳唱霸王别姬——拿手好戏",
+    "pinyin": "méi lán fāng chàng bà wáng bié jī —— ná shǒu hǎo xì",
+    "explanation": "最拿手的本领。",
+    "en": "One's best skill or signature performance.",
+    "ru": "Конёк; фирменный номер.",
+    "tr": "En iyi marifeti; numarası.",
+    "fa": "بهترین مهارت یا نمایش امضایی.",
+    "ar": "أمهر ما عنده أو عرضه المميّز."
+  },
+  {
+    "sentence": "虎父无犬子",
+    "pinyin": "hǔ fù wú quǎn zǐ",
+    "explanation": "比喻有才能的父亲，其子女也不会太差，多用来称赞别人的子女。",
+    "en": "Able fathers tend to have capable children; often used to praise someone else's child.",
+    "ru": "У способного отца дети обычно тоже неплохи; часто так хвалят чужих детей.",
+    "tr": "Yetenekli babanın çocukları da genelde iyidir; çoğunlukla başkasının çocuğunu övmek için kullanılır.",
+    "fa": "پدر بااستعداد فرزندانی شایسته دارد؛ بیشتر برای ستودن فرزند دیگران به کار می‌رود.",
+    "ar": "الأب الموهوب غالبًا له أبناء متميزون؛ يُستخدم غالبًا في مدح أبناء الغير."
+  },
+  {
+    "sentence": "馋嘴跑进药材店——净找苦吃",
+    "pinyin": "chán zuǐ pǎo jìn yào cái diàn —— jìng zhǎo kǔ chī",
+    "explanation": "自找苦吃。",
+    "en": "Looking for trouble; brings suffering on oneself.",
+    "ru": "Сам напросился на страдания.",
+    "tr": "Kendi kendine dert arıyor.",
+    "fa": "دنبال دردسر است؛ خودش را به بدبختی می‌اندازد.",
+    "ar": "يطلب المتاعب بنفسه."
+  },
+  {
+    "sentence": "八寸脚穿七寸鞋——硬装",
+    "pinyin": "bā cùn jiǎo chuān qī cùn xié —— yìng zhuāng",
+    "explanation": "硬撑，不合适也装。",
+    "en": "Forces a bad fit; pretends it works.",
+    "ru": "Втискивает насильно; делает вид, что подходит.",
+    "tr": "Olmazı olur gösterir; zorlar.",
+    "fa": "زور می‌زند؛ ناجور هم وانمود می‌کند.",
+    "ar": "يُجبرُ ما لا يلائم ويتظاهر بالملاءمة."
+  },
+  {
+    "sentence": "王子犯法，与庶民同罪",
+    "pinyin": "wáng zǐ fàn fǎ，yǔ shù mín tóng zuì",
+    "explanation": "比喻法律面前人人平等，即使是地位高贵的人，犯了法也要受到惩罚。",
+    "en": "Before the law all are equal; even the high-born are punished if they break it.",
+    "ru": "Перед законом все равны: и знать несёт наказание за нарушение.",
+    "tr": "Kanun önünde herkes eşittir; soylu da suç işlerse ceza görür.",
+    "fa": "پیش قانون همه برابرند؛ حتی نجیب‌زاده هم قانون‌شکن مجازات می‌شود.",
+    "ar": "أمام القانون الجميع سواء؛ حتى ذوو المناصب يُعاقَبون إذا خالفوا."
+  },
+  {
+    "sentence": "众志成城",
+    "pinyin": "zhòng zhì chéng chéng",
+    "explanation": "比喻大家同心协力，就像城墙一样坚固，能克服任何困难。",
+    "en": "United will is strong as a city wall and overcomes any hardship.",
+    "ru": "Единая воля крепка, как стена, и преодолевает любые трудности.",
+    "tr": "Birleşik irade sur kadar sağlamdır, her zorluğun üstesinden gelir.",
+    "fa": "اراده یکپارچه مانند دیوار شهر است و هر سختی را می‌شکند.",
+    "ar": "الإرادة الجماعية قوية كسور المدينة وتتغلب على الشدائد."
+  },
+  {
+    "sentence": "捉贼捉赃，捉奸捉双",
+    "pinyin": "zhuō zéi zhuō zāng，zhuō jiān zhuō shuāng",
+    "explanation": "比喻做事要抓住确凿的证据，才能让人信服。",
+    "en": "Convince others only with solid proof—catch the thief with the goods.",
+    "ru": "Убеждают лишь неопровержимые доказательства — как вора с уликой.",
+    "tr": "İnsanı ancak kesin kanıtla ikna edersin; hırsızı malıyla yakalarsın.",
+    "fa": "با مدارک محکم متقاعد کن؛ دزد را با مسروقات بگیر.",
+    "ar": "أقنع بالدليل القاطع؛ أمسك السارق بالمسروقات."
+  },
+  {
+    "sentence": "蚕豆开花——黑心",
+    "pinyin": "cán dòu kāi huā —— hēi xīn",
+    "explanation": "心眼坏（歇后语固定说法）。",
+    "en": "A set phrase meaning mean-spirited or ill-willed.",
+    "ru": "Устойчивое выражение о злом сердце.",
+    "tr": "Sabit söz: kötü niyetli demek.",
+    "fa": "تعبیر ثابت برای بدجنی و بدنیت.",
+    "ar": "تعبير متداول عن سوء النيّة."
+  },
+  {
+    "sentence": "猫爪伸到鱼缸里——想捞一把",
+    "pinyin": "māo zhǎo shēn dào yú gāng lǐ —— xiǎng lāo yī bǎ",
+    "explanation": "想趁机捞点好处。",
+    "en": "Trying to grab some benefit while the chance is there.",
+    "ru": "Хочет урвать выгоду при случае.",
+    "tr": "Fırsattan yararlanıp bir çıkar kapmak istiyor.",
+    "fa": "می‌خواهد از فرصت کمی سود ببرد.",
+    "ar": "يسعى لاغتنام الفرصة لنفعٍ ما."
+  },
+  {
+    "sentence": "阎王爷贴告示——鬼话连篇",
+    "pinyin": "yán wáng yé tiē gào shì —— guǐ huà lián piān",
+    "explanation": "全是骗人的话。",
+    "en": "Nothing but lies and nonsense.",
+    "ru": "Одна ложь и чушь.",
+    "tr": "Yalan dolan; boş laf.",
+    "fa": "فقط دروغ و حرف مفت.",
+    "ar": "كذبٌ وهراءٌ فقط."
+  },
+  {
+    "sentence": "因势利导",
+    "pinyin": "yīn shì lì dǎo",
+    "explanation": "指顺着事物发展的趋势，加以引导，使其朝着有利的方向发展。",
+    "en": "Guide matters along the trend so they develop favorably.",
+    "ru": "Направляй развитие вдоль тенденции, чтобы оно шло к выгодному исходу.",
+    "tr": "Gelişimin akışıyla uyumlu yönlendir; işleri yararlı yöne çek.",
+    "fa": "با جریان روند همراه شو و آن را به سوی سودمندی هدایت کن.",
+    "ar": "وجّه الأمور مع اتجاه تطورها نحو ما يفيد."
+  },
+  {
+    "sentence": "沙滩上盖楼房——不牢靠",
+    "pinyin": "shā tān shàng gài lóu fáng —— bù láo kào",
+    "explanation": "基础不牢，靠不住。",
+    "en": "Built on sand; not dependable.",
+    "ru": "На слабом фундаменте; ненадёжно.",
+    "tr": "Temeli zayıf; güvenilmez.",
+    "fa": "روی پایه سست؛ قابل اعتماد نیست.",
+    "ar": "على أساسٍ زلقٍ غير موثوق."
+  },
+  {
+    "sentence": "尺有所短，寸有所长",
+    "pinyin": "chǐ yǒu suǒ duǎn，cùn yǒu suǒ cháng",
+    "explanation": "比喻每个人都有自己的优点和缺点，没有十全十美的人。",
+    "en": "Everyone has strengths and weaknesses; no one is perfect.",
+    "ru": "У каждого есть достоинства и недостатки; никто не безупречен.",
+    "tr": "Herkesin güçlü ve zayıf yönleri vardır; kimse mükemmel değildir.",
+    "fa": "هر کس نقاط قوت و ضعف دارد؛ کسی کامل نیست.",
+    "ar": "لكل إنسان محاسن ومساوئ؛ لا أحد كامل."
+  },
+  {
+    "sentence": "学海无涯苦作舟",
+    "pinyin": "xué hǎi wú yá kǔ zuò zhōu",
+    "explanation": "比喻学习的道路没有尽头，只有通过刻苦努力，才能不断进步。",
+    "en": "Learning has no end; only through hard work can you keep improving.",
+    "ru": "Учёба бесконечна; прогресс возможен лишь через упорный труд.",
+    "tr": "Öğrenmenin sonu yok; ancak çok çalışarak ilerlersin.",
+    "fa": "راه یادگیری بی‌پایان است؛ تنها با سخت‌کوشی پیشرفت می‌کنی.",
+    "ar": "لا نهاية للتعلم؛ التقدم يتطلب جهدًا دؤوبًا."
+  },
+  {
+    "sentence": "种瓜得瓜，种豆得豆",
+    "pinyin": "zhòng guā dé guā，zhòng dòu dé dòu",
+    "explanation": "比喻做了什么事，就会得到什么样的结果，强调因果对应。",
+    "en": "It is a metaphor that you reap what you sow, stressing that outcomes correspond to what you do.",
+    "ru": "Метафора о том, что каковы поступки, таковы и последствия; подчёркивается соответствие причин и результатов.",
+    "tr": "Ne ekersen onu biçersin anlamına gelen bir mecazdır; sonuçların yaptıklarına uyduğunu vurgular.",
+    "fa": "استعاره‌ای است مبنی بر اینکه هر کاری بکنی همان نتیجه را می‌گیری و بر تناسب علت و اثر تأکید دارد.",
+    "ar": "استعارة مفادها أنك تحصد ما تزرع، وتؤكد على توافق الأفعال والنتائج."
+  },
+  {
+    "sentence": "圣人庙——供养贤（闲）人",
+    "pinyin": "shèng rén miào —— gòng yǎng xián rén",
+    "explanation": "供养闲人。",
+    "en": "Feeding idlers who contribute nothing.",
+    "ru": "Содержит бездельников.",
+    "tr": "İşe yaramayan boş gezenleri geçindirir.",
+    "fa": "راحت‌طلبان بی‌فایده را نگه می‌دارد.",
+    "ar": "يرعى الكسالى بلا فائدةٍ."
+  },
+  {
+    "sentence": "狗捉老鼠——多管闲事",
+    "pinyin": "gǒu zhuō lǎo shǔ —— duō guǎn xián shì",
+    "explanation": "管了不该管的事。",
+    "en": "Meddling in things that are none of your business.",
+    "ru": "Лезет не в своё дело.",
+    "tr": "İşine karışmaması gereken işlere burnunu sokuyor.",
+    "fa": "در کارهایی دخالت می‌کند که به او ربطی ندارد.",
+    "ar": "يتدخل في أمور لا تعنيه."
+  },
+  {
+    "sentence": "老鼠啃碟子——全是瓷（词）",
+    "pinyin": "lǎo shǔ kěn dié zi —— quán shì cí",
+    "explanation": "净是字眼、废话多。",
+    "en": "Nothing but empty words; too much pointless talk.",
+    "ru": "Пустые слова; много болтовни ни о чём.",
+    "tr": "Boş laf; gereksiz söz çok.",
+    "fa": "فقط حرف و کلمه؛ حرف بی‌ربط زیاد.",
+    "ar": "كلام فارغ؛ كثرة الكلام بلا فائدة."
+  },
+  {
+    "sentence": "有备无患",
+    "pinyin": "yǒu bèi wú huàn",
+    "explanation": "指事先做好准备，就能避免可能出现的灾祸。",
+    "en": "Preparation beforehand wards off trouble.",
+    "ru": "Заблаговременная подготовка помогает избежать беды.",
+    "tr": "Önceden hazırlık belayı önler.",
+    "fa": "آمادگی از پیش بلایا را دفع می‌کند.",
+    "ar": "الاستعداد المسبق يقي من البلاء."
+  },
+  {
+    "sentence": "予人玫瑰，手有余香",
+    "pinyin": "yǔ rén méi guī，shǒu yǒu yú xiāng",
+    "explanation": "比喻帮助别人，自己也会得到快乐和回报。",
+    "en": "Helping others brings you joy and reward as well.",
+    "ru": "Помогая другим, ты сам получаешь радость и отдачу.",
+    "tr": "Başkasına yardım etmek sana da mutluluk ve karşılık getirir.",
+    "fa": "کمک به دیگران شادی و پاداش به خودت هم می‌دهد.",
+    "ar": "مساعدة الآخرين تمنحك فرحًا ومكافأة أيضًا."
+  },
+  {
+    "sentence": "千里之行，始于足下",
+    "pinyin": "qiān lǐ zhī xíng，shǐ yú zú xià",
+    "explanation": "比喻远大的目标，要从眼前的小事做起，一步一步地实现。",
+    "en": "Great goals begin with small steps taken now, and are achieved step by step.",
+    "ru": "Большие цели начинаются с малых шагов здесь и сейчас и достигаются постепенно.",
+    "tr": "Büyük hedefler bugünün küçük adımlarıyla başlar ve adım adım gerçekleşir.",
+    "fa": "هدف‌های بزرگ از قدم‌های کوچک امروز شروع می‌شوند و مرحله‌به‌مرحله محقق می‌گردند.",
+    "ar": "الأهداف العظيمة تبدأ بخطوات صغيرة من الحاضر وتتحقق تدريجيًا."
+  },
+  {
+    "sentence": "一寸光阴一寸金，寸金难买寸光阴",
+    "pinyin": "yī cùn guāng yīn yī cùn jīn，cùn jīn nán mǎi cùn guāng yīn",
+    "explanation": "形容时间十分宝贵，金钱也买不来时间。",
+    "en": "Time is precious; money cannot buy it.",
+    "ru": "Время бесценно; деньгами его не купишь.",
+    "tr": "Zaman çok değerlidir; parayla satın alınamaz.",
+    "fa": "زمان بسیار گرانبهاست و با پول هم خریدنی نیست.",
+    "ar": "الوقت ثمين جدًا ولا يُشترى بالمال."
+  },
+  {
+    "sentence": "霸王敬酒——不干也得干",
+    "pinyin": "bà wáng jìng jiǔ —— bù gàn yě dé gàn",
+    "explanation": "逼人去做，不得不从。",
+    "en": "Forced to do it whether you want to or not.",
+    "ru": "Заставляют сделать, хочешь не хочешь.",
+    "tr": "İster istemez yapmak zorunda.",
+    "fa": "چه بخواهد چه نخواهد مجبور است انجام دهد.",
+    "ar": "مُجبرٌ على الفعل رغمًا عنه."
+  },
+  {
+    "sentence": "硬按公鸡下蛋——指望不上",
+    "pinyin": "yìng àn gōng jī xià dàn —— zhǐ wàng bù shàng",
+    "explanation": "根本办不到，别指望。",
+    "en": "It simply can't be done; don't count on it.",
+    "ru": "Просто нельзя; не рассчитывай.",
+    "tr": "Hiç olmaz; ona güvenme.",
+    "fa": "اصلاً ممکن نیست؛ روی آن حساب نکنید.",
+    "ar": "لا يمكن أصلًا؛ لا تعتمد عليه."
+  },
+  {
+    "sentence": "人逢喜事精神爽",
+    "pinyin": "rén féng xǐ shì jīng shén shuǎng",
+    "explanation": "指人遇到开心的事情，精神就会变得格外舒畅、振作。",
+    "en": "When people meet happy events, they become especially cheerful and energized.",
+    "ru": "Когда с человеком случается радостное событие, он становится бодрее и душевно светлее.",
+    "tr": "İnsan güzel bir olayla karşılaşınca morali yükselir ve canlanır.",
+    "fa": "وقتی انسان با خبر خوش روبه‌رو می‌شود، روحیه‌اش شاداب و پرانرژی می‌گردد.",
+    "ar": "عندما يلقى الإنسان أمرًا سارًا، تنتعش روحه ويزداد نشاطه."
+  },
+  {
+    "sentence": "一朝被蛇咬，十年怕井绳",
+    "pinyin": "yī zhāo bèi shé yǎo，shí nián pà jǐng shéng",
+    "explanation": "比喻经历过一次挫折或伤害后，就会对类似的事物产生恐惧心理。",
+    "en": "One bad experience breeds long fear of anything similar.",
+    "ru": "Один болезненный опыт надолго вселяет страх перед похожим.",
+    "tr": "Bir kötü deneyim, benzer şeylere karşı uzun süre korku bırakır.",
+    "fa": "یک تجربه بد ترس از چیزهای شبیه را سال‌ها نگه می‌دارد.",
+    "ar": "تجربة أليمة واحدة تولّد خوفًا طويلًا من ما يشبهها."
+  },
+  {
+    "sentence": "读书破万卷，下笔如有神",
+    "pinyin": "dú shū pò wàn juàn，xià bǐ rú yǒu shén",
+    "explanation": "指读书读得多，积累的知识丰富，写文章时就会得心应手、文思泉涌。",
+    "en": "Much reading builds knowledge so that writing flows easily and ideas come readily.",
+    "ru": "Обширное чтение накапливает знания, писать становится легко, мысли текут свободно.",
+    "tr": "Çok okumak bilgi biriktirir; yazmak kolaylaşır, düşünceler akıcı gelir.",
+    "fa": "مطالعه زیاد دانش می‌افزاید و نوشتن را آسان می‌کند و اندیشه‌ها را روان می‌سازد.",
+    "ar": "كثرة القراءة تثري المعرفة فيسهل الكتابة وتتدفق الأفكار."
+  },
+  {
+    "sentence": "兔子尾巴——长不了",
+    "pinyin": "tù zi wěi ba —— zhǎng bù liǎo",
+    "explanation": "好光景长不了，很快结束。",
+    "en": "Good times won't last; they end before long.",
+    "ru": "Хорошее недолго длится; скоро кончается.",
+    "tr": "İyi günler uzun sürmez; çabuk biter.",
+    "fa": "روزهای خوب دوام ندارند؛ زود تمام می‌شوند.",
+    "ar": "لا يدوم الخير طويلاً؛ ينتهي قريبًا."
+  },
+  {
+    "sentence": "雷声大雨点小——虚张声势",
+    "pinyin": "léi shēng dà yǔ diǎn xiǎo —— xū zhāng shēng shì",
+    "explanation": "声势大，实际小。",
+    "en": "Big noise, little real effect.",
+    "ru": "Много шума, мало толку.",
+    "tr": "Gürültü çok, icraat az.",
+    "fa": "صدا بلند، اثر کم.",
+    "ar": "صخبٌ كبيرٌ وأثرٌ قليلٌ."
+  },
+  {
+    "sentence": "没有规矩，不成方圆",
+    "pinyin": "méi yǒu guī ju，bù chéng fāng yuán",
+    "explanation": "比喻没有规章制度约束，就无法把事情做好、做规范。",
+    "en": "Without rules and standards, things cannot be done properly or in an orderly way.",
+    "ru": "Без правил и норм невозможно делать дела качественно и упорядоченно.",
+    "tr": "Kural ve düzen olmadan işler ne düzgün ne de standart şekilde yürür.",
+    "fa": "بدون قانون و چارچوب، کارها درست و منظم پیش نمی‌رود.",
+    "ar": "من دون قواعد وأنظمة، لا يمكن إنجاز الأمور بإتقان وانتظام."
+  },
+  {
+    "sentence": "宰相肚里能撑船",
+    "pinyin": "zǎi xiàng dù lǐ néng chēng chuán",
+    "explanation": "比喻人胸怀宽广，能包容别人的过错和不足。",
+    "en": "A broad mind forgives others' faults and shortcomings.",
+    "ru": "Широкая душа прощает чужие ошибки и недостатки.",
+    "tr": "Geniş gönül başkalarının hata ve eksiklerine tahammül eder.",
+    "fa": "دل بزرگ خطا و کمبود دیگران را می‌پذیرد.",
+    "ar": "صدر واسع يتسامح مع زلات الناس ونواقصهم."
+  },
+  {
+    "sentence": "刘姥姥进大观园——眼花缭乱",
+    "pinyin": "liú lǎo lao jìn dà guān yuán —— yǎn huā liáo luàn",
+    "explanation": "看得眼花，太新鲜。",
+    "en": "Overwhelmed by novelty; dazzled by too much at once.",
+    "ru": "Ошеломлён новизной; рябит в глазах.",
+    "tr": "Çok yenilik gözünü döndürmüş.",
+    "fa": "از تازگی گیج شده؛ چیزهای زیاد یک‌جا.",
+    "ar": "مذهولٌ بالجديدٍ؛ كثرةٌ دفعةً واحدة."
+  },
+  {
+    "sentence": "大意失荆州",
+    "pinyin": "dà yì shī jīng zhōu",
+    "explanation": "比喻因粗心大意、骄傲自满，而丢失重要的东西或导致失败。",
+    "en": "It means carelessness and conceit make you lose important things or lead to failure.",
+    "ru": "Излишняя самоуверенность и невнимательность ведут к потере важного или к провалу.",
+    "tr": "Dikkatsizlik ve kibir önemli şeyleri kaybettirir veya başarısızlığa yol açar.",
+    "fa": "به معنای آن است که سهل‌انگاری و غرور موجب از دست دادن چیزهای مهم یا شکست می‌شود.",
+    "ar": "يعني أن التهاون والغرور قد يفقدانك أشياء مهمة أو يوديان بالفشل."
+  },
+  {
+    "sentence": "身在曹营心在汉",
+    "pinyin": "shēn zài cáo yíng xīn zài hàn",
+    "explanation": "比喻人虽然身处对方阵营，但心里仍然向着自己原来的一方。",
+    "en": "Physically in one camp, but one's heart still belongs to the original side.",
+    "ru": "Тело в одном лагере, душа — на прежней стороне.",
+    "tr": "Beden bir tarafta, yürek hâlâ eski taraftadır.",
+    "fa": "جسم در یک جبهه، دل هنوز با سوی اصلی است.",
+    "ar": "الجسد في معسكر والقلب مع الجهة الأصلية."
+  },
+  {
+    "sentence": "无巧不成书",
+    "pinyin": "wú qiǎo bù chéng shū",
+    "explanation": "比喻事情的发展，往往会有巧合，让情节变得更加曲折有趣。",
+    "en": "Life often involves coincidences that make the story twist and engage.",
+    "ru": "В жизни бывают совпадения, из-за которых сюжет становится запутаннее и интереснее.",
+    "tr": "Hayatta tesadüfler olur; olayı daha dolambaçlı ve ilginç kılar.",
+    "fa": "گاه اتفاق‌های تصادفی روند را پیچیده و جذاب می‌کند.",
+    "ar": "غالبًا توجد صدف تجعل المسار أكثر تعقيدًا وإثارة."
+  },
+  {
+    "sentence": "江山易改，本性难移",
+    "pinyin": "jiāng shān yì gǎi，běn xìng nán yí",
+    "explanation": "比喻人的本性很难改变，即使环境发生变化，本性也不会轻易改变。",
+    "en": "Human nature is hard to change; it does not easily shift even if circumstances do.",
+    "ru": "Натура человека трудно изменить; она не легко меняется даже при смене обстоятельств.",
+    "tr": "İnsanın doğası değiştirmesi zordur; ortam değişse bile kolay kolay dönmez.",
+    "fa": "سرشت انسان دشوار تغییر می‌کند؛ حتی با تغییر محیط به‌سادگی عوض نمی‌شود.",
+    "ar": "طبيعة الإنسان صعبة التغيير ولا تنقلب بسهولة مع تبدل الظروف."
+  },
+  {
+    "sentence": "己所不欲，勿施于人",
+    "pinyin": "jǐ suǒ bù yù，wù shī yú rén",
+    "explanation": "指自己不愿意做的事情，也不要强加给别人。",
+    "en": "Do not impose on others what you yourself do not want.",
+    "ru": "Не делай другим того, чего не желаешь себе.",
+    "tr": "Kendin için istemediğini başkasına dayatma.",
+    "fa": "آنچه خود نمی‌پسندی بر دیگران تحمیل نکن.",
+    "ar": "لا تفعل بالناس ما تكرهه لنفسك."
+  },
+  {
+    "sentence": "多行不义必自毙",
+    "pinyin": "duō xíng bù yì bì zì bì",
+    "explanation": "指经常做不道德、不正当的事情，最终一定会自食恶果。",
+    "en": "Doing wrong repeatedly will inevitably bring consequences on oneself.",
+    "ru": "Поступая нечестно снова и снова, человек неизбежно пожнёт последствия на себе.",
+    "tr": "Ahlaksızlığı sürdüren sonunda cezasını kendi başına çeker.",
+    "fa": "تکرار کار نادرست و ناعادلانه در نهایت عواقبش را به خود شخص بازمی‌گرداند.",
+    "ar": "تكرار الأعمال غير الأخلاقية ينتهي بالوقوع في الويل على فاعلها."
+  },
+  {
+    "sentence": "眼中钉，肉中刺",
+    "pinyin": "yǎn zhōng dīng，ròu zhōng cì",
+    "explanation": "比喻让人非常厌恶、急于除掉的人或事物。",
+    "en": "Someone or something deeply hated and wanted gone.",
+    "ru": "Человек или вещь, которые сильно раздражают и от которых хотят избавиться.",
+    "tr": "Nefret edilen ve kurtulmak istenen biri veya bir şey.",
+    "fa": "کسی یا چیزی که از آن متنفری و می‌خواهی زود از بین برود.",
+    "ar": "شخص أو شيء مكروه يرغب المرء في التخلص منه."
+  },
+  {
+    "sentence": "不积跬步，无以至千里",
+    "pinyin": "bù jī kuǐ bù，wú yǐ zhì qiān lǐ",
+    "explanation": "比喻不积累微小的进步，就无法达到远大的目标。",
+    "en": "Without small steady steps, great goals cannot be reached.",
+    "ru": "Без накопления малых шагов недостижимы большие цели.",
+    "tr": "Küçük ilerlemeler birikmeden büyük hedeflere varılamaz.",
+    "fa": "بدون انباشتن پیشرفت‌های کوچک، به اهداف بزرگ نمی‌رسی.",
+    "ar": "بلا تراكم تقدم طفيف لا تُحقَّق أهداف عظيمة."
+  },
+  {
+    "sentence": "路遥知马力，日久见人心",
+    "pinyin": "lù yáo zhī mǎ lì，rì jiǔ jiàn rén xīn",
+    "explanation": "比喻经过长时间的相处和考验，才能看清一个人的真心和能力。",
+    "en": "Only through long acquaintance and trials can one see another's true heart and ability.",
+    "ru": "Истинные чувства и способности человека познаются лишь со временем и испытаниями.",
+    "tr": "Birinin yüreğini ve yeteneğini ancak uzun süreli birliktelik ve sınavlarla anlarsın.",
+    "fa": "تنها با معاشرت و آزمایش درازمدت می‌توان دل و توان واقعی کسی را شناخت.",
+    "ar": "لا يُعرف قلب الإنسان وقدرته إلا بممارسة طويلة وامتحانات."
+  }
+]

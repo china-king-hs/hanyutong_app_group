@@ -3,22 +3,62 @@ import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 import '../app_state.dart';
 import '../l10n/app_localizations.dart';
+import '../models/word_repository.dart';
+import '../models/idiom_repository.dart';
+import '../models/proverb_repository.dart';
+import '../models/poetry_repository.dart';
 
-class ProfileTab extends StatelessWidget {
+class ProfileTab extends StatefulWidget {
   const ProfileTab({super.key});
+
+  @override
+  State<ProfileTab> createState() => _ProfileTabState();
+}
+
+class _ProfileTabState extends State<ProfileTab> {
+  // 各类型总数据量
+  int _totalWords = 0;
+  int _totalIdioms = 0;
+  int _totalProverbs = 0;
+  int _totalPoems = 0;
+  bool _isLoading = true;
+
+  @override
+  void initState() {
+    super.initState();
+    _loadTotals();
+  }
+
+  Future<void> _loadTotals() async {
+    final state = context.read<AppState>();
+    // 根据用户当前难度加载对应的词语总数
+    final words = await WordRepository.loadWords(state.level);
+    // 成语、谚语、诗词加载全部
+    final idioms = await IdiomRepository.loadIdioms();
+    final proverbs = await ProverbRepository.loadProverbs();
+    final poems = await PoetryRepository.loadPoetry();
+
+    if (mounted) {
+      setState(() {
+        _totalWords = words.length;
+        _totalIdioms = idioms.length;
+        _totalProverbs = proverbs.length;
+        _totalPoems = poems.length;
+        _isLoading = false;
+      });
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
     final state = context.watch<AppState>();
     final loc = AppLocalizations.of(context)!;
 
-    final progress = [
-      {'label': '📝 ${loc.wordsLabel}', 'value': 45, 'color': const Color(0xFF4285F4)},
-      {'label': '📄 ${loc.sentencesLabel}', 'value': 30, 'color': Colors.green},
-      {'label': '📐 ${loc.grammarLabel}', 'value': 0, 'color': Colors.grey, 'locked': true},
-      {'label': '🎧 ${loc.listening}', 'value': 20, 'color': Colors.purple},
-      {'label': '⭐ ${loc.advancedLabel}', 'value': 10, 'color': Colors.red},
-    ];
+    // 计算各类型百分比
+    final wordsPercent = _totalWords > 0 ? (state.masteredWords / _totalWords * 100).round() : 0;
+    final idiomsPercent = _totalIdioms > 0 ? (state.masteredIdioms / _totalIdioms * 100).round() : 0;
+    final proverbsPercent = _totalProverbs > 0 ? (state.masteredProverbs / _totalProverbs * 100).round() : 0;
+    final poemsPercent = _totalPoems > 0 ? (state.learnedPoems / _totalPoems * 100).round() : 0;
 
     return SafeArea(
       child: SingleChildScrollView(
@@ -95,49 +135,58 @@ class ProfileTab extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                     color: Color(0xFF333333))),
             const SizedBox(height: 16),
-            ...progress.map((item) {
-              final isLocked = item['locked'] == true;
-              final val = item['value'] as int;
-              final color = item['color'] as Color;
-              return Padding(
-                padding: const EdgeInsets.only(bottom: 16),
-                child: Column(
-                  children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text(item['label'] as String,
-                            style: const TextStyle(
-                                fontSize: 13,
-                                fontWeight: FontWeight.w500,
-                                color: Color(0xFF666666))),
-                        isLocked
-                            ? const Text('🔒',
-                                style: TextStyle(
-                                    fontSize: 13, color: Color(0xFF999999)))
-                            : Text('$val%',
-                                style: const TextStyle(
-                                    fontSize: 13,
-                                    fontWeight: FontWeight.bold,
-                                    color: Color(0xFF4285F4))),
-                      ],
+            _isLoading
+                ? const Padding(
+                    padding: EdgeInsets.symmetric(vertical: 32),
+                    child: Center(
+                      child: CircularProgressIndicator(color: Color(0xFF4285F4)),
                     ),
-                    const SizedBox(height: 6),
-                    ClipRRect(
-                      borderRadius: BorderRadius.circular(4),
-                      child: LinearProgressIndicator(
-                        value: val / 100.0,
-                        backgroundColor: const Color(0xFFE0E0E0),
-                        color: isLocked ? Colors.grey[300] : color,
-                        minHeight: 8,
-                      ),
-                    ),
-                  ],
-                ),
-              );
-            }),
+                  )
+                : Column(
+                    children: [
+                      _buildProgressBar('📝 ${loc.wordsLabel}', wordsPercent, const Color(0xFF4285F4)),
+                      _buildProgressBar('🀄 ${loc.idioms}', idiomsPercent, Colors.orange),
+                      _buildProgressBar('📜 ${loc.proverbs}', proverbsPercent, Colors.green),
+                      _buildProgressBar('🎋 ${loc.poetry}', poemsPercent, Colors.purple),
+                    ],
+                  ),
           ],
         ),
+      ),
+    );
+  }
+
+  Widget _buildProgressBar(String label, int percent, Color color) {
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 16),
+      child: Column(
+        children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text(label,
+                  style: const TextStyle(
+                      fontSize: 13,
+                      fontWeight: FontWeight.w500,
+                      color: Color(0xFF666666))),
+              Text('$percent%',
+                  style: const TextStyle(
+                      fontSize: 13,
+                      fontWeight: FontWeight.bold,
+                      color: Color(0xFF4285F4))),
+            ],
+          ),
+          const SizedBox(height: 6),
+          ClipRRect(
+            borderRadius: BorderRadius.circular(4),
+            child: LinearProgressIndicator(
+              value: percent / 100.0,
+              backgroundColor: const Color(0xFFE0E0E0),
+              color: color,
+              minHeight: 8,
+            ),
+          ),
+        ],
       ),
     );
   }

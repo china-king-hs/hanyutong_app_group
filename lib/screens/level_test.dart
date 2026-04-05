@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 import '../app_state.dart';
@@ -156,7 +156,7 @@ class _LevelCard extends StatelessWidget {
               : null,
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(isSelected ? 0.12 : 0.06),
+              color: Colors.black.withValues(alpha: isSelected ? 0.12 : 0.06),
               blurRadius: isSelected ? 8 : 4,
               offset: const Offset(0, 2),
             ),

@@ -102,23 +102,23 @@ class HomeTab extends StatelessWidget {
                   Row(
                     children: [
                       _StatItem(
-                        icon: '📝', 
-                        value: '${state.masteredWords}', 
-                        label1: '字词', 
+                        icon: '📝',
+                        value: '${state.masteredWords}',
+                        label1: '字词',
                         label2: '个',
                         useLocalization: true,
                       ),
                       _StatItem(
-                        icon: '📄', 
-                        value: '${state.masteredSentences}', 
-                        label1: '句子', 
+                        icon: '📖',
+                        value: '${state.masteredIdioms}',
+                        label1: '成语',
                         label2: '个',
                         useLocalization: true,
                       ),
                       _StatItem(
-                        icon: '⭐', 
-                        value: '${state.masteredAdvanced}', 
-                        label1: '高阶', 
+                        icon: '💡',
+                        value: '${state.masteredProverbs}',
+                        label1: '谚语',
                         label2: '个',
                         useLocalization: true,
                       ),
@@ -323,10 +323,10 @@ class _StatItem extends StatelessWidget {
         return localizations.totalHoursLabel;
       case '字词':
         return localizations.wordsLabel;
-      case '句子':
-        return localizations.sentencesLabel;
-      case '高阶':
-        return localizations.advancedLabel;
+      case '成语':
+        return localizations.idiomsLabel;
+      case '谚语':
+        return localizations.proverbsLabel;
       default:
         return label1;
     }

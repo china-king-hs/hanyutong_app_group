@@ -1,4 +1,4 @@
-import 'dart:math';
+﻿import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
@@ -18,6 +18,7 @@ class PracticePage extends StatefulWidget {
 
 class _PracticePageState extends State<PracticePage> {
   List<WordModel> _words = [];
+  List<WordModel> _allWords = []; // 全部词语（含已掌握），用于跳转序号
   bool _isLoading = true;
   String? _loadError;
 
@@ -48,6 +49,7 @@ class _PracticePageState extends State<PracticePage> {
           .toList();
       if (mounted) {
         setState(() {
+          _allWords = allWords;
           _words = availableWords;
           _isLoading = false;
         });
@@ -140,11 +142,150 @@ class _PracticePageState extends State<PracticePage> {
 
   void _handleRetry() => setState(() => _showMeaningScore = false);
 
+  /// 跳转：弹出输入框让用户输入序号
+  void _showJumpDialog() {
+    final loc = AppLocalizations.of(context)!;
+    final controller = TextEditingController();
+    final total = _allWords.length;
+    final state = context.read<AppState>();
+
+    showDialog(
+      context: context,
+      builder: (ctx) {
+        String? errorText;
+        return StatefulBuilder(
+          builder: (ctx, setDialogState) {
+            return AlertDialog(
+              title: Text(loc.jumpToWord),
+              content: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  TextField(
+                    controller: controller,
+                    keyboardType: TextInputType.number,
+                    autofocus: true,
+                    decoration: InputDecoration(
+                      hintText: '1 ~ $total',
+                      errorText: errorText,
+                      border: const OutlineInputBorder(),
+                    ),
+                  ),
+                ],
+              ),
+              actions: [
+                TextButton(
+                  onPressed: () => Navigator.pop(ctx),
+                  child: Text(loc.close),
+                ),
+                ElevatedButton(
+                  onPressed: () {
+                    final input = controller.text.trim();
+                    final num = int.tryParse(input);
+                    if (num == null || num < 1 || num > total) {
+                      setDialogState(() {
+                        errorText = '$input ${loc.invalidNumberHint}$total';
+                      });
+                      return;
+                    }
+                    // 检查该词是否已掌握
+                    final targetWord = _allWords[num - 1];
+                    if (state.masteredWordIds.contains(targetWord.id)) {
+                      Navigator.pop(ctx);
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(content: Text(loc.wordAlreadyMastered)),
+                      );
+                      return;
+                    }
+                    // 在 _words 中找到对应索引
+                    final idx = _words.indexWhere((w) => w.id == targetWord.id);
+                    if (idx == -1) {
+                      Navigator.pop(ctx);
+                      return;
+                    }
+                    Navigator.pop(ctx);
+                    setState(() {
+                      _currentIndex = idx;
+                      _showPronunciationScore = false;
+                      _showMeaningScore = false;
+                      _showAnswer = false;
+                      _step = 'pronunciation';
+                    });
+                  },
+                  child: Text(loc.confirm),
+                ),
+              ],
+            );
+          },
+        );
+      },
+    );
+  }
+
   void _handleSkip() {
-    if (_step == 'pronunciation') {
-      setState(() => _step = 'meaning');
+    final loc = AppLocalizations.of(context)!;
+    // 弹出对话框询问是否已掌握
+    showDialog(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        backgroundColor: Colors.white,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+        title: Text(
+          loc.skipMasteredTitle,
+          style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () {
+              Navigator.pop(ctx); // 关闭对话框
+              _doSkip(mastered: false); // 单纯跳过
+            },
+            child: Text(loc.skipMasteredNo,
+                style: const TextStyle(color: Color(0xFF999999))),
+          ),
+          TextButton(
+            onPressed: () {
+              Navigator.pop(ctx); // 关闭对话框
+              _doSkip(mastered: true); // 标记掌握
+            },
+            child: Text(loc.skipMasteredYes,
+                style: const TextStyle(
+                    color: Color(0xFF4285F4), fontWeight: FontWeight.bold)),
+          ),
+        ],
+      ),
+    );
+  }
+
+  /// 执行跳过逻辑
+  /// [mastered] 是否同时标记为已掌握
+  void _doSkip({required bool mastered}) {
+    if (mastered && _currentWord != null) {
+      final state = context.read<AppState>();
+      state.markWordMastered(_currentWord!.id);
+      // 从 _words 列表中移除该词条
+      setState(() {
+        _words.removeAt(_currentIndex);
+        _showPronunciationScore = false;
+        _showMeaningScore = false;
+        _showAnswer = false;
+        _step = 'pronunciation';
+      });
     } else {
-      _handleContinue();
+      setState(() {
+        _showPronunciationScore = false;
+        _showMeaningScore = false;
+        _showAnswer = false;
+        _step = 'pronunciation';
+      });
+    }
+
+    // 调整 index：如果列表空了就返回，否则如果 index 越界就归零
+    if (_words.isEmpty) {
+      context.pop();
+    } else if (_currentIndex >= _words.length) {
+      setState(() => _currentIndex = 0);
+    } else if (!mastered && _currentIndex < _words.length - 1) {
+      setState(() => _currentIndex++);
     }
   }
 
@@ -282,7 +423,7 @@ class _PracticePageState extends State<PracticePage> {
                             ),
                           ),
                           // Speaker — 声波动画
-                          Positioned(
+                          const Positioned(
                             bottom: 0,
                             right: 0,
                             child: SoundWaveButton(size: 36),
@@ -310,7 +451,7 @@ class _PracticePageState extends State<PracticePage> {
                                 ? [
                                     BoxShadow(
                                       color: (_isCancelling ? Colors.red : const Color(0xFF4285F4))
-                                          .withOpacity(0.4),
+                                          .withValues(alpha: 0.4),
                                       blurRadius: 18,
                                       spreadRadius: 6,
                                     )
@@ -511,6 +652,13 @@ class _PracticePageState extends State<PracticePage> {
   }
 
   Widget _buildHeader(String title) {
+    // 找到当前词语在全部列表中的序号
+    final currentWord = _currentWord;
+    final displayIndex = currentWord != null
+        ? _allWords.indexWhere((w) => w.id == currentWord.id) + 1
+        : 1;
+    final total = _allWords.isNotEmpty ? _allWords.length : 0;
+
     return Container(
       color: Colors.white,
       child: SafeArea(
@@ -529,6 +677,19 @@ class _PracticePageState extends State<PracticePage> {
               Text(title,
                   style: const TextStyle(
                       fontSize: 18, fontWeight: FontWeight.bold)),
+              const Spacer(),
+              if (_allWords.isNotEmpty)
+                GestureDetector(
+                  onTap: _showJumpDialog,
+                  child: Text(
+                    '$displayIndex/$total',
+                    style: const TextStyle(
+                      fontSize: 13,
+                      color: Color(0xFF4285F4),
+                      decoration: TextDecoration.underline,
+                    ),
+                  ),
+                ),
             ],
           ),
         ),

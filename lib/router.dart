@@ -1,8 +1,5 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:provider/provider.dart';
-import 'app_state.dart';
 import 'screens/splash_screen.dart';
 import 'screens/language_selection.dart';
 import 'screens/level_test.dart';
@@ -16,8 +13,14 @@ import 'screens/review_page.dart';
 import 'screens/practice_page.dart';
 import 'screens/advanced_practice.dart';
 import 'screens/empty_page.dart';
+import 'screens/grammar_practice_page.dart';
 import 'screens/settings_page.dart';
 import 'screens/words_review_page.dart';
+import 'screens/idioms_review_page.dart';
+import 'screens/proverbs_review_page.dart';
+import 'screens/poetry_detail_page.dart';
+import 'screens/culture_practice_page.dart';
+import 'models/poetry_model.dart';
 
 GoRouter buildRouter(BuildContext context) {
   return GoRouter(
@@ -189,6 +192,20 @@ GoRouter buildRouter(BuildContext context) {
         },
       ),
       GoRoute(
+        path: '/grammar',
+        pageBuilder: (context, state) => CustomTransitionPage<void>(
+          key: state.pageKey,
+          child: const GrammarPracticePage(),
+          transitionsBuilder: (context, animation, secondaryAnimation, child) {
+            return FadeTransition(
+              opacity: animation,
+              child: child,
+            );
+          },
+          transitionDuration: const Duration(milliseconds: 200),
+        ),
+      ),
+      GoRoute(
         path: '/empty',
         pageBuilder: (context, state) => CustomTransitionPage<void>(
           key: state.pageKey,
@@ -220,7 +237,7 @@ GoRouter buildRouter(BuildContext context) {
         path: '/idioms-review',
         pageBuilder: (context, state) => CustomTransitionPage<void>(
           key: state.pageKey,
-          child: const EmptyPage(),
+          child: const IdiomsReviewPage(),
           transitionsBuilder: (context, animation, secondaryAnimation, child) {
             return FadeTransition(
               opacity: animation,
@@ -234,7 +251,7 @@ GoRouter buildRouter(BuildContext context) {
         path: '/proverbs-review',
         pageBuilder: (context, state) => CustomTransitionPage<void>(
           key: state.pageKey,
-          child: const EmptyPage(),
+          child: const ProverbsReviewPage(),
           transitionsBuilder: (context, animation, secondaryAnimation, child) {
             return FadeTransition(
               opacity: animation,
@@ -245,10 +262,10 @@ GoRouter buildRouter(BuildContext context) {
         ),
       ),
       GoRoute(
-        path: '/poetry-review',
+        path: '/culture',
         pageBuilder: (context, state) => CustomTransitionPage<void>(
           key: state.pageKey,
-          child: const EmptyPage(),
+          child: const CulturePracticePage(),
           transitionsBuilder: (context, animation, secondaryAnimation, child) {
             return FadeTransition(
               opacity: animation,
@@ -257,6 +274,23 @@ GoRouter buildRouter(BuildContext context) {
           },
           transitionDuration: const Duration(milliseconds: 200),
         ),
+      ),
+      GoRoute(
+        path: '/poetry-detail',
+        pageBuilder: (context, state) {
+          final poem = state.extra as PoetryModel;
+          return CustomTransitionPage<void>(
+            key: state.pageKey,
+            child: PoetryDetailPage(poem: poem),
+            transitionsBuilder: (context, animation, secondaryAnimation, child) {
+              return FadeTransition(
+                opacity: animation,
+                child: child,
+              );
+            },
+            transitionDuration: const Duration(milliseconds: 200),
+          );
+        },
       ),
       GoRoute(
         path: '/settings',

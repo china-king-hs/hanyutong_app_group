@@ -15,9 +15,6 @@ class AppState extends ChangeNotifier {
   int _streak = 0;
   int _totalDays = 0;
   int _totalHours = 0;
-  int _masteredWords = 68;
-  int _masteredSentences = 42;
-  int _masteredAdvanced = 15;
 
   // ---------- 今日学习时长 ----------
   int _learningTime = 0;
@@ -28,11 +25,16 @@ class AppState extends ChangeNotifier {
   DateTime? _lastLearningDate; // 上次学习日期,用于计算连续天数
   bool _goalReachedToday = false; // 今天是否已达成目标
 
-  // ---------- 收藏 ----------
-  Set<String> _favorites = {};
+  // ---------- 收藏（List 保留收藏顺序，越后面的越新） ----------
+  List<String> _favorites = [];
 
-  // ---------- 已掌握词语 ----------
-  Set<String> _masteredWordIds = {};
+  // ---------- 已掌握（List 保留掌握顺序，越后面的越新） ----------
+  List<String> _masteredWordIds = [];
+  List<String> _masteredIdiomIds = [];
+  Set<String> _masteredProverbIds = {};
+
+  // ---------- 诗词已学习（中文释义和母语释义都点过才标记） ----------
+  Set<String> _learnedPoemIds = {};
 
   // ---------- Getters ----------
   String get language => _language;
@@ -43,13 +45,18 @@ class AppState extends ChangeNotifier {
   int get streak => _streak;
   int get totalDays => _totalDays;
   int get totalHours => _totalHours;
-  int get masteredWords => _masteredWords;
-  int get masteredSentences => _masteredSentences;
-  int get masteredAdvanced => _masteredAdvanced;
+  int get masteredWords => _masteredWordIds.length;
+  int get masteredIdioms => _masteredIdiomIds.length;
+  int get masteredProverbs => _masteredProverbIds.length;
   int get learningTime => _learningTime;
   bool get showGoalPopup => _showGoalPopup;
-  Set<String> get favorites => _favorites;
-  Set<String> get masteredWordIds => _masteredWordIds;
+  Set<String> get favorites => _favorites.toSet();
+  List<String> get favoritesOrdered => _favorites; // 有序列表，供收藏页倒序使用
+  List<String> get masteredWordIds => _masteredWordIds;
+  List<String> get masteredIdiomIds => _masteredIdiomIds;
+  Set<String> get masteredProverbIds => _masteredProverbIds;
+  Set<String> get learnedPoemIds => _learnedPoemIds;
+  int get learnedPoems => _learnedPoemIds.length;
 
   // ---------- 初始化（从 SharedPreferences 读取） ----------
   Future<void> init() async {
@@ -62,9 +69,6 @@ class AppState extends ChangeNotifier {
     _streak = prefs.getInt('streak') ?? 0;
     _totalDays = prefs.getInt('totalDays') ?? 0;
     _totalHours = prefs.getInt('totalHours') ?? 0;
-    _masteredWords = prefs.getInt('masteredWords') ?? 68;
-    _masteredSentences = prefs.getInt('masteredSentences') ?? 42;
-    _masteredAdvanced = prefs.getInt('masteredAdvanced') ?? 15;
     _learningTime = prefs.getInt('todayLearningTime') ?? 0;
     _showGoalPopup = prefs.getBool('showGoalPopup') ?? false;
     final lastDateStr = prefs.getString('lastLearningDate');
@@ -79,13 +83,31 @@ class AppState extends ChangeNotifier {
     final favJson = prefs.getString('favorites');
     if (favJson != null) {
       final List list = jsonDecode(favJson);
-      _favorites = list.cast<String>().toSet();
+      _favorites = list.cast<String>().toList();
     }
 
     final masteredJson = prefs.getString('masteredWordIds');
     if (masteredJson != null) {
       final List list = jsonDecode(masteredJson);
-      _masteredWordIds = list.cast<String>().toSet();
+      _masteredWordIds = list.cast<String>().toList();
+    }
+
+    final idiomJson = prefs.getString('masteredIdiomIds');
+    if (idiomJson != null) {
+      final List list = jsonDecode(idiomJson);
+      _masteredIdiomIds = list.cast<String>().toList();
+    }
+
+    final proverbJson = prefs.getString('masteredProverbIds');
+    if (proverbJson != null) {
+      final List list = jsonDecode(proverbJson);
+      _masteredProverbIds = list.cast<String>().toSet();
+    }
+
+    final learnedPoemJson = prefs.getString('learnedPoemIds');
+    if (learnedPoemJson != null) {
+      final List list = jsonDecode(learnedPoemJson);
+      _learnedPoemIds = list.cast<String>().toSet();
     }
   }
 
@@ -156,6 +178,50 @@ class AppState extends ChangeNotifier {
     notifyListeners();
   }
 
+  // 重置学习记录（保留用户设置，只清除学习数据）
+  void resetLearningData() {
+    // 清除已掌握的词语/成语/谚语/诗词
+    _masteredWordIds = [];
+    _masteredIdiomIds = [];
+    _masteredProverbIds = {};
+    _learnedPoemIds = {};
+
+    // 清除收藏
+    _favorites = [];
+
+    // 清除学习统计
+    _streak = 0;
+    _totalDays = 0;
+    _totalHours = 0;
+
+    // 清除今日学习状态
+    _learningTime = 0;
+    _showGoalPopup = false;
+    _goalReachedToday = false;
+    _sessionStartTime = null;
+    _lastLearningDate = null;
+
+    _save((p) async {
+      // 已掌握数据
+      await p.remove('masteredWordIds');
+      await p.remove('masteredIdiomIds');
+      await p.remove('masteredProverbIds');
+      await p.remove('learnedPoemIds');
+      // 收藏
+      await p.remove('favorites');
+      // 学习统计
+      await p.setInt('streak', 0);
+      await p.setInt('totalDays', 0);
+      await p.setInt('totalHours', 0);
+      // 今日学习状态
+      await p.setInt('todayLearningTime', 0);
+      await p.setBool('showGoalPopup', false);
+      await p.setBool('goalReachedToday', false);
+      await p.remove('lastLearningDate');
+    });
+    notifyListeners();
+  }
+
   void setUsername(String name) {
     _username = name;
     _save((p) async => p.setString('username', name));
@@ -163,25 +229,53 @@ class AppState extends ChangeNotifier {
   }
 
   void toggleFavorite(String item) {
-    final newSet = Set<String>.from(_favorites);
-    if (newSet.contains(item)) {
-      newSet.remove(item);
+    final newList = List<String>.from(_favorites);
+    if (newList.contains(item)) {
+      newList.remove(item);
     } else {
-      newSet.add(item);
+      newList.add(item); // 追加到末尾，越新收藏越靠后
     }
-    _favorites = newSet;
-    _save((p) async => p.setString('favorites', jsonEncode(newSet.toList())));
+    _favorites = newList;
+    _save((p) async => p.setString('favorites', jsonEncode(newList)));
     notifyListeners();
   }
 
   /// 将词语标记为已掌握（两步测评都通过后调用）
   void markWordMastered(String wordId) {
     if (_masteredWordIds.contains(wordId)) return;
-    _masteredWordIds.add(wordId);
-    _masteredWords = _masteredWordIds.length;
+    _masteredWordIds.add(wordId);  // 追加到末尾，越新掌握的越靠后
     _save((p) async {
-      p.setString('masteredWordIds', jsonEncode(_masteredWordIds.toList()));
-      p.setInt('masteredWords', _masteredWords);
+      p.setString('masteredWordIds', jsonEncode(_masteredWordIds));
+    });
+    notifyListeners();
+  }
+
+  /// 将成语标记为已掌握
+  void markIdiomMastered(String idiomId) {
+    if (_masteredIdiomIds.contains(idiomId)) return;
+    _masteredIdiomIds.add(idiomId); // 追加到末尾，越新掌握越靠后
+    _save((p) async {
+      p.setString('masteredIdiomIds', jsonEncode(_masteredIdiomIds));
+    });
+    notifyListeners();
+  }
+
+  /// 将谚语标记为已掌握
+  void markProverbMastered(String proverbId) {
+    if (_masteredProverbIds.contains(proverbId)) return;
+    _masteredProverbIds.add(proverbId);
+    _save((p) async {
+      p.setString('masteredProverbIds', jsonEncode(_masteredProverbIds.toList()));
+    });
+    notifyListeners();
+  }
+
+  /// 标记诗词为已学习（中文释义和母语释义都查看后才调用）
+  void markPoemLearned(String poemId) {
+    if (_learnedPoemIds.contains(poemId)) return;
+    _learnedPoemIds.add(poemId);
+    _save((p) async {
+      p.setString('learnedPoemIds', jsonEncode(_learnedPoemIds.toList()));
     });
     notifyListeners();
   }

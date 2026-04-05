@@ -1,0 +1,352 @@
+{
+  "solar_terms": [
+    {
+      "name": "立春",
+      "chinese": "春季开始，万物复苏",
+      "en": "The beginning of spring, all things revive.",
+      "ru": "Начало весны, всё оживает.",
+      "tr": "İlkbahar başlıyor, tüm canlılar uyanıyor.",
+      "fa": "ابتدای بهار، زیستگاه‌ها احیا می‌شوند",
+      "ar": "بداية الربيع، وتنشط الكائنات الحية"
+    },
+    {
+      "name": "雨水",
+      "chinese": "降水增多，气温回升",
+      "en": "Precipitation increases and temperatures rise.",
+      "ru": "Осадки увеличиваются, температура повышается.",
+      "tr": "Yağışlar artıyor, hava sıcaklığı yükseliyor.",
+      "fa": "بارش باران افزایش می‌یابد و دما بالا می‌رود",
+      "ar": "يزيد هطول الأمطار وترتفع درجات الحرارة"
+    },
+    {
+      "name": "惊蛰",
+      "chinese": "春雷惊醒蛰伏的昆虫",
+      "en": "Spring thunder awakens hibernating insects.",
+      "ru": "Весенний гром пробуждает спящих насекомых.",
+      "tr": "İlkbahar gök gürültüsü kış uykusuna yatan böcekleri uyandırıyor.",
+      "fa": "رعد بهار حشرات خوابیده را بیدار می‌کند",
+      "ar": "رعد الربيع يوقح الحشرات التي كانت في سبات"
+    },
+    {
+      "name": "春分",
+      "chinese": "昼夜平分，春季过半",
+      "en": "Day and night are of equal length, spring is halfway.",
+      "ru": "День равен ночи, весна наполовину прошла.",
+      "tr": "Gündüz ve gece eşit uzunlukta, ilkbahar yarıda.",
+      "fa": "طول شب و روز برابر است، بهار به نصف می‌رسد",
+      "ar": "يتساوى طول الليل والنهار، ويصل الربيع إلى منتصفه"
+    },
+    {
+      "name": "清明",
+      "chinese": "天气清朗，祭祖踏青",
+      "en": "The weather is clear and bright; people worship ancestors and go for outings.",
+      "ru": "Чистая и светлая погода, поминовение предков и прогулки на природе.",
+      "tr": "Hava açık ve parlak, atalar anılıyor ve doğa gezileri yapılıyor.",
+      "fa": "هوای صاف و روشن، یاد و خاطره اجداد و پیاده‌روی در طبیعت",
+      "ar": "الجو صافي ومشرق، يُتذكر الأجداد ويُقام التنزه"
+    },
+    {
+      "name": "谷雨",
+      "chinese": "雨水滋养谷物，利于播种",
+      "en": "Rain nourishes grains, good for sowing.",
+      "ru": "Дожди питают злаки, благоприятное время для посевов.",
+      "tr": "Yağışlar tahılları besliyor, ekim için uygun zaman.",
+      "fa": "باران‌ها غلات را پرورش می‌دهند، برای کاشت مناسب است",
+      "ar": "الأمطار تغذي الحبوب، ومناسبة للزراعة"
+    },
+    {
+      "name": "立夏",
+      "chinese": "夏季开始，万物生长",
+      "en": "The beginning of summer, all things grow vigorously.",
+      "ru": "Начало лета, всё активно растёт.",
+      "tr": "Yaz başlıyor, her şey hızla büyüyor.",
+      "fa": "ابتدای تابستان، گیاهان به شدت رشد می‌کنند",
+      "ar": "بداية الصيف، وتنمو النباتات بقوة"
+    },
+    {
+      "name": "小满",
+      "chinese": "夏熟作物籽粒开始饱满",
+      "en": "Grains of summer crops begin to plump up.",
+      "ru": "Зёрна летних культур начинают наливаться.",
+      "tr": "Yaz ürünlerinin taneleri dolmaya başlıyor.",
+      "fa": "دانه‌های محصولات تابستانی شروع به پر شدن می‌کنند",
+      "ar": "تبدأ حبوب المحاصيل الصيفية بالامتلاء"
+    },
+    {
+      "name": "芒种",
+      "chinese": "麦类有芒，夏收夏种繁忙",
+      "en": "Wheat has awns; busy with summer harvesting and planting.",
+      "ru": "Пшеница созревает, активная уборка и посевы.",
+      "tr": "Buğday başakları olgunlaşıyor, hasat ve ekim yoğunlaşıyor.",
+      "fa": "غلات گندم کامل می‌شوند، فعالیت در برداشت و کاشت افزایش می‌یابد",
+      "ar": "حبوب القمح تكتمل، ويزداد النشاط في الحصاد والزراعة"
+    },
+    {
+      "name": "夏至",
+      "chinese": "白昼最长，盛夏将至",
+      "en": "The longest daytime, midsummer is approaching.",
+      "ru": "Самый длинный день в году, приближается середина лета.",
+      "tr": "Yılın en uzun günü, yaz ortası yaklaşıyor.",
+      "fa": "بلندترین روز سال، نیمه تابستان نزدیک می‌شود",
+      "ar": "أطول نهار في السنة، يقترب منتصف الصيف"
+    },
+    {
+      "name": "小暑",
+      "chinese": "天气开始炎热",
+      "en": "The weather starts to get hot.",
+      "ru": "Погода начинает жарчать.",
+      "tr": "Hava sıcak olmaya başlıyor.",
+      "fa": "هوای گرم شدن شروع می‌شود",
+      "ar": "يبدأ الجو بالارتفاع والحرارة"
+    },
+    {
+      "name": "大暑",
+      "chinese": "一年中最热时段",
+      "en": "The hottest period of the year.",
+      "ru": "Самый жаркий период года.",
+      "tr": "Yılın en sıcak dönemi.",
+      "fa": "سخن‌ترین دوره گرمایی سال",
+      "ar": "أشد فترة حرارة في السنة"
+    },
+    {
+      "name": "立秋",
+      "chinese": "秋季开始，气温转凉",
+      "en": "The beginning of autumn, temperatures turn cool.",
+      "ru": "Начало осени, температура постепенно снижается.",
+      "tr": "Sonbahar başlıyor, hava soğumaya başlıyor.",
+      "fa": "ابتدای پاییز، دما شروع به کاهش می‌کند",
+      "ar": "بداية الخريف، وتبدأ درجات الحرارة بالانخفاض"
+    },
+    {
+      "name": "处暑",
+      "chinese": "炎热暑天结束",
+      "en": "The hot summer days come to an end.",
+      "ru": "Жаркаяпогода заканчивается.",
+      "tr": "Sıcak yaz günleri sona eriyor.",
+      "fa": "دوره گرمای شدید به پایان می‌رسد",
+      "ar": "تنتهي فترة الحرارة الشديدة"
+    },
+    {
+      "name": "白露",
+      "chinese": "水汽凝结成白露，气温下降",
+      "en": "Water vapor condenses into dew, temperatures drop.",
+      "ru": "Появляется роса, температура падает.",
+      "tr": "Su buharı çiy haline geliyor, sıcaklık düşüyor.",
+      "fa": "بخار آب متراکم شده و شبنم ایجاد می‌شود، دما کاهش می‌یابد",
+      "ar": "يتكثف البخار المائي ليصبح ندى، وتنخفض الحرارة"
+    },
+    {
+      "name": "秋分",
+      "chinese": "昼夜平分，秋季过半",
+      "en": "Day and night are of equal length, autumn is halfway.",
+      "ru": "День равен ночи, осень наполовину прошла.",
+      "tr": "Gündüz ve gece eşit uzunlukta, sonbahar yarıda.",
+      "fa": "طول شب و روز برابر است، پاییز به نصف می‌رسد",
+      "ar": "يتساوى طول الليل والنهار، ويصل الخريف إلى منتصفه"
+    },
+    {
+      "name": "寒露",
+      "chinese": "露水寒凉，接近霜降",
+      "en": "Dew turns cold, frost is approaching.",
+      "ru": "Роса становится холодной, приближается заморозки.",
+      "tr": "Çiy soğuyor, don zamanı yaklaşıyor.",
+      "fa": "شبنم سرد می‌شود، زمان یخبندان نزدیک می‌شود",
+      "ar": "يصبح الندى باردًا، يقترب وقت الصقيع"
+    },
+    {
+      "name": "霜降",
+      "chinese": "初霜出现，作物渐收",
+      "en": "First frost appears, crops are gradually harvested.",
+      "ru": "Появляются первые заморозки, начинается уборка урожая.",
+      "tr": "İlk don görülüyor, ürünler hasat edilmeye başlıyor.",
+      "fa": "برای اولین بار یخبندان ظاهر می‌شود، برداشت محصولات شروع می‌شود",
+      "ar": "يظهر الصقيع لأول مرة، ويبدأ حصاد المحاصيل"
+    },
+    {
+      "name": "立冬",
+      "chinese": "冬季开始，万物收藏",
+      "en": "The beginning of winter, all things are stored.",
+      "ru": "Начало зимы, урожай собирают и хранят.",
+      "tr": "Kış başlıyor, ürünler toplanıp saklanıyor.",
+      "fa": "ابتدای زمستان، محصولات جمع و ذخیره می‌شوند",
+      "ar": "بداية الشتاء، وتُجمع المحاصيل وتخزن"
+    },
+    {
+      "name": "小雪",
+      "chinese": "开始飘小雪花",
+      "en": "Light snow begins to fall.",
+      "ru": "Начинается небольшой снегопад.",
+      "tr": "Hafif kar yağışları başlıyor.",
+      "fa": "بارش برف‌های سبک شروع می‌شود",
+      "ar": "تبدأ سقوط ثلوج خفيفة"
+    },
+    {
+      "name": "大雪",
+      "chinese": "降雪增多，地面或积雪",
+      "en": "More snowfall, ground may be covered with snow.",
+      "ru": "Снегопады усиливаются, земля может покрыться снегом.",
+      "tr": "Kar yağışları artıyor, yeri kaplayabilir.",
+      "fa": "بارش برف افزایش می‌یابد و ممکن است زمین را بپوشاند",
+      "ar": "يزيد سقوط الثلوج وقد تغطي الأرض"
+    },
+    {
+      "name": "冬至",
+      "chinese": "白昼最短，数九寒天开始",
+      "en": "The shortest daytime, the start of the coldest days.",
+      "ru": "Самый короткий день в году, начинаются сильные морозы.",
+      "tr": "Yılın en kısa günü, soğuk günler başlıyor.",
+      "fa": "کوتاه‌ترین روز سال، دوره‌های سرد شدید شروع می‌شود",
+      "ar": "أقصر نهار في السنة، تبدأ أيام البرد الشديدة"
+    },
+    {
+      "name": "小寒",
+      "chinese": "天气寒冷但未达极致",
+      "en": "The weather is cold but not the extreme.",
+      "ru": "Погода холодная, но не до крайности.",
+      "tr": "Hava soğuk ama en uç noktaya ulaşmadı.",
+      "fa": "هوا سرد است اما به حداکثر خود نرسیده",
+      "ar": "الجو بارد لكنه لم يصل إلى أقصاه"
+    },
+    {
+      "name": "大寒",
+      "chinese": "一年中最冷时节",
+      "en": "The coldest time of the year.",
+      "ru": "Самый холодный период года.",
+      "tr": "Yılın en soğuk dönemi.",
+      "fa": "سردترین دوره سال",
+      "ar": "أبرد فترة في السنة"
+    }
+  ],
+  "festivals": [
+    {
+      "name": "春节",
+      "date": "正月初一",
+      "chinese": "农历新年，一年中最隆重的节日，贴春联、守岁、拜年、吃年夜饭，象征辞旧迎新、阖家团圆。",
+      "en": "It is the Lunar New Year, the most important festival in China. People paste Spring Festival couplets, stay up late on New Year's Eve, pay New Year calls, and have a family reunion dinner, symbolizing bidding farewell to the old and welcoming the new, as well as family reunion.",
+      "ru": "Это Лунный Новый год, самый важный праздник в Китае. Люди наклеивают праздничные свитки, не спят до полуночи, поздравляют друг друга и ужинают всей семьёй. Это символизирует прощание со старым годом и встречу нового, а также семейное единство.",
+      "tr": "Çin Ay Takvimine göre Yeni Yıl, yılın en önemli festivalidir. İnsanlar Yeni Yıl afişleri asar, geceyi uyanık geçirir, birbirini ziyaret eder ve aile yemeği yerler; eski yılı uğurlayıp yeni yılı karşılamayı ve aile birliğini simgeler.",
+      "fa": "عید قمری جدید، مهم‌ترین جشن سال است. مردم نوارهای بهاری می‌چسبند، در شب سال جدید بیدار می‌مانند، از یکدیگر سلام می‌کنند و شام خانوادگی می‌خورند. این عمل وداع از گذشته و استقبال از آینده و همچنین اتحاد خانواده را نشان می‌دهد.",
+      "ar": "العام القمري الجديد، هو أهم عطية في السنة. يلصق الناس لوحات الربيع، ويقيمون الليلة حتى الصباح، ويزورون الأقارب، ويأكلون عشاء ليلة العام الجديد مع العائلة، ويرمز ذلك إلى وداع القديم وترحيب الجديد، وكذلك اتحاد العائلة."
+    },
+    {
+      "name": "元宵节",
+      "date": "正月十五",
+      "chinese": "春节后的第一个重要节日，赏花灯、猜灯谜、吃汤圆，寓意团圆美满。",
+      "en": "It is the first important festival after the Spring Festival. People enjoy lanterns, guess lantern riddles, and eat sweet rice dumplings (tangyuan), symbolizing reunion and happiness.",
+      "ru": "Первый важный праздник после Нового года. Люди любуются фонарями, разгадывают загадки на фонарях и едят рисовые шарики, что символизирует семейное единство и счастье.",
+      "tr": "Yeni Yıl'dan sonraki ilk önemli festival. İnsanlar fenerleri seyreder, fener bulmacaları çözer ve pirinç topları yerler; bu, aile birliği ve mutluluğu ifade eder.",
+      "fa": "اولین جشن مهم پس از عید بهاری است. مردم چراغ‌ها را تماشا می‌کنند، معماها را حدس می‌زنند و کره برنج شیرین می‌خورند که نماد اتحاد و خوشبختی است.",
+      "ar": "أهم عطية أولى بعد عيد الربيع. يُقام الناس لمعاينة الفوانيس، وحل ألغاز الفوانيس، وأكل كرات الأرز الحلوة، ويرمز ذلك إلى الاتحاد والسعادة."
+    },
+    {
+      "name": "龙抬头",
+      "date": "二月二",
+      "chinese": "传说龙抬头降雨，象征春耕开始，有理发、吃龙食的习俗，寓意鸿运当头。",
+      "en": "It is said that the dragon raises its head and brings rain, marking the start of spring plowing. Customs include getting a haircut and eating special food, symbolizing good luck and prosperity.",
+      "ru": "Согласно легенде, дракон поднимает голову и посылает дождь, что символизирует начало весенней пахоты. Существуют обычаи стричься и есть особые блюда, что означает удачу и благополучие.",
+      "tr": "Efsaneye göre ejderha başını kaldırıp yağmur yağdırır, bu ilkbahar ekiminin başlangıcını simgeler. Saç kesimi ve özel yemekler yeme gelenekleri vardır; iyi şans ve bereketi ifade eder.",
+      "fa": "بر افسانه، اژدها سر خود را بلند کرده و باران می‌بارد که نماد شروع کشت و کار بهاری است. عادات آن شامل اصلاح مو و خوردن غذاهای خاص است که نماد شانس خوب است.",
+      "ar": "حسب الأسطورة، يرفع التنين رأسه وينزل المطر، ويرمز ذلك إلى بداية الحرث الربيعي. من العادات حلاقة الشعر وأكل أطعمة خاصة، ويرمز ذلك إلى الحظ الجيد."
+    },
+    {
+      "name": "上巳节",
+      "date": "三月初三",
+      "chinese": "古代踏青、祓禊祈福的节日，如今多与踏青、祈福、纪念先祖相关。",
+      "en": "An ancient festival for outings, purification, and praying for blessings. Today it is mostly related to spring outings, praying, and commemorating ancestors.",
+      "ru": "Древний праздник прогулок на природе и очистительных обрядов. Сейчас он связан с прогулками, молитвами о благословении и поминовением предков.",
+      "tr": "Eskiden doğa gezileri ve temizlik törenleriyle kutlanan bir festivaldi. Günümüzde doğa gezileri, dua ve atalar anma ile ilişkilidir.",
+      "fa": "جشن قدیمی برای پیاده‌روی در طبیعت، پاکسازی و دعا برای برکت است. امروزه بیشتر با پیاده‌روی، دعا و یاد اجداد در ارتباط است.",
+      "ar": "عطية قديمة للتنزه في الطبيعة والطهارة والدعاء للبركة. اليوم ترتبط بشكل كبير بالتنزه والدعاء وتذكار الأجداد."
+    },
+    {
+      "name": "清明节",
+      "date": "公历 4 月 4-6 日",
+      "chinese": "祭祖扫墓、缅怀先人，同时也是踏青郊游的节气，兼具哀思与生机。",
+      "en": "People visit ancestral graves to honor the deceased. It is also a solar term for spring outings, combining grief for the departed with the vitality of spring.",
+      "ru": "Люди посещают могилы предков, чтят их память. Это также период весенних прогулок, сочетающий скорбь по усопшим и весеннюю живость природы.",
+      "tr": "İnsanlar atalar mezarlarını ziyaret ederek onları anır. Aynı zamanda ilkbahar gezileri için uygun bir güneş dönümüdür; hem özlem hem de doğal canlılık içerir.",
+      "fa": "مردم به مقبره اجداد می‌روند تا آن‌ها را یاد کنند. این دوره همچنین برای پیاده‌روی بهاری است و اندوه برای مردگان را با زیستگی بهاری ترکیب می‌کند.",
+      "ar": "يزور الناس مقابر الأجداد لتذكارهم، وهي أيضا فترة للتنزه في الربيع، تجمع بين الحزن للمتوفين وحيوية الربيع."
+    },
+    {
+      "name": "端午节",
+      "date": "五月初五",
+      "chinese": "纪念屈原，习俗有吃粽子、赛龙舟、挂艾草、佩香囊，驱邪避瘟、祈福安康。",
+      "en": "Commemorates Qu Yuan. Customs include eating zongzi, holding dragon boat races, hanging wormwood, and wearing sachets to ward off evil and pray for health.",
+      "ru": "Праздник в честь Цю Юаня. Обычаи: есть цзунцзы, проводить гонки на драконьих лодках, вешать полынь и носить ароматические мешочки для отпугивания зла и болезней, молиться о здоровье.",
+      "tr": "Qu Yuan'u anmak için kutlanır. Gelenekler arasında zongzi yemek, ejderha tekne yarışı, pelin otu asmak ve kese taşımak bulunur; kötülük ve hastalıklardan korunup sağlık dileyir.",
+      "fa": "به یاد چو یوان است. عادات شامل خوردن زونزی، مسابقه قایق اژدها، آویزان کردن گیاه دارویی و حمل کیسه‌های عطر برای دفع شر و بیماری و دعا برای سلامتی است.",
+      "ar": "تذكيراً لقوي يوان. من العادات أكل زونزي، سباقات القوارب التنينية، تعليق العشب، وارتداء أكياس العطر لطرد الشر والمرض والدعاء للصحة."
+    },
+    {
+      "name": "七夕节",
+      "date": "七月初七",
+      "chinese": "牛郎织女相会的日子，被称为 “中国情人节”，象征爱情忠贞，也有乞巧习俗。",
+      "en": "The day when the Cowherd and Weaver Maid meet. Known as China's Valentine's Day, it symbolizes loyal love and includes the custom of praying for skill in needlework.",
+      "ru": "День встречи Пастуха и Ткачихи, известный как китайский День святого Валентина. Символизирует верную любовь, также существует обычай молиться о мастерстве в рукоделии.",
+      "tr": "Çoban ve Dokurucu Kız'ın buluştuğu gün, Çin'in Sevgililer Günü olarak bilinir. Sadık aşkı simgeler ve zanaat becerisi için dua etme gelenekleri vardır.",
+      "fa": "روز ملاقات چوپان و بافنده است. به عنوان «عید عشق چین» شناخته می‌شود و وفاداری در عشق و همچنین عادت دعا برای مهارت در دست‌کاری را نشان می‌دهد.",
+      "ar": "يوم لقاء راعي البقر مع فتاة النسيج. يُعرف باسم عيد الحب الصيني، ويرمز إلى الولاء في الحب، وكذلك عادة الدعاء للمهارة في الحرف اليدوي."
+    },
+    {
+      "name": "中元节",
+      "date": "七月十五",
+      "chinese": "祭祀祖先、超度亡魂的节日，民间俗称 “鬼节”，表达对先人的追思。",
+      "en": "A festival for ancestor worship and comforting the souls of the deceased, commonly known as the Ghost Festival, expressing remembrance of ancestors.",
+      "ru": "Праздник поминовения предков и душ усопших, в народе известный как «праздник духов». Выражает скорбь и память о предках.",
+      "tr": "Atalara adak adanan ve ruhları anan festival, halk arasında Hayalet Festivali olarak bilinir. Atalara olan özlemi ifade eder.",
+      "fa": "جشن برای عبادت اجداد و تسلیت روح مردگان است که در عامه people به عنوان «عید ارواح» شناخته می‌شود و یاد اجداد را بیان می‌کند.",
+      "ar": "عطية لعبادة الأجداد وتعزية أرواح المتوفين، وتعرف شعبياً بعيد الأرواح، تعبر عن التذكار للأجداد."
+    },
+    {
+      "name": "中秋节",
+      "date": "八月十五",
+      "chinese": "月圆人团圆，赏月、吃月饼、赏桂花，是仅次于春节的团圆佳节。",
+      "en": "The full moon represents family reunion. People admire the moon, eat mooncakes, and enjoy osmanthus flowers. It is the second most important reunion festival after the Spring Festival.",
+      "ru": "Луна полная, а семьи вместе. Люди любуются луной, едят луничные пироги и наслаждаются цветением османтуса. Это второй по важности праздник семейного единства после Нового года.",
+      "tr": "Ay dolunaydır ve aileler bir araya gelir. İnsanlar ayı seyreder, ay pastası yerler ve yasemin çiçeğini izler; Yeni Yıl'dan sonra en önemli birlik festivalidir.",
+      "fa": "ماه کامل است و خانواده‌ها دور هم جمع می‌شوند. مردم ماه را تماشا می‌کنند، کیک ماه می‌خورند و گل ارغوان را می‌بینند. این دومین جشن مهم اتحاد پس از عید بهاری است.",
+      "ar": "القمر مكتمل والعراقيل متحدة. يُقام الناس لمعاينة القمر، وأكل كعك القمر، والاستمتاع بالزهور. هي ثاني أهم عطية للاتحاد بعد عيد الربيع."
+    },
+    {
+      "name": "重阳节",
+      "date": "九月初九",
+      "chinese": "登高、赏菊、插茱萸、敬老，因 “九九” 谐音 “久久”，也被定为敬老节。",
+      "en": "People climb mountains, enjoy chrysanthemums, wear dogwood, and respect the elderly. Since \"double nine\" sounds like \"longevity\", it is also designated as the Senior Citizens' Day.",
+      "ru": "Люди поднимаются на возвышенности, любуются хризантемами, носят ветки дёрева и почитают пожилых. Поскольку «девять девять» созвучно «долголетие», этот день считается Днём почитания пожилых.",
+      "tr": "İnsanlar yüksek yerlere çıkar, krizantem seyreder, bitki takar ve yaşlılara saygı duyarlar. “Çift dokuz” sözcüğü “uzun ömür”e benzetildiği için Yaşlılara Saygı Günü olarak kabul edilir.",
+      "fa": "مردم به بلندی‌ها می‌روند، گل سرخ را تماشا می‌کنند، گیاه زوفا می‌گذارند و سالمندان را احترام می‌کنند. از آنجایی که «نه و نه» شبیه «همیشگی» است، به عنوان «عید احترام سالمندان» نیز تعیین شده است.",
+      "ar": "يرتقي الناس في الجبال، ويُعجبون بالزنابق، ويضعون نبات الزوفا، ويكرمون كبار السن. لأن \"تسعة وتسعة\" تشبه \"أبدية\"، فهي تعتبر أيضاً عيد احترام المسنين."
+    },
+    {
+      "name": "冬至节",
+      "date": "公历 12 月 21-23 日",
+      "chinese": "北半球白昼最短，北方吃饺子、南方吃汤圆，有 “冬至大如年” 的说法。",
+      "en": "It is the shortest day in the Northern Hemisphere. People eat dumplings in northern China and sweet rice dumplings in the south. There is a saying that \"the Winter Solstice is as important as the New Year\".",
+      "ru": "Самый короткий день в Северном полушарии. На севере едят пельмени, на юге – рисовые шарики. Существует пословица: «Зимнее солнцестояние важнее Нового года».",
+      "tr": "Kuzey Yarımküre'de en kısa gündür. Kuzeyde mantı, Güneyde pirinç topları yenir. “Kış Dönümü Yeni Yıl kadar önemlidir” sözü vardır.",
+      "fa": "کوتاه‌ترین روز نیمکره شمالی است. مردم در شمال خورش خوراکی و در جنوب کره برنج می‌خورند. گفته می‌شود که «روز انقلاب زمستانی به اندازه سال جدید مهم است».",
+      "ar": "أقصر نهار في نصف الكرة الشمالي. يأكل الناس الجيوزي في الشمال، وكرات الأرز في الجنوب. هناك مقولة أن \"يوم الانقلاب الشتوي مهم كالعام الجديد\"."
+    },
+    {
+      "name": "腊八节",
+      "date": "腊月初八",
+      "chinese": "喝腊八粥，寓意祈福丰收、驱寒暖身，标志着年关将近。",
+      "en": "People eat Laba porridge, symbolizing prayers for a good harvest, warmth, and driving away cold, marking the approaching end of the year.",
+      "ru": "Люди едят кашу Лаба, что символизирует молитвы о богатом урожае и согревание от холода, а также означает приближение конца года.",
+      "tr": "İnsanlar Laba çorbası içerler; bu, bereketli hasat dilemek ve soğuktan korunmak anlamına gelir ve yıl sonunun yaklaştığını gösterir.",
+      "fa": "مردم سوپ لابا می‌نوشند که نماد دعا برای برداشت خوب، دفع سرما و گرم کردن بدن است و نشان‌دهنده نزدیک شدن به پایان سال است.",
+      "ar": "يشرب الناس شوربة لابا، ويرمز ذلك إلى الدعاء للحصاد الجيد، وطرد البرد، ويدل على اقتراب نهاية العام."
+    },
+    {
+      "name": "小年",
+      "date": "腊月二十三 / 二十四",
+      "chinese": "祭灶神、扫尘土，为春节做准备，不同地区日期略有差异。",
+      "en": "People worship the Kitchen God and do a thorough cleaning to prepare for the Spring Festival. The date varies slightly in different regions.",
+      "ru": "Люди почитают Бога кухни, убирают дом, готовясь к Новому году. Дата немного отличается в разных регионах.",
+      "tr": "İnsanlar Mutfak Tanrısı'na adak adar ve evi temizler, Yeni Yıl'a hazırlanır. Tarih bölgelere göre küçük farklılıklar gösterir.",
+      "fa": "مردم به خدای آشپزخانه می‌پرستند و خانه را تمیز می‌کنند تا برای عید بهاری آماده شوند. تاریخ در مناطق مختلف کمی متفاوت است.",
+      "ar": "يعبد الناس إله المطبخ، وينظفون المنزل تحضيراً لعيد الربيع. التاريخ يختلف قليلاً في المناطق المختلفة.。"
+    }
+  ]
+}

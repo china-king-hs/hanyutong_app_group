@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:provider/provider.dart';
@@ -110,7 +110,7 @@ class _ChineseGoAppState extends State<ChineseGoApp> with WidgetsBindingObserver
               width: 100,
               height: 100,
               decoration: BoxDecoration(
-                color: const Color(0xFF4285F4).withOpacity(0.1),
+                color: const Color(0xFF4285F4).withValues(alpha: 0.1),
                 shape: BoxShape.circle,
               ),
               child: const Icon(

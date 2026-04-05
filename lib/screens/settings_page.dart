@@ -43,6 +43,33 @@ class _SettingsPageState extends State<SettingsPage> {
     );
   }
 
+  void _resetLearningData() {
+    final loc = AppLocalizations.of(context)!;
+    showDialog(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: Text(loc.resetLearningRecord),
+        content: Text(loc.resetLearningRecordDesc),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(ctx),
+            child: Text(loc.back),
+          ),
+          TextButton(
+            onPressed: () {
+              Navigator.pop(ctx);
+              context.read<AppState>().resetLearningData();
+              ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(content: Text(loc.resetLearningRecordSuccess)),
+              );
+            },
+            child: Text(loc.confirm),
+          ),
+        ],
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final loc = AppLocalizations.of(context)!;
@@ -66,7 +93,7 @@ class _SettingsPageState extends State<SettingsPage> {
                       icon: const Icon(Icons.arrow_back, color: Color(0xFF333333)),
                     ),
                     Text(loc.settings,
-                        style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+                        style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
                   ],
                 ),
               ),
@@ -140,7 +167,7 @@ class _SettingsPageState extends State<SettingsPage> {
                               ),
                               child: Text(
                                 loc.save,
-                                style: TextStyle(
+                                style: const TextStyle(
                                   fontSize: 16,
                                   fontWeight: FontWeight.bold,
                                 ),
@@ -176,6 +203,41 @@ class _SettingsPageState extends State<SettingsPage> {
                         onPressed: _resetOnboarding,
                         style: ElevatedButton.styleFrom(
                           backgroundColor: const Color(0xFF4285F4),
+                          foregroundColor: Colors.white,
+                          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                        ),
+                        child: Text(loc.reset),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(height: 16),
+
+                  // 重置学习记录
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    child: ListTile(
+                      title: Text(
+                        loc.resetLearningRecord,
+                        style: const TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                          color: Color(0xFF333333),
+                        ),
+                      ),
+                      subtitle: Text(
+                        loc.resetLearningRecordDesc,
+                        style: const TextStyle(fontSize: 13, color: Color(0xFF666666)),
+                      ),
+                      trailing: ElevatedButton(
+                        onPressed: _resetLearningData,
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.red,
                           foregroundColor: Colors.white,
                           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                           shape: RoundedRectangleBorder(

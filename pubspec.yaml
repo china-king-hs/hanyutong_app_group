@@ -41,6 +41,30 @@ flutter:
   assets:
     - assets/icon/
     - assets/words/
+    - assets/idioms/
+    - assets/proverb_saying/
+    - assets/poetry/
+    - assets/culture/
+    - assets/grammar/en/hsk1_2/
+    - assets/grammar/en/hsk3/
+    - assets/grammar/en/hsk4/
+    - assets/grammar/en/hsk5_6/
+    - assets/grammar/ru/hsk1_2/
+    - assets/grammar/ru/hsk3/
+    - assets/grammar/ru/hsk4/
+    - assets/grammar/ru/hsk5_6/
+    - assets/grammar/tr/hsk1_2/
+    - assets/grammar/tr/hsk3/
+    - assets/grammar/tr/hsk4/
+    - assets/grammar/tr/hsk5_6/
+    - assets/grammar/ar/hsk1_2/
+    - assets/grammar/ar/hsk3/
+    - assets/grammar/ar/hsk4/
+    - assets/grammar/ar/hsk5_6/
+    - assets/grammar/fa/hsk1_2/
+    - assets/grammar/fa/hsk3/
+    - assets/grammar/fa/hsk4/
+    - assets/grammar/fa/hsk5_6/
 
 flutter_launcher_icons:
   android: true
