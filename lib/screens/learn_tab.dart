@@ -170,25 +170,6 @@ class _LearnTabState extends State<LearnTab> {
                     onTap: () => context.push('/culture')),
               ],
             ),
-            const SizedBox(height: 24),
-
-            // Auxiliary Materials
-            Text(AppLocalizations.of(context)!.auxiliaryMaterials,
-                style: const TextStyle(fontSize: 13, color: Color(0xFF999999))),
-            const SizedBox(height: 12),
-            GridView.count(
-              physics: const NeverScrollableScrollPhysics(),
-              shrinkWrap: true,
-              crossAxisCount: 2,
-              crossAxisSpacing: 16,
-              mainAxisSpacing: 16,
-              children: [
-                _SimpleCard(emoji: '📋', label: AppLocalizations.of(context)!.hskOutline,
-                    onTap: () => context.push('/empty')),
-                _SimpleCard(emoji: '📚', label: AppLocalizations.of(context)!.hskMaterials,
-                    onTap: () => context.push('/empty')),
-              ],
-            ),
           ],
         ),
       ),

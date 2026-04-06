@@ -94,13 +94,15 @@
 **Step 2（语义评测）**：
 - 用户用母语语音解释含义
 - 语音识别：Qwen-ASR-Flash 将母语音频转为文字
-- 语义评分：通义千问对比用户解释与标准翻译（来自数据文件），给出 0-100 分
+- **安全加固**：检测到中文字符时直接返回 0-10 分，防止读中文原文得高分
+- 语义评分：通义千问对比用户解释与标准翻译，给出 0-100 分
 - 评分门槛：≥ 70 分标记为"已掌握"，< 70 分需重试
 
 ### 🔊 TTS 语音合成
 - 接入 Edge TTS（微软在线语音合成），中文发音质量高
 - 学习页词卡的中文词语、成语、谚语均可点击播放标准发音
 - 支持 Windows、Android、iOS 平台
+- TTS 服务内置调试日志，方便排查问题
 
 ### 🔍 通用功能
 - **序号跳转**：词汇/成语/谚语/诗词/语法/文化知识均支持序号输入跳转
@@ -312,11 +314,34 @@ flutter run -d windows
 flutter run -d <device-id>
 ```
 
+### Android APK 打包
+
+```bash
+# 确保 android/key.properties 文件存在（含签名密钥密码）
+# 打包 release 版本
+flutter build apk --release
+```
+
+> **APK 输出路径**：`build/app/outputs/flutter-apk/app-release.apk`
+> **APK 大小**：约 32.4MB（arm64 单架构）
+
+### Android 权限说明
+
+Android APK 需要以下权限（已配置在 AndroidManifest.xml）：
+- `INTERNET`：访问网络（Edge TTS + DashScope API）
+- `RECORD_AUDIO`：麦克风录音
+
 ### API 配置
 
 AI 评分功能需要配置阿里云百炼 API Key：
 
 在 `lib/services/ai_service.dart` 中修改 `_apiKey` 为你的 DashScope API Key（在[阿里云百炼控制台](https://bailian.console.aliyun.com/)获取）。
+
+### Android 权限说明
+
+Android APK 需要以下权限（已配置在 AndroidManifest.xml）：
+- `INTERNET`：访问网络（Edge TTS + DashScope API）
+- `RECORD_AUDIO`：麦克风录音
 
 ---
 
@@ -331,7 +356,7 @@ SplashScreen → 语言选择 → 水平测试 → 学习目标设置 → 主界
 | Tab | 功能 |
 |-----|------|
 | 首页 | 学习统计（连续天数、累计天数、学习时长）、已掌握统计（词语/成语/谚语）、复习入口、收藏入口 |
-| 学习 | 按模块选择：词汇、语法、成语、谚语、诗词、文化知识、HSK 大纲、HSK 资料 |
+| 学习 | 按模块选择：词汇、语法、成语、谚语、诗词、文化知识 |
 | 我的 | 个人信息、学习统计、设置（重置引导、重置学习记录） |
 
 ### 学习模块导航
@@ -343,8 +368,6 @@ SplashScreen → 语言选择 → 水平测试 → 学习目标设置 → 主界
 ├── 谚语学习 → 卡片式学习（AI 评分 + 标记掌握 + 序号跳转）
 ├── 诗词学习 → 翻页浏览（中文释义+母语释义，可收藏，纯浏览无评分）
 ├── 文化知识 → 24 节气 + 13 节日翻页浏览
-├── HSK 大纲 → 占位页（即将推出）
-└── HSK 资料 → 占位页（即将推出）
 ```
 
 ### 复习系统
@@ -403,13 +426,16 @@ SplashScreen → 语言选择 → 水平测试 → 学习目标设置 → 主界
 - [x] AI 语义评分接入（通义千问 qwen-turbo，对比用户解释与标准翻译）
 - [x] 发音评分支持重试（"再试一次"按钮）
 - [x] 完整两步评分链路（录音 → ASR 转文字 → 大模型评分 → 掌握判定）
+- [x] 语义评分安全加固（防止读中文原文得高分）
+- [x] Android APK 网络权限修复（INTERNET 权限）
+- [x] TTS 调试日志功能
+- [x] Android release APK 打包（32.4MB，arm64 单架构）
 
 ### 计划中 📋
 - [ ] iOS 真机测试
 - [ ] 用户账号系统
 - [ ] 学习数据云同步
 - [ ] 网页版（Web 平台）
-- [ ] HSK 大纲与资料页面内容
 
 ---
 

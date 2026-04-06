@@ -225,30 +225,35 @@ class AiService {
         return Random().nextInt(20) + 40; // 40-59，没听清
       }
 
-      // 2. 用通义千问对比用户解释和标准翻译
+      // 2. 预检测语言：如果识别结果包含中文字符，说明用户读了中文原文而非用母语解释
+      if (_containsChinese(transcript)) {
+        debugPrint('⚠️ 语义评分：检测到中文，用户未用母语解释（识别结果: $transcript），直接给低分');
+        return Random().nextInt(11); // 0-10 分
+      }
+
+      // 3. 用通义千问对比用户解释和标准翻译
       final languageName = _languageNames[languageCode] ?? 'English';
 
-      final prompt = '''你是一个中文学习语义评测助手。用户正在学习中文，需要用$languageName解释以下词语的含义。
+      final prompt = '''你是一个严格的中文学习语义评测助手。用户正在学习中文，当前任务是用$languageName解释以下词语的含义。
 
 中文词语：$chineseWord
 正确翻译（$languageName）：$correctTranslation
-用户口头解释（ASR 识别结果，$languageName）：$transcript
+用户口头解释（ASR 识别结果）：$transcript
 
-请评估用户的解释与标准翻译的语义接近程度。
-注意：
-- 允许不同的表达方式和措辞，只要核心含义正确即可给高分
-- 用户是口头表达，可能会有口语化、不完整的情况，请宽容一些
-- 如果用户的解释和标准翻译意思相近但措辞不同，仍然应该给高分
+评测规则（必须严格执行，不可违反）：
+1. 语言检查（最重要）：用户的解释必须是用$languageName写的。如果解释中包含任何中文字符，或者看起来像是中文而非$languageName，分数必须为 0-10 分。
+2. 语义检查：仅当确认用户使用了$languageName时，才评估语义。
+
+评分标准（严格执行）：
+- 0-10：解释中包含中文，或使用了非$languageName的语言（未完成任务）
+- 90-100：用$languageName解释，语义与标准翻译完全一致
+- 80-89：用$languageName解释，基本正确，有细微差异
+- 70-79：用$languageName解释，部分正确，有小错误
+- 60-69：用$languageName解释，有较大偏差
+- 11-59：用$languageName解释，语义完全错误
 
 请严格按以下 JSON 格式回复，不要包含其他内容：
-{"score": 数字}
-
-评分标准：
-- 90-100：解释完全正确，语义与标准翻译一致
-- 80-89：解释基本正确，细微差异不影响理解
-- 70-79：解释部分正确，遗漏了部分含义或有小错误
-- 60-69：解释有较大偏差
-- 0-59：解释完全错误或与词义无关''';
+{"score": 数字}''';
 
       final result = await _callTextApi(prompt);
       debugPrint('📝 语义评分结果: $result');
@@ -317,5 +322,10 @@ class AiService {
       return int.tryParse(numMatch.group(1)!) ?? 70;
     }
     return 70; // 默认分数
+  }
+
+  /// 检测文本是否包含中文字符（CJK 统一汉字）
+  static bool _containsChinese(String text) {
+    return text.runes.any((rune) => rune >= 0x4E00 && rune <= 0x9FFF);
   }
 }
