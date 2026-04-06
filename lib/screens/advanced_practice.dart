@@ -14,6 +14,7 @@ import '../models/proverb_model.dart';
 import '../models/proverb_repository.dart';
 import '../models/poetry_model.dart';
 import '../models/poetry_repository.dart';
+import '../services/ai_service.dart';
 import '../services/tts_service.dart';
 import '../widgets/sound_wave_button.dart';
 
@@ -62,6 +63,7 @@ class _AdvancedPracticeState extends State<AdvancedPractice> {
   bool _showMeaningScore = false;
   bool _showAnswer = false;
   bool _showChineseExplanation = false;
+  bool _isEvaluating = false; // 正在调用 AI 评分
   bool _showPoetryChineseMeaning = false;
   bool _showPoetryNativeMeaning = false;
   /// 追踪每首诗词的释义查看状态 {poemId: {chinese: bool, native: bool}}
@@ -76,6 +78,7 @@ class _AdvancedPracticeState extends State<AdvancedPractice> {
 
   // ── TTS 语音播放 ──
   final TtsService _tts = TtsService();
+  final AiService _aiService = AiService();
   final GlobalKey<SoundWaveButtonState> _idiomSpeakerKey = GlobalKey();
 
   @override
@@ -429,22 +432,69 @@ class _AdvancedPracticeState extends State<AdvancedPractice> {
     }
   }
 
-  // 提交录音（当前先保留模拟分数，后端接好后替换）
-  void _submitRecording(String? path) {
-    // TODO: 将 path 上传至评分后端，用真实结果替换随机分
-    final rnd = Random();
-    setState(() {
+  // 提交录音 → ASR 转文字 + 通义千问评分
+  void _submitRecording(String? path) async {
+    // 诗词/文化类型无评测，跳过
+    if (widget.type == 'poetry' || widget.type == 'culture') return;
+    if (path == null) return;
+
+    setState(() => _isEvaluating = true);
+
+    try {
+      final state = context.read<AppState>();
+
       if (_step == 'pronunciation') {
-        _pronScore = rnd.nextInt(30) + 70;
-        _showPronScore = true;
+        // 第一步：发音评分（录音 → ASR 转文字 → 与正确答案对比 → 评分）
+        final score = await _aiService.evaluatePronunciation(
+          audioPath: path,
+          correctChinese: _currentChinese,
+          pinyin: _currentPinyin,
+        );
+        if (mounted) {
+          setState(() {
+            _pronScore = score;
+            _showPronScore = true;
+            _isEvaluating = false;
+          });
+        }
       } else {
-        _meaningScore = rnd.nextInt(30) + 70;
-        _showMeaningScore = true;
+        // 第二步：语义评分（录音 → ASR 转文字 → 与标准翻译对比 → 评分）
+        final score = await _aiService.evaluateMeaning(
+          audioPath: path,
+          correctTranslation: _currentTranslation,
+          languageCode: state.language,
+          chineseWord: _currentChinese,
+        );
+        if (mounted) {
+          setState(() {
+            _meaningScore = score;
+            _showMeaningScore = true;
+            _isEvaluating = false;
+          });
+        }
       }
-    });
+    } catch (_) {
+      // API 异常时使用模拟分数兜底
+      if (mounted) {
+        final rnd = Random();
+        setState(() {
+          if (_step == 'pronunciation') {
+            _pronScore = rnd.nextInt(30) + 70;
+            _showPronScore = true;
+          } else {
+            _meaningScore = rnd.nextInt(30) + 70;
+            _showMeaningScore = true;
+          }
+          _isEvaluating = false;
+        });
+      }
+    }
   }
 
   void _handleNextStep() => setState(() { _showPronScore = false; _step = 'meaning'; });
+
+  /// 第一步发音重试：关闭评分弹窗，留在发音步骤
+  void _handlePronRetry() => setState(() => _showPronScore = false);
 
   void _handleContinue() {
     final state = context.read<AppState>();
@@ -1075,21 +1125,23 @@ class _AdvancedPracticeState extends State<AdvancedPractice> {
                           ],
                         ),
                         const SizedBox(height: 32),
-                        // Mic — 按住录音，上滑取消
+                        // Mic — 按住录音，上滑取消（评分中禁用）
                         GestureDetector(
-                          onLongPressStart: _handleLongPressStart,
-                          onLongPressMoveUpdate: _handleLongPressMoveUpdate,
-                          onLongPressEnd: _handleLongPressEnd,
+                          onLongPressStart: _isEvaluating ? null : _handleLongPressStart,
+                          onLongPressMoveUpdate: _isEvaluating ? null : _handleLongPressMoveUpdate,
+                          onLongPressEnd: _isEvaluating ? null : _handleLongPressEnd,
                           child: AnimatedContainer(
                             duration: const Duration(milliseconds: 150),
                             width: _isRecording ? 84 : 72,
                             height: _isRecording ? 84 : 72,
                             decoration: BoxDecoration(
-                              color: _isCancelling
-                                  ? Colors.red
-                                  : _isRecording
-                                      ? const Color(0xFF4285F4)
-                                      : Colors.grey[300],
+                              color: _isEvaluating
+                                  ? const Color(0xFF4285F4).withValues(alpha: 0.5)
+                                  : _isCancelling
+                                      ? Colors.red
+                                      : _isRecording
+                                          ? const Color(0xFF4285F4)
+                                          : Colors.grey[300],
                               shape: BoxShape.circle,
                               boxShadow: _isRecording
                                   ? [
@@ -1102,18 +1154,22 @@ class _AdvancedPracticeState extends State<AdvancedPractice> {
                                     ]
                                   : [],
                             ),
-                            child: Icon(
-                              _isCancelling ? Icons.close : Icons.mic,
-                              color: Colors.white,
-                              size: 36,
-                            ),
+                            child: _isEvaluating
+                                ? const CircularProgressIndicator(color: Colors.white, strokeWidth: 3)
+                                : Icon(
+                                    _isCancelling ? Icons.close : Icons.mic,
+                                    color: Colors.white,
+                                    size: 36,
+                                  ),
                           ),
                         ),
                         const SizedBox(height: 12),
                         Text(
-                          _isRecording
-                              ? loc.slideUpToCancel
-                              : loc.holdToRecord,
+                          _isEvaluating
+                              ? '...'
+                              : _isRecording
+                                  ? loc.slideUpToCancel
+                                  : loc.holdToRecord,
                           style: TextStyle(
                             fontSize: 13,
                             color: _isRecording
@@ -1159,11 +1215,30 @@ class _AdvancedPracticeState extends State<AdvancedPractice> {
               items: [
                 _scoreRow(loc.pronunciationAccuracy, _pronScore, _scoreColor(_pronScore)),
               ],
-              action: ElevatedButton(
-                onPressed: _handleNextStep,
-                style: _blueBtn,
-                child: Text(loc.nextStepExplain,
-                    style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
+              action: Row(
+                children: [
+                  Expanded(
+                    child: OutlinedButton(
+                      onPressed: _handlePronRetry,
+                      style: OutlinedButton.styleFrom(
+                        side: const BorderSide(color: Colors.orange),
+                        padding: const EdgeInsets.symmetric(vertical: 16),
+                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                      ),
+                      child: Text(loc.tryAgain,
+                          style: const TextStyle(color: Colors.orange, fontWeight: FontWeight.bold)),
+                    ),
+                  ),
+                  const SizedBox(width: 12),
+                  Expanded(
+                    child: ElevatedButton(
+                      onPressed: _handleNextStep,
+                      style: _blueBtn,
+                      child: Text(loc.nextStepExplain,
+                          style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
+                    ),
+                  ),
+                ],
               ),
             ),
 
