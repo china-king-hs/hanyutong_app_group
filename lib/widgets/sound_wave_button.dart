@@ -1,12 +1,13 @@
 ﻿import 'package:flutter/material.dart';
+import '../services/tts_service.dart';
 
 /// 带声波动画的喇叭按钮
 ///
-/// 点击后通过 [onTap] 回调通知外部播放 TTS，
-/// 外部负责调用 [stopAnimation] 来停止动画。
+/// [text] 非空时，点击按钮会自动通过 Edge TTS 朗读该文本。
+/// [onTap] 仍可单独使用，适用于外部自定义 TTS 调用场景。
 ///
 /// 参数说明：
-/// - [text]      : 要朗读的文本（非空时点击会回调 onTap）
+/// - [text]      : 要朗读的文本（非空时自动播放 TTS）
 /// - [size]      : 按钮直径（默认36）
 /// - [iconSize]  : 图标大小（默认 size * 0.5，可手动覆盖）
 /// - [color]     : 一键设置主色（同时应用到 iconColor 和 waveColor）
@@ -14,6 +15,7 @@
 /// - [bgColor]   : 按钮背景色（未播放时）
 /// - [waveColor] : 声波圆环颜色（单独设置时优先于 color）
 class SoundWaveButton extends StatefulWidget {
+  final String? text;
   final VoidCallback? onTap;
   final double size;
   final double? iconSize;
@@ -24,6 +26,7 @@ class SoundWaveButton extends StatefulWidget {
 
   const SoundWaveButton({
     super.key,
+    this.text,
     this.onTap,
     this.size = 36,
     this.iconSize,
@@ -43,6 +46,14 @@ class SoundWaveButtonState extends State<SoundWaveButton>
   late AnimationController _iconController;
   late Animation<double> _iconScale;
   bool _isPlaying = false;
+
+  // 页面级 TTS 实例（同页面多个按钮共享）
+  static TtsService? _sharedTts;
+
+  TtsService get _tts {
+    _sharedTts ??= TtsService();
+    return _sharedTts!;
+  }
 
   @override
   void initState() {
@@ -87,7 +98,14 @@ class SoundWaveButtonState extends State<SoundWaveButton>
       setState(() => _isPlaying = true);
     }
 
-    widget.onTap?.call();
+    // 优先使用 onTap 回调（外部自定义场景），否则用内置 TTS
+    if (widget.onTap != null) {
+      widget.onTap!();
+    } else if (widget.text != null && widget.text!.isNotEmpty) {
+      _tts.speak(widget.text!).then((_) {
+        if (mounted) stopAnimation();
+      });
+    }
   }
 
   /// 外部调用：TTS 播放完成后停止动画

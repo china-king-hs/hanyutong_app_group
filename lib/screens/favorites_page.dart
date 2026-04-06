@@ -438,7 +438,7 @@ class _FavoriteWordCard extends StatelessWidget {
           ),
           const SizedBox(width: 4),
           // 播放按钮
-          const SoundWaveButton(size: 26),
+          SoundWaveButton(size: 26, text: word.word),
           // 星形收藏按钮
           GestureDetector(
             onTap: onToggleFavorite,
@@ -532,7 +532,7 @@ class _FavoriteIdiomCard extends StatelessWidget {
               ),
               const SizedBox(width: 4),
               // 播放按钮
-              const SoundWaveButton(size: 26),
+              SoundWaveButton(size: 26, text: idiom.word),
               // 星形收藏按钮
               GestureDetector(
                 onTap: onToggleFavorite,
@@ -665,7 +665,7 @@ class _FavoriteProverbCard extends StatelessWidget {
               ),
               const SizedBox(width: 4),
               // 播放按钮
-              const SoundWaveButton(size: 26),
+              SoundWaveButton(size: 26, text: proverb.sentence),
               // 星形收藏按钮
               GestureDetector(
                 onTap: onToggleFavorite,

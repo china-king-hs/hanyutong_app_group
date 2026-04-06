@@ -252,7 +252,7 @@ class _IdiomReviewCard extends StatelessWidget {
               ),
               const SizedBox(width: 4),
               // 播放按钮
-              const SoundWaveButton(size: 26),
+              SoundWaveButton(size: 26, text: idiom.word),
               // 星形收藏按钮
               GestureDetector(
                 onTap: onToggleFavorite,

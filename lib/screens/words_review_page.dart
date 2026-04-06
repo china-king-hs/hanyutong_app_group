@@ -296,7 +296,7 @@ class _WordReviewCard extends StatelessWidget {
             ),
           ),
           const SizedBox(width: 6),
-          const SoundWaveButton(size: 26),
+          SoundWaveButton(size: 26, text: word.word),
           // 星形收藏按钮
           GestureDetector(
             onTap: onToggleFavorite,

@@ -14,11 +14,10 @@ class AppState extends ChangeNotifier {
   // ---------- 学习统计 ----------
   int _streak = 0;
   int _totalDays = 0;
-  int _totalHours = 0;
+  int _totalMinutes = 0; // 累计学习分钟数
 
   // ---------- 今日学习时长 ----------
   int _learningTime = 0;
-  bool _showGoalPopup = false;
 
   // ---------- 计时器相关 ----------
   DateTime? _sessionStartTime; // 本次学习会话开始时间
@@ -44,12 +43,12 @@ class AppState extends ChangeNotifier {
   String get username => _username.isEmpty ? 'Learner' : _username;
   int get streak => _streak;
   int get totalDays => _totalDays;
-  int get totalHours => _totalHours;
+  /// 累计学习时长（小时），每 30 分钟进 0.5 小时
+  double get totalHours => (_totalMinutes / 30).ceilToDouble() * 0.5;
   int get masteredWords => _masteredWordIds.length;
   int get masteredIdioms => _masteredIdiomIds.length;
   int get masteredProverbs => _masteredProverbIds.length;
   int get learningTime => _learningTime;
-  bool get showGoalPopup => _showGoalPopup;
   Set<String> get favorites => _favorites.toSet();
   List<String> get favoritesOrdered => _favorites; // 有序列表，供收藏页倒序使用
   List<String> get masteredWordIds => _masteredWordIds;
@@ -68,9 +67,10 @@ class AppState extends ChangeNotifier {
     _username = prefs.getString('username') ?? '';
     _streak = prefs.getInt('streak') ?? 0;
     _totalDays = prefs.getInt('totalDays') ?? 0;
-    _totalHours = prefs.getInt('totalHours') ?? 0;
+    // 兼容旧版 totalHours（int，单位小时），转为分钟数
+    final oldTotalHours = prefs.getInt('totalHours') ?? 0;
+    _totalMinutes = prefs.getInt('totalMinutes') ?? (oldTotalHours * 60);
     _learningTime = prefs.getInt('todayLearningTime') ?? 0;
-    _showGoalPopup = prefs.getBool('showGoalPopup') ?? false;
     final lastDateStr = prefs.getString('lastLearningDate');
     if (lastDateStr != null) {
       _lastLearningDate = DateTime.parse(lastDateStr);
@@ -132,11 +132,9 @@ class AppState extends ChangeNotifier {
         // 新的一天,重置今日学习时间和达成目标标志
         _learningTime = 0;
         _goalReachedToday = false;
-        _showGoalPopup = false;
         _save((p) async {
           p.setInt('todayLearningTime', 0);
           p.setBool('goalReachedToday', false);
-          p.setBool('showGoalPopup', false);
         });
       }
     }
@@ -192,11 +190,10 @@ class AppState extends ChangeNotifier {
     // 清除学习统计
     _streak = 0;
     _totalDays = 0;
-    _totalHours = 0;
+    _totalMinutes = 0;
 
     // 清除今日学习状态
     _learningTime = 0;
-    _showGoalPopup = false;
     _goalReachedToday = false;
     _sessionStartTime = null;
     _lastLearningDate = null;
@@ -212,10 +209,9 @@ class AppState extends ChangeNotifier {
       // 学习统计
       await p.setInt('streak', 0);
       await p.setInt('totalDays', 0);
-      await p.setInt('totalHours', 0);
+      await p.setInt('totalMinutes', 0);
       // 今日学习状态
       await p.setInt('todayLearningTime', 0);
-      await p.setBool('showGoalPopup', false);
       await p.setBool('goalReachedToday', false);
       await p.remove('lastLearningDate');
     });
@@ -280,23 +276,17 @@ class AppState extends ChangeNotifier {
     notifyListeners();
   }
 
-  void setShowGoalPopup(bool show) {
-    _showGoalPopup = show;
-    _save((p) async => p.setBool('showGoalPopup', show));
-    notifyListeners();
-  }
-
   // 开始学习计时(进入学习页面时调用)
   void startLearningSession() {
     _checkNewDay(); // 检查是否是新的一天
-    if (_sessionStartTime == null && !_goalReachedToday) {
+    if (_sessionStartTime == null) {
       _sessionStartTime = DateTime.now();
     }
   }
 
   // 结束学习计时(退出学习页面时调用)
   void endLearningSession() {
-    if (_sessionStartTime != null && !_goalReachedToday) {
+    if (_sessionStartTime != null) {
       final now = DateTime.now();
       final duration = now.difference(_sessionStartTime!).inMinutes;
 
@@ -312,28 +302,28 @@ class AppState extends ChangeNotifier {
     }
   }
 
-  // 手动添加学习时间(保留原有方法)
+  // 手动添加学习时间
   void addLearningTime(int minutes) {
     final prev = _learningTime;
     _learningTime += minutes;
+    _totalMinutes += minutes;
 
-    // 如果达到目标且今天还没达到过
+    // 如果达到目标且今天还没达到过，更新连续天数和累计天数
     if (prev < _dailyGoal && _learningTime >= _dailyGoal && !_goalReachedToday) {
       _goalReachedToday = true;
-      _showGoalPopup = true;
       _streak++;
       _totalDays++;
-      _totalHours += (_learningTime ~/ 60);
       _save((p) async {
         p.setInt('streak', _streak);
         p.setInt('totalDays', _totalDays);
-        p.setInt('totalHours', _totalHours);
         p.setBool('goalReachedToday', _goalReachedToday);
-        p.setBool('showGoalPopup', _showGoalPopup);
       });
     }
 
-    _save((p) async => p.setInt('todayLearningTime', _learningTime));
+    _save((p) async {
+      p.setInt('todayLearningTime', _learningTime);
+      p.setInt('totalMinutes', _totalMinutes);
+    });
     notifyListeners();
   }
 }

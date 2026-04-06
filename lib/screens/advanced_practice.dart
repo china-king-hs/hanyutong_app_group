@@ -67,7 +67,7 @@ class _AdvancedPracticeState extends State<AdvancedPractice> {
   /// 追踪每首诗词的释义查看状态 {poemId: {chinese: bool, native: bool}}
   final Map<String, Map<String, bool>> _poemMeaningTapped = {};
   Map<String, int> _pronScore = {'tone': 85, 'sound': 90};
-  Map<String, int> _meaningScore = {'literal': 80, 'extended': 75, 'practical': 85};
+  int _meaningScore = 80; // 含义评分（合并为单条）
 
   // ── 录音 ──
   final AudioRecorder _audioRecorder = AudioRecorder();
@@ -438,11 +438,7 @@ class _AdvancedPracticeState extends State<AdvancedPractice> {
         _pronScore = {'tone': rnd.nextInt(30) + 70, 'sound': rnd.nextInt(30) + 70};
         _showPronScore = true;
       } else {
-        _meaningScore = {
-          'literal': rnd.nextInt(30) + 70,
-          'extended': rnd.nextInt(30) + 70,
-          'practical': rnd.nextInt(30) + 70,
-        };
+        _meaningScore = rnd.nextInt(30) + 70;
         _showMeaningScore = true;
       }
     });
@@ -678,8 +674,7 @@ class _AdvancedPracticeState extends State<AdvancedPractice> {
     return Colors.red;
   }
 
-  int get _avgMeaning =>
-      ((_meaningScore['literal']! + _meaningScore['extended']! + _meaningScore['practical']!) / 3).round();
+  int get _avgMeaning => _meaningScore;
 
   @override
   Widget build(BuildContext context) {
@@ -1178,9 +1173,7 @@ class _AdvancedPracticeState extends State<AdvancedPractice> {
             _bottomSheet(
               title: loc.meaningScore,
               items: [
-                _scoreRow(loc.literalMeaning, _meaningScore['literal']!, _scoreColor(_meaningScore['literal']!)),
-                _scoreRow(loc.extendedMeaning, _meaningScore['extended']!, _scoreColor(_meaningScore['extended']!)),
-                _scoreRow(loc.practicalMeaning, _meaningScore['practical']!, _scoreColor(_meaningScore['practical']!)),
+                _scoreRow(loc.meaningAccuracy, _meaningScore, _scoreColor(_meaningScore)),
               ],
               action: _avgMeaning >= 70
                   ? Column(children: [

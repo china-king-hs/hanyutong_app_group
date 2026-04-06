@@ -252,7 +252,7 @@ class _ProverbReviewCard extends StatelessWidget {
               ),
               const SizedBox(width: 4),
               // 播放按钮
-              const SoundWaveButton(size: 26),
+              SoundWaveButton(size: 26, text: proverb.sentence),
               // 星形收藏按钮
               GestureDetector(
                 onTap: onToggleFavorite,

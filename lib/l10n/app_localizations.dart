@@ -118,9 +118,7 @@ class AppLocalizations {
       'soundAccuracy': 'Sound Accuracy',
       'nextStepExplain': 'Next Step: Explain Meaning →',
       'meaningScore': 'Meaning Score 💡',
-      'literalMeaning': 'Literal Meaning',
-      'extendedMeaning': 'Extended Meaning',
-      'practicalMeaning': 'Practical Meaning',
+      'meaningAccuracy': 'Meaning Accuracy',
       'masteredSuccess': '✅ You have mastered!',
       'continueBtn': 'Continue →',
       'tryAgain': '🔄 Try Again',
@@ -311,9 +309,7 @@ class AppLocalizations {
       'soundAccuracy': 'Точность звуков',
       'nextStepExplain': 'Следующий шаг: Объяснение значения →',
       'meaningScore': 'Оценка понимания 💡',
-      'literalMeaning': 'Буквальное значение',
-      'extendedMeaning': 'Расширенное значение',
-      'practicalMeaning': 'Практическое значение',
+      'meaningAccuracy': 'Точность понимания',
       'masteredSuccess': '✅ Вы освоили!',
       'continueBtn': 'Продолжить →',
       'tryAgain': '🔄 Попробовать снова',
@@ -503,9 +499,7 @@ class AppLocalizations {
       'soundAccuracy': 'دقت صدا',
       'nextStepExplain': 'مرحله بعد: توضیح معنی →',
       'meaningScore': 'امتیاز معنی 💡',
-      'literalMeaning': 'معنی تحت‌اللفظی',
-      'extendedMeaning': 'معنی گسترده',
-      'practicalMeaning': 'معنی عملی',
+      'meaningAccuracy': 'دقت معنی',
       'masteredSuccess': '✅ شما تسلط یافته‌اید!',
       'continueBtn': 'ادامه →',
       'tryAgain': '🔄 دوباره امتحان کنید',
@@ -698,9 +692,7 @@ class AppLocalizations {
       'soundAccuracy': 'دقة الصوت',
       'nextStepExplain': 'الخطوة التالية: شرح المعنى →',
       'meaningScore': 'نتيجة المعنى 💡',
-      'literalMeaning': 'المعنى الحرفي',
-      'extendedMeaning': 'المعنى الموسع',
-      'practicalMeaning': 'المعنى العملي',
+      'meaningAccuracy': 'دقة المعنى',
       'masteredSuccess': '✅ لقد أتقنت!',
       'continueBtn': 'متابعة →',
       'tryAgain': '🔄 حاول مرة أخرى',
@@ -894,9 +886,7 @@ class AppLocalizations {
       'soundAccuracy': 'Ses Doğruluğu',
       'nextStepExplain': 'Sonraki Adım: Anlamı Açıkla →',
       'meaningScore': 'Anlama Puanı 💡',
-      'literalMeaning': 'Kelime Anlamı',
-      'extendedMeaning': 'Genişletilmiş Anlam',
-      'practicalMeaning': 'Pratik Anlam',
+      'meaningAccuracy': 'Anlama Doğruluğu',
       'masteredSuccess': '✅ Öğrendin!',
       'continueBtn': 'Devam Et →',
       'tryAgain': '🔄 Tekrar Deneyin',
@@ -1092,9 +1082,7 @@ class AppLocalizations {
   String get soundAccuracy => _localizedValues[locale.languageCode]?['soundAccuracy'] ?? 'Sound Accuracy';
   String get nextStepExplain => _localizedValues[locale.languageCode]?['nextStepExplain'] ?? 'Next Step: Explain Meaning →';
   String get meaningScore => _localizedValues[locale.languageCode]?['meaningScore'] ?? 'Meaning Score 💡';
-  String get literalMeaning => _localizedValues[locale.languageCode]?['literalMeaning'] ?? 'Literal Meaning';
-  String get extendedMeaning => _localizedValues[locale.languageCode]?['extendedMeaning'] ?? 'Extended Meaning';
-  String get practicalMeaning => _localizedValues[locale.languageCode]?['practicalMeaning'] ?? 'Practical Meaning';
+  String get meaningAccuracy => _localizedValues[locale.languageCode]?['meaningAccuracy'] ?? 'Meaning Accuracy';
   String get masteredSuccess => _localizedValues[locale.languageCode]?['masteredSuccess'] ?? '✅ You have mastered!';
   String get continueBtn => _localizedValues[locale.languageCode]?['continueBtn'] ?? 'Continue →';
   String get tryAgain => _localizedValues[locale.languageCode]?['tryAgain'] ?? '🔄 Try Again';

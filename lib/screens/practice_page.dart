@@ -36,7 +36,7 @@ class _PracticePageState extends State<PracticePage> {
   bool _showMeaningScore = false;
   bool _showAnswer = false;
   Map<String, int> _pronScore = {'tone': 85, 'sound': 90};
-  Map<String, int> _meaningScore = {'literal': 80, 'extended': 75, 'practical': 85};
+  int _meaningScore = 80; // 含义评分（合并为单条）
 
   // ── 录音 ──
   final AudioRecorder _audioRecorder = AudioRecorder();
@@ -183,11 +183,7 @@ class _PracticePageState extends State<PracticePage> {
         };
         _showPronunciationScore = true;
       } else {
-        _meaningScore = {
-          'literal': rnd.nextInt(30) + 70,
-          'extended': rnd.nextInt(30) + 70,
-          'practical': rnd.nextInt(30) + 70,
-        };
+        _meaningScore = rnd.nextInt(30) + 70;
         _showMeaningScore = true;
       }
     });
@@ -208,11 +204,14 @@ class _PracticePageState extends State<PracticePage> {
     setState(() {
       _showMeaningScore = false;
       _step = 'pronunciation';
+      // 从列表中移除，避免重复出现
+      _words.removeAt(_currentIndex);
     });
-    if (_currentIndex < _words.length - 1) {
-      setState(() => _currentIndex++);
-    } else {
+
+    if (_words.isEmpty) {
       context.pop();
+    } else if (_currentIndex >= _words.length) {
+      setState(() => _currentIndex = 0);
     }
   }
 
@@ -223,7 +222,6 @@ class _PracticePageState extends State<PracticePage> {
     final loc = AppLocalizations.of(context)!;
     final controller = TextEditingController();
     final total = _allWords.length;
-    final state = context.read<AppState>();
 
     showDialog(
       context: context,
@@ -263,29 +261,29 @@ class _PracticePageState extends State<PracticePage> {
                       });
                       return;
                     }
-                    // 检查该词是否已掌握
-                    final targetWord = _allWords[num - 1];
-                    if (state.masteredWordIds.contains(targetWord.id)) {
-                      Navigator.pop(ctx);
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        SnackBar(content: Text(loc.wordAlreadyMastered)),
-                      );
-                      return;
-                    }
                     // 在 _words 中找到对应索引
+                    final targetWord = _allWords[num - 1];
                     final idx = _words.indexWhere((w) => w.id == targetWord.id);
-                    if (idx == -1) {
-                      Navigator.pop(ctx);
-                      return;
-                    }
                     Navigator.pop(ctx);
-                    setState(() {
-                      _currentIndex = idx;
-                      _showPronunciationScore = false;
-                      _showMeaningScore = false;
-                      _showAnswer = false;
-                      _step = 'pronunciation';
-                    });
+                    if (idx == -1) {
+                      // 已掌握的词语，加入临时列表并跳转
+                      setState(() {
+                        _words.insert(num - 1, targetWord);
+                        _currentIndex = num - 1;
+                        _showPronunciationScore = false;
+                        _showMeaningScore = false;
+                        _showAnswer = false;
+                        _step = 'pronunciation';
+                      });
+                    } else {
+                      setState(() {
+                        _currentIndex = idx;
+                        _showPronunciationScore = false;
+                        _showMeaningScore = false;
+                        _showAnswer = false;
+                        _step = 'pronunciation';
+                      });
+                    }
                   },
                   child: Text(loc.confirm),
                 ),
@@ -371,8 +369,7 @@ class _PracticePageState extends State<PracticePage> {
     return Colors.red;
   }
 
-  int get _avgMeaning =>
-      ((_meaningScore['literal']! + _meaningScore['extended']! + _meaningScore['practical']!) / 3).round();
+  int get _avgMeaning => _meaningScore;
 
   @override
   Widget build(BuildContext context) {
@@ -627,14 +624,13 @@ class _PracticePageState extends State<PracticePage> {
             _ScoreSheet(
               title: loc.meaningScore,
               items: [
-                _ScoreItem(label: loc.literalMeaning, score: _meaningScore['literal']!),
-                _ScoreItem(label: loc.extendedMeaning, score: _meaningScore['extended']!),
-                _ScoreItem(label: loc.practicalMeaning, score: _meaningScore['practical']!),
+                _ScoreItem(label: loc.meaningAccuracy, score: _meaningScore),
               ],
               scoreColor: _scoreColor,
               actions: [
                 if (_avgMeaning >= 70) ...[
                   Container(
+                    width: double.infinity,
                     padding: const EdgeInsets.all(12),
                     margin: const EdgeInsets.only(bottom: 12),
                     decoration: BoxDecoration(
@@ -643,6 +639,7 @@ class _PracticePageState extends State<PracticePage> {
                       border: const Border(left: BorderSide(color: Colors.green, width: 4)),
                     ),
                     child: Text(loc.masteredSuccess,
+                        textAlign: TextAlign.center,
                         style: const TextStyle(color: Colors.green, fontWeight: FontWeight.bold)),
                   ),
                   SizedBox(
@@ -656,6 +653,7 @@ class _PracticePageState extends State<PracticePage> {
                   ),
                 ] else ...[
                   Container(
+                    width: double.infinity,
                     padding: const EdgeInsets.all(12),
                     margin: const EdgeInsets.only(bottom: 12),
                     decoration: BoxDecoration(
@@ -664,6 +662,7 @@ class _PracticePageState extends State<PracticePage> {
                       border: const Border(left: BorderSide(color: Colors.orange, width: 4)),
                     ),
                     child: Text(loc.tryAgain,
+                        textAlign: TextAlign.center,
                         style: const TextStyle(color: Colors.orange, fontWeight: FontWeight.bold)),
                   ),
                   SizedBox(

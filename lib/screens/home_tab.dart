@@ -78,7 +78,7 @@ class HomeTab extends StatelessWidget {
                   ),
                   _StatItem(
                     icon: '⏱', 
-                    value: '${state.totalHours}', 
+                    value: state.totalHours % 1 == 0 ? '${state.totalHours.toInt()}' : '${state.totalHours}', 
                     label1: '学习时长', 
                     label2: '小时',
                     useLocalization: true,
