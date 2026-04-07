@@ -115,12 +115,12 @@ class AppLocalizations {
       'skipProverbMasteredTitle': 'Have you already mastered this proverb?',
       'pronunciationScore': 'Pronunciation Score 🎤',
       'pronunciationAccuracy': 'Pronunciation Accuracy',
-      'nextStepExplain': 'Next Step: Explain Meaning →',
+      'nextStepExplain': 'Next Step →',
       'meaningScore': 'Meaning Score 💡',
       'meaningAccuracy': 'Meaning Accuracy',
       'masteredSuccess': '✅ You have mastered!',
       'continueBtn': 'Continue →',
-      'tryAgain': '🔄 Try Again',
+      'tryAgain': 'Try Again',
       'reRecord': 'Re-record',
       'meaningBelow': 'Explanation below',
       'meaningPlaceholder': '(Native language explanation, data not imported, temporarily blank)',
@@ -305,12 +305,12 @@ class AppLocalizations {
       'skipProverbMasteredTitle': 'Вы уже освоили эту пословицу?',
       'pronunciationScore': 'Оценка произношения 🎤',
       'pronunciationAccuracy': 'Точность произношения',
-      'nextStepExplain': 'Следующий шаг: Объяснение значения →',
+      'nextStepExplain': 'Следующий шаг →',
       'meaningScore': 'Оценка понимания 💡',
       'meaningAccuracy': 'Точность понимания',
       'masteredSuccess': '✅ Вы освоили!',
       'continueBtn': 'Продолжить →',
-      'tryAgain': '🔄 Попробовать снова',
+      'tryAgain': 'Попробовать снова',
       'reRecord': 'Перезаписать',
       'meaningBelow': 'Объяснение ниже',
       'meaningPlaceholder': '(Объяснение на родном языке, данные не импортированы, временно пусто)',
@@ -494,12 +494,12 @@ class AppLocalizations {
       'skipProverbMasteredTitle': 'آیا این ضرب‌المثل را قبلاً یاد گرفته‌اید؟',
       'pronunciationScore': 'امتیاز تلفظ 🎤',
       'pronunciationAccuracy': 'دقت تلفظ',
-      'nextStepExplain': 'مرحله بعد: توضیح معنی →',
+      'nextStepExplain': 'مرحله بعد →',
       'meaningScore': 'امتیاز معنی 💡',
       'meaningAccuracy': 'دقت معنی',
       'masteredSuccess': '✅ شما تسلط یافته‌اید!',
       'continueBtn': 'ادامه →',
-      'tryAgain': '🔄 دوباره امتحان کنید',
+      'tryAgain': 'دوباره امتحان کنید',
       'reRecord': 'ضبط مجدد',
       'meaningBelow': 'توضیح زیر',
       'meaningPlaceholder': '(توضیح به زبان مادری، داده وارد نشده، موقتا خالی)',
@@ -686,12 +686,12 @@ class AppLocalizations {
       'skipProverbMasteredTitle': 'هل أتقنت هذه الحكمة بالفعل؟',
       'pronunciationScore': 'نتيجة النطق 🎤',
       'pronunciationAccuracy': 'دقة النطق',
-      'nextStepExplain': 'الخطوة التالية: شرح المعنى →',
+      'nextStepExplain': 'الخطوة التالية →',
       'meaningScore': 'نتيجة المعنى 💡',
       'meaningAccuracy': 'دقة المعنى',
       'masteredSuccess': '✅ لقد أتقنت!',
       'continueBtn': 'متابعة →',
-      'tryAgain': '🔄 حاول مرة أخرى',
+      'tryAgain': 'حاول مرة أخرى',
       'reRecord': 'إعادة التسجيل',
       'meaningBelow': 'الشرح أدناه',
       'meaningPlaceholder': '(شرح باللغة الأم، لم يتم استيراد البيانات، فارغ مؤقتاً)',
@@ -879,12 +879,12 @@ class AppLocalizations {
       'skipProverbMasteredTitle': 'Bu atasözünü zaten öğrendiniz mi?',
       'pronunciationScore': 'Telaffuz Puanı 🎤',
       'pronunciationAccuracy': 'Telaffuz Doğruluğu',
-      'nextStepExplain': 'Sonraki Adım: Anlamı Açıkla →',
+      'nextStepExplain': 'Sonraki Adım →',
       'meaningScore': 'Anlama Puanı 💡',
       'meaningAccuracy': 'Anlama Doğruluğu',
       'masteredSuccess': '✅ Öğrendin!',
       'continueBtn': 'Devam Et →',
-      'tryAgain': '🔄 Tekrar Deneyin',
+      'tryAgain': 'Tekrar Deneyin',
       'reRecord': 'Tekrar Kaydet',
       'meaningBelow': 'Açıklama Aşağıda',
       'meaningPlaceholder': '(Ana dil açıklaması, veri yüklenmedi, geçici olarak boş)',
@@ -1074,12 +1074,12 @@ class AppLocalizations {
   String get skipProverbMasteredTitle => _localizedValues[locale.languageCode]?['skipProverbMasteredTitle'] ?? 'Have you already mastered this proverb?';
   String get pronunciationScore => _localizedValues[locale.languageCode]?['pronunciationScore'] ?? 'Pronunciation Score 🎤';
   String get pronunciationAccuracy => _localizedValues[locale.languageCode]?['pronunciationAccuracy'] ?? 'Pronunciation Accuracy';
-  String get nextStepExplain => _localizedValues[locale.languageCode]?['nextStepExplain'] ?? 'Next Step: Explain Meaning →';
+  String get nextStepExplain => _localizedValues[locale.languageCode]?['nextStepExplain'] ?? 'Next Step →';
   String get meaningScore => _localizedValues[locale.languageCode]?['meaningScore'] ?? 'Meaning Score 💡';
   String get meaningAccuracy => _localizedValues[locale.languageCode]?['meaningAccuracy'] ?? 'Meaning Accuracy';
   String get masteredSuccess => _localizedValues[locale.languageCode]?['masteredSuccess'] ?? '✅ You have mastered!';
   String get continueBtn => _localizedValues[locale.languageCode]?['continueBtn'] ?? 'Continue →';
-  String get tryAgain => _localizedValues[locale.languageCode]?['tryAgain'] ?? '🔄 Try Again';
+  String get tryAgain => _localizedValues[locale.languageCode]?['tryAgain'] ?? 'Try Again';
   String get reRecord => _localizedValues[locale.languageCode]?['reRecord'] ?? 'Re-record';
   String get meaningBelow => _localizedValues[locale.languageCode]?['meaningBelow'] ?? 'Explanation below';
   String get meaningPlaceholder => _localizedValues[locale.languageCode]?['meaningPlaceholder'] ?? '(Native language explanation, data not imported, temporarily blank)';
