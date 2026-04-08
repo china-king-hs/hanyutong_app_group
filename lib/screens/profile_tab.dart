@@ -92,7 +92,7 @@ class _ProfileTabState extends State<ProfileTab> {
                   ),
                 ),
                 IconButton(
-                  onPressed: () => context.push('/empty'),
+                  onPressed: () => context.push('/notifications'),
                   icon: const Icon(Icons.notifications_outlined,
                       color: Color(0xFF666666)),
                 ),

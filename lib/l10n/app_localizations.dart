@@ -97,6 +97,8 @@ class AppLocalizations {
       'language': 'Language',
       'dailyGoal': 'Daily Goal',
       'notifications': 'Notifications',
+      'noNotifications': 'No notifications',
+      'noNotificationsDesc': 'You\'re all caught up!',
       'about': 'About',
       'logOut': 'Log Out',
       'editProfile': 'Edit Profile',
@@ -268,6 +270,8 @@ class AppLocalizations {
       'language': 'Язык',
       'dailyGoal': 'Ежедневная цель',
       'notifications': 'Уведержения',
+      'noNotifications': 'Нет уведомлений',
+      'noNotificationsDesc': 'Всё в порядке!',
       'about': 'О приложении',
       'logOut': 'Выйти',
       'editProfile': 'Редактировать профиль',
@@ -458,6 +462,8 @@ class AppLocalizations {
       'language': 'زبان',
       'dailyGoal': 'هدف روزانه',
       'notifications': 'اعلان‌ها',
+      'noNotifications': 'هیچ اعلانی وجود ندارد',
+      'noNotificationsDesc': 'همه چیز خوب است!',
       'about': 'درباره',
       'logOut': 'خروج',
       'editProfile': 'ویرایش پروفایل',
@@ -650,6 +656,8 @@ class AppLocalizations {
       'language': 'اللغة',
       'dailyGoal': 'الهدف اليومي',
       'notifications': 'الإشعارات',
+      'noNotifications': 'لا توجد إشعارات',
+      'noNotificationsDesc': 'كل شيء على ما يرام!',
       'about': 'حول',
       'logOut': 'تسجيل الخروج',
       'editProfile': 'تعديل الملف الشخصي',
@@ -842,6 +850,8 @@ class AppLocalizations {
       'language': 'Dil',
       'dailyGoal': 'Günlük Hedef',
       'notifications': 'Bildirimler',
+      'noNotifications': 'Bildirim yok',
+      'noNotificationsDesc': 'Her şey yolunda!',
       'about': 'Hakkında',
       'logOut': 'Çıkış Yap',
       'editProfile': 'Profili Düzenle',
@@ -1014,6 +1024,8 @@ class AppLocalizations {
   String get language => _localizedValues[locale.languageCode]?['language'] ?? 'Language';
   String get dailyGoal => _localizedValues[locale.languageCode]?['dailyGoal'] ?? 'Daily Goal';
   String get notifications => _localizedValues[locale.languageCode]?['notifications'] ?? 'Notifications';
+  String get noNotifications => _localizedValues[locale.languageCode]?['noNotifications'] ?? 'No notifications';
+  String get noNotificationsDesc => _localizedValues[locale.languageCode]?['noNotificationsDesc'] ?? 'You\'re all caught up!';
   String get about => _localizedValues[locale.languageCode]?['about'] ?? 'About';
   String get logOut => _localizedValues[locale.languageCode]?['logOut'] ?? 'Log Out';
   String get editProfile => _localizedValues[locale.languageCode]?['editProfile'] ?? 'Edit Profile';

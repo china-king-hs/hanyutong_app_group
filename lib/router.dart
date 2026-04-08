@@ -13,6 +13,7 @@ import 'screens/review_page.dart';
 import 'screens/practice_page.dart';
 import 'screens/advanced_practice.dart';
 import 'screens/empty_page.dart';
+import 'screens/notifications_page.dart';
 import 'screens/grammar_practice_page.dart';
 import 'screens/settings_page.dart';
 import 'screens/words_review_page.dart';
@@ -196,6 +197,20 @@ GoRouter buildRouter(BuildContext context) {
         pageBuilder: (context, state) => CustomTransitionPage<void>(
           key: state.pageKey,
           child: const GrammarPracticePage(),
+          transitionsBuilder: (context, animation, secondaryAnimation, child) {
+            return FadeTransition(
+              opacity: animation,
+              child: child,
+            );
+          },
+          transitionDuration: const Duration(milliseconds: 200),
+        ),
+      ),
+      GoRoute(
+        path: '/notifications',
+        pageBuilder: (context, state) => CustomTransitionPage<void>(
+          key: state.pageKey,
+          child: const NotificationsPage(),
           transitionsBuilder: (context, animation, secondaryAnimation, child) {
             return FadeTransition(
               opacity: animation,
