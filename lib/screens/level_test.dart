@@ -146,8 +146,8 @@ class _LevelCard extends StatelessWidget {
       onTap: onTap,
       child: AnimatedContainer(
         duration: const Duration(milliseconds: 150),
-        margin: const EdgeInsets.only(bottom: 16),
-        padding: const EdgeInsets.all(20),
+        margin: const EdgeInsets.only(bottom: 12),
+        padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(16),
@@ -164,8 +164,6 @@ class _LevelCard extends StatelessWidget {
         ),
         child: Row(
           children: [
-            Text(level['emoji']!, style: const TextStyle(fontSize: 44)),
-            const SizedBox(width: 16),
             Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -173,9 +171,16 @@ class _LevelCard extends StatelessWidget {
                   Text(
                     level['title']!,
                     style: const TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 18,
+                      fontWeight: FontWeight.w600,
                       color: Color(0xFF333333),
+                      fontSize: 16,
+                    ),
+                  ),
+                  Text(
+                    level['desc']!,
+                    style: const TextStyle(
+                      fontSize: 13,
+                      color: Color(0xFF999999),
                     ),
                   ),
                 ],
