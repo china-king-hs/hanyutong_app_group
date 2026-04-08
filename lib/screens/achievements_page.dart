@@ -441,6 +441,7 @@ class _BadgeGridItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final loc = AppLocalizations.of(context)!;
+    final title = _getBadgeTitleFromLoc(loc, badge.id.name);
 
     return GestureDetector(
       onTap: onTap,
@@ -482,7 +483,7 @@ class _BadgeGridItem extends StatelessWidget {
               ),
               const SizedBox(height: 8),
               Text(
-                _getBadgeTitle(context, badge.id.name),
+                title,
                 style: TextStyle(
                   fontSize: 12,
                   fontWeight: FontWeight.w600,
@@ -501,6 +502,10 @@ class _BadgeGridItem extends StatelessWidget {
 
   String _getBadgeTitle(BuildContext context, String badgeId) {
     final loc = AppLocalizations.of(context)!;
+    return _getBadgeTitleFromLoc(loc, badgeId);
+  }
+
+  String _getBadgeTitleFromLoc(AppLocalizations loc, String badgeId) {
     switch (badgeId) {
       case 'beginner':       return loc.badgeBeginner;
       case 'explorer':       return loc.badgeExplorer;
