@@ -42,25 +42,25 @@
 
 ### LTR 语言界面（Windows 桌面）
 
-| | | |
-|---|---|---|
-| ![](_figure/1.png) | ![](_figure/2.png) | ![](_figure/3.png) |
-| ![](_figure/4.png) | ![](_figure/5.png) | ![](_figure/6.png) |
-| ![](_figure/7.png) | ![](_figure/8.png) | ![](_figure/9.png) |
+| |                     | |
+|---|---------------------|---|
+| ![](_figure/1.png) | ![](_figure/2.png)  | ![](_figure/3.png) |
+| ![](_figure/4.png) | ![](_figure/5.png)  | ![](_figure/6.png) |
+| ![](_figure/7.png) | ![](_figure/8.png)  | ![](_figure/9.png) |
 | ![](_figure/10.png) | ![](_figure/11.png) | ![](_figure/12.png) |
-| ![](_figure/13.png) | | |
+| ![](_figure/13.png) | ![](_figure/14.png) | | |
 
 ### RTL 语言界面（Windows 桌面）
 
-| | | |
-|---|---|---|
-| ![](_figure/14.png) | ![](_figure/15.png) | ![](_figure/16.png) |
+|                     |                     |                     |
+|---------------------|---------------------|---------------------|
+| ![](_figure/15.png) | ![](_figure/16.png) | ![](_figure/17.png) |
 
 ### Android 真机界面
 
-| | | |
-|---|---|---|
-| ![](_figure/17.png) | ![](_figure/18.png) | ![](_figure/19.png) |
+|                     |                     |                     |
+|---------------------|---------------------|---------------------|
+| ![](_figure/18.png) | ![](_figure/19.png) | ![](_figure/20.png) |
 
 ---
 
