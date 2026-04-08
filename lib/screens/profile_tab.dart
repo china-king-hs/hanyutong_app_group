@@ -119,9 +119,9 @@ class _ProfileTabState extends State<ProfileTab> {
                         color: Color(0xFF333333))),
                 TextButton(
                   onPressed: () => context.push('/achievements'),
-                  child: const Text(
-                    'View All →',
-                    style: TextStyle(
+                  child: Text(
+                    loc.viewAll,
+                    style: const TextStyle(
                       fontSize: 14,
                       color: Color(0xFF4285F4),
                     ),
@@ -170,11 +170,11 @@ class _ProfileTabState extends State<ProfileTab> {
 
     if (latestBadges.isEmpty) {
       // 无成就时显示提示
-      return Container(
+      return       Container(
         padding: const EdgeInsets.symmetric(vertical: 24),
         child: Center(
           child: Text(
-            'Start learning to unlock achievements!',
+            loc.startLearningToUnlockAchievements,
             style: TextStyle(
               color: Colors.grey[500],
               fontSize: 14,

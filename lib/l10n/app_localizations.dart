@@ -224,6 +224,9 @@ class AppLocalizations {
       'badgeUnlocked': 'Badge Unlocked!',
       'badgeLocked': 'Not yet unlocked',
       'learningProgress': 'Learning Progress',
+      // achievements_page
+      'viewAll': 'View All →',
+      'startLearningToUnlockAchievements': 'Start learning to unlock achievements!',
       // review_page.dart
       'reviewTitle': 'Review',
       'wordsReview': 'Words Review',
@@ -467,6 +470,9 @@ class AppLocalizations {
       'badgeUnlocked': 'Значок получен!',
       'badgeLocked': 'Пока не получено',
       'learningProgress': 'Прогресс обучения',
+      // achievements_page
+      'viewAll': 'Все →',
+      'startLearningToUnlockAchievements': 'Начните учиться, чтобы получить достижения!',
       // review_page.dart
       'reviewTitle': 'Обзор',
       'wordsReview': 'Обзор слов',
@@ -709,6 +715,9 @@ class AppLocalizations {
       'badgeUnlocked': 'نشان دریافت شد!',
       'badgeLocked': 'هنوز دریافت نشده',
       'learningProgress': 'پیشرفت یادگیری',
+      // achievements_page
+      'viewAll': 'مشاهده همه →',
+      'startLearningToUnlockAchievements': 'برای کسب دستاوردها شروع به یادگیری کنید!',
       // favorites_page.dart
       'noFavoritesYet': 'هنوز موردعلاقه‌ای وجود ندارد',
       'noFavoritesYetHint': 'برای افزودن موارد اینجا، روی آیکون ستاره ضربه بزنید',
@@ -954,6 +963,9 @@ class AppLocalizations {
       'badgeUnlocked': 'تم فتح الشارة!',
       'badgeLocked': 'لم تُفتح بعد',
       'learningProgress': 'تقدم التعلم',
+      // achievements_page
+      'viewAll': 'عرض الكل →',
+      'startLearningToUnlockAchievements': 'ابدأ التعلم لفتح الإنجازات!',
       // favorites_page.dart
       'noFavoritesYet': 'لا مفضلات حتى الآن',
       'noFavoritesYetHint': 'اضغط على أيقونة النجمة لإضافة عناصر هنا',
@@ -1200,6 +1212,9 @@ class AppLocalizations {
       'badgeUnlocked': 'Rozet Kazanıldı!',
       'badgeLocked': 'Henüz kazanılmadı',
       'learningProgress': 'Öğrenme İlerlemesi',
+      // achievements_page
+      'viewAll': 'Tümünü Gör →',
+      'startLearningToUnlockAchievements': 'Başarımları açmak için öğrenmeye başlayın!',
       // review_page.dart
       'reviewTitle': 'Gözden Geçirme',
       'wordsReview': 'Kelime Gözden Geçirme',
@@ -1444,6 +1459,10 @@ class AppLocalizations {
   String get badgeUnlocked => _localizedValues[locale.languageCode]?['badgeUnlocked'] ?? 'Badge Unlocked!';
   String get badgeLocked => _localizedValues[locale.languageCode]?['badgeLocked'] ?? 'Not yet unlocked';
   String get learningProgress => _localizedValues[locale.languageCode]?['learningProgress'] ?? 'Learning Progress';
+
+  // achievements_page
+  String get viewAll => _localizedValues[locale.languageCode]?['viewAll'] ?? 'View All →';
+  String get startLearningToUnlockAchievements => _localizedValues[locale.languageCode]?['startLearningToUnlockAchievements'] ?? 'Start learning to unlock achievements!';
 
   // settings_page.dart中的文本
   String get resetOnboarding => _localizedValues[locale.languageCode]?['resetOnboarding'] ?? 'Reset Onboarding';

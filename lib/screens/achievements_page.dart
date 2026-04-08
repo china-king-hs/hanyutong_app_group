@@ -45,7 +45,7 @@ class AchievementsPage extends StatelessWidget {
                 ),
                 const SizedBox(height: 4),
                 Text(
-                  '${loc.badgeUnlocked} $unlockedCount / $totalCount',
+                  '$unlockedCount / $totalCount',
                   style: const TextStyle(
                     fontSize: 14,
                     color: Color(0xFF666666),
@@ -152,7 +152,7 @@ class AchievementsPage extends StatelessWidget {
   String _getCategoryTitle(AppLocalizations loc, String category) {
     switch (category) {
       case 'starter':
-        return '入门';
+        return loc.beginnerLevel;
       default:
         return category;
     }
