@@ -59,14 +59,7 @@ class AchievementsPage extends StatelessWidget {
             child: ListView(
               padding: const EdgeInsets.all(16),
               children: [
-                _buildCategorySection(
-                  context: context,
-                  state: state,
-                  title: _getCategoryTitle(loc, 'starter'),
-                  icon: Icons.star_rounded,
-                  color: const Color(0xFFFFB300),
-                  badges: BadgeDef.all.where((b) => b.id.name == 'beginner' || b.id.name == 'explorer').toList(),
-                ),
+                // ── 类别1: 词语 ──
                 _buildCategorySection(
                   context: context,
                   state: state,
@@ -74,12 +67,12 @@ class AchievementsPage extends StatelessWidget {
                   icon: Icons.auto_stories_rounded,
                   color: const Color(0xFF4285F4),
                   badges: BadgeDef.all.where((b) =>
-                    b.id.name == 'wordLearner' ||
-                    b.id.name == 'wordKnight' ||
-                    b.id.name == 'wordMaster' ||
-                    b.id.name == 'wordLegend'
+                    b.id.name == 'word500' ||
+                    b.id.name == 'word1000' ||
+                    b.id.name == 'word3000'
                   ).toList(),
                 ),
+                // ── 类别2: 成语 ──
                 _buildCategorySection(
                   context: context,
                   state: state,
@@ -87,11 +80,13 @@ class AchievementsPage extends StatelessWidget {
                   icon: Icons.lightbulb_outline_rounded,
                   color: Colors.orange,
                   badges: BadgeDef.all.where((b) =>
-                    b.id.name == 'idiomFirst' ||
-                    b.id.name == 'idiomAdept' ||
-                    b.id.name == 'idiomMaster'
+                    b.id.name == 'idiom10' ||
+                    b.id.name == 'idiom50' ||
+                    b.id.name == 'idiom100' ||
+                    b.id.name == 'idiom500'
                   ).toList(),
                 ),
+                // ── 类别3: 谚语 ──
                 _buildCategorySection(
                   context: context,
                   state: state,
@@ -99,11 +94,43 @@ class AchievementsPage extends StatelessWidget {
                   icon: Icons.format_quote_rounded,
                   color: const Color(0xFF00796B),
                   badges: BadgeDef.all.where((b) =>
-                    b.id.name == 'proverbFirst' ||
-                    b.id.name == 'proverbAdept' ||
-                    b.id.name == 'proverbSage'
+                    b.id.name == 'proverb10' ||
+                    b.id.name == 'proverb30' ||
+                    b.id.name == 'proverb50' ||
+                    b.id.name == 'proverb100'
                   ).toList(),
                 ),
+                // ── 类别4: 诗词 ──
+                _buildCategorySection(
+                  context: context,
+                  state: state,
+                  title: loc.poetry,
+                  icon: Icons.nightlight_round,
+                  color: const Color(0xFF5C6BC0),
+                  badges: BadgeDef.all.where((b) =>
+                    b.id.name == 'poem5' ||
+                    b.id.name == 'poem10' ||
+                    b.id.name == 'poem50' ||
+                    b.id.name == 'poem100'
+                  ).toList(),
+                ),
+                // ── 类别5: 收藏 ──
+                _buildCategorySection(
+                  context: context,
+                  state: state,
+                  title: loc.favorites,
+                  icon: Icons.favorite_rounded,
+                  color: const Color(0xFFE91E63),
+                  badges: BadgeDef.all.where((b) =>
+                    b.id.name == 'fav10' ||
+                    b.id.name == 'fav50' ||
+                    b.id.name == 'fav100' ||
+                    b.id.name == 'fav500' ||
+                    b.id.name == 'fav1000' ||
+                    b.id.name == 'fav3000'
+                  ).toList(),
+                ),
+                // ── 类别6: 连续学习（倒数第二栏） ──
                 _buildCategorySection(
                   context: context,
                   state: state,
@@ -114,30 +141,23 @@ class AchievementsPage extends StatelessWidget {
                     b.id.name == 'streak3' ||
                     b.id.name == 'streak7' ||
                     b.id.name == 'streak14' ||
-                    b.id.name == 'streak30' ||
-                    b.id.name == 'streak100'
+                    b.id.name == 'streak30'
                   ).toList(),
                 ),
+                // ── 类别7: 累计学习天数（最后一栏） ──
                 _buildCategorySection(
                   context: context,
                   state: state,
-                  title: loc.poetry,
-                  icon: Icons.nightlight_round,
-                  color: const Color(0xFF5C6BC0),
+                  title: loc.totalDaysLabel,
+                  icon: Icons.calendar_today_rounded,
+                  color: const Color(0xFF00BCD4),
                   badges: BadgeDef.all.where((b) =>
-                    b.id.name == 'poemLover' ||
-                    b.id.name == 'poemScholar'
-                  ).toList(),
-                ),
-                _buildCategorySection(
-                  context: context,
-                  state: state,
-                  title: loc.favorites,
-                  icon: Icons.favorite_rounded,
-                  color: const Color(0xFFE91E63),
-                  badges: BadgeDef.all.where((b) =>
-                    b.id.name == 'collector' ||
-                    b.id.name == 'treasureHunter'
+                    b.id.name == 'totalDays3' ||
+                    b.id.name == 'totalDays7' ||
+                    b.id.name == 'totalDays15' ||
+                    b.id.name == 'totalDays30' ||
+                    b.id.name == 'totalDays100' ||
+                    b.id.name == 'totalDays365'
                   ).toList(),
                 ),
               ],
@@ -146,16 +166,6 @@ class AchievementsPage extends StatelessWidget {
         ],
       ),
     );
-  }
-
-  /// 获取类别标题
-  String _getCategoryTitle(AppLocalizations loc, String category) {
-    switch (category) {
-      case 'starter':
-        return loc.beginnerLevel;
-      default:
-        return category;
-    }
   }
 
   /// 构建类别区块
@@ -308,28 +318,38 @@ class AchievementsPage extends StatelessWidget {
   String _getBadgeTitle(BuildContext context, String badgeId) {
     final loc = AppLocalizations.of(context)!;
     switch (badgeId) {
-      case 'beginner':       return loc.badgeBeginner;
-      case 'explorer':       return loc.badgeExplorer;
-      case 'wordLearner':    return loc.badgeWordLearner;
-      case 'wordKnight':     return loc.badgeWordKnight;
-      case 'wordMaster':     return loc.badgeWordMaster;
-      case 'wordLegend':     return loc.badgeWordLegend;
-      case 'idiomFirst':     return loc.badgeIdiomFirst;
-      case 'idiomAdept':     return loc.badgeIdiomAdept;
-      case 'idiomMaster':    return loc.badgeIdiomMaster;
-      case 'proverbFirst':   return loc.badgeProverbFirst;
-      case 'proverbAdept':   return loc.badgeProverbAdept;
-      case 'proverbSage':    return loc.badgeProverbSage;
-      case 'streak3':        return loc.badgeStreak3;
-      case 'streak7':        return loc.badgeStreak7;
-      case 'streak14':       return loc.badgeStreak14;
-      case 'streak30':       return loc.badgeStreak30;
-      case 'streak100':      return loc.badgeStreak100;
-      case 'poemLover':      return loc.badgePoemLover;
-      case 'poemScholar':    return loc.badgePoemScholar;
-      case 'collector':      return loc.badgeCollector;
-      case 'treasureHunter': return loc.badgeTreasureHunter;
-      default:               return badgeId;
+      case 'word500':      return loc.badgeWord500;
+      case 'word1000':     return loc.badgeWord1000;
+      case 'word3000':     return loc.badgeWord3000;
+      case 'idiom10':      return loc.badgeIdiom10;
+      case 'idiom50':      return loc.badgeIdiom50;
+      case 'idiom100':     return loc.badgeIdiom100;
+      case 'idiom500':     return loc.badgeIdiom500;
+      case 'proverb10':    return loc.badgeProverb10;
+      case 'proverb30':    return loc.badgeProverb30;
+      case 'proverb50':    return loc.badgeProverb50;
+      case 'proverb100':   return loc.badgeProverb100;
+      case 'poem5':        return loc.badgePoem5;
+      case 'poem10':       return loc.badgePoem10;
+      case 'poem50':       return loc.badgePoem50;
+      case 'poem100':      return loc.badgePoem100;
+      case 'fav10':        return loc.badgeFav10;
+      case 'fav50':        return loc.badgeFav50;
+      case 'fav100':       return loc.badgeFav100;
+      case 'fav500':       return loc.badgeFav500;
+      case 'fav1000':      return loc.badgeFav1000;
+      case 'fav3000':      return loc.badgeFav3000;
+      case 'streak3':      return loc.badgeStreak3;
+      case 'streak7':      return loc.badgeStreak7;
+      case 'streak14':     return loc.badgeStreak14;
+      case 'streak30':     return loc.badgeStreak30;
+      case 'totalDays3':   return loc.badgeTotalDays3;
+      case 'totalDays7':   return loc.badgeTotalDays7;
+      case 'totalDays15':  return loc.badgeTotalDays15;
+      case 'totalDays30':  return loc.badgeTotalDays30;
+      case 'totalDays100': return loc.badgeTotalDays100;
+      case 'totalDays365': return loc.badgeTotalDays365;
+      default:             return badgeId;
     }
   }
 
@@ -337,28 +357,38 @@ class AchievementsPage extends StatelessWidget {
   String _getBadgeDesc(BuildContext context, String badgeId) {
     final loc = AppLocalizations.of(context)!;
     switch (badgeId) {
-      case 'beginner':       return loc.badgeBeginnerDesc;
-      case 'explorer':       return loc.badgeExplorerDesc;
-      case 'wordLearner':    return loc.badgeWordLearnerDesc;
-      case 'wordKnight':     return loc.badgeWordKnightDesc;
-      case 'wordMaster':     return loc.badgeWordMasterDesc;
-      case 'wordLegend':     return loc.badgeWordLegendDesc;
-      case 'idiomFirst':     return loc.badgeIdiomFirstDesc;
-      case 'idiomAdept':     return loc.badgeIdiomAdeptDesc;
-      case 'idiomMaster':    return loc.badgeIdiomMasterDesc;
-      case 'proverbFirst':   return loc.badgeProverbFirstDesc;
-      case 'proverbAdept':   return loc.badgeProverbAdeptDesc;
-      case 'proverbSage':    return loc.badgeProverbSageDesc;
-      case 'streak3':        return loc.badgeStreak3Desc;
-      case 'streak7':        return loc.badgeStreak7Desc;
-      case 'streak14':       return loc.badgeStreak14Desc;
-      case 'streak30':       return loc.badgeStreak30Desc;
-      case 'streak100':      return loc.badgeStreak100Desc;
-      case 'poemLover':      return loc.badgePoemLoverDesc;
-      case 'poemScholar':    return loc.badgePoemScholarDesc;
-      case 'collector':      return loc.badgeCollectorDesc;
-      case 'treasureHunter': return loc.badgeTreasureHunterDesc;
-      default:               return '';
+      case 'word500':      return loc.badgeWord500Desc;
+      case 'word1000':     return loc.badgeWord1000Desc;
+      case 'word3000':     return loc.badgeWord3000Desc;
+      case 'idiom10':      return loc.badgeIdiom10Desc;
+      case 'idiom50':      return loc.badgeIdiom50Desc;
+      case 'idiom100':     return loc.badgeIdiom100Desc;
+      case 'idiom500':     return loc.badgeIdiom500Desc;
+      case 'proverb10':    return loc.badgeProverb10Desc;
+      case 'proverb30':    return loc.badgeProverb30Desc;
+      case 'proverb50':    return loc.badgeProverb50Desc;
+      case 'proverb100':   return loc.badgeProverb100Desc;
+      case 'poem5':        return loc.badgePoem5Desc;
+      case 'poem10':       return loc.badgePoem10Desc;
+      case 'poem50':       return loc.badgePoem50Desc;
+      case 'poem100':      return loc.badgePoem100Desc;
+      case 'fav10':        return loc.badgeFav10Desc;
+      case 'fav50':        return loc.badgeFav50Desc;
+      case 'fav100':       return loc.badgeFav100Desc;
+      case 'fav500':       return loc.badgeFav500Desc;
+      case 'fav1000':      return loc.badgeFav1000Desc;
+      case 'fav3000':      return loc.badgeFav3000Desc;
+      case 'streak3':      return loc.badgeStreak3Desc;
+      case 'streak7':      return loc.badgeStreak7Desc;
+      case 'streak14':     return loc.badgeStreak14Desc;
+      case 'streak30':     return loc.badgeStreak30Desc;
+      case 'totalDays3':   return loc.badgeTotalDays3Desc;
+      case 'totalDays7':   return loc.badgeTotalDays7Desc;
+      case 'totalDays15':  return loc.badgeTotalDays15Desc;
+      case 'totalDays30':  return loc.badgeTotalDays30Desc;
+      case 'totalDays100': return loc.badgeTotalDays100Desc;
+      case 'totalDays365': return loc.badgeTotalDays365Desc;
+      default:             return '';
     }
   }
 }
@@ -437,35 +467,40 @@ class _BadgeGridItem extends StatelessWidget {
     );
   }
 
-  String _getBadgeTitle(BuildContext context, String badgeId) {
-    final loc = AppLocalizations.of(context)!;
-    return _getBadgeTitleFromLoc(loc, badgeId);
-  }
-
   String _getBadgeTitleFromLoc(AppLocalizations loc, String badgeId) {
     switch (badgeId) {
-      case 'beginner':       return loc.badgeBeginner;
-      case 'explorer':       return loc.badgeExplorer;
-      case 'wordLearner':    return loc.badgeWordLearner;
-      case 'wordKnight':     return loc.badgeWordKnight;
-      case 'wordMaster':     return loc.badgeWordMaster;
-      case 'wordLegend':     return loc.badgeWordLegend;
-      case 'idiomFirst':     return loc.badgeIdiomFirst;
-      case 'idiomAdept':     return loc.badgeIdiomAdept;
-      case 'idiomMaster':    return loc.badgeIdiomMaster;
-      case 'proverbFirst':   return loc.badgeProverbFirst;
-      case 'proverbAdept':   return loc.badgeProverbAdept;
-      case 'proverbSage':    return loc.badgeProverbSage;
-      case 'streak3':        return loc.badgeStreak3;
-      case 'streak7':        return loc.badgeStreak7;
-      case 'streak14':       return loc.badgeStreak14;
-      case 'streak30':       return loc.badgeStreak30;
-      case 'streak100':      return loc.badgeStreak100;
-      case 'poemLover':      return loc.badgePoemLover;
-      case 'poemScholar':    return loc.badgePoemScholar;
-      case 'collector':      return loc.badgeCollector;
-      case 'treasureHunter': return loc.badgeTreasureHunter;
-      default:               return badgeId;
+      case 'word500':      return loc.badgeWord500;
+      case 'word1000':     return loc.badgeWord1000;
+      case 'word3000':     return loc.badgeWord3000;
+      case 'idiom10':      return loc.badgeIdiom10;
+      case 'idiom50':      return loc.badgeIdiom50;
+      case 'idiom100':     return loc.badgeIdiom100;
+      case 'idiom500':     return loc.badgeIdiom500;
+      case 'proverb10':    return loc.badgeProverb10;
+      case 'proverb30':    return loc.badgeProverb30;
+      case 'proverb50':    return loc.badgeProverb50;
+      case 'proverb100':   return loc.badgeProverb100;
+      case 'poem5':        return loc.badgePoem5;
+      case 'poem10':       return loc.badgePoem10;
+      case 'poem50':       return loc.badgePoem50;
+      case 'poem100':      return loc.badgePoem100;
+      case 'fav10':        return loc.badgeFav10;
+      case 'fav50':        return loc.badgeFav50;
+      case 'fav100':       return loc.badgeFav100;
+      case 'fav500':       return loc.badgeFav500;
+      case 'fav1000':      return loc.badgeFav1000;
+      case 'fav3000':      return loc.badgeFav3000;
+      case 'streak3':      return loc.badgeStreak3;
+      case 'streak7':      return loc.badgeStreak7;
+      case 'streak14':     return loc.badgeStreak14;
+      case 'streak30':     return loc.badgeStreak30;
+      case 'totalDays3':   return loc.badgeTotalDays3;
+      case 'totalDays7':   return loc.badgeTotalDays7;
+      case 'totalDays15':  return loc.badgeTotalDays15;
+      case 'totalDays30':  return loc.badgeTotalDays30;
+      case 'totalDays100': return loc.badgeTotalDays100;
+      case 'totalDays365': return loc.badgeTotalDays365;
+      default:             return badgeId;
     }
   }
 }

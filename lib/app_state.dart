@@ -395,66 +395,80 @@ class AppState extends ChangeNotifier {
   /// 检查并解锁徽章（在学习数据变化后调用）
   /// [totalWords] 当前难度总词数（用于检查全部掌握）
   void checkAndUnlockBadges({int totalWords = 0}) {
-    // ── 类别1: 入门 ──
-    // 🌟 初学者：掌握任意 1 个内容
-    if (_masteredWordIds.isNotEmpty ||
-        _masteredIdiomIds.isNotEmpty ||
-        _masteredProverbIds.isNotEmpty) {
-      unlockBadge('beginner');
-    }
-    // 🧭 探索者：访问过 5 种学习内容类型
-    if (_visitedSections.length >= 5) {
-      unlockBadge('explorer');
-    }
+    // ── 类别1: 词语 ──
+    // 掌握 500 个词语
+    if (_masteredWordIds.length >= 500) unlockBadge('word500');
+    // 掌握 1000 个词语
+    if (_masteredWordIds.length >= 1000) unlockBadge('word1000');
+    // 掌握 3000 个词语
+    if (_masteredWordIds.length >= 3000) unlockBadge('word3000');
 
-    // ── 类别2: 词语 ──
-    // 📖 词语新手：掌握 10 个词语
-    if (_masteredWordIds.length >= 10) unlockBadge('wordLearner');
-    // 🛡️ 词语骑士：掌握 30 个词语
-    if (_masteredWordIds.length >= 30) unlockBadge('wordKnight');
-    // 🎖️ 词语大师：掌握 50 个词语
-    if (_masteredWordIds.length >= 50) unlockBadge('wordMaster');
-    // 💎 词语传奇：掌握 100 个词语
-    if (_masteredWordIds.length >= 100) unlockBadge('wordLegend');
+    // ── 类别2: 成语 ──
+    // 掌握 10 个成语
+    if (_masteredIdiomIds.length >= 10) unlockBadge('idiom10');
+    // 掌握 50 个成语
+    if (_masteredIdiomIds.length >= 50) unlockBadge('idiom50');
+    // 掌握 100 个成语
+    if (_masteredIdiomIds.length >= 100) unlockBadge('idiom100');
+    // 掌握 500 个成语
+    if (_masteredIdiomIds.length >= 500) unlockBadge('idiom500');
 
-    // ── 类别3: 成语 ──
-    // 💡 成语启蒙：掌握 1 个成语
-    if (_masteredIdiomIds.isNotEmpty) unlockBadge('idiomFirst');
-    // 🔮 成语熟练：掌握 5 个成语
-    if (_masteredIdiomIds.length >= 5) unlockBadge('idiomAdept');
-    // ✨ 成语大师：掌握 10 个成语
-    if (_masteredIdiomIds.length >= 10) unlockBadge('idiomMaster');
+    // ── 类别3: 谚语 ──
+    // 掌握 10 个谚语
+    if (_masteredProverbIds.length >= 10) unlockBadge('proverb10');
+    // 掌握 30 个谚语
+    if (_masteredProverbIds.length >= 30) unlockBadge('proverb30');
+    // 掌握 50 个谚语
+    if (_masteredProverbIds.length >= 50) unlockBadge('proverb50');
+    // 掌握 100 个谚语
+    if (_masteredProverbIds.length >= 100) unlockBadge('proverb100');
 
-    // ── 类别4: 谚语 ──
-    // 📜 谚语启蒙：掌握 1 个谚语
-    if (_masteredProverbIds.isNotEmpty) unlockBadge('proverbFirst');
-    // 📚 谚语熟练：掌握 5 个谚语
-    if (_masteredProverbIds.length >= 5) unlockBadge('proverbAdept');
-    // 🏫 谚语智者：掌握 10 个谚语
-    if (_masteredProverbIds.length >= 10) unlockBadge('proverbSage');
+    // ── 类别4: 诗词 ──
+    // 学习 5 首诗词
+    if (_learnedPoemIds.length >= 5) unlockBadge('poem5');
+    // 学习 10 首诗词
+    if (_learnedPoemIds.length >= 10) unlockBadge('poem10');
+    // 学习 50 首诗词
+    if (_learnedPoemIds.length >= 50) unlockBadge('poem50');
+    // 学习 100 首诗词
+    if (_learnedPoemIds.length >= 100) unlockBadge('poem100');
 
-    // ── 类别5: 连续学习 ──
-    // 🔥 坚持不懈：连续学习 3 天
+    // ── 类别5: 收藏 ──
+    // 收藏 10 个
+    if (_favorites.length >= 10) unlockBadge('fav10');
+    // 收藏 50 个
+    if (_favorites.length >= 50) unlockBadge('fav50');
+    // 收藏 100 个
+    if (_favorites.length >= 100) unlockBadge('fav100');
+    // 收藏 500 个
+    if (_favorites.length >= 500) unlockBadge('fav500');
+    // 收藏 1000 个
+    if (_favorites.length >= 1000) unlockBadge('fav1000');
+    // 收藏 3000 个
+    if (_favorites.length >= 3000) unlockBadge('fav3000');
+
+    // ── 类别6: 连续学习 ──
+    // 连续学习 3 天
     if (_streak >= 3) unlockBadge('streak3');
-    // 🏅 一周勇士：连续学习 7 天
+    // 连续学习 7 天
     if (_streak >= 7) unlockBadge('streak7');
-    // 🎉 双周达人：连续学习 14 天
+    // 连续学习 14 天
     if (_streak >= 14) unlockBadge('streak14');
-    // 🏆 月度冠军：连续学习 30 天
+    // 连续学习 30 天
     if (_streak >= 30) unlockBadge('streak30');
-    // 👑 百日英雄：连续学习 100 天
-    if (_streak >= 100) unlockBadge('streak100');
 
-    // ── 类别6: 诗词 ──
-    // 🌙 诗词爱好者：学习 3 首诗词
-    if (_learnedPoemIds.length >= 3) unlockBadge('poemLover');
-    // 🔧 诗词学者：学习 8 首诗词
-    if (_learnedPoemIds.length >= 8) unlockBadge('poemScholar');
-
-    // ── 类别7: 收藏 ──
-    // ❤️ 收藏达人：收藏 10 个内容
-    if (_favorites.length >= 10) unlockBadge('collector');
-    // ⭐ 宝藏猎人：收藏 25 个内容
-    if (_favorites.length >= 25) unlockBadge('treasureHunter');
+    // ── 类别7: 累计学习天数 ──
+    // 累计学习 3 天
+    if (_totalDays >= 3) unlockBadge('totalDays3');
+    // 累计学习 7 天
+    if (_totalDays >= 7) unlockBadge('totalDays7');
+    // 累计学习 15 天
+    if (_totalDays >= 15) unlockBadge('totalDays15');
+    // 累计学习 30 天
+    if (_totalDays >= 30) unlockBadge('totalDays30');
+    // 累计学习 100 天
+    if (_totalDays >= 100) unlockBadge('totalDays100');
+    // 累计学习 365 天
+    if (_totalDays >= 365) unlockBadge('totalDays365');
   }
 }
