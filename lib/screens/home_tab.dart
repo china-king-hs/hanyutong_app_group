@@ -22,40 +22,46 @@ class HomeTab extends StatelessWidget {
               children: [
                 Expanded(
                   child: _TopButton(
-                    child: Row(children: [
-                      const Icon(Icons.language, size: 18, color: Color(0xFF666666)),
-                      const SizedBox(width: 8),
-                      Expanded(
-                        child: Text(
-                          getLanguage(state.language)?.nativeName ?? 'English',
-                          style: const TextStyle(
-                              fontSize: 13,
-                              fontWeight: FontWeight.w500,
-                              color: Color(0xFF666666)),
-                          overflow: TextOverflow.ellipsis,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        const Icon(Icons.language, size: 18, color: Color(0xFF666666)),
+                        const SizedBox(width: 8),
+                        Expanded(
+                          child: Text(
+                            getLanguage(state.language)?.nativeName ?? 'English',
+                            style: const TextStyle(
+                                fontSize: 13,
+                                fontWeight: FontWeight.w500,
+                                color: Color(0xFF666666)),
+                            overflow: TextOverflow.ellipsis,
+                          ),
                         ),
-                      ),
-                    ]),
+                      ],
+                    ),
                     onTap: () => _showLanguageSelector(context, state),
                   ),
                 ),
                 const SizedBox(width: 8),
                 Expanded(
                   child: _TopButton(
-                    child: Row(children: [
-                      const Text('🎯', style: TextStyle(fontSize: 18)),
-                      const SizedBox(width: 8),
-                      Expanded(
-                        child: Text(
-                          '${state.dailyGoal} ${AppLocalizations.of(context)!.minutes}',
-                          style: const TextStyle(
-                              fontSize: 13,
-                              fontWeight: FontWeight.w500,
-                              color: Color(0xFF666666)),
-                          overflow: TextOverflow.ellipsis,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        const Text('🎯', style: TextStyle(fontSize: 18)),
+                        const SizedBox(width: 8),
+                        Expanded(
+                          child: Text(
+                            '${state.dailyGoal} ${AppLocalizations.of(context)!.minutes}',
+                            style: const TextStyle(
+                                fontSize: 13,
+                                fontWeight: FontWeight.w500,
+                                color: Color(0xFF666666)),
+                            overflow: TextOverflow.ellipsis,
+                          ),
                         ),
-                      ),
-                    ]),
+                      ],
+                    ),
                     onTap: () => _showGoalSelector(context, state),
                   ),
                 ),
