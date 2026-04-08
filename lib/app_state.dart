@@ -235,6 +235,10 @@ class AppState extends ChangeNotifier {
     _sessionStartTime = null;
     _lastLearningDate = null;
 
+    // 清除已解锁的徽章
+    _unlockedBadgeIds = {};
+    _badgeUnlockTimes = {};
+
     _save((p) async {
       // 已掌握数据
       await p.remove('masteredWordIds');
