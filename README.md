@@ -352,6 +352,10 @@ flutter build apk --release
 > **debug APK 大小**：约 91.7MB（arm64 单架构）
 > **debug APK 特性**：自带签名，可直接安装，无需配置签名文件
 
+> **release APK 输出路径**：`build/app/outputs/flutter-apk/app-release.apk`
+> **release APK 大小**：约 32.4MB（arm64 单架构）
+> **release APK 特性**：代码混淆压缩，体积小，需配置签名文件（`android/key.properties` + `android/hanyu_tong.keystore`），推荐正式发布
+
 ### Android 权限说明
 
 Android APK 需要以下权限（已配置在 AndroidManifest.xml）：
