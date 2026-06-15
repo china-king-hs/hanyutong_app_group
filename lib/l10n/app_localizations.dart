@@ -289,6 +289,11 @@ class AppLocalizations {
       'nextItem': 'Next',
       'cultureSolarTerm': 'Solar Term',
       'cultureFestival': 'Festival',
+      // ask_teacher_fab.dart & tutor_chat_panel.dart
+      'askTeacher': 'Ask Teacher',
+      'askTeacherContext': 'Studying in',
+      'askTeacherHint': 'Type a message...',
+      'tutorPlayChinese': 'Play Chinese',
     },
     'ru': {
       'appTitle': 'Chinese Go',
@@ -561,6 +566,11 @@ class AppLocalizations {
       'nextItem': 'Следующий',
       'cultureSolarTerm': 'Солнечный термин',
       'cultureFestival': 'Праздник',
+      // ask_teacher_fab.dart & tutor_chat_panel.dart
+      'askTeacher': 'Спросить учителя',
+      'askTeacherContext': 'Изучаю в',
+      'askTeacherHint': 'Введите сообщение...',
+      'tutorPlayChinese': 'Воспроизвести',
     },
     'fa': {
       'appTitle': 'چینی گو',
@@ -835,6 +845,11 @@ class AppLocalizations {
       'nextItem': 'بعدی',
       'cultureSolarTerm': 'موقعیت خورشیدی',
       'cultureFestival': 'جشنواره',
+      // ask_teacher_fab.dart & tutor_chat_panel.dart
+      'askTeacher': 'پرسش از معلم',
+      'askTeacherContext': 'یادگیری در',
+      'askTeacherHint': 'پیام بنویسید...',
+      'tutorPlayChinese': 'پخش چینی',
     },
     'ar': {
       'appTitle': 'تشين جو',
@@ -1109,6 +1124,11 @@ class AppLocalizations {
       'nextItem': 'التالي',
       'cultureSolarTerm': 'مصطلح شمسي',
       'cultureFestival': 'مهرجان',
+      // ask_teacher_fab.dart & tutor_chat_panel.dart
+      'askTeacher': 'اسأل المعلم',
+      'askTeacherContext': 'درس في',
+      'askTeacherHint': 'اكتب رسالة...',
+      'tutorPlayChinese': 'تشغيل الصينية',
     },
     'tr': {
       'appTitle': 'Chinese Go',
@@ -1381,6 +1401,11 @@ class AppLocalizations {
       'nextItem': 'Sonraki',
       'cultureSolarTerm': 'Güneş Dönemi',
       'cultureFestival': 'Festival',
+      // ask_teacher_fab.dart & tutor_chat_panel.dart
+      'askTeacher': 'Öğretmene Sor',
+      'askTeacherContext': 'Çalışılan modül',
+      'askTeacherHint': 'Mesaj yazın...',
+      'tutorPlayChinese': 'Çinceyi Oynat',
     },
   };
 
@@ -1645,6 +1670,12 @@ class AppLocalizations {
   String get cultureSolarTerm => _localizedValues[locale.languageCode]?['cultureSolarTerm'] ?? 'Solar Term';
   String get cultureFestival => _localizedValues[locale.languageCode]?['cultureFestival'] ?? 'Festival';
   String get cancel => _localizedValues[locale.languageCode]?['confirm'] ?? 'Cancel';
+
+  // ask_teacher_fab.dart & tutor_chat_panel.dart
+  String get askTeacher => _localizedValues[locale.languageCode]?['askTeacher'] ?? 'Ask Teacher';
+  String get askTeacherContext => _localizedValues[locale.languageCode]?['askTeacherContext'] ?? 'Studying in';
+  String get askTeacherHint => _localizedValues[locale.languageCode]?['askTeacherHint'] ?? 'Type a message...';
+  String get tutorPlayChinese => _localizedValues[locale.languageCode]?['tutorPlayChinese'] ?? 'Play Chinese';
 
   // level_test.dart中的文本
   String get whatsYourLevel => _localizedValues[locale.languageCode]?['whatsYourLevel'] ?? 'What is your Chinese level?';

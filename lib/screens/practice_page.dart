@@ -13,6 +13,7 @@ import '../models/word_repository.dart';
 import '../services/ai_service.dart';
 import '../services/tts_service.dart';
 import '../widgets/sound_wave_button.dart';
+import '../widgets/ask_teacher_fab.dart';
 
 class PracticePage extends StatefulWidget {
   final String type;
@@ -788,8 +789,8 @@ class _PracticePageState extends State<PracticePage> {
                                 shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(12)),
                               ),
-                            child: Text(loc.close,
-                                style: const TextStyle(color: Color(0xFF666666))),
+                              child: Text(loc.close,
+                                  style: const TextStyle(color: Color(0xFF666666))),
                             ),
                           ),
                         ],
@@ -798,6 +799,13 @@ class _PracticePageState extends State<PracticePage> {
                   ),
                 ),
               ),
+            ),
+
+          // "问老师"浮动按钮
+          if (word.word.isNotEmpty)
+            AskTeacherFab(
+              currentContent: '${word.word} (${word.pinyin})',
+              moduleName: widget.type == 'words' ? loc.words : loc.sentences,
             ),
         ],
       ),

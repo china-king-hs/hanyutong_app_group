@@ -17,6 +17,7 @@ import '../models/poetry_repository.dart';
 import '../services/ai_service.dart';
 import '../services/tts_service.dart';
 import '../widgets/sound_wave_button.dart';
+import '../widgets/ask_teacher_fab.dart';
 
 class AdvancedPractice extends StatefulWidget {
   final String type;
@@ -1305,6 +1306,17 @@ class _AdvancedPracticeState extends State<AdvancedPractice> {
           if (_showPoetryNativeMeaning)
             _dialog(loc.showNativeMeaning, _currentPoetryNativeMeaning,
                 () => setState(() => _showPoetryNativeMeaning = false)),
+
+          // "问老师"浮动按钮
+          if (_currentChinese != '—' && _currentChinese.isNotEmpty)
+            AskTeacherFab(
+              currentContent: '$_currentChinese${_currentPinyin.isNotEmpty ? ' ($_currentPinyin)' : ''}',
+              moduleName: widget.type == 'idioms'
+                  ? loc.idioms
+                  : widget.type == 'proverbs'
+                      ? loc.proverbs
+                      : loc.poetry,
+            ),
         ],
       ),
     );

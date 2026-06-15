@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 import '../app_state.dart';
 import '../l10n/app_localizations.dart';
 import '../models/poetry_model.dart';
+import '../widgets/ask_teacher_fab.dart';
 
 /// 收藏页诗词详情 — 显示诗词原文、中文释义、母语释义
 class PoetryDetailPage extends StatefulWidget {
@@ -153,6 +154,11 @@ class _PoetryDetailPageState extends State<PoetryDetailPage> {
               content: widget.poem.translationFor(state.language),
               onClose: () => setState(() => _showNativeMeaning = false),
             ),
+          // "问老师"浮动按钮
+          AskTeacherFab(
+            currentContent: '${widget.poem.title} (${widget.poem.dynasty} · ${widget.poem.author})',
+            moduleName: loc.poetry,
+          ),
         ],
       ),
     );
