@@ -142,7 +142,7 @@ class _SettingsPageState extends State<SettingsPage> {
                               ),
                               focusedBorder: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(8),
-                                borderSide: const BorderSide(color: Color(0xFF4285F4), width: 2),
+                                borderSide: const BorderSide(color: Color(0xFF10B981), width: 2),
                               ),
                               contentPadding: const EdgeInsets.symmetric(
                                 horizontal: 16,
@@ -158,7 +158,7 @@ class _SettingsPageState extends State<SettingsPage> {
                             child: ElevatedButton(
                               onPressed: _saveUsername,
                               style: ElevatedButton.styleFrom(
-                                backgroundColor: const Color(0xFF4285F4),
+                                backgroundColor: const Color(0xFF10B981),
                                 foregroundColor: Colors.white,
                                 padding: const EdgeInsets.symmetric(vertical: 14),
                                 shape: RoundedRectangleBorder(
@@ -202,7 +202,7 @@ class _SettingsPageState extends State<SettingsPage> {
                       trailing: ElevatedButton(
                         onPressed: _resetOnboarding,
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: const Color(0xFF4285F4),
+                          backgroundColor: const Color(0xFF10B981),
                           foregroundColor: Colors.white,
                           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                           shape: RoundedRectangleBorder(

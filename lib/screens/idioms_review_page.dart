@@ -117,7 +117,7 @@ class _IdiomsReviewPageState extends State<IdiomsReviewPage> {
             child: _isLoading
                 ? const Center(
                     child:
-                        CircularProgressIndicator(color: Color(0xFF4285F4)))
+                        CircularProgressIndicator(color: Color(0xFF10B981)))
                 : _loadError != null
                     ? Center(
                         child: Column(
@@ -246,7 +246,7 @@ class _IdiomReviewCard extends StatelessWidget {
                   idiom.translationFor(languageCode),
                   style: const TextStyle(
                     fontSize: 13,
-                    color: Color(0xFF4285F4),
+                    color: Color(0xFF10B981),
                   ),
                 ),
               ),

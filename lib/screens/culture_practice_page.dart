@@ -132,7 +132,7 @@ class _CulturePracticePageState extends State<CulturePracticePage> {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              const CircularProgressIndicator(color: Color(0xFF4285F4)),
+              const CircularProgressIndicator(color: Color(0xFF10B981)),
               const SizedBox(height: 16),
               Text(loc.loading, style: const TextStyle(color: Color(0xFF999999))),
             ],
@@ -198,7 +198,7 @@ class _CulturePracticePageState extends State<CulturePracticePage> {
                       onTap: _showJumpDialog,
                       child: Text(
                         '${_currentIndex + 1}/${_items.length}',
-                        style: const TextStyle(fontSize: 13, color: Color(0xFF4285F4), decoration: TextDecoration.underline),
+                        style: const TextStyle(fontSize: 13, color: Color(0xFF10B981), decoration: TextDecoration.underline),
                       ),
                     ),
                   ],
@@ -225,7 +225,7 @@ class _CulturePracticePageState extends State<CulturePracticePage> {
                     style: TextStyle(
                       fontSize: 12,
                       fontWeight: FontWeight.w600,
-                      color: item.isFestival ? Colors.orange : const Color(0xFF4285F4),
+                      color: item.isFestival ? Colors.orange : const Color(0xFF10B981),
                     ),
                   ),
                 ),
@@ -290,14 +290,14 @@ class _CulturePracticePageState extends State<CulturePracticePage> {
                       children: [
                         Row(
                           children: [
-                            const Icon(Icons.menu_book, size: 18, color: Color(0xFF4285F4)),
+                            const Icon(Icons.menu_book, size: 18, color: Color(0xFF10B981)),
                             const SizedBox(width: 6),
                             Text(
                               loc.chineseExplanation,
                               style: const TextStyle(
                                 fontSize: 14,
                                 fontWeight: FontWeight.bold,
-                                color: Color(0xFF4285F4),
+                                color: Color(0xFF10B981),
                               ),
                             ),
                           ],
@@ -384,7 +384,7 @@ class _CulturePracticePageState extends State<CulturePracticePage> {
                         child: ElevatedButton(
                           onPressed: _handleNext,
                           style: ElevatedButton.styleFrom(
-                            backgroundColor: const Color(0xFF4285F4),
+                            backgroundColor: const Color(0xFF10B981),
                             foregroundColor: Colors.white,
                             padding: const EdgeInsets.symmetric(vertical: 14),
                             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),

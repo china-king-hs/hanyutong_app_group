@@ -211,7 +211,7 @@ class _FavoritesPageState extends State<FavoritesPage> {
             child: _isLoading
                 ? const Center(
                     child:
-                        CircularProgressIndicator(color: Color(0xFF4285F4)))
+                        CircularProgressIndicator(color: Color(0xFF10B981)))
                 : _loadError != null
                     ? Center(
                         child: Column(
@@ -320,7 +320,7 @@ class _FavoritesPageState extends State<FavoritesPage> {
           padding: const EdgeInsets.symmetric(vertical: 8),
           decoration: BoxDecoration(
             color: isSelected
-                ? const Color(0xFF4285F4)
+                ? const Color(0xFF10B981)
                 : const Color(0xFFF0F0F0),
             borderRadius: BorderRadius.circular(20),
           ),

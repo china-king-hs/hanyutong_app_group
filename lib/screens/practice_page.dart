@@ -369,7 +369,7 @@ class _PracticePageState extends State<PracticePage> {
             },
             child: Text(loc.skipMasteredYes,
                 style: const TextStyle(
-                    color: Color(0xFF4285F4), fontWeight: FontWeight.bold)),
+                    color: Color(0xFF10B981), fontWeight: FontWeight.bold)),
           ),
         ],
       ),
@@ -431,7 +431,7 @@ class _PracticePageState extends State<PracticePage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const CircularProgressIndicator(color: Color(0xFF4285F4)),
+              const CircularProgressIndicator(color: Color(0xFF10B981)),
               const SizedBox(height: 16),
               Text(loc.loading, style: const TextStyle(color: Color(0xFF666666))),
             ],
@@ -572,17 +572,17 @@ class _PracticePageState extends State<PracticePage> {
                           height: _isRecording ? 84 : 72,
                           decoration: BoxDecoration(
                             color: _isEvaluating
-                                ? const Color(0xFF4285F4).withValues(alpha: 0.5)
+                                ? const Color(0xFF10B981).withValues(alpha: 0.5)
                                 : _isCancelling
                                     ? Colors.red
                                     : _isRecording
-                                        ? const Color(0xFF4285F4)
+                                        ? const Color(0xFF10B981)
                                         : Colors.grey[300],
                             shape: BoxShape.circle,
                             boxShadow: _isRecording
                                 ? [
                                     BoxShadow(
-                                      color: (_isCancelling ? Colors.red : const Color(0xFF4285F4))
+                                      color: (_isCancelling ? Colors.red : const Color(0xFF10B981))
                                           .withValues(alpha: 0.4),
                                       blurRadius: 18,
                                       spreadRadius: 6,
@@ -609,7 +609,7 @@ class _PracticePageState extends State<PracticePage> {
                         style: TextStyle(
                           fontSize: 13,
                           color: _isRecording
-                              ? (_isCancelling ? Colors.red : const Color(0xFF4285F4))
+                              ? (_isCancelling ? Colors.red : const Color(0xFF10B981))
                               : const Color(0xFF999999),
                           fontWeight: _isRecording ? FontWeight.w600 : FontWeight.normal,
                         ),
@@ -838,7 +838,7 @@ class _PracticePageState extends State<PracticePage> {
                     '$displayIndex/$total',
                     style: const TextStyle(
                       fontSize: 13,
-                      color: Color(0xFF4285F4),
+                      color: Color(0xFF10B981),
                       decoration: TextDecoration.underline,
                     ),
                   ),
@@ -870,7 +870,7 @@ class _PracticePageState extends State<PracticePage> {
                     height: 24,
                     decoration: BoxDecoration(
                       color: _step == 'pronunciation'
-                          ? const Color(0xFF4285F4)
+                          ? const Color(0xFF10B981)
                           : const Color(0xFFE0E0E0),
                       borderRadius: BorderRadius.circular(12),
                     ),
@@ -897,7 +897,7 @@ class _PracticePageState extends State<PracticePage> {
                             ? FontWeight.bold
                             : FontWeight.normal,
                         color: _step == 'pronunciation'
-                            ? const Color(0xFF4285F4)
+                            ? const Color(0xFF10B981)
                             : const Color(0xFF999999),
                       ),
                     ),
@@ -913,7 +913,7 @@ class _PracticePageState extends State<PracticePage> {
                     height: 24,
                     decoration: BoxDecoration(
                       color: _step == 'meaning'
-                          ? const Color(0xFF4285F4)
+                          ? const Color(0xFF10B981)
                           : const Color(0xFFE0E0E0),
                       borderRadius: BorderRadius.circular(12),
                     ),
@@ -940,7 +940,7 @@ class _PracticePageState extends State<PracticePage> {
                             ? FontWeight.bold
                             : FontWeight.normal,
                         color: _step == 'meaning'
-                            ? const Color(0xFF4285F4)
+                            ? const Color(0xFF10B981)
                             : const Color(0xFF999999),
                       ),
                     ),
@@ -955,7 +955,7 @@ class _PracticePageState extends State<PracticePage> {
             child: LinearProgressIndicator(
               value: _step == 'pronunciation' ? 0.5 : 1.0,
               backgroundColor: const Color(0xFFE0E0E0),
-              color: const Color(0xFF4285F4),
+              color: const Color(0xFF10B981),
               minHeight: 4,
             ),
           ),
@@ -1022,7 +1022,7 @@ class _ScoreSheet extends StatelessWidget {
                               style: const TextStyle(
                                   fontSize: 13,
                                   fontWeight: FontWeight.bold,
-                                  color: Color(0xFF4285F4))),
+                                  color: Color(0xFF10B981))),
                         ],
                       ),
                       const SizedBox(height: 6),
@@ -1047,7 +1047,7 @@ class _ScoreSheet extends StatelessWidget {
 }
 
 final _blueBtn = ElevatedButton.styleFrom(
-  backgroundColor: const Color(0xFF4285F4),
+  backgroundColor: const Color(0xFF10B981),
   padding: const EdgeInsets.symmetric(vertical: 16),
   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
 );

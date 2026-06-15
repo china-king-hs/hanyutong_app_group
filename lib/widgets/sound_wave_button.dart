@@ -123,7 +123,7 @@ class SoundWaveButtonState extends State<SoundWaveButton>
   @override
   Widget build(BuildContext context) {
     final double sz = widget.size;
-    final Color primaryColor = widget.color ?? const Color(0xFF4285F4);
+    final Color primaryColor = widget.color ?? const Color(0xFF10B981);
     final Color effectiveIconColor = widget.iconColor ?? primaryColor;
     final Color effectiveWaveColor = widget.waveColor ?? primaryColor;
     final double effectiveIconSize = widget.iconSize ?? sz * 0.5;

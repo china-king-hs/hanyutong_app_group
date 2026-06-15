@@ -105,7 +105,7 @@ class _PoetryDetailPageState extends State<PoetryDetailPage> {
                             label: Text(loc.showChineseMeaning,
                                 style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w600)),
                             style: ElevatedButton.styleFrom(
-                              backgroundColor: const Color(0xFF4285F4),
+                              backgroundColor: const Color(0xFF10B981),
                               foregroundColor: Colors.white,
                               padding: const EdgeInsets.symmetric(vertical: 16),
                               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),

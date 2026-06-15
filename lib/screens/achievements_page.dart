@@ -40,7 +40,7 @@ class AchievementsPage extends StatelessWidget {
                   style: const TextStyle(
                     fontSize: 32,
                     fontWeight: FontWeight.bold,
-                    color: Color(0xFF4285F4),
+                    color: Color(0xFF10B981),
                   ),
                 ),
                 const SizedBox(height: 4),
@@ -65,7 +65,7 @@ class AchievementsPage extends StatelessWidget {
                   state: state,
                   title: loc.wordsLabel,
                   icon: Icons.auto_stories_rounded,
-                  color: const Color(0xFF4285F4),
+                  color: const Color(0xFF10B981),
                   badges: BadgeDef.all.where((b) =>
                     b.id.name == 'word10' ||
                     b.id.name == 'word50' ||

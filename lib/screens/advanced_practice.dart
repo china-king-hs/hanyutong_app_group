@@ -595,7 +595,7 @@ class _AdvancedPracticeState extends State<AdvancedPractice> {
               },
               child: Text(loc.skipMasteredYes,
                   style: const TextStyle(
-                      color: Color(0xFF4285F4), fontWeight: FontWeight.bold)),
+                      color: Color(0xFF10B981), fontWeight: FontWeight.bold)),
             ),
           ],
         ),
@@ -628,7 +628,7 @@ class _AdvancedPracticeState extends State<AdvancedPractice> {
               },
               child: Text(loc.skipMasteredYes,
                   style: const TextStyle(
-                      color: Color(0xFF4285F4), fontWeight: FontWeight.bold)),
+                      color: Color(0xFF10B981), fontWeight: FontWeight.bold)),
             ),
           ],
         ),
@@ -740,7 +740,7 @@ class _AdvancedPracticeState extends State<AdvancedPractice> {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              const CircularProgressIndicator(color: Color(0xFF4285F4)),
+              const CircularProgressIndicator(color: Color(0xFF10B981)),
               const SizedBox(height: 16),
               Text(loc.loading, style: const TextStyle(color: Color(0xFF999999))),
             ],
@@ -835,7 +835,7 @@ class _AdvancedPracticeState extends State<AdvancedPractice> {
                                       : widget.type == 'proverbs'
                                           ? '${_currentProverb != null ? _allProverbs.indexWhere((w) => w.id == _currentProverb!.id) + 1 : 1}/${_allProverbs.length}'
                                           : '${_currentIndex + 1}/${_poems.length}',
-                                  style: const TextStyle(fontSize: 13, color: Color(0xFF4285F4), decoration: TextDecoration.underline),
+                                  style: const TextStyle(fontSize: 13, color: Color(0xFF10B981), decoration: TextDecoration.underline),
                                 ),
                               )
                             : Text(
@@ -869,7 +869,7 @@ class _AdvancedPracticeState extends State<AdvancedPractice> {
                               width: 24, height: 24,
                               decoration: BoxDecoration(
                                 color: _step == 'pronunciation'
-                                    ? const Color(0xFF4285F4)
+                                    ? const Color(0xFF10B981)
                                     : const Color(0xFFE0E0E0),
                                 borderRadius: BorderRadius.circular(12),
                               ),
@@ -886,7 +886,7 @@ class _AdvancedPracticeState extends State<AdvancedPractice> {
                                   style: TextStyle(
                                       fontSize: 12,
                                       fontWeight: _step == 'pronunciation' ? FontWeight.bold : FontWeight.normal,
-                                      color: _step == 'pronunciation' ? const Color(0xFF4285F4) : const Color(0xFF999999))),
+                                      color: _step == 'pronunciation' ? const Color(0xFF10B981) : const Color(0xFF999999))),
                             ),
                           ],
                         ),
@@ -898,7 +898,7 @@ class _AdvancedPracticeState extends State<AdvancedPractice> {
                               width: 24, height: 24,
                               decoration: BoxDecoration(
                                 color: _step == 'meaning'
-                                    ? const Color(0xFF4285F4)
+                                    ? const Color(0xFF10B981)
                                     : const Color(0xFFE0E0E0),
                                 borderRadius: BorderRadius.circular(12),
                               ),
@@ -915,7 +915,7 @@ class _AdvancedPracticeState extends State<AdvancedPractice> {
                                   style: TextStyle(
                                       fontSize: 12,
                                       fontWeight: _step == 'meaning' ? FontWeight.bold : FontWeight.normal,
-                                      color: _step == 'meaning' ? const Color(0xFF4285F4) : const Color(0xFF999999))),
+                                      color: _step == 'meaning' ? const Color(0xFF10B981) : const Color(0xFF999999))),
                             ),
                           ],
                         ),
@@ -927,7 +927,7 @@ class _AdvancedPracticeState extends State<AdvancedPractice> {
                       child: LinearProgressIndicator(
                         value: _step == 'pronunciation' ? 0.5 : 1.0,
                         backgroundColor: const Color(0xFFE0E0E0),
-                        color: const Color(0xFF4285F4),
+                        color: const Color(0xFF10B981),
                         minHeight: 4,
                       ),
                     ),
@@ -983,7 +983,7 @@ class _AdvancedPracticeState extends State<AdvancedPractice> {
                             label: Text(loc.showChineseMeaning,
                                 style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w600)),
                             style: ElevatedButton.styleFrom(
-                              backgroundColor: const Color(0xFF4285F4),
+                              backgroundColor: const Color(0xFF10B981),
                               foregroundColor: Colors.white,
                               padding: const EdgeInsets.symmetric(vertical: 16),
                               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
@@ -1048,7 +1048,7 @@ class _AdvancedPracticeState extends State<AdvancedPractice> {
                                   }
                                 },
                                 style: ElevatedButton.styleFrom(
-                                  backgroundColor: const Color(0xFF4285F4),
+                                  backgroundColor: const Color(0xFF10B981),
                                   foregroundColor: Colors.white,
                                   padding: const EdgeInsets.symmetric(vertical: 14),
                                   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
@@ -1136,17 +1136,17 @@ class _AdvancedPracticeState extends State<AdvancedPractice> {
                             height: _isRecording ? 84 : 72,
                             decoration: BoxDecoration(
                               color: _isEvaluating
-                                  ? const Color(0xFF4285F4).withValues(alpha: 0.5)
+                                  ? const Color(0xFF10B981).withValues(alpha: 0.5)
                                   : _isCancelling
                                       ? Colors.red
                                       : _isRecording
-                                          ? const Color(0xFF4285F4)
+                                          ? const Color(0xFF10B981)
                                           : Colors.grey[300],
                               shape: BoxShape.circle,
                               boxShadow: _isRecording
                                   ? [
                                       BoxShadow(
-                                        color: (_isCancelling ? Colors.red : const Color(0xFF4285F4))
+                                        color: (_isCancelling ? Colors.red : const Color(0xFF10B981))
                                             .withValues(alpha: 0.4),
                                         blurRadius: 18,
                                         spreadRadius: 6,
@@ -1173,7 +1173,7 @@ class _AdvancedPracticeState extends State<AdvancedPractice> {
                           style: TextStyle(
                             fontSize: 13,
                             color: _isRecording
-                                ? (_isCancelling ? Colors.red : const Color(0xFF4285F4))
+                                ? (_isCancelling ? Colors.red : const Color(0xFF10B981))
                                 : const Color(0xFF999999),
                             fontWeight: _isRecording ? FontWeight.w600 : FontWeight.normal,
                           ),
@@ -1384,7 +1384,7 @@ Widget _scoreRow(String label, int score, Color color) {
       children: [
         Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
           Text(label, style: const TextStyle(fontSize: 13, color: Color(0xFF666666))),
-          Text('$score%', style: const TextStyle(fontSize: 13, fontWeight: FontWeight.bold, color: Color(0xFF4285F4))),
+          Text('$score%', style: const TextStyle(fontSize: 13, fontWeight: FontWeight.bold, color: Color(0xFF10B981))),
         ]),
         const SizedBox(height: 4),
         ClipRRect(
@@ -1398,7 +1398,7 @@ Widget _scoreRow(String label, int score, Color color) {
 }
 
 final _blueBtn = ElevatedButton.styleFrom(
-  backgroundColor: const Color(0xFF4285F4),
+  backgroundColor: const Color(0xFF10B981),
   padding: const EdgeInsets.symmetric(vertical: 16),
   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
 );

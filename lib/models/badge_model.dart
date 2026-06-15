@@ -96,7 +96,7 @@ class BadgeDef {
       titleKey: 'badgeWord500',
       descKey: 'badgeWord500Desc',
       icon: Icons.auto_stories_rounded,
-      color: Color(0xFF4285F4),
+      color: Color(0xFF10B981),
     ),
     BadgeDef(
       id: BadgeId.word1000,
@@ -297,7 +297,7 @@ class BadgeDef {
       titleKey: 'badgeTotalDays15',
       descKey: 'badgeTotalDays15Desc',
       icon: Icons.event_rounded,
-      color: Color(0xFF4285F4),
+      color: Color(0xFF10B981),
     ),
     BadgeDef(
       id: BadgeId.totalDays30,

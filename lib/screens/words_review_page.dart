@@ -144,7 +144,7 @@ class _WordsReviewPageState extends State<WordsReviewPage> {
           // Content
           Expanded(
             child: _isLoading
-                ? const Center(child: CircularProgressIndicator(color: Color(0xFF4285F4)))
+                ? const Center(child: CircularProgressIndicator(color: Color(0xFF10B981)))
                 : _loadError != null
                     ? Center(
                         child: Column(
@@ -206,7 +206,7 @@ class _WordsReviewPageState extends State<WordsReviewPage> {
           duration: const Duration(milliseconds: 200),
           padding: const EdgeInsets.symmetric(vertical: 8),
           decoration: BoxDecoration(
-            color: isSelected ? const Color(0xFF4285F4) : const Color(0xFFF0F0F0),
+            color: isSelected ? const Color(0xFF10B981) : const Color(0xFFF0F0F0),
             borderRadius: BorderRadius.circular(20),
           ),
           child: Center(
@@ -291,7 +291,7 @@ class _WordReviewCard extends StatelessWidget {
               word.translationFor(languageCode),
               style: const TextStyle(
                 fontSize: 13,
-                color: Color(0xFF4285F4),
+                color: Color(0xFF10B981),
               ),
             ),
           ),

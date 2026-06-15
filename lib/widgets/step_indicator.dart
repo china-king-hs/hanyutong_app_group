@@ -19,7 +19,7 @@ class StepIndicator extends StatelessWidget {
           decoration: BoxDecoration(
             shape: BoxShape.circle,
             color: i == current
-                ? const Color(0xFF4285F4)
+                ? const Color(0xFF10B981)
                 : const Color(0xFFCCCCCC),
           ),
         );

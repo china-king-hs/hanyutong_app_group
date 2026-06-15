@@ -66,7 +66,7 @@ class _ChineseGoAppState extends State<ChineseGoApp> {
           title: '汉语通',
           debugShowCheckedModeBanner: false,
           theme: ThemeData(
-            colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF4285F4)),
+            colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF10B981)),
             useMaterial3: true,
             fontFamily: 'Roboto',
           ),

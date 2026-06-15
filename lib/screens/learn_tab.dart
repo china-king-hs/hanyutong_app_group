@@ -99,7 +99,7 @@ class _LearnTabState extends State<LearnTab> {
                               margin: const EdgeInsets.only(bottom: 8),
                               decoration: BoxDecoration(
                                 color: state.level == lvl['id']
-                                    ? const Color(0xFF4285F4)
+                                    ? const Color(0xFF10B981)
                                     : const Color(0xFFF5F5F5),
                                 borderRadius: BorderRadius.circular(12),
                               ),
@@ -129,7 +129,7 @@ class _LearnTabState extends State<LearnTab> {
                     emoji: '📖',
                     label: AppLocalizations.of(context)!.wordsPractice,
                     color: const Color(0xFFDCEAFF),
-                    iconColor: const Color(0xFF4285F4),
+                    iconColor: const Color(0xFF10B981),
                     icon: Icons.menu_book,
                     onTap: () => context.push('/practice/words'),
                   ),
