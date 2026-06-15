@@ -117,7 +117,7 @@ class _ProverbsReviewPageState extends State<ProverbsReviewPage> {
             child: _isLoading
                 ? const Center(
                     child:
-                        CircularProgressIndicator(color: Color(0xFF4285F4)))
+                        CircularProgressIndicator(color: Color(0xFF10B981)))
                 : _loadError != null
                     ? Center(
                         child: Column(
@@ -246,7 +246,7 @@ class _ProverbReviewCard extends StatelessWidget {
                   proverb.translationFor(languageCode),
                   style: const TextStyle(
                     fontSize: 13,
-                    color: Color(0xFF4285F4),
+                    color: Color(0xFF10B981),
                   ),
                 ),
               ),

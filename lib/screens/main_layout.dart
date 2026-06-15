@@ -60,7 +60,7 @@ class _MainLayoutState extends State<MainLayout> with RouteAware {
       body: widget.child,
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: idx,
-        selectedItemColor: const Color(0xFF4285F4),
+        selectedItemColor: const Color(0xFF10B981),
         unselectedItemColor: Colors.grey,
         onTap: (i) {
           switch (i) {

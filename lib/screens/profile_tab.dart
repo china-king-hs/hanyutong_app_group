@@ -83,7 +83,7 @@ class _ProfileTabState extends State<ProfileTab> {
                   width: 72,
                   height: 72,
                   decoration: const BoxDecoration(
-                    color: Color(0xFF4285F4),
+                    color: Color(0xFF10B981),
                     shape: BoxShape.circle,
                   ),
                   child: const Icon(Icons.person, color: Colors.white, size: 40),
@@ -130,7 +130,7 @@ class _ProfileTabState extends State<ProfileTab> {
                     loc.viewAll,
                     style: const TextStyle(
                       fontSize: 14,
-                      color: Color(0xFF4285F4),
+                      color: Color(0xFF10B981),
                     ),
                   ),
                 ),
@@ -152,12 +152,12 @@ class _ProfileTabState extends State<ProfileTab> {
                 ? const Padding(
                     padding: EdgeInsets.symmetric(vertical: 32),
                     child: Center(
-                      child: CircularProgressIndicator(color: Color(0xFF4285F4)),
+                      child: CircularProgressIndicator(color: Color(0xFF10B981)),
                     ),
                   )
                 : Column(
                     children: [
-                      _buildProgressBar('📝 ${loc.wordsLabel}', wordsPercent, const Color(0xFF4285F4)),
+                      _buildProgressBar('📝 ${loc.wordsLabel}', wordsPercent, const Color(0xFF10B981)),
                       _buildProgressBar('🀄 ${loc.idioms}', idiomsPercent, Colors.orange),
                       _buildProgressBar('📜 ${loc.proverbs}', proverbsPercent, Colors.green),
                       _buildProgressBar('🎋 ${loc.poetry}', poemsPercent, Colors.purple),
@@ -460,7 +460,7 @@ class _ProfileTabState extends State<ProfileTab> {
                   style: const TextStyle(
                       fontSize: 13,
                       fontWeight: FontWeight.bold,
-                      color: Color(0xFF4285F4))),
+                      color: Color(0xFF10B981))),
             ],
           ),
           const SizedBox(height: 6),

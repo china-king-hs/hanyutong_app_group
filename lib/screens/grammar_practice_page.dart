@@ -102,7 +102,7 @@ class _GrammarPracticePageState extends State<GrammarPracticePage> {
                   '${_currentIndex + 1}/$_totalItems',
                   style: const TextStyle(
                     fontSize: 13,
-                    color: Color(0xFF4285F4),
+                    color: Color(0xFF10B981),
                     decoration: TextDecoration.underline,
                   ),
                 ),
@@ -222,7 +222,7 @@ class _GrammarPracticePageState extends State<GrammarPracticePage> {
                         }
                       },
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: const Color(0xFF4285F4),
+                        backgroundColor: const Color(0xFF10B981),
                         foregroundColor: Colors.white,
                         padding: const EdgeInsets.symmetric(vertical: 14),
                         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),

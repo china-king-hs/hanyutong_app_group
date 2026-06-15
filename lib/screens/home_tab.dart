@@ -146,7 +146,7 @@ class HomeTab extends StatelessWidget {
                     child: ElevatedButton(
                       onPressed: () => context.push('/review'),
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: const Color(0xFF4285F4),
+                        backgroundColor: const Color(0xFF10B981),
                         padding: const EdgeInsets.symmetric(vertical: 14),
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(12)),
@@ -219,7 +219,7 @@ class HomeTab extends StatelessWidget {
                   ],
                 ),
                 trailing: state.language == l.code
-                    ? const Icon(Icons.check, color: Color(0xFF4285F4))
+                    ? const Icon(Icons.check, color: Color(0xFF10B981))
                     : null,
                 onTap: () {
                   state.setLanguage(l.code);
@@ -248,7 +248,7 @@ class HomeTab extends StatelessWidget {
           ...goals.map((g) => ListTile(
                 title: Text('$g ${AppLocalizations.of(context)!.minutes}'),
                 trailing: state.dailyGoal == g
-                    ? const Icon(Icons.check, color: Color(0xFF4285F4))
+                    ? const Icon(Icons.check, color: Color(0xFF10B981))
                     : null,
                 onTap: () {
                   state.setDailyGoal(g);
@@ -316,7 +316,7 @@ class _StatItem extends StatelessWidget {
               style: const TextStyle(
                   fontSize: 22,
                   fontWeight: FontWeight.bold,
-                  color: Color(0xFF4285F4))),
+                  color: Color(0xFF10B981))),
           Text(
             useLocalization && localizations != null ? _getLocalizedLabel1(localizations) : label1,
             style: const TextStyle(fontSize: 11, color: Color(0xFF999999)),

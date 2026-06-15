@@ -104,7 +104,7 @@ class _LevelTestState extends State<LevelTest> {
                 child: ElevatedButton(
                   onPressed: _selected != null ? _handleContinue : null,
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color(0xFF4285F4),
+                    backgroundColor: const Color(0xFF10B981),
                     disabledBackgroundColor: const Color(0xFFCCCCCC),
                     padding: const EdgeInsets.symmetric(vertical: 16),
                     shape: RoundedRectangleBorder(
@@ -152,7 +152,7 @@ class _LevelCard extends StatelessWidget {
           color: Colors.white,
           borderRadius: BorderRadius.circular(16),
           border: isSelected
-              ? Border.all(color: const Color(0xFF4285F4), width: 2)
+              ? Border.all(color: const Color(0xFF10B981), width: 2)
               : null,
           boxShadow: [
             BoxShadow(
@@ -191,10 +191,10 @@ class _LevelCard extends StatelessWidget {
               height: 24,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
-                color: isSelected ? const Color(0xFF4285F4) : Colors.transparent,
+                color: isSelected ? const Color(0xFF10B981) : Colors.transparent,
                 border: Border.all(
                   color: isSelected
-                      ? const Color(0xFF4285F4)
+                      ? const Color(0xFF10B981)
                       : const Color(0xFFCCCCCC),
                   width: 2,
                 ),
